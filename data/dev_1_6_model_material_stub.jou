@@ -1,0 +1,4129 @@
+delete table all
+delete block all
+delete material all
+set duplicate block elements on
+block 1 add surface 3
+block 1 add surface 2
+block 1 add surface 1
+create table 4 column count 3
+modify table 4 dependency x column 1
+modify table 4 dependency y column 2
+create table 3 column count 3
+modify table 3 dependency x column 1
+modify table 3 dependency y column 2
+create table 2 column count 3
+modify table 2 dependency x column 1
+modify table 2 dependency y column 2
+create table 1 column count 3
+modify table 1 dependency x column 1
+modify table 1 dependency y column 2
+modify table 4 insert row 1
+modify table 4 cell 1 1 value 0.0
+modify table 4 cell 1 2 value 0.0
+modify table 4 cell 1 3 value 2215607159.0627093
+modify table 3 insert row 1
+modify table 3 cell 1 1 value 0.0
+modify table 3 cell 1 2 value 0.0
+modify table 3 cell 1 3 value 0.28392566012842024
+modify table 2 insert row 1
+modify table 2 cell 1 1 value 0.0
+modify table 2 cell 1 2 value 0.0
+modify table 2 cell 1 3 value 1823.778212
+modify table 1 insert row 1
+modify table 1 cell 1 1 value 0.0
+modify table 1 cell 1 2 value 0.0
+modify table 1 cell 1 3 value 0
+modify table 4 insert row 2
+modify table 4 cell 2 1 value 0.0
+modify table 4 cell 2 2 value 4.957580477234976
+modify table 4 cell 2 3 value 2215607159.0627093
+modify table 3 insert row 2
+modify table 3 cell 2 1 value 0.0
+modify table 3 cell 2 2 value 4.957580477234976
+modify table 3 cell 2 3 value 0.28392566012842024
+modify table 2 insert row 2
+modify table 2 cell 2 1 value 0.0
+modify table 2 cell 2 2 value 4.957580477234976
+modify table 2 cell 2 3 value 1823.778212
+modify table 1 insert row 2
+modify table 1 cell 2 1 value 0.0
+modify table 1 cell 2 2 value 4.957580477234976
+modify table 1 cell 2 3 value 0
+create material 1
+modify material 1 name 'песчаник 1' 
+modify material 1 set property 'MODULUS' table 4
+modify material 1 set property 'POISSON' table 3
+modify material 1 set property 'DENSITY' table 2
+modify material 1 set property 'MASS_MATRIX_DAMPING' table 1
+modify material 1 set property 'BIOT_ALPHA' value 1
+block 1 material 1 cs 1 category plane order 4
+block 2 add surface 6
+block 2 add surface 5
+block 2 add surface 4
+create table 8 column count 3
+modify table 8 dependency x column 1
+modify table 8 dependency y column 2
+create table 7 column count 3
+modify table 7 dependency x column 1
+modify table 7 dependency y column 2
+create table 6 column count 3
+modify table 6 dependency x column 1
+modify table 6 dependency y column 2
+create table 5 column count 3
+modify table 5 dependency x column 1
+modify table 5 dependency y column 2
+modify table 8 insert row 1
+modify table 8 cell 1 1 value 0.0
+modify table 8 cell 1 2 value 4.957580477234976
+modify table 8 cell 1 3 value 2215607159.0627093
+modify table 7 insert row 1
+modify table 7 cell 1 1 value 0.0
+modify table 7 cell 1 2 value 4.957580477234976
+modify table 7 cell 1 3 value 0.28392566012842024
+modify table 6 insert row 1
+modify table 6 cell 1 1 value 0.0
+modify table 6 cell 1 2 value 4.957580477234976
+modify table 6 cell 1 3 value 1823.778212
+modify table 5 insert row 1
+modify table 5 cell 1 1 value 0.0
+modify table 5 cell 1 2 value 4.957580477234976
+modify table 5 cell 1 3 value 0
+modify table 8 insert row 2
+modify table 8 cell 2 1 value 0.0
+modify table 8 cell 2 2 value 9.915160954469952
+modify table 8 cell 2 3 value 2215607159.0627093
+modify table 7 insert row 2
+modify table 7 cell 2 1 value 0.0
+modify table 7 cell 2 2 value 9.915160954469952
+modify table 7 cell 2 3 value 0.28392566012842024
+modify table 6 insert row 2
+modify table 6 cell 2 1 value 0.0
+modify table 6 cell 2 2 value 9.915160954469952
+modify table 6 cell 2 3 value 1823.778212
+modify table 5 insert row 2
+modify table 5 cell 2 1 value 0.0
+modify table 5 cell 2 2 value 9.915160954469952
+modify table 5 cell 2 3 value 0
+create material 2
+modify material 2 name 'песчаник 2' 
+modify material 2 set property 'MODULUS' table 8
+modify material 2 set property 'POISSON' table 7
+modify material 2 set property 'DENSITY' table 6
+modify material 2 set property 'MASS_MATRIX_DAMPING' table 5
+modify material 2 set property 'BIOT_ALPHA' value 1
+block 2 material 2 cs 1 category plane order 4
+block 3 add surface 9
+block 3 add surface 8
+block 3 add surface 7
+create table 12 column count 3
+modify table 12 dependency x column 1
+modify table 12 dependency y column 2
+create table 11 column count 3
+modify table 11 dependency x column 1
+modify table 11 dependency y column 2
+create table 10 column count 3
+modify table 10 dependency x column 1
+modify table 10 dependency y column 2
+create table 9 column count 3
+modify table 9 dependency x column 1
+modify table 9 dependency y column 2
+modify table 12 insert row 1
+modify table 12 cell 1 1 value 0.0
+modify table 12 cell 1 2 value 23.135375560429907
+modify table 12 cell 1 3 value 2215607159.0627093
+modify table 11 insert row 1
+modify table 11 cell 1 1 value 0.0
+modify table 11 cell 1 2 value 23.135375560429907
+modify table 11 cell 1 3 value 0.28392566012842024
+modify table 10 insert row 1
+modify table 10 cell 1 1 value 0.0
+modify table 10 cell 1 2 value 23.135375560429907
+modify table 10 cell 1 3 value 1823.778212
+modify table 9 insert row 1
+modify table 9 cell 1 1 value 0.0
+modify table 9 cell 1 2 value 23.135375560429907
+modify table 9 cell 1 3 value 0
+modify table 12 insert row 2
+modify table 12 cell 2 1 value 0.0
+modify table 12 cell 2 2 value 29.74548286340989
+modify table 12 cell 2 3 value 2215607159.0627093
+modify table 11 insert row 2
+modify table 11 cell 2 1 value 0.0
+modify table 11 cell 2 2 value 29.74548286340989
+modify table 11 cell 2 3 value 0.28392566012842024
+modify table 10 insert row 2
+modify table 10 cell 2 1 value 0.0
+modify table 10 cell 2 2 value 29.74548286340989
+modify table 10 cell 2 3 value 1823.778212
+modify table 9 insert row 2
+modify table 9 cell 2 1 value 0.0
+modify table 9 cell 2 2 value 29.74548286340989
+modify table 9 cell 2 3 value 0
+create material 3
+modify material 3 name 'песчаник 3' 
+modify material 3 set property 'MODULUS' table 12
+modify material 3 set property 'POISSON' table 11
+modify material 3 set property 'DENSITY' table 10
+modify material 3 set property 'MASS_MATRIX_DAMPING' table 9
+modify material 3 set property 'BIOT_ALPHA' value 1
+block 3 material 3 cs 1 category plane order 4
+block 4 add surface 12
+block 4 add surface 11
+block 4 add surface 10
+create table 16 column count 3
+modify table 16 dependency x column 1
+modify table 16 dependency y column 2
+create table 15 column count 3
+modify table 15 dependency x column 1
+modify table 15 dependency y column 2
+create table 14 column count 3
+modify table 14 dependency x column 1
+modify table 14 dependency y column 2
+create table 13 column count 3
+modify table 13 dependency x column 1
+modify table 13 dependency y column 2
+modify table 16 insert row 1
+modify table 16 cell 1 1 value 0.0
+modify table 16 cell 1 2 value 52.054595010967304
+modify table 16 cell 1 3 value 2072138485.797246
+modify table 15 insert row 1
+modify table 15 cell 1 1 value 0.0
+modify table 15 cell 1 2 value 52.054595010967304
+modify table 15 cell 1 3 value 0.2839499093069614
+modify table 14 insert row 1
+modify table 14 cell 1 1 value 0.0
+modify table 14 cell 1 2 value 52.054595010967304
+modify table 14 cell 1 3 value 1814.8867
+modify table 13 insert row 1
+modify table 13 cell 1 1 value 0.0
+modify table 13 cell 1 2 value 52.054595010967304
+modify table 13 cell 1 3 value 0
+modify table 16 insert row 2
+modify table 16 cell 2 1 value 0.0
+modify table 16 cell 2 2 value 59.49096572681978
+modify table 16 cell 2 3 value 2105995378.3751256
+modify table 15 insert row 2
+modify table 15 cell 2 1 value 0.0
+modify table 15 cell 2 2 value 59.49096572681978
+modify table 15 cell 2 3 value 0.2839439662281126
+modify table 14 insert row 2
+modify table 14 cell 2 1 value 0.0
+modify table 14 cell 2 2 value 59.49096572681978
+modify table 14 cell 2 3 value 1817.018417
+modify table 13 insert row 2
+modify table 13 cell 2 1 value 0.0
+modify table 13 cell 2 2 value 59.49096572681978
+modify table 13 cell 2 3 value 0
+create material 4
+modify material 4 name 'песчаник 4' 
+modify material 4 set property 'MODULUS' table 16
+modify material 4 set property 'POISSON' table 15
+modify material 4 set property 'DENSITY' table 14
+modify material 4 set property 'MASS_MATRIX_DAMPING' table 13
+modify material 4 set property 'BIOT_ALPHA' value 1
+block 4 material 4 cs 1 category plane order 4
+block 5 add surface 15
+block 5 add surface 14
+block 5 add surface 13
+create table 20 column count 3
+modify table 20 dependency x column 1
+modify table 20 dependency y column 2
+create table 19 column count 3
+modify table 19 dependency x column 1
+modify table 19 dependency y column 2
+create table 18 column count 3
+modify table 18 dependency x column 1
+modify table 18 dependency y column 2
+create table 17 column count 3
+modify table 17 dependency x column 1
+modify table 17 dependency y column 2
+modify table 20 insert row 1
+modify table 20 cell 1 1 value 0.0
+modify table 20 cell 1 2 value 89.23644859022966
+modify table 20 cell 1 3 value 2542368222.2847075
+modify table 19 insert row 1
+modify table 19 cell 1 1 value 0.0
+modify table 19 cell 1 2 value 89.23644859022966
+modify table 19 cell 1 3 value 0.2838782334872216
+modify table 18 insert row 1
+modify table 18 cell 1 1 value 0.0
+modify table 18 cell 1 2 value 89.23644859022966
+modify table 18 cell 1 3 value 1842.7758970000002
+modify table 17 insert row 1
+modify table 17 cell 1 1 value 0.0
+modify table 17 cell 1 2 value 89.23644859022966
+modify table 17 cell 1 3 value 0
+modify table 20 insert row 2
+modify table 20 cell 2 1 value 0.0
+modify table 20 cell 2 2 value 99.15160954469962
+modify table 20 cell 2 3 value 2737531659.2172923
+modify table 19 insert row 2
+modify table 19 cell 2 1 value 0.0
+modify table 19 cell 2 2 value 99.15160954469962
+modify table 19 cell 2 3 value 0.2838540120997341
+modify table 18 insert row 2
+modify table 18 cell 2 1 value 0.0
+modify table 18 cell 2 2 value 99.15160954469962
+modify table 18 cell 2 3 value 1853.403197
+modify table 17 insert row 2
+modify table 17 cell 2 1 value 0.0
+modify table 17 cell 2 2 value 99.15160954469962
+modify table 17 cell 2 3 value 0
+create material 5
+modify material 5 name 'песчаник 5' 
+modify material 5 set property 'MODULUS' table 20
+modify material 5 set property 'POISSON' table 19
+modify material 5 set property 'DENSITY' table 18
+modify material 5 set property 'MASS_MATRIX_DAMPING' table 17
+modify material 5 set property 'BIOT_ALPHA' value 1
+block 5 material 5 cs 1 category plane order 4
+block 6 add surface 18
+block 6 add surface 17
+block 6 add surface 16
+create table 24 column count 3
+modify table 24 dependency x column 1
+modify table 24 dependency y column 2
+create table 23 column count 3
+modify table 23 dependency x column 1
+modify table 23 dependency y column 2
+create table 22 column count 3
+modify table 22 dependency x column 1
+modify table 22 dependency y column 2
+create table 21 column count 3
+modify table 21 dependency x column 1
+modify table 21 dependency y column 2
+modify table 24 insert row 1
+modify table 24 cell 1 1 value 0.0
+modify table 24 cell 1 2 value 112.37182415065958
+modify table 24 cell 1 3 value 3459540339.6380596
+modify table 23 insert row 1
+modify table 23 cell 1 1 value 0.0
+modify table 23 cell 1 2 value 112.37182415065958
+modify table 23 cell 1 3 value 0.28378281581207926
+modify table 22 insert row 1
+modify table 22 cell 1 1 value 0.0
+modify table 22 cell 1 2 value 112.37182415065958
+modify table 22 cell 1 3 value 1889.016834
+modify table 21 insert row 1
+modify table 21 cell 1 1 value 0.0
+modify table 21 cell 1 2 value 112.37182415065958
+modify table 21 cell 1 3 value 0
+modify table 24 insert row 2
+modify table 24 cell 2 1 value 0.0
+modify table 24 cell 2 2 value 118.98193145363955
+modify table 24 cell 2 3 value 4973729039.307965
+modify table 23 insert row 2
+modify table 23 cell 2 1 value 0.0
+modify table 23 cell 2 2 value 118.98193145363955
+modify table 23 cell 2 3 value 0.283687096684495
+modify table 22 insert row 2
+modify table 22 cell 2 1 value 0.0
+modify table 22 cell 2 2 value 118.98193145363955
+modify table 22 cell 2 3 value 1950.5156610000001
+modify table 21 insert row 2
+modify table 21 cell 2 1 value 0.0
+modify table 21 cell 2 2 value 118.98193145363955
+modify table 21 cell 2 3 value 0
+create material 6
+modify material 6 name 'песчаник 6' 
+modify material 6 set property 'MODULUS' table 24
+modify material 6 set property 'POISSON' table 23
+modify material 6 set property 'DENSITY' table 22
+modify material 6 set property 'MASS_MATRIX_DAMPING' table 21
+modify material 6 set property 'BIOT_ALPHA' value 1
+block 6 material 6 cs 1 category plane order 4
+block 7 add surface 21
+block 7 add surface 20
+block 7 add surface 19
+create table 28 column count 3
+modify table 28 dependency x column 1
+modify table 28 dependency y column 2
+create table 27 column count 3
+modify table 27 dependency x column 1
+modify table 27 dependency y column 2
+create table 26 column count 3
+modify table 26 dependency x column 1
+modify table 26 dependency y column 2
+create table 25 column count 3
+modify table 25 dependency x column 1
+modify table 25 dependency y column 2
+modify table 28 insert row 1
+modify table 28 cell 1 1 value 0.0
+modify table 28 cell 1 2 value 132.2021460595995
+modify table 28 cell 1 3 value 6308922041.953202
+modify table 27 insert row 1
+modify table 27 cell 1 1 value 0.0
+modify table 27 cell 1 2 value 132.2021460595995
+modify table 27 cell 1 3 value 0.2836328247269651
+modify table 26 insert row 1
+modify table 26 cell 1 1 value 0.0
+modify table 26 cell 1 2 value 132.2021460595995
+modify table 26 cell 1 3 value 1995.168817
+modify table 25 insert row 1
+modify table 25 cell 1 1 value 0.0
+modify table 25 cell 1 2 value 132.2021460595995
+modify table 25 cell 1 3 value 0
+modify table 28 insert row 2
+modify table 28 cell 2 1 value 0.0
+modify table 28 cell 2 2 value 138.81225336257947
+modify table 28 cell 2 3 value 6311694543.8721895
+modify table 27 insert row 2
+modify table 27 cell 2 1 value 0.0
+modify table 27 cell 2 2 value 138.81225336257947
+modify table 27 cell 2 3 value 0.28363273002521133
+modify table 26 insert row 2
+modify table 26 cell 2 1 value 0.0
+modify table 26 cell 2 2 value 138.81225336257947
+modify table 26 cell 2 3 value 1995.254637
+modify table 25 insert row 2
+modify table 25 cell 2 1 value 0.0
+modify table 25 cell 2 2 value 138.81225336257947
+modify table 25 cell 2 3 value 0
+create material 7
+modify material 7 name 'песчаник 7' 
+modify material 7 set property 'MODULUS' table 28
+modify material 7 set property 'POISSON' table 27
+modify material 7 set property 'DENSITY' table 26
+modify material 7 set property 'MASS_MATRIX_DAMPING' table 25
+modify material 7 set property 'BIOT_ALPHA' value 1
+block 7 material 7 cs 1 category plane order 4
+block 8 add surface 24
+block 8 add surface 23
+block 8 add surface 22
+create table 32 column count 3
+modify table 32 dependency x column 1
+modify table 32 dependency y column 2
+create table 31 column count 3
+modify table 31 dependency x column 1
+modify table 31 dependency y column 2
+create table 30 column count 3
+modify table 30 dependency x column 1
+modify table 30 dependency y column 2
+create table 29 column count 3
+modify table 29 dependency x column 1
+modify table 29 dependency y column 2
+modify table 32 insert row 1
+modify table 32 cell 1 1 value 0.0
+modify table 32 cell 1 2 value 152.0324679685394
+modify table 32 cell 1 3 value 5906073294.001878
+modify table 31 insert row 1
+modify table 31 cell 1 1 value 0.0
+modify table 31 cell 1 2 value 152.0324679685394
+modify table 31 cell 1 3 value 0.28364727381429994
+modify table 30 insert row 1
+modify table 30 cell 1 1 value 0.0
+modify table 30 cell 1 2 value 152.0324679685394
+modify table 30 cell 1 3 value 1982.420465
+modify table 29 insert row 1
+modify table 29 cell 1 1 value 0.0
+modify table 29 cell 1 2 value 152.0324679685394
+modify table 29 cell 1 3 value 0
+modify table 32 insert row 2
+modify table 32 cell 2 1 value 0.0
+modify table 32 cell 2 2 value 158.64257527151938
+modify table 32 cell 2 3 value 4836989897.101899
+modify table 31 insert row 2
+modify table 31 cell 2 1 value 0.0
+modify table 31 cell 2 2 value 158.64257527151938
+modify table 31 cell 2 3 value 0.2836938714651105
+modify table 30 insert row 2
+modify table 30 cell 2 1 value 0.0
+modify table 30 cell 2 2 value 158.64257527151938
+modify table 30 cell 2 3 value 1945.5121120000001
+modify table 29 insert row 2
+modify table 29 cell 2 1 value 0.0
+modify table 29 cell 2 2 value 158.64257527151938
+modify table 29 cell 2 3 value 0
+create material 8
+modify material 8 name 'песчаник 8' 
+modify material 8 set property 'MODULUS' table 32
+modify material 8 set property 'POISSON' table 31
+modify material 8 set property 'DENSITY' table 30
+modify material 8 set property 'MASS_MATRIX_DAMPING' table 29
+modify material 8 set property 'BIOT_ALPHA' value 1
+block 8 material 8 cs 1 category plane order 4
+block 9 add surface 27
+block 9 add surface 26
+block 9 add surface 25
+create table 36 column count 3
+modify table 36 dependency x column 1
+modify table 36 dependency y column 2
+create table 35 column count 3
+modify table 35 dependency x column 1
+modify table 35 dependency y column 2
+create table 34 column count 3
+modify table 34 dependency x column 1
+modify table 34 dependency y column 2
+create table 33 column count 3
+modify table 33 dependency x column 1
+modify table 33 dependency y column 2
+modify table 36 insert row 1
+modify table 36 cell 1 1 value 0.0
+modify table 36 cell 1 2 value 171.96244243163116
+modify table 36 cell 1 3 value 3680907242.6361713
+modify table 35 insert row 1
+modify table 35 cell 1 1 value 0.0
+modify table 35 cell 1 2 value 171.96244243163116
+modify table 35 cell 1 3 value 0.28376525888628695
+modify table 34 insert row 1
+modify table 34 cell 1 1 value 0.0
+modify table 34 cell 1 2 value 171.96244243163116
+modify table 34 cell 1 3 value 1898.972424
+modify table 33 insert row 1
+modify table 33 cell 1 1 value 0.0
+modify table 33 cell 1 2 value 171.96244243163116
+modify table 33 cell 1 3 value 0
+modify table 36 insert row 2
+modify table 36 cell 2 1 value 0.0
+modify table 36 cell 2 2 value 178.62237601168704
+modify table 36 cell 2 3 value 3485760458.2692685
+modify table 35 insert row 2
+modify table 35 cell 2 1 value 0.0
+modify table 35 cell 2 2 value 178.62237601168704
+modify table 35 cell 2 3 value 0.28378065038473455
+modify table 34 insert row 2
+modify table 34 cell 2 1 value 0.0
+modify table 34 cell 2 2 value 178.62237601168704
+modify table 34 cell 2 3 value 1890.2169470000001
+modify table 33 insert row 2
+modify table 33 cell 2 1 value 0.0
+modify table 33 cell 2 2 value 178.62237601168704
+modify table 33 cell 2 3 value 0
+create material 9
+modify material 9 name 'песчаник 9' 
+modify material 9 set property 'MODULUS' table 36
+modify material 9 set property 'POISSON' table 35
+modify material 9 set property 'DENSITY' table 34
+modify material 9 set property 'MASS_MATRIX_DAMPING' table 33
+modify material 9 set property 'BIOT_ALPHA' value 1
+block 9 material 9 cs 1 category plane order 4
+block 10 add surface 30
+block 10 add surface 29
+block 10 add surface 28
+create table 40 column count 3
+modify table 40 dependency x column 1
+modify table 40 dependency y column 2
+create table 39 column count 3
+modify table 39 dependency x column 1
+modify table 39 dependency y column 2
+create table 38 column count 3
+modify table 38 dependency x column 1
+modify table 38 dependency y column 2
+create table 37 column count 3
+modify table 37 dependency x column 1
+modify table 37 dependency y column 2
+modify table 40 insert row 1
+modify table 40 cell 1 1 value 0.0
+modify table 40 cell 1 2 value 218.12485734934427
+modify table 40 cell 1 3 value 3804378617.0434723
+modify table 39 insert row 1
+modify table 39 cell 1 1 value 0.0
+modify table 39 cell 1 2 value 218.12485734934427
+modify table 39 cell 1 3 value 0.2837561306794755
+modify table 38 insert row 1
+modify table 38 cell 1 1 value 0.0
+modify table 38 cell 1 2 value 218.12485734934427
+modify table 38 cell 1 3 value 1904.3591410000001
+modify table 37 insert row 1
+modify table 37 cell 1 1 value 0.0
+modify table 37 cell 1 2 value 218.12485734934427
+modify table 37 cell 1 3 value 0
+modify table 40 insert row 2
+modify table 40 cell 2 1 value 0.0
+modify table 40 cell 2 2 value 231.29235112856333
+modify table 40 cell 2 3 value 3823716107.777817
+modify table 39 insert row 2
+modify table 39 cell 2 1 value 0.0
+modify table 39 cell 2 2 value 231.29235112856333
+modify table 39 cell 2 3 value 0.28375474073761703
+modify table 38 insert row 2
+modify table 38 cell 2 1 value 0.0
+modify table 38 cell 2 2 value 231.29235112856333
+modify table 38 cell 2 3 value 1905.192548
+modify table 37 insert row 2
+modify table 37 cell 2 1 value 0.0
+modify table 37 cell 2 2 value 231.29235112856333
+modify table 37 cell 2 3 value 0
+create material 10
+modify material 10 name 'глина 10' 
+modify material 10 set property 'MODULUS' table 40
+modify material 10 set property 'POISSON' table 39
+modify material 10 set property 'DENSITY' table 38
+modify material 10 set property 'MASS_MATRIX_DAMPING' table 37
+modify material 10 set property 'BIOT_ALPHA' value 1
+block 10 material 10 cs 1 category plane order 4
+block 11 add surface 33
+block 11 add surface 32
+block 11 add surface 31
+create table 44 column count 3
+modify table 44 dependency x column 1
+modify table 44 dependency y column 2
+create table 43 column count 3
+modify table 43 dependency x column 1
+modify table 43 dependency y column 2
+create table 42 column count 3
+modify table 42 dependency x column 1
+modify table 42 dependency y column 2
+create table 41 column count 3
+modify table 41 dependency x column 1
+modify table 41 dependency y column 2
+modify table 44 insert row 1
+modify table 44 cell 1 1 value 0.0
+modify table 44 cell 1 2 value 262.8943361986891
+modify table 44 cell 1 3 value 4059374930.4291415
+modify table 43 insert row 1
+modify table 43 cell 1 1 value 0.0
+modify table 43 cell 1 2 value 262.8943361986891
+modify table 43 cell 1 3 value 0.2837385979836094
+modify table 42 insert row 1
+modify table 42 cell 1 1 value 0.0
+modify table 42 cell 1 2 value 262.8943361986891
+modify table 42 cell 1 3 value 1915.137392
+modify table 41 insert row 1
+modify table 41 cell 1 1 value 0.0
+modify table 41 cell 1 2 value 262.8943361986891
+modify table 41 cell 1 3 value 0
+modify table 44 insert row 2
+modify table 44 cell 2 1 value 0.0
+modify table 44 cell 2 2 value 273.42833122206434
+modify table 44 cell 2 3 value 4043611559.9913416
+modify table 43 insert row 2
+modify table 43 cell 2 1 value 0.0
+modify table 43 cell 2 2 value 273.42833122206434
+modify table 43 cell 2 3 value 0.2837396341327358
+modify table 42 insert row 2
+modify table 42 cell 2 1 value 0.0
+modify table 42 cell 2 2 value 273.42833122206434
+modify table 42 cell 2 3 value 1914.483997
+modify table 41 insert row 2
+modify table 41 cell 2 1 value 0.0
+modify table 41 cell 2 2 value 273.42833122206434
+modify table 41 cell 2 3 value 0
+create material 11
+modify material 11 name 'глина 11' 
+modify material 11 set property 'MODULUS' table 44
+modify material 11 set property 'POISSON' table 43
+modify material 11 set property 'DENSITY' table 42
+modify material 11 set property 'MASS_MATRIX_DAMPING' table 41
+modify material 11 set property 'BIOT_ALPHA' value 1
+block 11 material 11 cs 1 category plane order 4
+block 12 add surface 36
+block 12 add surface 35
+block 12 add surface 34
+create table 48 column count 3
+modify table 48 dependency x column 1
+modify table 48 dependency y column 2
+create table 47 column count 3
+modify table 47 dependency x column 1
+modify table 47 dependency y column 2
+create table 46 column count 3
+modify table 46 dependency x column 1
+modify table 46 dependency y column 2
+create table 45 column count 3
+modify table 45 dependency x column 1
+modify table 45 dependency y column 2
+modify table 48 insert row 1
+modify table 48 cell 1 1 value 0.0
+modify table 48 cell 1 2 value 283.9623262454396
+modify table 48 cell 1 3 value 3932075298.511545
+modify table 47 insert row 1
+modify table 47 cell 1 1 value 0.0
+modify table 47 cell 1 2 value 283.9623262454396
+modify table 47 cell 1 3 value 0.28374714029140985
+modify table 46 insert row 1
+modify table 46 cell 1 1 value 0.0
+modify table 46 cell 1 2 value 283.9623262454396
+modify table 46 cell 1 3 value 1909.813066
+modify table 45 insert row 1
+modify table 45 cell 1 1 value 0.0
+modify table 45 cell 1 2 value 283.9623262454396
+modify table 45 cell 1 3 value 0
+modify table 48 insert row 2
+modify table 48 cell 2 1 value 0.0
+modify table 48 cell 2 2 value 294.4963212688149
+modify table 48 cell 2 3 value 4099179935.897282
+modify table 47 insert row 2
+modify table 47 cell 2 1 value 0.0
+modify table 47 cell 2 2 value 294.4963212688149
+modify table 47 cell 2 3 value 0.28373600783893144
+modify table 46 insert row 2
+modify table 46 cell 2 1 value 0.0
+modify table 46 cell 2 2 value 294.4963212688149
+modify table 46 cell 2 3 value 1916.780041
+modify table 45 insert row 2
+modify table 45 cell 2 1 value 0.0
+modify table 45 cell 2 2 value 294.4963212688149
+modify table 45 cell 2 3 value 0
+create material 12
+modify material 12 name 'глина 12' 
+modify material 12 set property 'MODULUS' table 48
+modify material 12 set property 'POISSON' table 47
+modify material 12 set property 'DENSITY' table 46
+modify material 12 set property 'MASS_MATRIX_DAMPING' table 45
+modify material 12 set property 'BIOT_ALPHA' value 1
+block 12 material 12 cs 1 category plane order 4
+block 13 add surface 39
+block 13 add surface 38
+block 13 add surface 37
+create table 52 column count 3
+modify table 52 dependency x column 1
+modify table 52 dependency y column 2
+create table 51 column count 3
+modify table 51 dependency x column 1
+modify table 51 dependency y column 2
+create table 50 column count 3
+modify table 50 dependency x column 1
+modify table 50 dependency y column 2
+create table 49 column count 3
+modify table 49 dependency x column 1
+modify table 49 dependency y column 2
+modify table 52 insert row 1
+modify table 52 cell 1 1 value 0.0
+modify table 52 cell 1 2 value 318.1978100714092
+modify table 52 cell 1 3 value 3884531701.9243417
+modify table 51 insert row 1
+modify table 51 cell 1 1 value 0.0
+modify table 51 cell 1 2 value 318.1978100714092
+modify table 51 cell 1 3 value 0.2837504364036757
+modify table 50 insert row 1
+modify table 50 cell 1 1 value 0.0
+modify table 50 cell 1 2 value 318.1978100714092
+modify table 50 cell 1 3 value 1907.796012
+modify table 49 insert row 1
+modify table 49 cell 1 1 value 0.0
+modify table 49 cell 1 2 value 318.1978100714092
+modify table 49 cell 1 3 value 0
+modify table 52 insert row 2
+modify table 52 cell 2 1 value 0.0
+modify table 52 cell 2 2 value 326.09830633894063
+modify table 52 cell 2 3 value 4231386313.8056083
+modify table 51 insert row 2
+modify table 51 cell 2 1 value 0.0
+modify table 51 cell 2 2 value 326.09830633894063
+modify table 51 cell 2 3 value 0.2837276654191751
+modify table 50 insert row 2
+modify table 50 cell 2 1 value 0.0
+modify table 50 cell 2 2 value 326.09830633894063
+modify table 50 cell 2 3 value 1922.162804
+modify table 49 insert row 2
+modify table 49 cell 2 1 value 0.0
+modify table 49 cell 2 2 value 326.09830633894063
+modify table 49 cell 2 3 value 0
+create material 13
+modify material 13 name 'глина 13' 
+modify material 13 set property 'MODULUS' table 52
+modify material 13 set property 'POISSON' table 51
+modify material 13 set property 'DENSITY' table 50
+modify material 13 set property 'MASS_MATRIX_DAMPING' table 49
+modify material 13 set property 'BIOT_ALPHA' value 1
+block 13 material 13 cs 1 category plane order 4
+block 14 add surface 42
+block 14 add surface 41
+block 14 add surface 40
+create table 56 column count 3
+modify table 56 dependency x column 1
+modify table 56 dependency y column 2
+create table 55 column count 3
+modify table 55 dependency x column 1
+modify table 55 dependency y column 2
+create table 54 column count 3
+modify table 54 dependency x column 1
+modify table 54 dependency y column 2
+create table 53 column count 3
+modify table 53 dependency x column 1
+modify table 53 dependency y column 2
+modify table 56 insert row 1
+modify table 56 cell 1 1 value 0.0
+modify table 56 cell 1 2 value 339.9560085316985
+modify table 56 cell 1 3 value 3548658628.261446
+modify table 55 insert row 1
+modify table 55 cell 1 1 value 0.0
+modify table 55 cell 1 2 value 339.9560085316985
+modify table 55 cell 1 3 value 0.2837755528263496
+modify table 54 insert row 1
+modify table 54 cell 1 1 value 0.0
+modify table 54 cell 1 2 value 339.9560085316985
+modify table 54 cell 1 3 value 1893.072488
+modify table 53 insert row 1
+modify table 53 cell 1 1 value 0.0
+modify table 53 cell 1 2 value 339.9560085316985
+modify table 53 cell 1 3 value 0
+modify table 56 insert row 2
+modify table 56 cell 2 1 value 0.0
+modify table 56 cell 2 2 value 346.88485962807744
+modify table 56 cell 2 3 value 3622688182.514918
+modify table 55 insert row 2
+modify table 55 cell 2 1 value 0.0
+modify table 55 cell 2 2 value 346.88485962807744
+modify table 55 cell 2 3 value 0.2837697219285819
+modify table 54 insert row 2
+modify table 54 cell 2 1 value 0.0
+modify table 54 cell 2 2 value 346.88485962807744
+modify table 54 cell 2 3 value 1896.392165
+modify table 53 insert row 2
+modify table 53 cell 2 1 value 0.0
+modify table 53 cell 2 2 value 346.88485962807744
+modify table 53 cell 2 3 value 0
+create material 14
+modify material 14 name 'песчаник 14' 
+modify material 14 set property 'MODULUS' table 56
+modify material 14 set property 'POISSON' table 55
+modify material 14 set property 'DENSITY' table 54
+modify material 14 set property 'MASS_MATRIX_DAMPING' table 53
+modify material 14 set property 'BIOT_ALPHA' value 1
+block 14 material 14 cs 1 category plane order 4
+block 15 add surface 45
+block 15 add surface 44
+block 15 add surface 43
+create table 60 column count 3
+modify table 60 dependency x column 1
+modify table 60 dependency y column 2
+create table 59 column count 3
+modify table 59 dependency x column 1
+modify table 59 dependency y column 2
+create table 58 column count 3
+modify table 58 dependency x column 1
+modify table 58 dependency y column 2
+create table 57 column count 3
+modify table 57 dependency x column 1
+modify table 57 dependency y column 2
+modify table 60 insert row 1
+modify table 60 cell 1 1 value 0.0
+modify table 60 cell 1 2 value 396.98641796479944
+modify table 60 cell 1 3 value 4254307963.8274713
+modify table 59 insert row 1
+modify table 59 cell 1 1 value 0.0
+modify table 59 cell 1 2 value 396.98641796479944
+modify table 59 cell 1 3 value 0.2837262581865394
+modify table 58 insert row 1
+modify table 58 cell 1 1 value 0.0
+modify table 58 cell 1 2 value 396.98641796479944
+modify table 58 cell 1 3 value 1923.08491
+modify table 57 insert row 1
+modify table 57 cell 1 1 value 0.0
+modify table 57 cell 1 2 value 396.98641796479944
+modify table 57 cell 1 3 value 0
+modify table 60 insert row 2
+modify table 60 cell 2 1 value 0.0
+modify table 60 cell 2 2 value 405.3366776875864
+modify table 60 cell 2 3 value 4065948817.3067427
+modify table 59 insert row 2
+modify table 59 cell 2 1 value 0.0
+modify table 59 cell 2 2 value 405.3366776875864
+modify table 59 cell 2 3 value 0.2837381676300929
+modify table 58 insert row 2
+modify table 58 cell 2 1 value 0.0
+modify table 58 cell 2 2 value 405.3366776875864
+modify table 58 cell 2 3 value 1915.409396
+modify table 57 insert row 2
+modify table 57 cell 2 1 value 0.0
+modify table 57 cell 2 2 value 405.3366776875864
+modify table 57 cell 2 3 value 0
+create material 15
+modify material 15 name 'песчаник 15' 
+modify material 15 set property 'MODULUS' table 60
+modify material 15 set property 'POISSON' table 59
+modify material 15 set property 'DENSITY' table 58
+modify material 15 set property 'MASS_MATRIX_DAMPING' table 57
+modify material 15 set property 'BIOT_ALPHA' value 1
+block 15 material 15 cs 1 category plane order 4
+block 16 add surface 48
+block 16 add surface 47
+block 16 add surface 46
+create table 64 column count 3
+modify table 64 dependency x column 1
+modify table 64 dependency y column 2
+create table 63 column count 3
+modify table 63 dependency x column 1
+modify table 63 dependency y column 2
+create table 62 column count 3
+modify table 62 dependency x column 1
+modify table 62 dependency y column 2
+create table 61 column count 3
+modify table 61 dependency x column 1
+modify table 61 dependency y column 2
+modify table 64 insert row 1
+modify table 64 cell 1 1 value 0.0
+modify table 64 cell 1 2 value 424.93010376578655
+modify table 64 cell 1 3 value 4181535554.0766025
+modify table 63 insert row 1
+modify table 63 cell 1 1 value 0.0
+modify table 63 cell 1 2 value 424.93010376578655
+modify table 63 cell 1 3 value 0.2837307652133328
+modify table 62 insert row 1
+modify table 62 cell 1 1 value 0.0
+modify table 62 cell 1 2 value 424.93010376578655
+modify table 62 cell 1 3 value 1920.146123
+modify table 61 insert row 1
+modify table 61 cell 1 1 value 0.0
+modify table 61 cell 1 2 value 424.93010376578655
+modify table 61 cell 1 3 value 0
+modify table 64 insert row 2
+modify table 64 cell 2 1 value 0.0
+modify table 64 cell 2 2 value 434.72681680488665
+modify table 64 cell 2 3 value 3886738181.7536583
+modify table 63 insert row 2
+modify table 63 cell 2 1 value 0.0
+modify table 63 cell 2 2 value 434.72681680488665
+modify table 63 cell 2 3 value 0.2837502821130381
+modify table 62 insert row 2
+modify table 62 cell 2 1 value 0.0
+modify table 62 cell 2 2 value 434.72681680488665
+modify table 62 cell 2 3 value 1907.889974
+modify table 61 insert row 2
+modify table 61 cell 2 1 value 0.0
+modify table 61 cell 2 2 value 434.72681680488665
+modify table 61 cell 2 3 value 0
+create material 16
+modify material 16 name 'песчаник 16' 
+modify material 16 set property 'MODULUS' table 64
+modify material 16 set property 'POISSON' table 63
+modify material 16 set property 'DENSITY' table 62
+modify material 16 set property 'MASS_MATRIX_DAMPING' table 61
+modify material 16 set property 'BIOT_ALPHA' value 1
+block 16 material 16 cs 1 category plane order 4
+block 17 add surface 51
+block 17 add surface 50
+block 17 add surface 49
+create table 68 column count 3
+modify table 68 dependency x column 1
+modify table 68 dependency y column 2
+create table 67 column count 3
+modify table 67 dependency x column 1
+modify table 67 dependency y column 2
+create table 66 column count 3
+modify table 66 dependency x column 1
+modify table 66 dependency y column 2
+create table 65 column count 3
+modify table 65 dependency x column 1
+modify table 65 dependency y column 2
+modify table 68 insert row 1
+modify table 68 cell 1 1 value 0.0
+modify table 68 cell 1 2 value 439.7367011865772
+modify table 68 cell 1 3 value 3886738181.7536583
+modify table 67 insert row 1
+modify table 67 cell 1 1 value 0.0
+modify table 67 cell 1 2 value 439.7367011865772
+modify table 67 cell 1 3 value 0.2837502821130381
+modify table 66 insert row 1
+modify table 66 cell 1 1 value 0.0
+modify table 66 cell 1 2 value 439.7367011865772
+modify table 66 cell 1 3 value 1907.889974
+modify table 65 insert row 1
+modify table 65 cell 1 1 value 0.0
+modify table 65 cell 1 2 value 439.7367011865772
+modify table 65 cell 1 3 value 0
+modify table 68 insert row 2
+modify table 68 cell 2 1 value 0.0
+modify table 68 cell 2 2 value 444.74658556826773
+modify table 68 cell 2 3 value 4726003343.529071
+modify table 67 insert row 2
+modify table 67 cell 2 1 value 0.0
+modify table 67 cell 2 2 value 444.74658556826773
+modify table 67 cell 2 3 value 0.2836995819297983
+modify table 66 insert row 2
+modify table 66 cell 2 1 value 0.0
+modify table 66 cell 2 2 value 444.74658556826773
+modify table 66 cell 2 3 value 1941.382184
+modify table 65 insert row 2
+modify table 65 cell 2 1 value 0.0
+modify table 65 cell 2 2 value 444.74658556826773
+modify table 65 cell 2 3 value 0
+create material 17
+modify material 17 name 'песчаник 17' 
+modify material 17 set property 'MODULUS' table 68
+modify material 17 set property 'POISSON' table 67
+modify material 17 set property 'DENSITY' table 66
+modify material 17 set property 'MASS_MATRIX_DAMPING' table 65
+modify material 17 set property 'BIOT_ALPHA' value 1
+block 17 material 17 cs 1 category plane order 4
+block 18 add surface 54
+block 18 add surface 53
+block 18 add surface 52
+create table 72 column count 3
+modify table 72 dependency x column 1
+modify table 72 dependency y column 2
+create table 71 column count 3
+modify table 71 dependency x column 1
+modify table 71 dependency y column 2
+create table 70 column count 3
+modify table 70 dependency x column 1
+modify table 70 dependency y column 2
+create table 69 column count 3
+modify table 69 dependency x column 1
+modify table 69 dependency y column 2
+modify table 72 insert row 1
+modify table 72 cell 1 1 value 0.0
+modify table 72 cell 1 2 value 454.7663543316488
+modify table 72 cell 1 3 value 5437349083.815026
+modify table 71 insert row 1
+modify table 71 cell 1 1 value 0.0
+modify table 71 cell 1 2 value 454.7663543316488
+modify table 71 cell 1 3 value 0.28366603311376837
+modify table 70 insert row 1
+modify table 70 cell 1 1 value 0.0
+modify table 70 cell 1 2 value 454.7663543316488
+modify table 70 cell 1 3 value 1966.834489
+modify table 69 insert row 1
+modify table 69 cell 1 1 value 0.0
+modify table 69 cell 1 2 value 454.7663543316488
+modify table 69 cell 1 3 value 0
+modify table 72 insert row 2
+modify table 72 cell 2 1 value 0.0
+modify table 72 cell 2 2 value 464.7861230950299
+modify table 72 cell 2 3 value 5007359064.119657
+modify table 71 insert row 2
+modify table 71 cell 2 1 value 0.0
+modify table 71 cell 2 2 value 464.7861230950299
+modify table 71 cell 2 3 value 0.28368547250965714
+modify table 70 insert row 2
+modify table 70 cell 2 1 value 0.0
+modify table 70 cell 2 2 value 464.7861230950299
+modify table 70 cell 2 3 value 1951.732356
+modify table 69 insert row 2
+modify table 69 cell 2 1 value 0.0
+modify table 69 cell 2 2 value 464.7861230950299
+modify table 69 cell 2 3 value 0
+create material 18
+modify material 18 name 'песчаник 18' 
+modify material 18 set property 'MODULUS' table 72
+modify material 18 set property 'POISSON' table 71
+modify material 18 set property 'DENSITY' table 70
+modify material 18 set property 'MASS_MATRIX_DAMPING' table 69
+modify material 18 set property 'BIOT_ALPHA' value 1
+block 18 material 18 cs 1 category plane order 4
+block 19 add surface 57
+block 19 add surface 56
+block 19 add surface 55
+create table 76 column count 3
+modify table 76 dependency x column 1
+modify table 76 dependency y column 2
+create table 75 column count 3
+modify table 75 dependency x column 1
+modify table 75 dependency y column 2
+create table 74 column count 3
+modify table 74 dependency x column 1
+modify table 74 dependency y column 2
+create table 73 column count 3
+modify table 73 dependency x column 1
+modify table 73 dependency y column 2
+modify table 76 insert row 1
+modify table 76 cell 1 1 value 0.0
+modify table 76 cell 1 2 value 484.82566062179205
+modify table 76 cell 1 3 value 4841812555.73655
+modify table 75 insert row 1
+modify table 75 cell 1 1 value 0.0
+modify table 75 cell 1 2 value 484.82566062179205
+modify table 75 cell 1 3 value 0.2836936277258974
+modify table 74 insert row 1
+modify table 74 cell 1 1 value 0.0
+modify table 74 cell 1 2 value 484.82566062179205
+modify table 74 cell 1 3 value 1945.690153
+modify table 73 insert row 1
+modify table 73 cell 1 1 value 0.0
+modify table 73 cell 1 2 value 484.82566062179205
+modify table 73 cell 1 3 value 0
+modify table 76 insert row 2
+modify table 76 cell 2 1 value 0.0
+modify table 76 cell 2 2 value 494.84542938517313
+modify table 76 cell 2 3 value 4859936901.739492
+modify table 75 insert row 2
+modify table 75 cell 2 1 value 0.0
+modify table 75 cell 2 2 value 494.84542938517313
+modify table 75 cell 2 3 value 0.2836927149117074
+modify table 74 insert row 2
+modify table 74 cell 2 1 value 0.0
+modify table 74 cell 2 2 value 494.84542938517313
+modify table 74 cell 2 3 value 1946.358219
+modify table 73 insert row 2
+modify table 73 cell 2 1 value 0.0
+modify table 73 cell 2 2 value 494.84542938517313
+modify table 73 cell 2 3 value 0
+create material 19
+modify material 19 name 'песчаник 19' 
+modify material 19 set property 'MODULUS' table 76
+modify material 19 set property 'POISSON' table 75
+modify material 19 set property 'DENSITY' table 74
+modify material 19 set property 'MASS_MATRIX_DAMPING' table 73
+modify material 19 set property 'BIOT_ALPHA' value 1
+block 19 material 19 cs 1 category plane order 4
+block 20 add surface 60
+block 20 add surface 59
+block 20 add surface 58
+create table 80 column count 3
+modify table 80 dependency x column 1
+modify table 80 dependency y column 2
+create table 79 column count 3
+modify table 79 dependency x column 1
+modify table 79 dependency y column 2
+create table 78 column count 3
+modify table 78 dependency x column 1
+modify table 78 dependency y column 2
+create table 77 column count 3
+modify table 77 dependency x column 1
+modify table 77 dependency y column 2
+modify table 80 insert row 1
+modify table 80 cell 1 1 value 0.0
+modify table 80 cell 1 2 value 521.6490733655164
+modify table 80 cell 1 3 value 4927826996.485428
+modify table 79 insert row 1
+modify table 79 cell 1 1 value 0.0
+modify table 79 cell 1 2 value 521.6490733655164
+modify table 79 cell 1 3 value 0.283689339915459
+modify table 78 insert row 1
+modify table 78 cell 1 1 value 0.0
+modify table 78 cell 1 2 value 521.6490733655164
+modify table 78 cell 1 3 value 1948.846213
+modify table 77 insert row 1
+modify table 77 cell 1 1 value 0.0
+modify table 77 cell 1 2 value 521.6490733655164
+modify table 77 cell 1 3 value 0
+modify table 80 insert row 2
+modify table 80 cell 2 1 value 0.0
+modify table 80 cell 2 2 value 535.050895355688
+modify table 80 cell 2 3 value 5032712309.806782
+modify table 79 insert row 2
+modify table 79 cell 2 1 value 0.0
+modify table 79 cell 2 2 value 535.050895355688
+modify table 79 cell 2 3 value 0.28368425868173053
+modify table 78 insert row 2
+modify table 78 cell 2 1 value 0.0
+modify table 78 cell 2 2 value 535.050895355688
+modify table 78 cell 2 3 value 1952.646055
+modify table 77 insert row 2
+modify table 77 cell 2 1 value 0.0
+modify table 77 cell 2 2 value 535.050895355688
+modify table 77 cell 2 3 value 0
+create material 20
+modify material 20 name 'алевролит 20' 
+modify material 20 set property 'MODULUS' table 80
+modify material 20 set property 'POISSON' table 79
+modify material 20 set property 'DENSITY' table 78
+modify material 20 set property 'MASS_MATRIX_DAMPING' table 77
+modify material 20 set property 'BIOT_ALPHA' value 1
+block 20 material 20 cs 1 category plane order 4
+block 21 add surface 63
+block 21 add surface 62
+block 21 add surface 61
+create table 84 column count 3
+modify table 84 dependency x column 1
+modify table 84 dependency y column 2
+create table 83 column count 3
+modify table 83 dependency x column 1
+modify table 83 dependency y column 2
+create table 82 column count 3
+modify table 82 dependency x column 1
+modify table 82 dependency y column 2
+create table 81 column count 3
+modify table 81 dependency x column 1
+modify table 81 dependency y column 2
+modify table 84 insert row 1
+modify table 84 cell 1 1 value 0.0
+modify table 84 cell 1 2 value 548.4555649817859
+modify table 84 cell 1 3 value 4430541095.805329
+modify table 83 insert row 1
+modify table 83 cell 1 1 value 0.0
+modify table 83 cell 1 2 value 548.4555649817859
+modify table 83 cell 1 3 value 0.2837158010591655
+modify table 82 insert row 1
+modify table 82 cell 1 1 value 0.0
+modify table 82 cell 1 2 value 548.4555649817859
+modify table 82 cell 1 3 value 1930.068902
+modify table 81 insert row 1
+modify table 81 cell 1 1 value 0.0
+modify table 81 cell 1 2 value 548.4555649817859
+modify table 81 cell 1 3 value 0
+modify table 84 insert row 2
+modify table 84 cell 2 1 value 0.0
+modify table 84 cell 2 2 value 555.1578997948349
+modify table 84 cell 2 3 value 4216346203.7525954
+modify table 83 insert row 2
+modify table 83 cell 2 1 value 0.0
+modify table 83 cell 2 2 value 555.1578997948349
+modify table 83 cell 2 3 value 0.2837285949217426
+modify table 82 insert row 2
+modify table 82 cell 2 1 value 0.0
+modify table 82 cell 2 2 value 555.1578997948349
+modify table 82 cell 2 3 value 1921.555998
+modify table 81 insert row 2
+modify table 81 cell 2 1 value 0.0
+modify table 81 cell 2 2 value 555.1578997948349
+modify table 81 cell 2 3 value 0
+create material 21
+modify material 21 name 'алевролит 21' 
+modify material 21 set property 'MODULUS' table 84
+modify material 21 set property 'POISSON' table 83
+modify material 21 set property 'DENSITY' table 82
+modify material 21 set property 'MASS_MATRIX_DAMPING' table 81
+modify material 21 set property 'BIOT_ALPHA' value 1
+block 21 material 21 cs 1 category plane order 4
+block 22 add surface 66
+block 22 add surface 65
+block 22 add surface 64
+create table 88 column count 3
+modify table 88 dependency x column 1
+modify table 88 dependency y column 2
+create table 87 column count 3
+modify table 87 dependency x column 1
+modify table 87 dependency y column 2
+create table 86 column count 3
+modify table 86 dependency x column 1
+modify table 86 dependency y column 2
+create table 85 column count 3
+modify table 85 dependency x column 1
+modify table 85 dependency y column 2
+modify table 88 insert row 1
+modify table 88 cell 1 1 value 0.0
+modify table 88 cell 1 2 value 585.3184064535552
+modify table 88 cell 1 3 value 4759315847.813732
+modify table 87 insert row 1
+modify table 87 cell 1 1 value 0.0
+modify table 87 cell 1 2 value 585.3184064535552
+modify table 87 cell 1 3 value 0.28369784728357356
+modify table 86 insert row 1
+modify table 86 cell 1 1 value 0.0
+modify table 86 cell 1 2 value 585.3184064535552
+modify table 86 cell 1 3 value 1942.628397
+modify table 85 insert row 1
+modify table 85 cell 1 1 value 0.0
+modify table 85 cell 1 2 value 585.3184064535552
+modify table 85 cell 1 3 value 0
+modify table 88 insert row 2
+modify table 88 cell 2 1 value 0.0
+modify table 88 cell 2 2 value 595.3719086731287
+modify table 88 cell 2 3 value 4921272237.925334
+modify table 87 insert row 2
+modify table 87 cell 2 1 value 0.0
+modify table 87 cell 2 2 value 595.3719086731287
+modify table 87 cell 2 3 value 0.28368966276619867
+modify table 86 insert row 2
+modify table 86 cell 2 1 value 0.0
+modify table 86 cell 2 2 value 595.3719086731287
+modify table 86 cell 2 3 value 1948.606984
+modify table 85 insert row 2
+modify table 85 cell 2 1 value 0.0
+modify table 85 cell 2 2 value 595.3719086731287
+modify table 85 cell 2 3 value 0
+create material 22
+modify material 22 name 'алевролит 22' 
+modify material 22 set property 'MODULUS' table 88
+modify material 22 set property 'POISSON' table 87
+modify material 22 set property 'DENSITY' table 86
+modify material 22 set property 'MASS_MATRIX_DAMPING' table 85
+modify material 22 set property 'BIOT_ALPHA' value 1
+block 22 material 22 cs 1 category plane order 4
+block 23 add surface 69
+block 23 add surface 68
+block 23 add surface 67
+create table 92 column count 3
+modify table 92 dependency x column 1
+modify table 92 dependency y column 2
+create table 91 column count 3
+modify table 91 dependency x column 1
+modify table 91 dependency y column 2
+create table 90 column count 3
+modify table 90 dependency x column 1
+modify table 90 dependency y column 2
+create table 89 column count 3
+modify table 89 dependency x column 1
+modify table 89 dependency y column 2
+modify table 92 insert row 1
+modify table 92 cell 1 1 value 0.0
+modify table 92 cell 1 2 value 625.5324153318492
+modify table 92 cell 1 3 value 4831694094.146781
+modify table 91 insert row 1
+modify table 91 cell 1 1 value 0.0
+modify table 91 cell 1 2 value 625.5324153318492
+modify table 91 cell 1 3 value 0.28369413953139405
+modify table 90 insert row 1
+modify table 90 cell 1 1 value 0.0
+modify table 90 cell 1 2 value 625.5324153318492
+modify table 90 cell 1 3 value 1945.31647
+modify table 89 insert row 1
+modify table 89 cell 1 1 value 0.0
+modify table 89 cell 1 2 value 625.5324153318492
+modify table 89 cell 1 3 value 0
+modify table 92 insert row 2
+modify table 92 cell 2 1 value 0.0
+modify table 92 cell 2 2 value 635.5859175514227
+modify table 92 cell 2 3 value 4773717953.388036
+modify table 91 insert row 2
+modify table 91 cell 2 1 value 0.0
+modify table 91 cell 2 2 value 635.5859175514227
+modify table 91 cell 2 3 value 0.2836971028841992
+modify table 90 insert row 2
+modify table 90 cell 2 1 value 0.0
+modify table 90 cell 2 2 value 635.5859175514227
+modify table 90 cell 2 3 value 1943.165406
+modify table 89 insert row 2
+modify table 89 cell 2 1 value 0.0
+modify table 89 cell 2 2 value 635.5859175514227
+modify table 89 cell 2 3 value 0
+create material 23
+modify material 23 name 'алевролит 23' 
+modify material 23 set property 'MODULUS' table 92
+modify material 23 set property 'POISSON' table 91
+modify material 23 set property 'DENSITY' table 90
+modify material 23 set property 'MASS_MATRIX_DAMPING' table 89
+modify material 23 set property 'BIOT_ALPHA' value 1
+block 23 material 23 cs 1 category plane order 4
+block 24 add surface 72
+block 24 add surface 71
+block 24 add surface 70
+create table 96 column count 3
+modify table 96 dependency x column 1
+modify table 96 dependency y column 2
+create table 95 column count 3
+modify table 95 dependency x column 1
+modify table 95 dependency y column 2
+create table 94 column count 3
+modify table 94 dependency x column 1
+modify table 94 dependency y column 2
+create table 93 column count 3
+modify table 93 dependency x column 1
+modify table 93 dependency y column 2
+modify table 96 insert row 1
+modify table 96 cell 1 1 value 0.0
+modify table 96 cell 1 2 value 648.9905871775205
+modify table 96 cell 1 3 value 4810722028.636073
+modify table 95 insert row 1
+modify table 95 cell 1 1 value 0.0
+modify table 95 cell 1 2 value 648.9905871775205
+modify table 95 cell 1 3 value 0.28369520538822207
+modify table 94 insert row 1
+modify table 94 cell 1 1 value 0.0
+modify table 94 cell 1 2 value 648.9905871775205
+modify table 94 cell 1 3 value 1944.540317
+modify table 93 insert row 1
+modify table 93 cell 1 1 value 0.0
+modify table 93 cell 1 2 value 648.9905871775205
+modify table 93 cell 1 3 value 0
+modify table 96 insert row 2
+modify table 96 cell 2 1 value 0.0
+modify table 96 cell 2 2 value 655.6929219905694
+modify table 96 cell 2 3 value 4829552913.74516
+modify table 95 insert row 2
+modify table 95 cell 2 1 value 0.0
+modify table 95 cell 2 2 value 655.6929219905694
+modify table 95 cell 2 3 value 0.28369424803835014
+modify table 94 insert row 2
+modify table 94 cell 2 1 value 0.0
+modify table 94 cell 2 2 value 655.6929219905694
+modify table 94 cell 2 3 value 1945.237329
+modify table 93 insert row 2
+modify table 93 cell 2 1 value 0.0
+modify table 93 cell 2 2 value 655.6929219905694
+modify table 93 cell 2 3 value 0
+create material 24
+modify material 24 name 'песчаник 24' 
+modify material 24 set property 'MODULUS' table 96
+modify material 24 set property 'POISSON' table 95
+modify material 24 set property 'DENSITY' table 94
+modify material 24 set property 'MASS_MATRIX_DAMPING' table 93
+modify material 24 set property 'BIOT_ALPHA' value 1
+block 24 material 24 cs 1 category plane order 4
+block 25 add surface 75
+block 25 add surface 74
+block 25 add surface 73
+create table 100 column count 3
+modify table 100 dependency x column 1
+modify table 100 dependency y column 2
+create table 99 column count 3
+modify table 99 dependency x column 1
+modify table 99 dependency y column 2
+create table 98 column count 3
+modify table 98 dependency x column 1
+modify table 98 dependency y column 2
+create table 97 column count 3
+modify table 97 dependency x column 1
+modify table 97 dependency y column 2
+modify table 100 insert row 1
+modify table 100 cell 1 1 value 0.0
+modify table 100 cell 1 2 value 660.7196731003562
+modify table 100 cell 1 3 value 4829552913.74516
+modify table 99 insert row 1
+modify table 99 cell 1 1 value 0.0
+modify table 99 cell 1 2 value 660.7196731003562
+modify table 99 cell 1 3 value 0.28369424803835014
+modify table 98 insert row 1
+modify table 98 cell 1 1 value 0.0
+modify table 98 cell 1 2 value 660.7196731003562
+modify table 98 cell 1 3 value 1945.237329
+modify table 97 insert row 1
+modify table 97 cell 1 1 value 0.0
+modify table 97 cell 1 2 value 660.7196731003562
+modify table 97 cell 1 3 value 0
+modify table 100 insert row 2
+modify table 100 cell 2 1 value 0.0
+modify table 100 cell 2 2 value 665.746424210143
+modify table 100 cell 2 3 value 5402030257.928172
+modify table 99 insert row 2
+modify table 99 cell 2 1 value 0.0
+modify table 99 cell 2 2 value 665.746424210143
+modify table 99 cell 2 3 value 0.28366754317742293
+modify table 98 insert row 2
+modify table 98 cell 2 1 value 0.0
+modify table 98 cell 2 2 value 665.746424210143
+modify table 98 cell 2 3 value 1965.624445
+modify table 97 insert row 2
+modify table 97 cell 2 1 value 0.0
+modify table 97 cell 2 2 value 665.746424210143
+modify table 97 cell 2 3 value 0
+create material 25
+modify material 25 name 'песчаник 25' 
+modify material 25 set property 'MODULUS' table 100
+modify material 25 set property 'POISSON' table 99
+modify material 25 set property 'DENSITY' table 98
+modify material 25 set property 'MASS_MATRIX_DAMPING' table 97
+modify material 25 set property 'BIOT_ALPHA' value 1
+block 25 material 25 cs 1 category plane order 4
+block 26 add surface 78
+block 26 add surface 77
+block 26 add surface 76
+create table 104 column count 3
+modify table 104 dependency x column 1
+modify table 104 dependency y column 2
+create table 103 column count 3
+modify table 103 dependency x column 1
+modify table 103 dependency y column 2
+create table 102 column count 3
+modify table 102 dependency x column 1
+modify table 102 dependency y column 2
+create table 101 column count 3
+modify table 101 dependency x column 1
+modify table 101 dependency y column 2
+modify table 104 insert row 1
+modify table 104 cell 1 1 value 0.0
+modify table 104 cell 1 2 value 788.2734825111945
+modify table 104 cell 1 3 value 6482000363.053647
+modify table 103 insert row 1
+modify table 103 cell 1 1 value 0.0
+modify table 103 cell 1 2 value 788.2734825111945
+modify table 103 cell 1 3 value 0.2836270278505053
+modify table 102 insert row 1
+modify table 102 cell 1 1 value 0.0
+modify table 102 cell 1 2 value 788.2734825111945
+modify table 102 cell 1 3 value 2000.4783929999999
+modify table 101 insert row 1
+modify table 101 cell 1 1 value 0.0
+modify table 101 cell 1 2 value 788.2734825111945
+modify table 101 cell 1 3 value 0
+modify table 104 insert row 2
+modify table 104 cell 2 1 value 0.0
+modify table 104 cell 2 2 value 796.441953064598
+modify table 104 cell 2 3 value 6967751172.161244
+modify table 103 insert row 2
+modify table 103 cell 2 1 value 0.0
+modify table 103 cell 2 2 value 796.441953064598
+modify table 103 cell 2 3 value 0.2836119093464189
+modify table 102 insert row 2
+modify table 102 cell 2 1 value 0.0
+modify table 102 cell 2 2 value 796.441953064598
+modify table 102 cell 2 3 value 2014.8868860000002
+modify table 101 insert row 2
+modify table 101 cell 2 1 value 0.0
+modify table 101 cell 2 2 value 796.441953064598
+modify table 101 cell 2 3 value 0
+create material 26
+modify material 26 name 'песчаник 26' 
+modify material 26 set property 'MODULUS' table 104
+modify material 26 set property 'POISSON' table 103
+modify material 26 set property 'DENSITY' table 102
+modify material 26 set property 'MASS_MATRIX_DAMPING' table 101
+modify material 26 set property 'BIOT_ALPHA' value 1
+block 26 material 26 cs 1 category plane order 4
+block 27 add surface 81
+block 27 add surface 80
+block 27 add surface 79
+create table 108 column count 3
+modify table 108 dependency x column 1
+modify table 108 dependency y column 2
+create table 107 column count 3
+modify table 107 dependency x column 1
+modify table 107 dependency y column 2
+create table 106 column count 3
+modify table 106 dependency x column 1
+modify table 106 dependency y column 2
+create table 105 column count 3
+modify table 105 dependency x column 1
+modify table 105 dependency y column 2
+modify table 108 insert row 1
+modify table 108 cell 1 1 value 0.0
+modify table 108 cell 1 2 value 819.0623330586384
+modify table 108 cell 1 3 value 7338443007.886329
+modify table 107 insert row 1
+modify table 107 cell 1 1 value 0.0
+modify table 107 cell 1 2 value 819.0623330586384
+modify table 107 cell 1 3 value 0.28360137904532984
+modify table 106 insert row 1
+modify table 106 cell 1 1 value 0.0
+modify table 106 cell 1 2 value 819.0623330586384
+modify table 106 cell 1 3 value 2025.4310059999998
+modify table 105 insert row 1
+modify table 105 cell 1 1 value 0.0
+modify table 105 cell 1 2 value 819.0623330586384
+modify table 105 cell 1 3 value 0
+modify table 108 insert row 2
+modify table 108 cell 2 1 value 0.0
+modify table 108 cell 2 2 value 826.6024597233185
+modify table 108 cell 2 3 value 8897044468.870487
+modify table 107 insert row 2
+modify table 107 cell 2 1 value 0.0
+modify table 107 cell 2 2 value 826.6024597233185
+modify table 107 cell 2 3 value 0.283564433926742
+modify table 106 insert row 2
+modify table 106 cell 2 1 value 0.0
+modify table 106 cell 2 2 value 826.6024597233185
+modify table 106 cell 2 3 value 2066.156987
+modify table 105 insert row 2
+modify table 105 cell 2 1 value 0.0
+modify table 105 cell 2 2 value 826.6024597233185
+modify table 105 cell 2 3 value 0
+create material 27
+modify material 27 name 'песчаник 27' 
+modify material 27 set property 'MODULUS' table 108
+modify material 27 set property 'POISSON' table 107
+modify material 27 set property 'DENSITY' table 106
+modify material 27 set property 'MASS_MATRIX_DAMPING' table 105
+modify material 27 set property 'BIOT_ALPHA' value 1
+block 27 material 27 cs 1 category plane order 4
+block 28 add surface 84
+block 28 add surface 83
+block 28 add surface 82
+create table 112 column count 3
+modify table 112 dependency x column 1
+modify table 112 dependency y column 2
+create table 111 column count 3
+modify table 111 dependency x column 1
+modify table 111 dependency y column 2
+create table 110 column count 3
+modify table 110 dependency x column 1
+modify table 110 dependency y column 2
+create table 109 column count 3
+modify table 109 dependency x column 1
+modify table 109 dependency y column 2
+modify table 112 insert row 1
+modify table 112 cell 1 1 value 0.0
+modify table 112 cell 1 2 value 858.7736668259536
+modify table 112 cell 1 3 value 7541719960.305681
+modify table 111 insert row 1
+modify table 111 cell 1 1 value 0.0
+modify table 111 cell 1 2 value 858.7736668259536
+modify table 111 cell 1 3 value 0.2835959311357872
+modify table 110 insert row 1
+modify table 110 cell 1 1 value 0.0
+modify table 110 cell 1 2 value 858.7736668259536
+modify table 110 cell 1 3 value 2031.059892
+modify table 109 insert row 1
+modify table 109 cell 1 1 value 0.0
+modify table 109 cell 1 2 value 858.7736668259536
+modify table 109 cell 1 3 value 0
+modify table 112 insert row 2
+modify table 112 cell 2 1 value 0.0
+modify table 112 cell 2 2 value 866.8164686016123
+modify table 112 cell 2 3 value 7740636045.8194065
+modify table 111 insert row 2
+modify table 111 cell 2 1 value 0.0
+modify table 111 cell 2 2 value 866.8164686016123
+modify table 111 cell 2 3 value 0.28359080540676235
+modify table 110 insert row 2
+modify table 110 cell 2 1 value 0.0
+modify table 110 cell 2 2 value 866.8164686016123
+modify table 110 cell 2 3 value 2036.4686399999998
+modify table 109 insert row 2
+modify table 109 cell 2 1 value 0.0
+modify table 109 cell 2 2 value 866.8164686016123
+modify table 109 cell 2 3 value 0
+create material 28
+modify material 28 name 'песчаник 28' 
+modify material 28 set property 'MODULUS' table 112
+modify material 28 set property 'POISSON' table 111
+modify material 28 set property 'DENSITY' table 110
+modify material 28 set property 'MASS_MATRIX_DAMPING' table 109
+modify material 28 set property 'BIOT_ALPHA' value 1
+block 28 material 28 cs 1 category plane order 4
+block 29 add surface 87
+block 29 add surface 86
+block 29 add surface 85
+create table 116 column count 3
+modify table 116 dependency x column 1
+modify table 116 dependency y column 2
+create table 115 column count 3
+modify table 115 dependency x column 1
+modify table 115 dependency y column 2
+create table 114 column count 3
+modify table 114 dependency x column 1
+modify table 114 dependency y column 2
+create table 113 column count 3
+modify table 113 dependency x column 1
+modify table 113 dependency y column 2
+modify table 116 insert row 1
+modify table 116 cell 1 1 value 0.0
+modify table 116 cell 1 2 value 873.5188034146613
+modify table 116 cell 1 3 value 6667642007.744722
+modify table 115 insert row 1
+modify table 115 cell 1 1 value 0.0
+modify table 115 cell 1 2 value 873.5188034146613
+modify table 115 cell 1 3 value 0.28362105856338976
+modify table 114 insert row 1
+modify table 114 cell 1 1 value 0.0
+modify table 114 cell 1 2 value 873.5188034146613
+modify table 114 cell 1 3 value 2006.0683350000002
+modify table 113 insert row 1
+modify table 113 cell 1 1 value 0.0
+modify table 113 cell 1 2 value 873.5188034146613
+modify table 113 cell 1 3 value 0
+modify table 116 insert row 2
+modify table 116 cell 2 1 value 0.0
+modify table 116 cell 2 2 value 876.8699708211858
+modify table 116 cell 2 3 value 6667642007.744722
+modify table 115 insert row 2
+modify table 115 cell 2 1 value 0.0
+modify table 115 cell 2 2 value 876.8699708211858
+modify table 115 cell 2 3 value 0.28362105856338976
+modify table 114 insert row 2
+modify table 114 cell 2 1 value 0.0
+modify table 114 cell 2 2 value 876.8699708211858
+modify table 114 cell 2 3 value 2006.0683350000002
+modify table 113 insert row 2
+modify table 113 cell 2 1 value 0.0
+modify table 113 cell 2 2 value 876.8699708211858
+modify table 113 cell 2 3 value 0
+create material 29
+modify material 29 name 'алевролит 29' 
+modify material 29 set property 'MODULUS' table 116
+modify material 29 set property 'POISSON' table 115
+modify material 29 set property 'DENSITY' table 114
+modify material 29 set property 'MASS_MATRIX_DAMPING' table 113
+modify material 29 set property 'BIOT_ALPHA' value 1
+block 29 material 29 cs 1 category plane order 4
+block 30 add surface 90
+block 30 add surface 89
+block 30 add surface 88
+create table 120 column count 3
+modify table 120 dependency x column 1
+modify table 120 dependency y column 2
+create table 119 column count 3
+modify table 119 dependency x column 1
+modify table 119 dependency y column 2
+create table 118 column count 3
+modify table 118 dependency x column 1
+modify table 118 dependency y column 2
+create table 117 column count 3
+modify table 117 dependency x column 1
+modify table 117 dependency y column 2
+modify table 120 insert row 1
+modify table 120 cell 1 1 value 0.0
+modify table 120 cell 1 2 value 881.8967219309725
+modify table 120 cell 1 3 value 6667642007.744722
+modify table 119 insert row 1
+modify table 119 cell 1 1 value 0.0
+modify table 119 cell 1 2 value 881.8967219309725
+modify table 119 cell 1 3 value 0.28362105856338976
+modify table 118 insert row 1
+modify table 118 cell 1 1 value 0.0
+modify table 118 cell 1 2 value 881.8967219309725
+modify table 118 cell 1 3 value 2006.0683350000002
+modify table 117 insert row 1
+modify table 117 cell 1 1 value 0.0
+modify table 117 cell 1 2 value 881.8967219309725
+modify table 117 cell 1 3 value 0
+modify table 120 insert row 2
+modify table 120 cell 2 1 value 0.0
+modify table 120 cell 2 2 value 886.9234730407592
+modify table 120 cell 2 3 value 5982425970.31099
+modify table 119 insert row 2
+modify table 119 cell 2 1 value 0.0
+modify table 119 cell 2 2 value 886.9234730407592
+modify table 119 cell 2 3 value 0.2836444254040674
+modify table 118 insert row 2
+modify table 118 cell 2 1 value 0.0
+modify table 118 cell 2 2 value 886.9234730407592
+modify table 118 cell 2 3 value 1984.880411
+modify table 117 insert row 2
+modify table 117 cell 2 1 value 0.0
+modify table 117 cell 2 2 value 886.9234730407592
+modify table 117 cell 2 3 value 0
+create material 30
+modify material 30 name 'алевролит 30' 
+modify material 30 set property 'MODULUS' table 120
+modify material 30 set property 'POISSON' table 119
+modify material 30 set property 'DENSITY' table 118
+modify material 30 set property 'MASS_MATRIX_DAMPING' table 117
+modify material 30 set property 'BIOT_ALPHA' value 1
+block 30 material 30 cs 1 category plane order 4
+block 31 add surface 93
+block 31 add surface 92
+block 31 add surface 91
+create table 124 column count 3
+modify table 124 dependency x column 1
+modify table 124 dependency y column 2
+create table 123 column count 3
+modify table 123 dependency x column 1
+modify table 123 dependency y column 2
+create table 122 column count 3
+modify table 122 dependency x column 1
+modify table 122 dependency y column 2
+create table 121 column count 3
+modify table 121 dependency x column 1
+modify table 121 dependency y column 2
+modify table 124 insert row 1
+modify table 124 cell 1 1 value 0.0
+modify table 124 cell 1 2 value 900.2692799723765
+modify table 124 cell 1 3 value 6740914076.821992
+modify table 123 insert row 1
+modify table 123 cell 1 1 value 0.0
+modify table 123 cell 1 2 value 900.2692799723765
+modify table 123 cell 1 3 value 0.28361876949175174
+modify table 122 insert row 1
+modify table 122 cell 1 1 value 0.0
+modify table 122 cell 1 2 value 900.2692799723765
+modify table 122 cell 1 3 value 2008.245766
+modify table 121 insert row 1
+modify table 121 cell 1 1 value 0.0
+modify table 121 cell 1 2 value 900.2692799723765
+modify table 121 cell 1 3 value 0
+modify table 124 insert row 2
+modify table 124 cell 2 1 value 0.0
+modify table 124 cell 2 2 value 906.9421834381851
+modify table 124 cell 2 3 value 7016936917.523255
+modify table 123 insert row 2
+modify table 123 cell 2 1 value 0.0
+modify table 123 cell 2 2 value 906.9421834381851
+modify table 123 cell 2 3 value 0.2836104651256556
+modify table 122 insert row 2
+modify table 122 cell 2 1 value 0.0
+modify table 122 cell 2 2 value 906.9421834381851
+modify table 122 cell 2 3 value 2016.307523
+modify table 121 insert row 2
+modify table 121 cell 2 1 value 0.0
+modify table 121 cell 2 2 value 906.9421834381851
+modify table 121 cell 2 3 value 0
+create material 31
+modify material 31 name 'алевролит 31' 
+modify material 31 set property 'MODULUS' table 124
+modify material 31 set property 'POISSON' table 123
+modify material 31 set property 'DENSITY' table 122
+modify material 31 set property 'MASS_MATRIX_DAMPING' table 121
+modify material 31 set property 'BIOT_ALPHA' value 1
+block 31 material 31 cs 1 category plane order 4
+block 32 add surface 96
+block 32 add surface 95
+block 32 add surface 94
+create table 128 column count 3
+modify table 128 dependency x column 1
+modify table 128 dependency y column 2
+create table 127 column count 3
+modify table 127 dependency x column 1
+modify table 127 dependency y column 2
+create table 126 column count 3
+modify table 126 dependency x column 1
+modify table 126 dependency y column 2
+create table 125 column count 3
+modify table 125 dependency x column 1
+modify table 125 dependency y column 2
+modify table 128 insert row 1
+modify table 128 cell 1 1 value 0.0
+modify table 128 cell 1 2 value 936.6436849924669
+modify table 128 cell 1 3 value 8620844639.208687
+modify table 127 insert row 1
+modify table 127 cell 1 1 value 0.0
+modify table 127 cell 1 2 value 936.6436849924669
+modify table 127 cell 1 3 value 0.28357025648708645
+modify table 126 insert row 1
+modify table 126 cell 1 1 value 0.0
+modify table 126 cell 1 2 value 936.6436849924669
+modify table 126 cell 1 3 value 2059.319941
+modify table 125 insert row 1
+modify table 125 cell 1 1 value 0.0
+modify table 125 cell 1 2 value 936.6436849924669
+modify table 125 cell 1 3 value 0
+modify table 128 insert row 2
+modify table 128 cell 2 1 value 0.0
+modify table 128 cell 2 2 value 946.5441855105609
+modify table 128 cell 2 3 value 8500575361.440434
+modify table 127 insert row 2
+modify table 127 cell 2 1 value 0.0
+modify table 127 cell 2 2 value 946.5441855105609
+modify table 127 cell 2 3 value 0.2835728783421854
+modify table 126 insert row 2
+modify table 126 cell 2 1 value 0.0
+modify table 126 cell 2 2 value 946.5441855105609
+modify table 126 cell 2 3 value 2056.2953890000003
+modify table 125 insert row 2
+modify table 125 cell 2 1 value 0.0
+modify table 125 cell 2 2 value 946.5441855105609
+modify table 125 cell 2 3 value 0
+create material 32
+modify material 32 name 'алевролит 32' 
+modify material 32 set property 'MODULUS' table 128
+modify material 32 set property 'POISSON' table 127
+modify material 32 set property 'DENSITY' table 126
+modify material 32 set property 'MASS_MATRIX_DAMPING' table 125
+modify material 32 set property 'BIOT_ALPHA' value 1
+block 32 material 32 cs 1 category plane order 4
+block 33 add surface 99
+block 33 add surface 98
+block 33 add surface 97
+create table 132 column count 3
+modify table 132 dependency x column 1
+modify table 132 dependency y column 2
+create table 131 column count 3
+modify table 131 dependency x column 1
+modify table 131 dependency y column 2
+create table 130 column count 3
+modify table 130 dependency x column 1
+modify table 130 dependency y column 2
+create table 129 column count 3
+modify table 129 dependency x column 1
+modify table 129 dependency y column 2
+modify table 132 insert row 1
+modify table 132 cell 1 1 value 0.0
+modify table 132 cell 1 2 value 968.8203116762719
+modify table 132 cell 1 3 value 8303801543.065117
+modify table 131 insert row 1
+modify table 131 cell 1 1 value 0.0
+modify table 131 cell 1 2 value 968.8203116762719
+modify table 131 cell 1 3 value 0.28357728775331725
+modify table 130 insert row 1
+modify table 130 cell 1 1 value 0.0
+modify table 130 cell 1 2 value 968.8203116762719
+modify table 130 cell 1 3 value 2051.282547
+modify table 129 insert row 1
+modify table 129 cell 1 1 value 0.0
+modify table 129 cell 1 2 value 968.8203116762719
+modify table 129 cell 1 3 value 0
+modify table 132 insert row 2
+modify table 132 cell 2 1 value 0.0
+modify table 132 cell 2 2 value 976.2456870648423
+modify table 132 cell 2 3 value 8829037164.291355
+modify table 131 insert row 2
+modify table 131 cell 2 1 value 0.0
+modify table 131 cell 2 2 value 976.2456870648423
+modify table 131 cell 2 3 value 0.283565842704847
+modify table 130 insert row 2
+modify table 130 cell 2 1 value 0.0
+modify table 130 cell 2 2 value 976.2456870648423
+modify table 130 cell 2 3 value 2064.487332
+modify table 129 insert row 2
+modify table 129 cell 2 1 value 0.0
+modify table 129 cell 2 2 value 976.2456870648423
+modify table 129 cell 2 3 value 0
+create material 33
+modify material 33 name 'алевролит 33' 
+modify material 33 set property 'MODULUS' table 132
+modify material 33 set property 'POISSON' table 131
+modify material 33 set property 'DENSITY' table 130
+modify material 33 set property 'MASS_MATRIX_DAMPING' table 129
+modify material 33 set property 'BIOT_ALPHA' value 1
+block 33 material 33 cs 1 category plane order 4
+block 34 add surface 102
+block 34 add surface 101
+block 34 add surface 100
+create table 136 column count 3
+modify table 136 dependency x column 1
+modify table 136 dependency y column 2
+create table 135 column count 3
+modify table 135 dependency x column 1
+modify table 135 dependency y column 2
+create table 134 column count 3
+modify table 134 dependency x column 1
+modify table 134 dependency y column 2
+create table 133 column count 3
+modify table 133 dependency x column 1
+modify table 133 dependency y column 2
+modify table 136 insert row 1
+modify table 136 cell 1 1 value 0.0
+modify table 136 cell 1 2 value 1083.1710926602564
+modify table 136 cell 1 3 value 10196921386.94159
+modify table 135 insert row 1
+modify table 135 cell 1 1 value 0.0
+modify table 135 cell 1 2 value 1083.1710926602564
+modify table 135 cell 1 3 value 0.2835402248192815
+modify table 134 insert row 1
+modify table 134 cell 1 1 value 0.0
+modify table 134 cell 1 2 value 1083.1710926602564
+modify table 134 cell 1 3 value 2096.487633
+modify table 133 insert row 1
+modify table 133 cell 1 1 value 0.0
+modify table 133 cell 1 2 value 1083.1710926602564
+modify table 133 cell 1 3 value 0
+modify table 136 insert row 2
+modify table 136 cell 2 1 value 0.0
+modify table 136 cell 2 2 value 1095.0516932819692
+modify table 136 cell 2 3 value 9805446011.211285
+modify table 135 insert row 2
+modify table 135 cell 2 1 value 0.0
+modify table 135 cell 2 2 value 1095.0516932819692
+modify table 135 cell 2 3 value 0.28354701717764247
+modify table 134 insert row 2
+modify table 134 cell 2 1 value 0.0
+modify table 134 cell 2 2 value 1095.0516932819692
+modify table 134 cell 2 3 value 2087.6526129999997
+modify table 133 insert row 2
+modify table 133 cell 2 1 value 0.0
+modify table 133 cell 2 2 value 1095.0516932819692
+modify table 133 cell 2 3 value 0
+create material 34
+modify material 34 name 'песчаник 34' 
+modify material 34 set property 'MODULUS' table 136
+modify material 34 set property 'POISSON' table 135
+modify material 34 set property 'DENSITY' table 134
+modify material 34 set property 'MASS_MATRIX_DAMPING' table 133
+modify material 34 set property 'BIOT_ALPHA' value 1
+block 34 material 34 cs 1 category plane order 4
+block 35 add surface 105
+block 35 add surface 104
+block 35 add surface 103
+create table 140 column count 3
+modify table 140 dependency x column 1
+modify table 140 dependency y column 2
+create table 139 column count 3
+modify table 139 dependency x column 1
+modify table 139 dependency y column 2
+create table 138 column count 3
+modify table 138 dependency x column 1
+modify table 138 dependency y column 2
+create table 137 column count 3
+modify table 137 dependency x column 1
+modify table 137 dependency y column 2
+modify table 140 insert row 1
+modify table 140 cell 1 1 value 0.0
+modify table 140 cell 1 2 value 1128.9962664868624
+modify table 140 cell 1 3 value 10765253909.75202
+modify table 139 insert row 1
+modify table 139 cell 1 1 value 0.0
+modify table 139 cell 1 2 value 1128.9962664868624
+modify table 139 cell 1 3 value 0.28353101735058267
+modify table 138 insert row 1
+modify table 138 cell 1 1 value 0.0
+modify table 138 cell 1 2 value 1128.9962664868624
+modify table 138 cell 1 3 value 2108.898852
+modify table 137 insert row 1
+modify table 137 cell 1 1 value 0.0
+modify table 137 cell 1 2 value 1128.9962664868624
+modify table 137 cell 1 3 value 0
+modify table 140 insert row 2
+modify table 140 cell 2 1 value 0.0
+modify table 140 cell 2 2 value 1134.6536953543446
+modify table 140 cell 2 3 value 10276591078.446196
+modify table 139 insert row 2
+modify table 139 cell 2 1 value 0.0
+modify table 139 cell 2 2 value 1134.6536953543446
+modify table 139 cell 2 3 value 0.2835388892311892
+modify table 138 insert row 2
+modify table 138 cell 2 1 value 0.0
+modify table 138 cell 2 2 value 1134.6536953543446
+modify table 138 cell 2 3 value 2098.256364
+modify table 137 insert row 2
+modify table 137 cell 2 1 value 0.0
+modify table 137 cell 2 2 value 1134.6536953543446
+modify table 137 cell 2 3 value 0
+create material 35
+modify material 35 name 'песчаник 35' 
+modify material 35 set property 'MODULUS' table 140
+modify material 35 set property 'POISSON' table 139
+modify material 35 set property 'DENSITY' table 138
+modify material 35 set property 'MASS_MATRIX_DAMPING' table 137
+modify material 35 set property 'BIOT_ALPHA' value 1
+block 35 material 35 cs 1 category plane order 4
+block 36 add surface 108
+block 36 add surface 107
+block 36 add surface 106
+create table 144 column count 3
+modify table 144 dependency x column 1
+modify table 144 dependency y column 2
+create table 143 column count 3
+modify table 143 dependency x column 1
+modify table 143 dependency y column 2
+create table 142 column count 3
+modify table 142 dependency x column 1
+modify table 142 dependency y column 2
+create table 141 column count 3
+modify table 141 dependency x column 1
+modify table 141 dependency y column 2
+modify table 144 insert row 1
+modify table 144 cell 1 1 value 0.0
+modify table 144 cell 1 2 value 1169.3054471676733
+modify table 144 cell 1 3 value 9465180096.857716
+modify table 143 insert row 1
+modify table 143 cell 1 1 value 0.0
+modify table 143 cell 1 2 value 1169.3054471676733
+modify table 143 cell 1 3 value 0.2835532527915855
+modify table 142 insert row 1
+modify table 142 cell 1 1 value 0.0
+modify table 142 cell 1 2 value 1169.3054471676733
+modify table 142 cell 1 3 value 2079.770308
+modify table 141 insert row 1
+modify table 141 cell 1 1 value 0.0
+modify table 141 cell 1 2 value 1169.3054471676733
+modify table 141 cell 1 3 value 0
+modify table 144 insert row 2
+modify table 144 cell 2 1 value 0.0
+modify table 144 cell 2 2 value 1174.2556974267202
+modify table 144 cell 2 3 value 9625076062.418522
+modify table 143 insert row 2
+modify table 143 cell 2 1 value 0.0
+modify table 143 cell 2 2 value 1174.2556974267202
+modify table 143 cell 2 3 value 0.28355028227311313
+modify table 142 insert row 2
+modify table 142 cell 2 1 value 0.0
+modify table 142 cell 2 2 value 1174.2556974267202
+modify table 142 cell 2 3 value 2083.498573
+modify table 141 insert row 2
+modify table 141 cell 2 1 value 0.0
+modify table 141 cell 2 2 value 1174.2556974267202
+modify table 141 cell 2 3 value 0
+create material 36
+modify material 36 name 'алевролит 36' 
+modify material 36 set property 'MODULUS' table 144
+modify material 36 set property 'POISSON' table 143
+modify material 36 set property 'DENSITY' table 142
+modify material 36 set property 'MASS_MATRIX_DAMPING' table 141
+modify material 36 set property 'BIOT_ALPHA' value 1
+block 36 material 36 cs 1 category plane order 4
+block 37 add surface 111
+block 37 add surface 110
+block 37 add surface 109
+create table 148 column count 3
+modify table 148 dependency x column 1
+modify table 148 dependency y column 2
+create table 147 column count 3
+modify table 147 dependency x column 1
+modify table 147 dependency y column 2
+create table 146 column count 3
+modify table 146 dependency x column 1
+modify table 146 dependency y column 2
+create table 145 column count 3
+modify table 145 dependency x column 1
+modify table 145 dependency y column 2
+modify table 148 insert row 1
+modify table 148 cell 1 1 value 0.0
+modify table 148 cell 1 2 value 1215.507782918778
+modify table 148 cell 1 3 value 9103130400.22265
+modify table 147 insert row 1
+modify table 147 cell 1 1 value 0.0
+modify table 147 cell 1 2 value 1215.507782918778
+modify table 147 cell 1 3 value 0.28356025973578947
+modify table 146 insert row 1
+modify table 146 cell 1 1 value 0.0
+modify table 146 cell 1 2 value 1215.507782918778
+modify table 146 cell 1 3 value 2071.163152
+modify table 145 insert row 1
+modify table 145 cell 1 1 value 0.0
+modify table 145 cell 1 2 value 1215.507782918778
+modify table 145 cell 1 3 value 0
+modify table 148 insert row 2
+modify table 148 cell 2 1 value 0.0
+modify table 148 cell 2 2 value 1223.7582000171897
+modify table 148 cell 2 3 value 10509287466.16538
+modify table 147 insert row 2
+modify table 147 cell 2 1 value 0.0
+modify table 147 cell 2 2 value 1223.7582000171897
+modify table 147 cell 2 3 value 0.2835350737574869
+modify table 146 insert row 2
+modify table 146 cell 2 1 value 0.0
+modify table 146 cell 2 2 value 1223.7582000171897
+modify table 146 cell 2 3 value 2103.367735
+modify table 145 insert row 2
+modify table 145 cell 2 1 value 0.0
+modify table 145 cell 2 2 value 1223.7582000171897
+modify table 145 cell 2 3 value 0
+create material 37
+modify material 37 name 'алевролит 37' 
+modify material 37 set property 'MODULUS' table 148
+modify material 37 set property 'POISSON' table 147
+modify material 37 set property 'DENSITY' table 146
+modify material 37 set property 'MASS_MATRIX_DAMPING' table 145
+modify material 37 set property 'BIOT_ALPHA' value 1
+block 37 material 37 cs 1 category plane order 4
+block 38 add surface 114
+block 38 add surface 113
+block 38 add surface 112
+create table 152 column count 3
+modify table 152 dependency x column 1
+modify table 152 dependency y column 2
+create table 151 column count 3
+modify table 151 dependency x column 1
+modify table 151 dependency y column 2
+create table 150 column count 3
+modify table 150 dependency x column 1
+modify table 150 dependency y column 2
+create table 149 column count 3
+modify table 149 dependency x column 1
+modify table 149 dependency y column 2
+modify table 152 insert row 1
+modify table 152 cell 1 1 value 0.0
+modify table 152 cell 1 2 value 1301.724641597179
+modify table 152 cell 1 3 value 9509089662.994349
+modify table 151 insert row 1
+modify table 151 cell 1 1 value 0.0
+modify table 151 cell 1 2 value 1301.724641597179
+modify table 151 cell 1 3 value 0.2835524297459179
+modify table 150 insert row 1
+modify table 150 cell 1 1 value 0.0
+modify table 150 cell 1 2 value 1301.724641597179
+modify table 150 cell 1 3 value 2080.7984930000002
+modify table 149 insert row 1
+modify table 149 cell 1 1 value 0.0
+modify table 149 cell 1 2 value 1301.724641597179
+modify table 149 cell 1 3 value 0
+modify table 152 insert row 2
+modify table 152 cell 2 1 value 0.0
+modify table 152 cell 2 2 value 1312.8627046800348
+modify table 152 cell 2 3 value 9508738622.376352
+modify table 151 insert row 2
+modify table 151 cell 2 1 value 0.0
+modify table 151 cell 2 2 value 1312.8627046800348
+modify table 151 cell 2 3 value 0.2835524363036984
+modify table 150 insert row 2
+modify table 150 cell 2 1 value 0.0
+modify table 150 cell 2 2 value 1312.8627046800348
+modify table 150 cell 2 3 value 2080.790286
+modify table 149 insert row 2
+modify table 149 cell 2 1 value 0.0
+modify table 149 cell 2 2 value 1312.8627046800348
+modify table 149 cell 2 3 value 0
+create material 38
+modify material 38 name 'глина 38' 
+modify material 38 set property 'MODULUS' table 152
+modify material 38 set property 'POISSON' table 151
+modify material 38 set property 'DENSITY' table 150
+modify material 38 set property 'MASS_MATRIX_DAMPING' table 149
+modify material 38 set property 'BIOT_ALPHA' value 1
+block 38 material 38 cs 1 category plane order 4
+block 39 add surface 117
+block 39 add surface 116
+block 39 add surface 115
+create table 156 column count 3
+modify table 156 dependency x column 1
+modify table 156 dependency y column 2
+create table 155 column count 3
+modify table 155 dependency x column 1
+modify table 155 dependency y column 2
+create table 154 column count 3
+modify table 154 dependency x column 1
+modify table 154 dependency y column 2
+create table 153 column count 3
+modify table 153 dependency x column 1
+modify table 153 dependency y column 2
+modify table 156 insert row 1
+modify table 156 cell 1 1 value 0.0
+modify table 156 cell 1 2 value 1332.6637057162225
+modify table 156 cell 1 3 value 10174093955.150747
+modify table 155 insert row 1
+modify table 155 cell 1 1 value 0.0
+modify table 155 cell 1 2 value 1332.6637057162225
+modify table 155 cell 1 3 value 0.2835406103256843
+modify table 154 insert row 1
+modify table 154 cell 1 1 value 0.0
+modify table 154 cell 1 2 value 1332.6637057162225
+modify table 154 cell 1 3 value 2095.979055
+modify table 153 insert row 1
+modify table 153 cell 1 1 value 0.0
+modify table 153 cell 1 2 value 1332.6637057162225
+modify table 153 cell 1 3 value 0
+modify table 156 insert row 2
+modify table 156 cell 2 1 value 0.0
+modify table 156 cell 2 2 value 1342.5642062343163
+modify table 156 cell 2 3 value 10332849063.83761
+modify table 155 insert row 2
+modify table 155 cell 2 1 value 0.0
+modify table 155 cell 2 2 value 1342.5642062343163
+modify table 155 cell 2 3 value 0.2835379552366985
+modify table 154 insert row 2
+modify table 154 cell 2 1 value 0.0
+modify table 154 cell 2 2 value 1342.5642062343163
+modify table 154 cell 2 3 value 2099.499532
+modify table 153 insert row 2
+modify table 153 cell 2 1 value 0.0
+modify table 153 cell 2 2 value 1342.5642062343163
+modify table 153 cell 2 3 value 0
+create material 39
+modify material 39 name 'глина 39' 
+modify material 39 set property 'MODULUS' table 156
+modify material 39 set property 'POISSON' table 155
+modify material 39 set property 'DENSITY' table 154
+modify material 39 set property 'MASS_MATRIX_DAMPING' table 153
+modify material 39 set property 'BIOT_ALPHA' value 1
+block 39 material 39 cs 1 category plane order 4
+block 40 add surface 120
+block 40 add surface 119
+block 40 add surface 118
+create table 160 column count 3
+modify table 160 dependency x column 1
+modify table 160 dependency y column 2
+create table 159 column count 3
+modify table 159 dependency x column 1
+modify table 159 dependency y column 2
+create table 158 column count 3
+modify table 158 dependency x column 1
+modify table 158 dependency y column 2
+create table 157 column count 3
+modify table 157 dependency x column 1
+modify table 157 dependency y column 2
+modify table 160 insert row 1
+modify table 160 cell 1 1 value 0.0
+modify table 160 cell 1 2 value 1355.7648735917749
+modify table 160 cell 1 3 value 9630556311.978806
+modify table 159 insert row 1
+modify table 159 cell 1 1 value 0.0
+modify table 159 cell 1 2 value 1355.7648735917749
+modify table 159 cell 1 3 value 0.28355018174777485
+modify table 158 insert row 1
+modify table 158 cell 1 1 value 0.0
+modify table 158 cell 1 2 value 1355.7648735917749
+modify table 158 cell 1 3 value 2083.6255850000002
+modify table 157 insert row 1
+modify table 157 cell 1 1 value 0.0
+modify table 157 cell 1 2 value 1355.7648735917749
+modify table 157 cell 1 3 value 0
+modify table 160 insert row 2
+modify table 160 cell 2 1 value 0.0
+modify table 160 cell 2 2 value 1362.365207270504
+modify table 160 cell 2 3 value 10443117864.372805
+modify table 159 insert row 2
+modify table 159 cell 2 1 value 0.0
+modify table 159 cell 2 2 value 1362.365207270504
+modify table 159 cell 2 3 value 0.28353614602321237
+modify table 158 insert row 2
+modify table 158 cell 2 1 value 0.0
+modify table 158 cell 2 2 value 1362.365207270504
+modify table 158 cell 2 3 value 2101.9224489999997
+modify table 157 insert row 2
+modify table 157 cell 2 1 value 0.0
+modify table 157 cell 2 2 value 1362.365207270504
+modify table 157 cell 2 3 value 0
+create material 40
+modify material 40 name 'песчаник 40' 
+modify material 40 set property 'MODULUS' table 160
+modify material 40 set property 'POISSON' table 159
+modify material 40 set property 'DENSITY' table 158
+modify material 40 set property 'MASS_MATRIX_DAMPING' table 157
+modify material 40 set property 'BIOT_ALPHA' value 1
+block 40 material 40 cs 1 category plane order 4
+block 41 add surface 123
+block 41 add surface 122
+block 41 add surface 121
+create table 164 column count 3
+modify table 164 dependency x column 1
+modify table 164 dependency y column 2
+create table 163 column count 3
+modify table 163 dependency x column 1
+modify table 163 dependency y column 2
+create table 162 column count 3
+modify table 162 dependency x column 1
+modify table 162 dependency y column 2
+create table 161 column count 3
+modify table 161 dependency x column 1
+modify table 161 dependency y column 2
+modify table 164 insert row 1
+modify table 164 cell 1 1 value 0.0
+modify table 164 cell 1 2 value 1372.265707788598
+modify table 164 cell 1 3 value 13317874190.741104
+modify table 163 insert row 1
+modify table 163 cell 1 1 value 0.0
+modify table 163 cell 1 2 value 1372.265707788598
+modify table 163 cell 1 3 value 0.28349706009000214
+modify table 162 insert row 1
+modify table 162 cell 1 1 value 0.0
+modify table 162 cell 1 2 value 1372.265707788598
+modify table 162 cell 1 3 value 2159.510518
+modify table 161 insert row 1
+modify table 161 cell 1 1 value 0.0
+modify table 161 cell 1 2 value 1372.265707788598
+modify table 161 cell 1 3 value 0
+modify table 164 insert row 2
+modify table 164 cell 2 1 value 0.0
+modify table 164 cell 2 2 value 1382.1662083066922
+modify table 164 cell 2 3 value 14496104004.511232
+modify table 163 insert row 2
+modify table 163 cell 2 1 value 0.0
+modify table 163 cell 2 2 value 1382.1662083066922
+modify table 163 cell 2 3 value 0.28348443783322674
+modify table 162 insert row 2
+modify table 162 cell 2 1 value 0.0
+modify table 162 cell 2 2 value 1382.1662083066922
+modify table 162 cell 2 3 value 2180.5273
+modify table 161 insert row 2
+modify table 161 cell 2 1 value 0.0
+modify table 161 cell 2 2 value 1382.1662083066922
+modify table 161 cell 2 3 value 0
+create material 41
+modify material 41 name 'песчаник 41' 
+modify material 41 set property 'MODULUS' table 164
+modify material 41 set property 'POISSON' table 163
+modify material 41 set property 'DENSITY' table 162
+modify material 41 set property 'MASS_MATRIX_DAMPING' table 161
+modify material 41 set property 'BIOT_ALPHA' value 1
+block 41 material 41 cs 1 category plane order 4
+block 42 add surface 126
+block 42 add surface 125
+block 42 add surface 124
+create table 168 column count 3
+modify table 168 dependency x column 1
+modify table 168 dependency y column 2
+create table 167 column count 3
+modify table 167 dependency x column 1
+modify table 167 dependency y column 2
+create table 166 column count 3
+modify table 166 dependency x column 1
+modify table 166 dependency y column 2
+create table 165 column count 3
+modify table 165 dependency x column 1
+modify table 165 dependency y column 2
+modify table 168 insert row 1
+modify table 168 cell 1 1 value 0.0
+modify table 168 cell 1 2 value 1395.4187877178028
+modify table 168 cell 1 3 value 12539610740.887623
+modify table 167 insert row 1
+modify table 167 cell 1 1 value 0.0
+modify table 167 cell 1 2 value 1395.4187877178028
+modify table 167 cell 1 3 value 0.2835063313942111
+modify table 166 insert row 1
+modify table 166 cell 1 1 value 0.0
+modify table 166 cell 1 2 value 1395.4187877178028
+modify table 166 cell 1 3 value 2144.8772919999997
+modify table 165 insert row 1
+modify table 165 cell 1 1 value 0.0
+modify table 165 cell 1 2 value 1395.4187877178028
+modify table 165 cell 1 3 value 0
+modify table 168 insert row 2
+modify table 168 cell 2 1 value 0.0
+modify table 168 cell 2 2 value 1402.0450774233582
+modify table 168 cell 2 3 value 14259230891.983955
+modify table 167 insert row 2
+modify table 167 cell 2 1 value 0.0
+modify table 167 cell 2 2 value 1402.0450774233582
+modify table 167 cell 2 3 value 0.2834868523899719
+modify table 166 insert row 2
+modify table 166 cell 2 1 value 0.0
+modify table 166 cell 2 2 value 1402.0450774233582
+modify table 166 cell 2 3 value 2176.40475
+modify table 165 insert row 2
+modify table 165 cell 2 1 value 0.0
+modify table 165 cell 2 2 value 1402.0450774233582
+modify table 165 cell 2 3 value 0
+create material 42
+modify material 42 name 'песчаник 42' 
+modify material 42 set property 'MODULUS' table 168
+modify material 42 set property 'POISSON' table 167
+modify material 42 set property 'DENSITY' table 166
+modify material 42 set property 'MASS_MATRIX_DAMPING' table 165
+modify material 42 set property 'BIOT_ALPHA' value 1
+block 42 material 42 cs 1 category plane order 4
+block 43 add surface 129
+block 43 add surface 128
+block 43 add surface 127
+create table 172 column count 3
+modify table 172 dependency x column 1
+modify table 172 dependency y column 2
+create table 171 column count 3
+modify table 171 dependency x column 1
+modify table 171 dependency y column 2
+create table 170 column count 3
+modify table 170 dependency x column 1
+modify table 170 dependency y column 2
+create table 169 column count 3
+modify table 169 dependency x column 1
+modify table 169 dependency y column 2
+modify table 172 insert row 1
+modify table 172 cell 1 1 value 0.0
+modify table 172 cell 1 2 value 1407.0450774233582
+modify table 172 cell 1 3 value 14259230891.983955
+modify table 171 insert row 1
+modify table 171 cell 1 1 value 0.0
+modify table 171 cell 1 2 value 1407.0450774233582
+modify table 171 cell 1 3 value 0.2834868523899719
+modify table 170 insert row 1
+modify table 170 cell 1 1 value 0.0
+modify table 170 cell 1 2 value 1407.0450774233582
+modify table 170 cell 1 3 value 2176.40475
+modify table 169 insert row 1
+modify table 169 cell 1 1 value 0.0
+modify table 169 cell 1 2 value 1407.0450774233582
+modify table 169 cell 1 3 value 0
+modify table 172 insert row 2
+modify table 172 cell 2 1 value 0.0
+modify table 172 cell 2 2 value 1412.0450774233582
+modify table 172 cell 2 3 value 13091302301.784197
+modify table 171 insert row 2
+modify table 171 cell 2 1 value 0.0
+modify table 171 cell 2 2 value 1412.0450774233582
+modify table 171 cell 2 3 value 0.2834996757716827
+modify table 170 insert row 2
+modify table 170 cell 2 1 value 0.0
+modify table 170 cell 2 2 value 1412.0450774233582
+modify table 170 cell 2 3 value 2155.3155789999996
+modify table 169 insert row 2
+modify table 169 cell 2 1 value 0.0
+modify table 169 cell 2 2 value 1412.0450774233582
+modify table 169 cell 2 3 value 0
+create material 43
+modify material 43 name 'песчаник 43' 
+modify material 43 set property 'MODULUS' table 172
+modify material 43 set property 'POISSON' table 171
+modify material 43 set property 'DENSITY' table 170
+modify material 43 set property 'MASS_MATRIX_DAMPING' table 169
+modify material 43 set property 'BIOT_ALPHA' value 1
+block 43 material 43 cs 1 category plane order 4
+block 44 add surface 132
+block 44 add surface 131
+block 44 add surface 130
+create table 176 column count 3
+modify table 176 dependency x column 1
+modify table 176 dependency y column 2
+create table 175 column count 3
+modify table 175 dependency x column 1
+modify table 175 dependency y column 2
+create table 174 column count 3
+modify table 174 dependency x column 1
+modify table 174 dependency y column 2
+create table 173 column count 3
+modify table 173 dependency x column 1
+modify table 173 dependency y column 2
+modify table 176 insert row 1
+modify table 176 cell 1 1 value 0.0
+modify table 176 cell 1 2 value 1512.3324125388604
+modify table 176 cell 1 3 value 13946863936.530962
+modify table 175 insert row 1
+modify table 175 cell 1 1 value 0.0
+modify table 175 cell 1 2 value 1512.3324125388604
+modify table 175 cell 1 3 value 0.28349012763948633
+modify table 174 insert row 1
+modify table 174 cell 1 1 value 0.0
+modify table 174 cell 1 2 value 1512.3324125388604
+modify table 174 cell 1 3 value 2170.8911980000003
+modify table 173 insert row 1
+modify table 173 cell 1 1 value 0.0
+modify table 173 cell 1 2 value 1512.3324125388604
+modify table 173 cell 1 3 value 0
+modify table 176 insert row 2
+modify table 176 cell 2 1 value 0.0
+modify table 176 cell 2 2 value 1521.449443003906
+modify table 176 cell 2 3 value 14001226101.387817
+modify table 175 insert row 2
+modify table 175 cell 2 1 value 0.0
+modify table 175 cell 2 2 value 1521.449443003906
+modify table 175 cell 2 3 value 0.2834895499694961
+modify table 174 insert row 2
+modify table 174 cell 2 1 value 0.0
+modify table 174 cell 2 2 value 1521.449443003906
+modify table 174 cell 2 3 value 2171.85716
+modify table 173 insert row 2
+modify table 173 cell 2 1 value 0.0
+modify table 173 cell 2 2 value 1521.449443003906
+modify table 173 cell 2 3 value 0
+create material 44
+modify material 44 name 'песчаник 44' 
+modify material 44 set property 'MODULUS' table 176
+modify material 44 set property 'POISSON' table 175
+modify material 44 set property 'DENSITY' table 174
+modify material 44 set property 'MASS_MATRIX_DAMPING' table 173
+modify material 44 set property 'BIOT_ALPHA' value 1
+block 44 material 44 cs 1 category plane order 4
+block 45 add surface 135
+block 45 add surface 134
+block 45 add surface 133
+create table 180 column count 3
+modify table 180 dependency x column 1
+modify table 180 dependency y column 2
+create table 179 column count 3
+modify table 179 dependency x column 1
+modify table 179 dependency y column 2
+create table 178 column count 3
+modify table 178 dependency x column 1
+modify table 178 dependency y column 2
+create table 177 column count 3
+modify table 177 dependency x column 1
+modify table 177 dependency y column 2
+modify table 180 insert row 1
+modify table 180 cell 1 1 value 0.0
+modify table 180 cell 1 2 value 1526.449443003906
+modify table 180 cell 1 3 value 14001226101.387817
+modify table 179 insert row 1
+modify table 179 cell 1 1 value 0.0
+modify table 179 cell 1 2 value 1526.449443003906
+modify table 179 cell 1 3 value 0.2834895499694961
+modify table 178 insert row 1
+modify table 178 cell 1 1 value 0.0
+modify table 178 cell 1 2 value 1526.449443003906
+modify table 178 cell 1 3 value 2171.85716
+modify table 177 insert row 1
+modify table 177 cell 1 1 value 0.0
+modify table 177 cell 1 2 value 1526.449443003906
+modify table 177 cell 1 3 value 0
+modify table 180 insert row 2
+modify table 180 cell 2 1 value 0.0
+modify table 180 cell 2 2 value 1531.449443003906
+modify table 180 cell 2 3 value 15118809223.762424
+modify table 179 insert row 2
+modify table 179 cell 2 1 value 0.0
+modify table 179 cell 2 2 value 1531.449443003906
+modify table 179 cell 2 3 value 0.2834783563651334
+modify table 178 insert row 2
+modify table 178 cell 2 1 value 0.0
+modify table 178 cell 2 2 value 1531.449443003906
+modify table 178 cell 2 3 value 2191.134554
+modify table 177 insert row 2
+modify table 177 cell 2 1 value 0.0
+modify table 177 cell 2 2 value 1531.449443003906
+modify table 177 cell 2 3 value 0
+create material 45
+modify material 45 name 'песчаник 45' 
+modify material 45 set property 'MODULUS' table 180
+modify material 45 set property 'POISSON' table 179
+modify material 45 set property 'DENSITY' table 178
+modify material 45 set property 'MASS_MATRIX_DAMPING' table 177
+modify material 45 set property 'BIOT_ALPHA' value 1
+block 45 material 45 cs 1 category plane order 4
+block 46 add surface 138
+block 46 add surface 137
+block 46 add surface 136
+create table 184 column count 3
+modify table 184 dependency x column 1
+modify table 184 dependency y column 2
+create table 183 column count 3
+modify table 183 dependency x column 1
+modify table 183 dependency y column 2
+create table 182 column count 3
+modify table 182 dependency x column 1
+modify table 182 dependency y column 2
+create table 181 column count 3
+modify table 181 dependency x column 1
+modify table 181 dependency y column 2
+modify table 184 insert row 1
+modify table 184 cell 1 1 value 0.0
+modify table 184 cell 1 2 value 1546.368220128526
+modify table 184 cell 1 3 value 14202300512.594967
+modify table 183 insert row 1
+modify table 183 cell 1 1 value 0.0
+modify table 183 cell 1 2 value 1546.368220128526
+modify table 183 cell 1 3 value 0.28348744146220795
+modify table 182 insert row 1
+modify table 182 cell 1 1 value 0.0
+modify table 182 cell 1 2 value 1546.368220128526
+modify table 182 cell 1 3 value 2175.406487
+modify table 181 insert row 1
+modify table 181 cell 1 1 value 0.0
+modify table 181 cell 1 2 value 1546.368220128526
+modify table 181 cell 1 3 value 0
+modify table 184 insert row 2
+modify table 184 cell 2 1 value 0.0
+modify table 184 cell 2 2 value 1551.3411458367327
+modify table 184 cell 2 3 value 14563811392.100754
+modify table 183 insert row 2
+modify table 183 cell 2 1 value 0.0
+modify table 183 cell 2 2 value 1551.3411458367327
+modify table 183 cell 2 3 value 0.2834837582329139
+modify table 182 insert row 2
+modify table 182 cell 2 1 value 0.0
+modify table 182 cell 2 2 value 1551.3411458367327
+modify table 182 cell 2 3 value 2181.696626
+modify table 181 insert row 2
+modify table 181 cell 2 1 value 0.0
+modify table 181 cell 2 2 value 1551.3411458367327
+modify table 181 cell 2 3 value 0
+create material 46
+modify material 46 name 'песчаник 46' 
+modify material 46 set property 'MODULUS' table 184
+modify material 46 set property 'POISSON' table 183
+modify material 46 set property 'DENSITY' table 182
+modify material 46 set property 'MASS_MATRIX_DAMPING' table 181
+modify material 46 set property 'BIOT_ALPHA' value 1
+block 46 material 46 cs 1 category plane order 4
+block 47 add surface 141
+block 47 add surface 140
+block 47 add surface 139
+create table 188 column count 3
+modify table 188 dependency x column 1
+modify table 188 dependency y column 2
+create table 187 column count 3
+modify table 187 dependency x column 1
+modify table 187 dependency y column 2
+create table 186 column count 3
+modify table 186 dependency x column 1
+modify table 186 dependency y column 2
+create table 185 column count 3
+modify table 185 dependency x column 1
+modify table 185 dependency y column 2
+modify table 188 insert row 1
+modify table 188 cell 1 1 value 0.0
+modify table 188 cell 1 2 value 1575.211189236125
+modify table 188 cell 1 3 value 14945957263.113443
+modify table 187 insert row 1
+modify table 187 cell 1 1 value 0.0
+modify table 187 cell 1 2 value 1575.211189236125
+modify table 187 cell 1 3 value 0.2834800072922417
+modify table 186 insert row 1
+modify table 186 cell 1 1 value 0.0
+modify table 186 cell 1 2 value 1575.211189236125
+modify table 186 cell 1 3 value 2188.222796
+modify table 185 insert row 1
+modify table 185 cell 1 1 value 0.0
+modify table 185 cell 1 2 value 1575.211189236125
+modify table 185 cell 1 3 value 0
+modify table 188 insert row 2
+modify table 188 cell 2 1 value 0.0
+modify table 188 cell 2 2 value 1581.178700085973
+modify table 188 cell 2 3 value 15966700991.558647
+modify table 187 insert row 2
+modify table 187 cell 2 1 value 0.0
+modify table 187 cell 2 2 value 1581.178700085973
+modify table 187 cell 2 3 value 0.2834706401788809
+modify table 186 insert row 2
+modify table 186 cell 2 1 value 0.0
+modify table 186 cell 2 2 value 1581.178700085973
+modify table 186 cell 2 3 value 2205.0728959999997
+modify table 185 insert row 2
+modify table 185 cell 2 1 value 0.0
+modify table 185 cell 2 2 value 1581.178700085973
+modify table 185 cell 2 3 value 0
+create material 47
+modify material 47 name 'глина 47' 
+modify material 47 set property 'MODULUS' table 188
+modify material 47 set property 'POISSON' table 187
+modify material 47 set property 'DENSITY' table 186
+modify material 47 set property 'MASS_MATRIX_DAMPING' table 185
+modify material 47 set property 'BIOT_ALPHA' value 1
+block 47 material 47 cs 1 category plane order 4
+block 48 add surface 144
+block 48 add surface 143
+block 48 add surface 142
+create table 192 column count 3
+modify table 192 dependency x column 1
+modify table 192 dependency y column 2
+create table 191 column count 3
+modify table 191 dependency x column 1
+modify table 191 dependency y column 2
+create table 190 column count 3
+modify table 190 dependency x column 1
+modify table 190 dependency y column 2
+create table 189 column count 3
+modify table 189 dependency x column 1
+modify table 189 dependency y column 2
+modify table 192 insert row 1
+modify table 192 cell 1 1 value 0.0
+modify table 192 cell 1 2 value 1591.1245515023866
+modify table 192 cell 1 3 value 14080906757.914753
+modify table 191 insert row 1
+modify table 191 cell 1 1 value 0.0
+modify table 191 cell 1 2 value 1591.1245515023866
+modify table 191 cell 1 3 value 0.2834887091576175
+modify table 190 insert row 1
+modify table 190 cell 1 1 value 0.0
+modify table 190 cell 1 2 value 1591.1245515023866
+modify table 190 cell 1 3 value 2173.2680840000003
+modify table 189 insert row 1
+modify table 189 cell 1 1 value 0.0
+modify table 189 cell 1 2 value 1591.1245515023866
+modify table 189 cell 1 3 value 0
+modify table 192 insert row 2
+modify table 192 cell 2 1 value 0.0
+modify table 192 cell 2 2 value 1601.0704029188
+modify table 192 cell 2 3 value 15395884637.95272
+modify table 191 insert row 2
+modify table 191 cell 2 1 value 0.0
+modify table 191 cell 2 2 value 1601.0704029188
+modify table 191 cell 2 3 value 0.2834757667123588
+modify table 190 insert row 2
+modify table 190 cell 2 1 value 0.0
+modify table 190 cell 2 2 value 1601.0704029188
+modify table 190 cell 2 3 value 2195.7513510000003
+modify table 189 insert row 2
+modify table 189 cell 2 1 value 0.0
+modify table 189 cell 2 2 value 1601.0704029188
+modify table 189 cell 2 3 value 0
+create material 48
+modify material 48 name 'глина 48' 
+modify material 48 set property 'MODULUS' table 192
+modify material 48 set property 'POISSON' table 191
+modify material 48 set property 'DENSITY' table 190
+modify material 48 set property 'MASS_MATRIX_DAMPING' table 189
+modify material 48 set property 'BIOT_ALPHA' value 1
+block 48 material 48 cs 1 category plane order 4
+block 49 add surface 147
+block 49 add surface 146
+block 49 add surface 145
+create table 196 column count 3
+modify table 196 dependency x column 1
+modify table 196 dependency y column 2
+create table 195 column count 3
+modify table 195 dependency x column 1
+modify table 195 dependency y column 2
+create table 194 column count 3
+modify table 194 dependency x column 1
+modify table 194 dependency y column 2
+create table 193 column count 3
+modify table 193 dependency x column 1
+modify table 193 dependency y column 2
+modify table 196 insert row 1
+modify table 196 cell 1 1 value 0.0
+modify table 196 cell 1 2 value 1630.90795716804
+modify table 196 cell 1 3 value 15014754694.896101
+modify table 195 insert row 1
+modify table 195 cell 1 1 value 0.0
+modify table 195 cell 1 2 value 1630.90795716804
+modify table 195 cell 1 3 value 0.28347934687541243
+modify table 194 insert row 1
+modify table 194 cell 1 1 value 0.0
+modify table 194 cell 1 2 value 1630.90795716804
+modify table 194 cell 1 3 value 2189.384663
+modify table 193 insert row 1
+modify table 193 cell 1 1 value 0.0
+modify table 193 cell 1 2 value 1630.90795716804
+modify table 193 cell 1 3 value 0
+modify table 196 insert row 2
+modify table 196 cell 2 1 value 0.0
+modify table 196 cell 2 2 value 1640.8538085844534
+modify table 196 cell 2 3 value 10967616078.863361
+modify table 195 insert row 2
+modify table 195 cell 2 1 value 0.0
+modify table 195 cell 2 2 value 1640.8538085844534
+modify table 195 cell 2 3 value 0.283527909247706
+modify table 194 insert row 2
+modify table 194 cell 2 1 value 0.0
+modify table 194 cell 2 2 value 1640.8538085844534
+modify table 194 cell 2 3 value 2113.2061860000003
+modify table 193 insert row 2
+modify table 193 cell 2 1 value 0.0
+modify table 193 cell 2 2 value 1640.8538085844534
+modify table 193 cell 2 3 value 0
+create material 49
+modify material 49 name 'глина 49' 
+modify material 49 set property 'MODULUS' table 196
+modify material 49 set property 'POISSON' table 195
+modify material 49 set property 'DENSITY' table 194
+modify material 49 set property 'MASS_MATRIX_DAMPING' table 193
+modify material 49 set property 'BIOT_ALPHA' value 1
+block 49 material 49 cs 1 category plane order 4
+block 50 add surface 150
+block 50 add surface 149
+block 50 add surface 148
+create table 200 column count 3
+modify table 200 dependency x column 1
+modify table 200 dependency y column 2
+create table 199 column count 3
+modify table 199 dependency x column 1
+modify table 199 dependency y column 2
+create table 198 column count 3
+modify table 198 dependency x column 1
+modify table 198 dependency y column 2
+create table 197 column count 3
+modify table 197 dependency x column 1
+modify table 197 dependency y column 2
+modify table 200 insert row 1
+modify table 200 cell 1 1 value 0.0
+modify table 200 cell 1 2 value 1698.7656199311807
+modify table 200 cell 1 3 value 15939134373.941757
+modify table 199 insert row 1
+modify table 199 cell 1 1 value 0.0
+modify table 199 cell 1 2 value 1698.7656199311807
+modify table 199 cell 1 3 value 0.2834708815785391
+modify table 198 insert row 1
+modify table 198 cell 1 1 value 0.0
+modify table 198 cell 1 2 value 1698.7656199311807
+modify table 198 cell 1 3 value 2204.628434
+modify table 197 insert row 1
+modify table 197 cell 1 1 value 0.0
+modify table 197 cell 1 2 value 1698.7656199311807
+modify table 197 cell 1 3 value 0
+modify table 200 insert row 2
+modify table 200 cell 2 1 value 0.0
+modify table 200 cell 2 2 value 1710.347982200526
+modify table 200 cell 2 3 value 15801713584.655722
+modify table 199 insert row 2
+modify table 199 cell 2 1 value 0.0
+modify table 199 cell 2 2 value 1710.347982200526
+modify table 199 cell 2 3 value 0.28347209412123564
+modify table 198 insert row 2
+modify table 198 cell 2 1 value 0.0
+modify table 198 cell 2 2 value 1710.347982200526
+modify table 198 cell 2 3 value 2202.404253
+modify table 197 insert row 2
+modify table 197 cell 2 1 value 0.0
+modify table 197 cell 2 2 value 1710.347982200526
+modify table 197 cell 2 3 value 0
+create material 50
+modify material 50 name 'глина 50' 
+modify material 50 set property 'MODULUS' table 200
+modify material 50 set property 'POISSON' table 199
+modify material 50 set property 'DENSITY' table 198
+modify material 50 set property 'MASS_MATRIX_DAMPING' table 197
+modify material 50 set property 'BIOT_ALPHA' value 1
+block 50 material 50 cs 1 category plane order 4
+block 51 add surface 153
+block 51 add surface 152
+block 51 add surface 151
+create table 204 column count 3
+modify table 204 dependency x column 1
+modify table 204 dependency y column 2
+create table 203 column count 3
+modify table 203 dependency x column 1
+modify table 203 dependency y column 2
+create table 202 column count 3
+modify table 202 dependency x column 1
+modify table 202 dependency y column 2
+create table 201 column count 3
+modify table 201 dependency x column 1
+modify table 201 dependency y column 2
+modify table 204 insert row 1
+modify table 204 cell 1 1 value 0.0
+modify table 204 cell 1 2 value 1720.258484028965
+modify table 204 cell 1 3 value 16700637758.850794
+modify table 203 insert row 1
+modify table 203 cell 1 1 value 0.0
+modify table 203 cell 1 2 value 1720.258484028965
+modify table 203 cell 1 3 value 0.2834644287204737
+modify table 202 insert row 1
+modify table 202 cell 1 1 value 0.0
+modify table 202 cell 1 2 value 1720.258484028965
+modify table 202 cell 1 3 value 2216.702453
+modify table 201 insert row 1
+modify table 201 cell 1 1 value 0.0
+modify table 201 cell 1 2 value 1720.258484028965
+modify table 201 cell 1 3 value 0
+modify table 204 insert row 2
+modify table 204 cell 2 1 value 0.0
+modify table 204 cell 2 2 value 1730.1689858574039
+modify table 204 cell 2 3 value 15976527499.037369
+modify table 203 insert row 2
+modify table 203 cell 2 1 value 0.0
+modify table 203 cell 2 2 value 1730.1689858574039
+modify table 203 cell 2 3 value 0.28347055427558226
+modify table 202 insert row 2
+modify table 202 cell 2 1 value 0.0
+modify table 202 cell 2 2 value 1730.1689858574039
+modify table 202 cell 2 3 value 2205.231193
+modify table 201 insert row 2
+modify table 201 cell 2 1 value 0.0
+modify table 201 cell 2 2 value 1730.1689858574039
+modify table 201 cell 2 3 value 0
+create material 51
+modify material 51 name 'глина 51' 
+modify material 51 set property 'MODULUS' table 204
+modify material 51 set property 'POISSON' table 203
+modify material 51 set property 'DENSITY' table 202
+modify material 51 set property 'MASS_MATRIX_DAMPING' table 201
+modify material 51 set property 'BIOT_ALPHA' value 1
+block 51 material 51 cs 1 category plane order 4
+block 52 add surface 156
+block 52 add surface 155
+block 52 add surface 154
+create table 208 column count 3
+modify table 208 dependency x column 1
+modify table 208 dependency y column 2
+create table 207 column count 3
+modify table 207 dependency x column 1
+modify table 207 dependency y column 2
+create table 206 column count 3
+modify table 206 dependency x column 1
+modify table 206 dependency y column 2
+create table 205 column count 3
+modify table 205 dependency x column 1
+modify table 205 dependency y column 2
+modify table 208 insert row 1
+modify table 208 cell 1 1 value 0.0
+modify table 208 cell 1 2 value 1745.0347386000622
+modify table 208 cell 1 3 value 16614877821.23808
+modify table 207 insert row 1
+modify table 207 cell 1 1 value 0.0
+modify table 207 cell 1 2 value 1745.0347386000622
+modify table 207 cell 1 3 value 0.2834651338027358
+modify table 206 insert row 1
+modify table 206 cell 1 1 value 0.0
+modify table 206 cell 1 2 value 1745.0347386000622
+modify table 206 cell 1 3 value 2215.363374
+modify table 205 insert row 1
+modify table 205 cell 1 1 value 0.0
+modify table 205 cell 1 2 value 1745.0347386000622
+modify table 205 cell 1 3 value 0
+modify table 208 insert row 2
+modify table 208 cell 2 1 value 0.0
+modify table 208 cell 2 2 value 1749.9899895142817
+modify table 208 cell 2 3 value 15729094417.622826
+modify table 207 insert row 2
+modify table 207 cell 2 1 value 0.0
+modify table 207 cell 2 2 value 1749.9899895142817
+modify table 207 cell 2 3 value 0.2834727411173348
+modify table 206 insert row 2
+modify table 206 cell 2 1 value 0.0
+modify table 206 cell 2 2 value 1749.9899895142817
+modify table 206 cell 2 3 value 2201.2231199999997
+modify table 205 insert row 2
+modify table 205 cell 2 1 value 0.0
+modify table 205 cell 2 2 value 1749.9899895142817
+modify table 205 cell 2 3 value 0
+create material 52
+modify material 52 name 'глина 52' 
+modify material 52 set property 'MODULUS' table 208
+modify material 52 set property 'POISSON' table 207
+modify material 52 set property 'DENSITY' table 206
+modify material 52 set property 'MASS_MATRIX_DAMPING' table 205
+modify material 52 set property 'BIOT_ALPHA' value 1
+block 52 material 52 cs 1 category plane order 4
+block 53 add surface 159
+block 53 add surface 158
+block 53 add surface 157
+create table 212 column count 3
+modify table 212 dependency x column 1
+modify table 212 dependency y column 2
+create table 211 column count 3
+modify table 211 dependency x column 1
+modify table 211 dependency y column 2
+create table 210 column count 3
+modify table 210 dependency x column 1
+modify table 210 dependency y column 2
+create table 209 column count 3
+modify table 209 dependency x column 1
+modify table 209 dependency y column 2
+modify table 212 insert row 1
+modify table 212 cell 1 1 value 0.0
+modify table 212 cell 1 2 value 1868.0901363031785
+modify table 212 cell 1 3 value 16168305899.242556
+modify table 211 insert row 1
+modify table 211 cell 1 1 value 0.0
+modify table 211 cell 1 2 value 1868.0901363031785
+modify table 211 cell 1 3 value 0.28346889303937006
+modify table 210 insert row 1
+modify table 210 cell 1 1 value 0.0
+modify table 210 cell 1 2 value 1868.0901363031785
+modify table 210 cell 1 3 value 2208.306259
+modify table 209 insert row 1
+modify table 209 cell 1 1 value 0.0
+modify table 209 cell 1 2 value 1868.0901363031785
+modify table 209 cell 1 3 value 0
+modify table 212 insert row 2
+modify table 212 cell 2 1 value 0.0
+modify table 212 cell 2 2 value 1878.8265132839872
+modify table 212 cell 2 3 value 16602889337.505468
+modify table 211 insert row 2
+modify table 211 cell 2 1 value 0.0
+modify table 211 cell 2 2 value 1878.8265132839872
+modify table 211 cell 2 3 value 0.28346523279003205
+modify table 210 insert row 2
+modify table 210 cell 2 1 value 0.0
+modify table 210 cell 2 2 value 1878.8265132839872
+modify table 210 cell 2 3 value 2215.175773
+modify table 209 insert row 2
+modify table 209 cell 2 1 value 0.0
+modify table 209 cell 2 2 value 1878.8265132839872
+modify table 209 cell 2 3 value 0
+create material 53
+modify material 53 name 'глина 53' 
+modify material 53 set property 'MODULUS' table 212
+modify material 53 set property 'POISSON' table 211
+modify material 53 set property 'DENSITY' table 210
+modify material 53 set property 'MASS_MATRIX_DAMPING' table 209
+modify material 53 set property 'BIOT_ALPHA' value 1
+block 53 material 53 cs 1 category plane order 4
+block 54 add surface 162
+block 54 add surface 161
+block 54 add surface 160
+create table 216 column count 3
+modify table 216 dependency x column 1
+modify table 216 dependency y column 2
+create table 215 column count 3
+modify table 215 dependency x column 1
+modify table 215 dependency y column 2
+create table 214 column count 3
+modify table 214 dependency x column 1
+modify table 214 dependency y column 2
+create table 213 column count 3
+modify table 213 dependency x column 1
+modify table 213 dependency y column 2
+modify table 216 insert row 1
+modify table 216 cell 1 1 value 0.0
+modify table 216 cell 1 2 value 1898.647516940865
+modify table 216 cell 1 3 value 16887468351.16916
+modify table 215 insert row 1
+modify table 215 cell 1 1 value 0.0
+modify table 215 cell 1 2 value 1898.647516940865
+modify table 215 cell 1 3 value 0.2834629108063224
+modify table 214 insert row 1
+modify table 214 cell 1 1 value 0.0
+modify table 214 cell 1 2 value 1898.647516940865
+modify table 214 cell 1 3 value 2219.602051
+modify table 213 insert row 1
+modify table 213 cell 1 1 value 0.0
+modify table 213 cell 1 2 value 1898.647516940865
+modify table 213 cell 1 3 value 0
+modify table 216 insert row 2
+modify table 216 cell 2 1 value 0.0
+modify table 216 cell 2 2 value 1908.558018769304
+modify table 216 cell 2 3 value 16604100071.555765
+modify table 215 insert row 2
+modify table 215 cell 2 1 value 0.0
+modify table 215 cell 2 2 value 1908.558018769304
+modify table 215 cell 2 3 value 0.2834652227884544
+modify table 214 insert row 2
+modify table 214 cell 2 1 value 0.0
+modify table 214 cell 2 2 value 1908.558018769304
+modify table 214 cell 2 3 value 2215.194724
+modify table 213 insert row 2
+modify table 213 cell 2 1 value 0.0
+modify table 213 cell 2 2 value 1908.558018769304
+modify table 213 cell 2 3 value 0
+create material 54
+modify material 54 name 'глина 54' 
+modify material 54 set property 'MODULUS' table 216
+modify material 54 set property 'POISSON' table 215
+modify material 54 set property 'DENSITY' table 214
+modify material 54 set property 'MASS_MATRIX_DAMPING' table 213
+modify material 54 set property 'BIOT_ALPHA' value 1
+block 54 material 54 cs 1 category plane order 4
+block 55 add surface 165
+block 55 add surface 164
+block 55 add surface 163
+create table 220 column count 3
+modify table 220 dependency x column 1
+modify table 220 dependency y column 2
+create table 219 column count 3
+modify table 219 dependency x column 1
+modify table 219 dependency y column 2
+create table 218 column count 3
+modify table 218 dependency x column 1
+modify table 218 dependency y column 2
+create table 217 column count 3
+modify table 217 dependency x column 1
+modify table 217 dependency y column 2
+modify table 220 insert row 1
+modify table 220 cell 1 1 value 0.0
+modify table 220 cell 1 2 value 1977.9315315683762
+modify table 220 cell 1 3 value 16212695012.063337
+modify table 219 insert row 1
+modify table 219 cell 1 1 value 0.0
+modify table 219 cell 1 2 value 1977.9315315683762
+modify table 219 cell 1 3 value 0.28346851262263867
+modify table 218 insert row 1
+modify table 218 cell 1 1 value 0.0
+modify table 218 cell 1 2 value 1977.9315315683762
+modify table 218 cell 1 3 value 2209.0141609999996
+modify table 217 insert row 1
+modify table 217 cell 1 1 value 0.0
+modify table 217 cell 1 2 value 1977.9315315683762
+modify table 217 cell 1 3 value 0
+modify table 220 insert row 2
+modify table 220 cell 2 1 value 0.0
+modify table 220 cell 2 2 value 1987.842033396815
+modify table 220 cell 2 3 value 16376777137.584866
+modify table 219 insert row 2
+modify table 219 cell 2 1 value 0.0
+modify table 219 cell 2 2 value 1987.842033396815
+modify table 219 cell 2 3 value 0.2834671195191959
+modify table 218 insert row 2
+modify table 218 cell 2 1 value 0.0
+modify table 218 cell 2 2 value 1987.842033396815
+modify table 218 cell 2 3 value 2211.618474
+modify table 217 insert row 2
+modify table 217 cell 2 1 value 0.0
+modify table 217 cell 2 2 value 1987.842033396815
+modify table 217 cell 2 3 value 0
+create material 55
+modify material 55 name 'глина 55' 
+modify material 55 set property 'MODULUS' table 220
+modify material 55 set property 'POISSON' table 219
+modify material 55 set property 'DENSITY' table 218
+modify material 55 set property 'MASS_MATRIX_DAMPING' table 217
+modify material 55 set property 'BIOT_ALPHA' value 1
+block 55 material 55 cs 1 category plane order 4
+block 56 add surface 168
+block 56 add surface 167
+block 56 add surface 166
+create table 224 column count 3
+modify table 224 dependency x column 1
+modify table 224 dependency y column 2
+create table 223 column count 3
+modify table 223 dependency x column 1
+modify table 223 dependency y column 2
+create table 222 column count 3
+modify table 222 dependency x column 1
+modify table 222 dependency y column 2
+create table 221 column count 3
+modify table 221 dependency x column 1
+modify table 221 dependency y column 2
+modify table 224 insert row 1
+modify table 224 cell 1 1 value 0.0
+modify table 224 cell 1 2 value 1997.752535225254
+modify table 224 cell 1 3 value 17377632841.966236
+modify table 223 insert row 1
+modify table 223 cell 1 1 value 0.0
+modify table 223 cell 1 2 value 1997.752535225254
+modify table 223 cell 1 3 value 0.28345904227114405
+modify table 222 insert row 1
+modify table 222 cell 1 1 value 0.0
+modify table 222 cell 1 2 value 1997.752535225254
+modify table 222 cell 1 3 value 2227.097281
+modify table 221 insert row 1
+modify table 221 cell 1 1 value 0.0
+modify table 221 cell 1 2 value 1997.752535225254
+modify table 221 cell 1 3 value 0
+modify table 224 insert row 2
+modify table 224 cell 2 1 value 0.0
+modify table 224 cell 2 2 value 2007.663037053693
+modify table 224 cell 2 3 value 17425526049.27634
+modify table 223 insert row 2
+modify table 223 cell 2 1 value 0.0
+modify table 223 cell 2 2 value 2007.663037053693
+modify table 223 cell 2 3 value 0.28345867281820203
+modify table 222 insert row 2
+modify table 222 cell 2 1 value 0.0
+modify table 222 cell 2 2 value 2007.663037053693
+modify table 222 cell 2 3 value 2227.821121
+modify table 221 insert row 2
+modify table 221 cell 2 1 value 0.0
+modify table 221 cell 2 2 value 2007.663037053693
+modify table 221 cell 2 3 value 0
+create material 56
+modify material 56 name 'глина 56' 
+modify material 56 set property 'MODULUS' table 224
+modify material 56 set property 'POISSON' table 223
+modify material 56 set property 'DENSITY' table 222
+modify material 56 set property 'MASS_MATRIX_DAMPING' table 221
+modify material 56 set property 'BIOT_ALPHA' value 1
+block 56 material 56 cs 1 category plane order 4
+block 57 add surface 171
+block 57 add surface 170
+block 57 add surface 169
+create table 228 column count 3
+modify table 228 dependency x column 1
+modify table 228 dependency y column 2
+create table 227 column count 3
+modify table 227 dependency x column 1
+modify table 227 dependency y column 2
+create table 226 column count 3
+modify table 226 dependency x column 1
+modify table 226 dependency y column 2
+create table 225 column count 3
+modify table 225 dependency x column 1
+modify table 225 dependency y column 2
+modify table 228 insert row 1
+modify table 228 cell 1 1 value 0.0
+modify table 228 cell 1 2 value 2037.3945425390093
+modify table 228 cell 1 3 value 20358819124.90189
+modify table 227 insert row 1
+modify table 227 cell 1 1 value 0.0
+modify table 227 cell 1 2 value 2037.3945425390093
+modify table 227 cell 1 3 value 0.2834385261060476
+modify table 226 insert row 1
+modify table 226 cell 1 1 value 0.0
+modify table 226 cell 1 2 value 2037.3945425390093
+modify table 226 cell 1 3 value 2269.547741
+modify table 225 insert row 1
+modify table 225 cell 1 1 value 0.0
+modify table 225 cell 1 2 value 2037.3945425390093
+modify table 225 cell 1 3 value 0
+modify table 228 insert row 2
+modify table 228 cell 2 1 value 0.0
+modify table 228 cell 2 2 value 2047.305044367448
+modify table 228 cell 2 3 value 16419691002.97821
+modify table 227 insert row 2
+modify table 227 cell 2 1 value 0.0
+modify table 227 cell 2 2 value 2047.305044367448
+modify table 227 cell 2 3 value 0.2834667585242301
+modify table 226 insert row 2
+modify table 226 cell 2 1 value 0.0
+modify table 226 cell 2 2 value 2047.305044367448
+modify table 226 cell 2 3 value 2212.2964070000003
+modify table 225 insert row 2
+modify table 225 cell 2 1 value 0.0
+modify table 225 cell 2 2 value 2047.305044367448
+modify table 225 cell 2 3 value 0
+create material 57
+modify material 57 name 'глина 57' 
+modify material 57 set property 'MODULUS' table 228
+modify material 57 set property 'POISSON' table 227
+modify material 57 set property 'DENSITY' table 226
+modify material 57 set property 'MASS_MATRIX_DAMPING' table 225
+modify material 57 set property 'BIOT_ALPHA' value 1
+block 57 material 57 cs 1 category plane order 4
+block 58 add surface 174
+block 58 add surface 173
+block 58 add surface 172
+create table 232 column count 3
+modify table 232 dependency x column 1
+modify table 232 dependency y column 2
+create table 231 column count 3
+modify table 231 dependency x column 1
+modify table 231 dependency y column 2
+create table 230 column count 3
+modify table 230 dependency x column 1
+modify table 230 dependency y column 2
+create table 229 column count 3
+modify table 229 dependency x column 1
+modify table 229 dependency y column 2
+modify table 232 insert row 1
+modify table 232 cell 1 1 value 0.0
+modify table 232 cell 1 2 value 2126.5890589949595
+modify table 232 cell 1 3 value 17727306121.701557
+modify table 231 insert row 1
+modify table 231 cell 1 1 value 0.0
+modify table 231 cell 1 2 value 2126.5890589949595
+modify table 231 cell 1 3 value 0.2834563784401954
+modify table 230 insert row 1
+modify table 230 cell 1 1 value 0.0
+modify table 230 cell 1 2 value 2126.5890589949595
+modify table 230 cell 1 3 value 2232.348171
+modify table 229 insert row 1
+modify table 229 cell 1 1 value 0.0
+modify table 229 cell 1 2 value 2126.5890589949595
+modify table 229 cell 1 3 value 0
+modify table 232 insert row 2
+modify table 232 cell 2 1 value 0.0
+modify table 232 cell 2 2 value 2136.4995608233985
+modify table 232 cell 2 3 value 18136374981.165417
+modify table 231 insert row 2
+modify table 231 cell 2 1 value 0.0
+modify table 231 cell 2 2 value 2136.4995608233985
+modify table 231 cell 2 3 value 0.28345335770493235
+modify table 230 insert row 2
+modify table 230 cell 2 1 value 0.0
+modify table 230 cell 2 2 value 2136.4995608233985
+modify table 230 cell 2 3 value 2238.393291
+modify table 229 insert row 2
+modify table 229 cell 2 1 value 0.0
+modify table 229 cell 2 2 value 2136.4995608233985
+modify table 229 cell 2 3 value 0
+create material 58
+modify material 58 name 'глина 58' 
+modify material 58 set property 'MODULUS' table 232
+modify material 58 set property 'POISSON' table 231
+modify material 58 set property 'DENSITY' table 230
+modify material 58 set property 'MASS_MATRIX_DAMPING' table 229
+modify material 58 set property 'BIOT_ALPHA' value 1
+block 58 material 58 cs 1 category plane order 4
+block 59 add surface 177
+block 59 add surface 176
+block 59 add surface 175
+create table 236 column count 3
+modify table 236 dependency x column 1
+modify table 236 dependency y column 2
+create table 235 column count 3
+modify table 235 dependency x column 1
+modify table 235 dependency y column 2
+create table 234 column count 3
+modify table 234 dependency x column 1
+modify table 234 dependency y column 2
+create table 233 column count 3
+modify table 233 dependency x column 1
+modify table 233 dependency y column 2
+modify table 236 insert row 1
+modify table 236 cell 1 1 value 0.0
+modify table 236 cell 1 2 value 2156.320564480276
+modify table 236 cell 1 3 value 16499439576.191198
+modify table 235 insert row 1
+modify table 235 cell 1 1 value 0.0
+modify table 235 cell 1 2 value 2156.320564480276
+modify table 235 cell 1 3 value 0.2834660913152177
+modify table 234 insert row 1
+modify table 234 cell 1 1 value 0.0
+modify table 234 cell 1 2 value 2156.320564480276
+modify table 234 cell 1 3 value 2213.5527509999997
+modify table 233 insert row 1
+modify table 233 cell 1 1 value 0.0
+modify table 233 cell 1 2 value 2156.320564480276
+modify table 233 cell 1 3 value 0
+modify table 236 insert row 2
+modify table 236 cell 2 1 value 0.0
+modify table 236 cell 2 2 value 2166.231066308715
+modify table 236 cell 2 3 value 17296078970.55714
+modify table 235 insert row 2
+modify table 235 cell 2 1 value 0.0
+modify table 235 cell 2 2 value 2166.231066308715
+modify table 235 cell 2 3 value 0.28345967481448237
+modify table 234 insert row 2
+modify table 234 cell 2 1 value 0.0
+modify table 234 cell 2 2 value 2166.231066308715
+modify table 234 cell 2 3 value 2225.861266
+modify table 233 insert row 2
+modify table 233 cell 2 1 value 0.0
+modify table 233 cell 2 2 value 2166.231066308715
+modify table 233 cell 2 3 value 0
+create material 59
+modify material 59 name 'глина 59' 
+modify material 59 set property 'MODULUS' table 236
+modify material 59 set property 'POISSON' table 235
+modify material 59 set property 'DENSITY' table 234
+modify material 59 set property 'MASS_MATRIX_DAMPING' table 233
+modify material 59 set property 'BIOT_ALPHA' value 1
+block 59 material 59 cs 1 category plane order 4
+block 60 add surface 180
+block 60 add surface 179
+block 60 add surface 178
+create table 240 column count 3
+modify table 240 dependency x column 1
+modify table 240 dependency y column 2
+create table 239 column count 3
+modify table 239 dependency x column 1
+modify table 239 dependency y column 2
+create table 238 column count 3
+modify table 238 dependency x column 1
+modify table 238 dependency y column 2
+create table 237 column count 3
+modify table 237 dependency x column 1
+modify table 237 dependency y column 2
+modify table 240 insert row 1
+modify table 240 cell 1 1 value 0.0
+modify table 240 cell 1 2 value 2186.0520699655926
+modify table 240 cell 1 3 value 15455992985.40638
+modify table 239 insert row 1
+modify table 239 cell 1 1 value 0.0
+modify table 239 cell 1 2 value 2186.0520699655926
+modify table 239 cell 1 3 value 0.28347521388717695
+modify table 238 insert row 1
+modify table 238 cell 1 1 value 0.0
+modify table 238 cell 1 2 value 2186.0520699655926
+modify table 238 cell 1 3 value 2196.744826
+modify table 237 insert row 1
+modify table 237 cell 1 1 value 0.0
+modify table 237 cell 1 2 value 2186.0520699655926
+modify table 237 cell 1 3 value 0
+modify table 240 insert row 2
+modify table 240 cell 2 1 value 0.0
+modify table 240 cell 2 2 value 2195.9625717940316
+modify table 240 cell 2 3 value 15245398270.28163
+modify table 239 insert row 2
+modify table 239 cell 2 1 value 0.0
+modify table 239 cell 2 2 value 2195.9625717940316
+modify table 239 cell 2 3 value 0.2834771646880619
+modify table 238 insert row 2
+modify table 238 cell 2 1 value 0.0
+modify table 238 cell 2 2 value 2195.9625717940316
+modify table 238 cell 2 3 value 2193.251514
+modify table 237 insert row 2
+modify table 237 cell 2 1 value 0.0
+modify table 237 cell 2 2 value 2195.9625717940316
+modify table 237 cell 2 3 value 0
+create material 60
+modify material 60 name 'известняк пористый 60' 
+modify material 60 set property 'MODULUS' table 240
+modify material 60 set property 'POISSON' table 239
+modify material 60 set property 'DENSITY' table 238
+modify material 60 set property 'MASS_MATRIX_DAMPING' table 237
+modify material 60 set property 'BIOT_ALPHA' value 1
+block 60 material 60 cs 1 category plane order 4
+block 61 add surface 183
+block 61 add surface 182
+block 61 add surface 181
+create table 244 column count 3
+modify table 244 dependency x column 1
+modify table 244 dependency y column 2
+create table 243 column count 3
+modify table 243 dependency x column 1
+modify table 243 dependency y column 2
+create table 242 column count 3
+modify table 242 dependency x column 1
+modify table 242 dependency y column 2
+create table 241 column count 3
+modify table 241 dependency x column 1
+modify table 241 dependency y column 2
+modify table 244 insert row 1
+modify table 244 cell 1 1 value 0.0
+modify table 244 cell 1 2 value 2200.9625717940316
+modify table 244 cell 1 3 value 15245398270.28163
+modify table 243 insert row 1
+modify table 243 cell 1 1 value 0.0
+modify table 243 cell 1 2 value 2200.9625717940316
+modify table 243 cell 1 3 value 0.2834771646880619
+modify table 242 insert row 1
+modify table 242 cell 1 1 value 0.0
+modify table 242 cell 1 2 value 2200.9625717940316
+modify table 242 cell 1 3 value 2193.251514
+modify table 241 insert row 1
+modify table 241 cell 1 1 value 0.0
+modify table 241 cell 1 2 value 2200.9625717940316
+modify table 241 cell 1 3 value 0
+modify table 244 insert row 2
+modify table 244 cell 2 1 value 0.0
+modify table 244 cell 2 2 value 2205.9625717940316
+modify table 244 cell 2 3 value 12788215411.224909
+modify table 243 insert row 2
+modify table 243 cell 2 1 value 0.0
+modify table 243 cell 2 2 value 2205.9625717940316
+modify table 243 cell 2 3 value 0.2835032802155864
+modify table 242 insert row 2
+modify table 242 cell 2 1 value 0.0
+modify table 242 cell 2 2 value 2205.9625717940316
+modify table 242 cell 2 3 value 2149.621164
+modify table 241 insert row 2
+modify table 241 cell 2 1 value 0.0
+modify table 241 cell 2 2 value 2205.9625717940316
+modify table 241 cell 2 3 value 0
+create material 61
+modify material 61 name 'мергель 61' 
+modify material 61 set property 'MODULUS' table 244
+modify material 61 set property 'POISSON' table 243
+modify material 61 set property 'DENSITY' table 242
+modify material 61 set property 'MASS_MATRIX_DAMPING' table 241
+modify material 61 set property 'BIOT_ALPHA' value 1
+block 61 material 61 cs 1 category plane order 4
+block 62 add surface 186
+block 62 add surface 185
+block 62 add surface 184
+create table 248 column count 3
+modify table 248 dependency x column 1
+modify table 248 dependency y column 2
+create table 247 column count 3
+modify table 247 dependency x column 1
+modify table 247 dependency y column 2
+create table 246 column count 3
+modify table 246 dependency x column 1
+modify table 246 dependency y column 2
+create table 245 column count 3
+modify table 245 dependency x column 1
+modify table 245 dependency y column 2
+modify table 248 insert row 1
+modify table 248 cell 1 1 value 0.0
+modify table 248 cell 1 2 value 2220.8283245366893
+modify table 248 cell 1 3 value 14180626282.951994
+modify table 247 insert row 1
+modify table 247 cell 1 1 value 0.0
+modify table 247 cell 1 2 value 2220.8283245366893
+modify table 247 cell 1 3 value 0.28348766663867525
+modify table 246 insert row 1
+modify table 246 cell 1 1 value 0.0
+modify table 246 cell 1 2 value 2220.8283245366893
+modify table 246 cell 1 3 value 2175.025666
+modify table 245 insert row 1
+modify table 245 cell 1 1 value 0.0
+modify table 245 cell 1 2 value 2220.8283245366893
+modify table 245 cell 1 3 value 0
+modify table 248 insert row 2
+modify table 248 cell 2 1 value 0.0
+modify table 248 cell 2 2 value 2225.7835754509088
+modify table 248 cell 2 3 value 13313077745.574099
+modify table 247 insert row 2
+modify table 247 cell 2 1 value 0.0
+modify table 247 cell 2 2 value 2225.7835754509088
+modify table 247 cell 2 3 value 0.2834971147872542
+modify table 246 insert row 2
+modify table 246 cell 2 1 value 0.0
+modify table 246 cell 2 2 value 2225.7835754509088
+modify table 246 cell 2 3 value 2159.42225
+modify table 245 insert row 2
+modify table 245 cell 2 1 value 0.0
+modify table 245 cell 2 2 value 2225.7835754509088
+modify table 245 cell 2 3 value 0
+create material 62
+modify material 62 name 'глина 62' 
+modify material 62 set property 'MODULUS' table 248
+modify material 62 set property 'POISSON' table 247
+modify material 62 set property 'DENSITY' table 246
+modify material 62 set property 'MASS_MATRIX_DAMPING' table 245
+modify material 62 set property 'BIOT_ALPHA' value 1
+block 62 material 62 cs 1 category plane order 4
+block 63 add surface 189
+block 63 add surface 188
+block 63 add surface 187
+create table 252 column count 3
+modify table 252 dependency x column 1
+modify table 252 dependency y column 2
+create table 251 column count 3
+modify table 251 dependency x column 1
+modify table 251 dependency y column 2
+create table 250 column count 3
+modify table 250 dependency x column 1
+modify table 250 dependency y column 2
+create table 249 column count 3
+modify table 249 dependency x column 1
+modify table 249 dependency y column 2
+modify table 252 insert row 1
+modify table 252 cell 1 1 value 0.0
+modify table 252 cell 1 2 value 2248.0822045648965
+modify table 252 cell 1 3 value 13785379656.026854
+modify table 251 insert row 1
+modify table 251 cell 1 1 value 0.0
+modify table 251 cell 1 2 value 2248.0822045648965
+modify table 251 cell 1 3 value 0.2834918632194914
+modify table 250 insert row 1
+modify table 250 cell 1 1 value 0.0
+modify table 250 cell 1 2 value 2248.0822045648965
+modify table 250 cell 1 3 value 2168.005526
+modify table 249 insert row 1
+modify table 249 cell 1 1 value 0.0
+modify table 249 cell 1 2 value 2248.0822045648965
+modify table 249 cell 1 3 value 0
+modify table 252 insert row 2
+modify table 252 cell 2 1 value 0.0
+modify table 252 cell 2 2 value 2255.515080936226
+modify table 252 cell 2 3 value 15642159431.22409
+modify table 251 insert row 2
+modify table 251 cell 2 1 value 0.0
+modify table 251 cell 2 2 value 2255.515080936226
+modify table 251 cell 2 3 value 0.2834735214183435
+modify table 250 insert row 2
+modify table 250 cell 2 1 value 0.0
+modify table 250 cell 2 2 value 2255.515080936226
+modify table 250 cell 2 3 value 2199.803835
+modify table 249 insert row 2
+modify table 249 cell 2 1 value 0.0
+modify table 249 cell 2 2 value 2255.515080936226
+modify table 249 cell 2 3 value 0
+create material 63
+modify material 63 name 'карбонаты(известняк/доломит) 63' 
+modify material 63 set property 'MODULUS' table 252
+modify material 63 set property 'POISSON' table 251
+modify material 63 set property 'DENSITY' table 250
+modify material 63 set property 'MASS_MATRIX_DAMPING' table 249
+modify material 63 set property 'BIOT_ALPHA' value 1
+block 63 material 63 cs 1 category plane order 4
+block 64 add surface 192
+block 64 add surface 191
+block 64 add surface 190
+create table 256 column count 3
+modify table 256 dependency x column 1
+modify table 256 dependency y column 2
+create table 255 column count 3
+modify table 255 dependency x column 1
+modify table 255 dependency y column 2
+create table 254 column count 3
+modify table 254 dependency x column 1
+modify table 254 dependency y column 2
+create table 253 column count 3
+modify table 253 dependency x column 1
+modify table 253 dependency y column 2
+modify table 256 insert row 1
+modify table 256 cell 1 1 value 0.0
+modify table 256 cell 1 2 value 2265.425582764665
+modify table 256 cell 1 3 value 17457912540.7317
+modify table 255 insert row 1
+modify table 255 cell 1 1 value 0.0
+modify table 255 cell 1 2 value 2265.425582764665
+modify table 255 cell 1 3 value 0.28345842382355774
+modify table 254 insert row 1
+modify table 254 cell 1 1 value 0.0
+modify table 254 cell 1 2 value 2265.425582764665
+modify table 254 cell 1 3 value 2228.309755
+modify table 253 insert row 1
+modify table 253 cell 1 1 value 0.0
+modify table 253 cell 1 2 value 2265.425582764665
+modify table 253 cell 1 3 value 0
+modify table 256 insert row 2
+modify table 256 cell 2 1 value 0.0
+modify table 256 cell 2 2 value 2275.3360845931034
+modify table 256 cell 2 3 value 17345456563.477596
+modify table 255 insert row 2
+modify table 255 cell 2 1 value 0.0
+modify table 255 cell 2 2 value 2275.3360845931034
+modify table 255 cell 2 3 value 0.28345929131696496
+modify table 254 insert row 2
+modify table 254 cell 2 1 value 0.0
+modify table 254 cell 2 2 value 2275.3360845931034
+modify table 254 cell 2 3 value 2226.610143
+modify table 253 insert row 2
+modify table 253 cell 2 1 value 0.0
+modify table 253 cell 2 2 value 2275.3360845931034
+modify table 253 cell 2 3 value 0
+create material 64
+modify material 64 name 'глина 64' 
+modify material 64 set property 'MODULUS' table 256
+modify material 64 set property 'POISSON' table 255
+modify material 64 set property 'DENSITY' table 254
+modify material 64 set property 'MASS_MATRIX_DAMPING' table 253
+modify material 64 set property 'BIOT_ALPHA' value 1
+block 64 material 64 cs 1 category plane order 4
+block 65 add surface 195
+block 65 add surface 194
+block 65 add surface 193
+create table 260 column count 3
+modify table 260 dependency x column 1
+modify table 260 dependency y column 2
+create table 259 column count 3
+modify table 259 dependency x column 1
+modify table 259 dependency y column 2
+create table 258 column count 3
+modify table 258 dependency x column 1
+modify table 258 dependency y column 2
+create table 257 column count 3
+modify table 257 dependency x column 1
+modify table 257 dependency y column 2
+modify table 260 insert row 1
+modify table 260 cell 1 1 value 0.0
+modify table 260 cell 1 2 value 2285.246586421543
+modify table 260 cell 1 3 value 26224096520.540947
+modify table 259 insert row 1
+modify table 259 cell 1 1 value 0.0
+modify table 259 cell 1 2 value 2285.246586421543
+modify table 259 cell 1 3 value 0.2834086374649118
+modify table 258 insert row 1
+modify table 258 cell 1 1 value 0.0
+modify table 258 cell 1 2 value 2285.246586421543
+modify table 258 cell 1 3 value 2340.7504160000003
+modify table 257 insert row 1
+modify table 257 cell 1 1 value 0.0
+modify table 257 cell 1 2 value 2285.246586421543
+modify table 257 cell 1 3 value 0
+modify table 260 insert row 2
+modify table 260 cell 2 1 value 0.0
+modify table 260 cell 2 2 value 2295.157088249982
+modify table 260 cell 2 3 value 25426133745.555798
+modify table 259 insert row 2
+modify table 259 cell 2 1 value 0.0
+modify table 259 cell 2 2 value 2295.157088249982
+modify table 259 cell 2 3 value 0.28341210534554595
+modify table 258 insert row 2
+modify table 258 cell 2 1 value 0.0
+modify table 258 cell 2 2 value 2295.157088249982
+modify table 258 cell 2 3 value 2331.84775
+modify table 257 insert row 2
+modify table 257 cell 2 1 value 0.0
+modify table 257 cell 2 2 value 2295.157088249982
+modify table 257 cell 2 3 value 0
+create material 65
+modify material 65 name 'алевролит глинистый 65' 
+modify material 65 set property 'MODULUS' table 260
+modify material 65 set property 'POISSON' table 259
+modify material 65 set property 'DENSITY' table 258
+modify material 65 set property 'MASS_MATRIX_DAMPING' table 257
+modify material 65 set property 'BIOT_ALPHA' value 1
+block 65 material 65 cs 1 category plane order 4
+block 66 add surface 198
+block 66 add surface 197
+block 66 add surface 196
+create table 264 column count 3
+modify table 264 dependency x column 1
+modify table 264 dependency y column 2
+create table 263 column count 3
+modify table 263 dependency x column 1
+modify table 263 dependency y column 2
+create table 262 column count 3
+modify table 262 dependency x column 1
+modify table 262 dependency y column 2
+create table 261 column count 3
+modify table 261 dependency x column 1
+modify table 261 dependency y column 2
+modify table 264 insert row 1
+modify table 264 cell 1 1 value 0.0
+modify table 264 cell 1 2 value 2300.157088249982
+modify table 264 cell 1 3 value 25426133745.555798
+modify table 263 insert row 1
+modify table 263 cell 1 1 value 0.0
+modify table 263 cell 1 2 value 2300.157088249982
+modify table 263 cell 1 3 value 0.28341210534554595
+modify table 262 insert row 1
+modify table 262 cell 1 1 value 0.0
+modify table 262 cell 1 2 value 2300.157088249982
+modify table 262 cell 1 3 value 2331.84775
+modify table 261 insert row 1
+modify table 261 cell 1 1 value 0.0
+modify table 261 cell 1 2 value 2300.157088249982
+modify table 261 cell 1 3 value 0
+modify table 264 insert row 2
+modify table 264 cell 2 1 value 0.0
+modify table 264 cell 2 2 value 2305.157088249982
+modify table 264 cell 2 3 value 26869184405.015118
+modify table 263 insert row 2
+modify table 263 cell 2 1 value 0.0
+modify table 263 cell 2 2 value 2305.157088249982
+modify table 263 cell 2 3 value 0.28340594385816137
+modify table 262 insert row 2
+modify table 262 cell 2 1 value 0.0
+modify table 262 cell 2 2 value 2305.157088249982
+modify table 262 cell 2 3 value 2347.79165
+modify table 261 insert row 2
+modify table 261 cell 2 1 value 0.0
+modify table 261 cell 2 2 value 2305.157088249982
+modify table 261 cell 2 3 value 0
+create material 66
+modify material 66 name 'мергель 66' 
+modify material 66 set property 'MODULUS' table 264
+modify material 66 set property 'POISSON' table 263
+modify material 66 set property 'DENSITY' table 262
+modify material 66 set property 'MASS_MATRIX_DAMPING' table 261
+modify material 66 set property 'BIOT_ALPHA' value 1
+block 66 material 66 cs 1 category plane order 4
+block 67 add surface 201
+block 67 add surface 200
+block 67 add surface 199
+create table 268 column count 3
+modify table 268 dependency x column 1
+modify table 268 dependency y column 2
+create table 267 column count 3
+modify table 267 dependency x column 1
+modify table 267 dependency y column 2
+create table 266 column count 3
+modify table 266 dependency x column 1
+modify table 266 dependency y column 2
+create table 265 column count 3
+modify table 265 dependency x column 1
+modify table 265 dependency y column 2
+modify table 268 insert row 1
+modify table 268 cell 1 1 value 0.0
+modify table 268 cell 1 2 value 2310.157088249982
+modify table 268 cell 1 3 value 26869184405.015118
+modify table 267 insert row 1
+modify table 267 cell 1 1 value 0.0
+modify table 267 cell 1 2 value 2310.157088249982
+modify table 267 cell 1 3 value 0.28340594385816137
+modify table 266 insert row 1
+modify table 266 cell 1 1 value 0.0
+modify table 266 cell 1 2 value 2310.157088249982
+modify table 266 cell 1 3 value 2347.79165
+modify table 265 insert row 1
+modify table 265 cell 1 1 value 0.0
+modify table 265 cell 1 2 value 2310.157088249982
+modify table 265 cell 1 3 value 0
+modify table 268 insert row 2
+modify table 268 cell 2 1 value 0.0
+modify table 268 cell 2 2 value 2315.157088249982
+modify table 268 cell 2 3 value 23317636351.319504
+modify table 267 insert row 2
+modify table 267 cell 2 1 value 0.0
+modify table 267 cell 2 2 value 2315.157088249982
+modify table 267 cell 2 3 value 0.2834220812853909
+modify table 266 insert row 2
+modify table 266 cell 2 1 value 0.0
+modify table 266 cell 2 2 value 2315.157088249982
+modify table 266 cell 2 3 value 2307.216265
+modify table 265 insert row 2
+modify table 265 cell 2 1 value 0.0
+modify table 265 cell 2 2 value 2315.157088249982
+modify table 265 cell 2 3 value 0
+create material 67
+modify material 67 name 'песчаник 67' 
+modify material 67 set property 'MODULUS' table 268
+modify material 67 set property 'POISSON' table 267
+modify material 67 set property 'DENSITY' table 266
+modify material 67 set property 'MASS_MATRIX_DAMPING' table 265
+modify material 67 set property 'BIOT_ALPHA' value 1
+block 67 material 67 cs 1 category plane order 4
+block 68 add surface 204
+block 68 add surface 203
+block 68 add surface 202
+create table 272 column count 3
+modify table 272 dependency x column 1
+modify table 272 dependency y column 2
+create table 271 column count 3
+modify table 271 dependency x column 1
+modify table 271 dependency y column 2
+create table 270 column count 3
+modify table 270 dependency x column 1
+modify table 270 dependency y column 2
+create table 269 column count 3
+modify table 269 dependency x column 1
+modify table 269 dependency y column 2
+modify table 272 insert row 1
+modify table 272 cell 1 1 value 0.0
+modify table 272 cell 1 2 value 2324.9459884059925
+modify table 272 cell 1 3 value 25675971987.10489
+modify table 271 insert row 1
+modify table 271 cell 1 1 value 0.0
+modify table 271 cell 1 2 value 2324.9459884059925
+modify table 271 cell 1 3 value 0.28341100278720144
+modify table 270 insert row 1
+modify table 270 cell 1 1 value 0.0
+modify table 270 cell 1 2 value 2324.9459884059925
+modify table 270 cell 1 3 value 2334.658633
+modify table 269 insert row 1
+modify table 269 cell 1 1 value 0.0
+modify table 269 cell 1 2 value 2324.9459884059925
+modify table 269 cell 1 3 value 0
+modify table 272 insert row 2
+modify table 272 cell 2 1 value 0.0
+modify table 272 cell 2 2 value 2334.7348885620036
+modify table 272 cell 2 3 value 22706986047.486885
+modify table 271 insert row 2
+modify table 271 cell 2 1 value 0.0
+modify table 271 cell 2 2 value 2334.7348885620036
+modify table 271 cell 2 3 value 0.28342521830452594
+modify table 270 insert row 2
+modify table 270 cell 2 1 value 0.0
+modify table 270 cell 2 2 value 2334.7348885620036
+modify table 270 cell 2 3 value 2299.758143
+modify table 269 insert row 2
+modify table 269 cell 2 1 value 0.0
+modify table 269 cell 2 2 value 2334.7348885620036
+modify table 269 cell 2 3 value 0
+create material 68
+modify material 68 name 'алевролит песчанистый 68' 
+modify material 68 set property 'MODULUS' table 272
+modify material 68 set property 'POISSON' table 271
+modify material 68 set property 'DENSITY' table 270
+modify material 68 set property 'MASS_MATRIX_DAMPING' table 269
+modify material 68 set property 'BIOT_ALPHA' value 1
+block 68 material 68 cs 1 category plane order 4
+block 69 add surface 207
+block 69 add surface 206
+block 69 add surface 205
+create table 276 column count 3
+modify table 276 dependency x column 1
+modify table 276 dependency y column 2
+create table 275 column count 3
+modify table 275 dependency x column 1
+modify table 275 dependency y column 2
+create table 274 column count 3
+modify table 274 dependency x column 1
+modify table 274 dependency y column 2
+create table 273 column count 3
+modify table 273 dependency x column 1
+modify table 273 dependency y column 2
+modify table 276 insert row 1
+modify table 276 cell 1 1 value 0.0
+modify table 276 cell 1 2 value 2344.639339743165
+modify table 276 cell 1 3 value 20986922793.73767
+modify table 275 insert row 1
+modify table 275 cell 1 1 value 0.0
+modify table 275 cell 1 2 value 2344.639339743165
+modify table 275 cell 1 3 value 0.2834347553046417
+modify table 274 insert row 1
+modify table 274 cell 1 1 value 0.0
+modify table 274 cell 1 2 value 2344.639339743165
+modify table 274 cell 1 3 value 2277.880814
+modify table 273 insert row 1
+modify table 273 cell 1 1 value 0.0
+modify table 273 cell 1 2 value 2344.639339743165
+modify table 273 cell 1 3 value 0
+modify table 276 insert row 2
+modify table 276 cell 2 1 value 0.0
+modify table 276 cell 2 2 value 2354.543790924326
+modify table 276 cell 2 3 value 24624963348.174393
+modify table 275 insert row 2
+modify table 275 cell 2 1 value 0.0
+modify table 275 cell 2 2 value 2354.543790924326
+modify table 275 cell 2 3 value 0.2834157496445517
+modify table 274 insert row 2
+modify table 274 cell 2 1 value 0.0
+modify table 274 cell 2 2 value 2354.543790924326
+modify table 274 cell 2 3 value 2322.684405
+modify table 273 insert row 2
+modify table 273 cell 2 1 value 0.0
+modify table 273 cell 2 2 value 2354.543790924326
+modify table 273 cell 2 3 value 0
+create material 69
+modify material 69 name 'мергель 69' 
+modify material 69 set property 'MODULUS' table 276
+modify material 69 set property 'POISSON' table 275
+modify material 69 set property 'DENSITY' table 274
+modify material 69 set property 'MASS_MATRIX_DAMPING' table 273
+modify material 69 set property 'BIOT_ALPHA' value 1
+block 69 material 69 cs 1 category plane order 4
+block 70 add surface 210
+block 70 add surface 209
+block 70 add surface 208
+create table 280 column count 3
+modify table 280 dependency x column 1
+modify table 280 dependency y column 2
+create table 279 column count 3
+modify table 279 dependency x column 1
+modify table 279 dependency y column 2
+create table 278 column count 3
+modify table 278 dependency x column 1
+modify table 278 dependency y column 2
+create table 277 column count 3
+modify table 277 dependency x column 1
+modify table 277 dependency y column 2
+modify table 280 insert row 1
+modify table 280 cell 1 1 value 0.0
+modify table 280 cell 1 2 value 2359.5702749543066
+modify table 280 cell 1 3 value 24624963348.174393
+modify table 279 insert row 1
+modify table 279 cell 1 1 value 0.0
+modify table 279 cell 1 2 value 2359.5702749543066
+modify table 279 cell 1 3 value 0.2834157496445517
+modify table 278 insert row 1
+modify table 278 cell 1 1 value 0.0
+modify table 278 cell 1 2 value 2359.5702749543066
+modify table 278 cell 1 3 value 2322.684405
+modify table 277 insert row 1
+modify table 277 cell 1 1 value 0.0
+modify table 277 cell 1 2 value 2359.5702749543066
+modify table 277 cell 1 3 value 0
+modify table 280 insert row 2
+modify table 280 cell 2 1 value 0.0
+modify table 280 cell 2 2 value 2364.596758984287
+modify table 280 cell 2 3 value 26232917991.60082
+modify table 279 insert row 2
+modify table 279 cell 2 1 value 0.0
+modify table 279 cell 2 2 value 2364.596758984287
+modify table 279 cell 2 3 value 0.2834085999844584
+modify table 278 insert row 2
+modify table 278 cell 2 1 value 0.0
+modify table 278 cell 2 2 value 2364.596758984287
+modify table 278 cell 2 3 value 2340.847628
+modify table 277 insert row 2
+modify table 277 cell 2 1 value 0.0
+modify table 277 cell 2 2 value 2364.596758984287
+modify table 277 cell 2 3 value 0
+create material 70
+modify material 70 name 'алевролит песчанистый 70' 
+modify material 70 set property 'MODULUS' table 280
+modify material 70 set property 'POISSON' table 279
+modify material 70 set property 'DENSITY' table 278
+modify material 70 set property 'MASS_MATRIX_DAMPING' table 277
+modify material 70 set property 'BIOT_ALPHA' value 1
+block 70 material 70 cs 1 category plane order 4
+block 71 add surface 213
+block 71 add surface 212
+block 71 add surface 211
+create table 284 column count 3
+modify table 284 dependency x column 1
+modify table 284 dependency y column 2
+create table 283 column count 3
+modify table 283 dependency x column 1
+modify table 283 dependency y column 2
+create table 282 column count 3
+modify table 282 dependency x column 1
+modify table 282 dependency y column 2
+create table 281 column count 3
+modify table 281 dependency x column 1
+modify table 281 dependency y column 2
+modify table 284 insert row 1
+modify table 284 cell 1 1 value 0.0
+modify table 284 cell 1 2 value 2374.6497270442487
+modify table 284 cell 1 3 value 23198988563.076973
+modify table 283 insert row 1
+modify table 283 cell 1 1 value 0.0
+modify table 283 cell 1 2 value 2374.6497270442487
+modify table 283 cell 1 3 value 0.2834226814012392
+modify table 282 insert row 1
+modify table 282 cell 1 1 value 0.0
+modify table 282 cell 1 2 value 2374.6497270442487
+modify table 282 cell 1 3 value 2305.779169
+modify table 281 insert row 1
+modify table 281 cell 1 1 value 0.0
+modify table 281 cell 1 2 value 2374.6497270442487
+modify table 281 cell 1 3 value 0
+modify table 284 insert row 2
+modify table 284 cell 2 1 value 0.0
+modify table 284 cell 2 2 value 2384.7026951042103
+modify table 284 cell 2 3 value 25857317502.34609
+modify table 283 insert row 2
+modify table 283 cell 2 1 value 0.0
+modify table 283 cell 2 2 value 2384.7026951042103
+modify table 283 cell 2 3 value 0.2834102121874222
+modify table 282 insert row 2
+modify table 282 cell 2 1 value 0.0
+modify table 282 cell 2 2 value 2384.7026951042103
+modify table 282 cell 2 3 value 2336.685394
+modify table 281 insert row 2
+modify table 281 cell 2 1 value 0.0
+modify table 281 cell 2 2 value 2384.7026951042103
+modify table 281 cell 2 3 value 0
+create material 71
+modify material 71 name 'аргиллит 71' 
+modify material 71 set property 'MODULUS' table 284
+modify material 71 set property 'POISSON' table 283
+modify material 71 set property 'DENSITY' table 282
+modify material 71 set property 'MASS_MATRIX_DAMPING' table 281
+modify material 71 set property 'BIOT_ALPHA' value 1
+block 71 material 71 cs 1 category plane order 4
+block 72 add surface 216
+block 72 add surface 215
+block 72 add surface 214
+create table 288 column count 3
+modify table 288 dependency x column 1
+modify table 288 dependency y column 2
+create table 287 column count 3
+modify table 287 dependency x column 1
+modify table 287 dependency y column 2
+create table 286 column count 3
+modify table 286 dependency x column 1
+modify table 286 dependency y column 2
+create table 285 column count 3
+modify table 285 dependency x column 1
+modify table 285 dependency y column 2
+modify table 288 insert row 1
+modify table 288 cell 1 1 value 0.0
+modify table 288 cell 1 2 value 2389.7291791341913
+modify table 288 cell 1 3 value 25857317502.34609
+modify table 287 insert row 1
+modify table 287 cell 1 1 value 0.0
+modify table 287 cell 1 2 value 2389.7291791341913
+modify table 287 cell 1 3 value 0.2834102121874222
+modify table 286 insert row 1
+modify table 286 cell 1 1 value 0.0
+modify table 286 cell 1 2 value 2389.7291791341913
+modify table 286 cell 1 3 value 2336.685394
+modify table 285 insert row 1
+modify table 285 cell 1 1 value 0.0
+modify table 285 cell 1 2 value 2389.7291791341913
+modify table 285 cell 1 3 value 0
+modify table 288 insert row 2
+modify table 288 cell 2 1 value 0.0
+modify table 288 cell 2 2 value 2394.755663164172
+modify table 288 cell 2 3 value 17284800531.99
+modify table 287 insert row 2
+modify table 287 cell 2 1 value 0.0
+modify table 287 cell 2 2 value 2394.755663164172
+modify table 287 cell 2 3 value 0.28345976263401135
+modify table 286 insert row 2
+modify table 286 cell 2 1 value 0.0
+modify table 286 cell 2 2 value 2394.755663164172
+modify table 286 cell 2 3 value 2225.68999
+modify table 285 insert row 2
+modify table 285 cell 2 1 value 0.0
+modify table 285 cell 2 2 value 2394.755663164172
+modify table 285 cell 2 3 value 0
+create material 72
+modify material 72 name 'алевролит 72' 
+modify material 72 set property 'MODULUS' table 288
+modify material 72 set property 'POISSON' table 287
+modify material 72 set property 'DENSITY' table 286
+modify material 72 set property 'MASS_MATRIX_DAMPING' table 285
+modify material 72 set property 'BIOT_ALPHA' value 1
+block 72 material 72 cs 1 category plane order 4
+block 73 add surface 219
+block 73 add surface 218
+block 73 add surface 217
+create table 292 column count 3
+modify table 292 dependency x column 1
+modify table 292 dependency y column 2
+create table 291 column count 3
+modify table 291 dependency x column 1
+modify table 291 dependency y column 2
+create table 290 column count 3
+modify table 290 dependency x column 1
+modify table 290 dependency y column 2
+create table 289 column count 3
+modify table 289 dependency x column 1
+modify table 289 dependency y column 2
+modify table 292 insert row 1
+modify table 292 cell 1 1 value 0.0
+modify table 292 cell 1 2 value 2399.7821471941525
+modify table 292 cell 1 3 value 17284800531.99
+modify table 291 insert row 1
+modify table 291 cell 1 1 value 0.0
+modify table 291 cell 1 2 value 2399.7821471941525
+modify table 291 cell 1 3 value 0.28345976263401135
+modify table 290 insert row 1
+modify table 290 cell 1 1 value 0.0
+modify table 290 cell 1 2 value 2399.7821471941525
+modify table 290 cell 1 3 value 2225.68999
+modify table 289 insert row 1
+modify table 289 cell 1 1 value 0.0
+modify table 289 cell 1 2 value 2399.7821471941525
+modify table 289 cell 1 3 value 0
+modify table 292 insert row 2
+modify table 292 cell 2 1 value 0.0
+modify table 292 cell 2 2 value 2404.808631224133
+modify table 292 cell 2 3 value 13482728416.102589
+modify table 291 insert row 2
+modify table 291 cell 2 1 value 0.0
+modify table 291 cell 2 2 value 2404.808631224133
+modify table 291 cell 2 3 value 0.2834951974833512
+modify table 290 insert row 2
+modify table 290 cell 2 1 value 0.0
+modify table 290 cell 2 2 value 2404.808631224133
+modify table 290 cell 2 3 value 2162.5304079999996
+modify table 289 insert row 2
+modify table 289 cell 2 1 value 0.0
+modify table 289 cell 2 2 value 2404.808631224133
+modify table 289 cell 2 3 value 0
+create material 73
+modify material 73 name 'сланец глинистый 73' 
+modify material 73 set property 'MODULUS' table 292
+modify material 73 set property 'POISSON' table 291
+modify material 73 set property 'DENSITY' table 290
+modify material 73 set property 'MASS_MATRIX_DAMPING' table 289
+modify material 73 set property 'BIOT_ALPHA' value 1
+block 73 material 73 cs 1 category plane order 4
+block 74 add surface 222
+block 74 add surface 221
+block 74 add surface 220
+create table 296 column count 3
+modify table 296 dependency x column 1
+modify table 296 dependency y column 2
+create table 295 column count 3
+modify table 295 dependency x column 1
+modify table 295 dependency y column 2
+create table 294 column count 3
+modify table 294 dependency x column 1
+modify table 294 dependency y column 2
+create table 293 column count 3
+modify table 293 dependency x column 1
+modify table 293 dependency y column 2
+modify table 296 insert row 1
+modify table 296 cell 1 1 value 0.0
+modify table 296 cell 1 2 value 2409.8351152541145
+modify table 296 cell 1 3 value 13482728416.102589
+modify table 295 insert row 1
+modify table 295 cell 1 1 value 0.0
+modify table 295 cell 1 2 value 2409.8351152541145
+modify table 295 cell 1 3 value 0.2834951974833512
+modify table 294 insert row 1
+modify table 294 cell 1 1 value 0.0
+modify table 294 cell 1 2 value 2409.8351152541145
+modify table 294 cell 1 3 value 2162.5304079999996
+modify table 293 insert row 1
+modify table 293 cell 1 1 value 0.0
+modify table 293 cell 1 2 value 2409.8351152541145
+modify table 293 cell 1 3 value 0
+modify table 296 insert row 2
+modify table 296 cell 2 1 value 0.0
+modify table 296 cell 2 2 value 2414.8615992840955
+modify table 296 cell 2 3 value 21708190095.02175
+modify table 295 insert row 2
+modify table 295 cell 2 1 value 0.0
+modify table 295 cell 2 2 value 2414.8615992840955
+modify table 295 cell 2 3 value 0.28343062262149615
+modify table 294 insert row 2
+modify table 294 cell 2 1 value 0.0
+modify table 294 cell 2 2 value 2414.8615992840955
+modify table 294 cell 2 3 value 2287.217011
+modify table 293 insert row 2
+modify table 293 cell 2 1 value 0.0
+modify table 293 cell 2 2 value 2414.8615992840955
+modify table 293 cell 2 3 value 0
+create material 74
+modify material 74 name 'аргиллит 74' 
+modify material 74 set property 'MODULUS' table 296
+modify material 74 set property 'POISSON' table 295
+modify material 74 set property 'DENSITY' table 294
+modify material 74 set property 'MASS_MATRIX_DAMPING' table 293
+modify material 74 set property 'BIOT_ALPHA' value 1
+block 74 material 74 cs 1 category plane order 4
+block 75 add surface 225
+block 75 add surface 224
+block 75 add surface 223
+create table 300 column count 3
+modify table 300 dependency x column 1
+modify table 300 dependency y column 2
+create table 299 column count 3
+modify table 299 dependency x column 1
+modify table 299 dependency y column 2
+create table 298 column count 3
+modify table 298 dependency x column 1
+modify table 298 dependency y column 2
+create table 297 column count 3
+modify table 297 dependency x column 1
+modify table 297 dependency y column 2
+modify table 300 insert row 1
+modify table 300 cell 1 1 value 0.0
+modify table 300 cell 1 2 value 2419.888083314076
+modify table 300 cell 1 3 value 21708190095.02175
+modify table 299 insert row 1
+modify table 299 cell 1 1 value 0.0
+modify table 299 cell 1 2 value 2419.888083314076
+modify table 299 cell 1 3 value 0.28343062262149615
+modify table 298 insert row 1
+modify table 298 cell 1 1 value 0.0
+modify table 298 cell 1 2 value 2419.888083314076
+modify table 298 cell 1 3 value 2287.217011
+modify table 297 insert row 1
+modify table 297 cell 1 1 value 0.0
+modify table 297 cell 1 2 value 2419.888083314076
+modify table 297 cell 1 3 value 0
+modify table 300 insert row 2
+modify table 300 cell 2 1 value 0.0
+modify table 300 cell 2 2 value 2424.9145673440566
+modify table 300 cell 2 3 value 29436354242.940353
+modify table 299 insert row 2
+modify table 299 cell 2 1 value 0.0
+modify table 299 cell 2 2 value 2424.9145673440566
+modify table 299 cell 2 3 value 0.28339608732212535
+modify table 298 insert row 2
+modify table 298 cell 2 1 value 0.0
+modify table 298 cell 2 2 value 2424.9145673440566
+modify table 298 cell 2 3 value 2374.538544
+modify table 297 insert row 2
+modify table 297 cell 2 1 value 0.0
+modify table 297 cell 2 2 value 2424.9145673440566
+modify table 297 cell 2 3 value 0
+create material 75
+modify material 75 name 'сланец кристаллический 75' 
+modify material 75 set property 'MODULUS' table 300
+modify material 75 set property 'POISSON' table 299
+modify material 75 set property 'DENSITY' table 298
+modify material 75 set property 'MASS_MATRIX_DAMPING' table 297
+modify material 75 set property 'BIOT_ALPHA' value 1
+block 75 material 75 cs 1 category plane order 4

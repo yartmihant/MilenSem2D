@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+  <Collection>
+    <DataSet timestep="0" step="0" part="0" file="dev_1_6_/case1_step00000000.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+  </Collection>
+</VTKFile>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+  <Collection>
+    <DataSet timestep="0" step="0" part="0" file="dev_1_6_model_calc/case1_step00000000.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.1001264202270268" step="556" part="0" file="dev_1_6_model_calc/case1_step00000556.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.2002528404540541" step="1112" part="0" file="dev_1_6_model_calc/case1_step00001112.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.3003792606810814" step="1668" part="0" file="dev_1_6_model_calc/case1_step00001668.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.4005056809081087" step="2224" part="0" file="dev_1_6_model_calc/case1_step00002224.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.500632101135136" step="2780" part="0" file="dev_1_6_model_calc/case1_step00002780.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.6007585213621633" step="3336" part="0" file="dev_1_6_model_calc/case1_step00003336.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.7008849415891907" step="3892" part="0" file="dev_1_6_model_calc/case1_step00003892.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+  </Collection>
+</VTKFile>

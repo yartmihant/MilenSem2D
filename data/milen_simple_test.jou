@@ -1,0 +1,46 @@
+reset
+set default element hex
+create surface rectangle width 1000 zplane
+webcut body 1 with plane yplane offset 0
+webcut body 1 with plane xplane offset 0
+delete Surface 3
+imprint all
+merge all
+compress all
+curve 1 2 3 size 10
+curve 4 5 6 7 size 50
+curve all scheme equal
+mesh curve all
+
+surface all submap smooth off
+surface all scheme submap
+mesh surface all
+
+create material 1
+modify material 1 name 'TestMat'
+modify material 1 set property 'MODULUS' value 1.68592e+10
+modify material 1 set property 'POISSON' value 0.283744
+modify material 1 set property 'DENSITY' value 1935.6
+modify material 1 set property 'BIOT_ALPHA' value 1
+
+set duplicate block elements off
+block 1 add surface 1 2 
+block 1  material 1 cs 1 category plane order 6
+
+create force on vertex 5 force value 1  direction 0 1 0
+bcdep force 1 value 'ricker(1e+10, 30, 0, time)'
+
+create absorption on curve 4 7 1 2 
+
+analysis type dynamic elasticity dim2 planestrain preload off
+dynamic method full_solution scheme explicit maxsteps 100000 maxtime 0.3
+dynamic results everytime 0.01
+output nodalforce off energy off record3d off material on without_smoothing off fullperiodic off
+
+calculation start path '/home/antonov/Документы/CAE-Fidesys-8.1/fidesys02.pvd'
+
+
+
+create porepressure on vertex 5  value 1
+create formula 2 'ricker(1e+10, 30, 0, time)'
+modify porepressure 1  formula 2

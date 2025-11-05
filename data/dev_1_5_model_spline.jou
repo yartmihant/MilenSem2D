@@ -1,0 +1,457 @@
+create curve spline location vertex 1 to 86
+create curve spline location vertex 86 to 151
+create curve spline location vertex 151 to 236
+create curve spline location vertex 237 to 322
+create curve spline location vertex 322 to 387
+create curve spline location vertex 387 to 472
+create curve spline location vertex 473 to 558
+create curve spline location vertex 558 to 623
+create curve spline location vertex 623 to 708
+create curve spline location vertex 709 to 794
+create curve spline location vertex 794 to 859
+create curve spline location vertex 859 to 944
+create curve spline location vertex 945 to 1030
+create curve spline location vertex 1030 to 1095
+create curve spline location vertex 1095 to 1180
+create curve spline location vertex 1181 to 1266
+create curve spline location vertex 1266 to 1331
+create curve spline location vertex 1331 to 1416
+create curve spline location vertex 1417 to 1502
+create curve spline location vertex 1502 to 1567
+create curve spline location vertex 1567 to 1652
+create curve spline location vertex 1653 to 1738
+create curve spline location vertex 1738 to 1803
+create curve spline location vertex 1803 to 1888
+create curve spline location vertex 1889 to 1974
+create curve spline location vertex 1974 to 2039
+create curve spline location vertex 2039 to 2124
+create curve spline location vertex 2125 to 2210
+create curve spline location vertex 2210 to 2275
+create curve spline location vertex 2275 to 2360
+create curve spline location vertex 2361 to 2446
+create curve spline location vertex 2446 to 2511
+create curve spline location vertex 2511 to 2596
+create curve spline location vertex 2597 to 2682
+create curve spline location vertex 2682 to 2747
+create curve spline location vertex 2747 to 2832
+create curve spline location vertex 2833 to 2918
+create curve spline location vertex 2918 to 2983
+create curve spline location vertex 2983 to 3068
+create curve spline location vertex 3069 to 3154
+create curve spline location vertex 3154 to 3219
+create curve spline location vertex 3219 to 3304
+create curve spline location vertex 3305 to 3390
+create curve spline location vertex 3390 to 3455
+create curve spline location vertex 3455 to 3540
+create curve spline location vertex 3541 to 3626
+create curve spline location vertex 3626 to 3691
+create curve spline location vertex 3691 to 3776
+create curve spline location vertex 3777 to 3862
+create curve spline location vertex 3862 to 3927
+create curve spline location vertex 3927 to 4012
+create curve spline location vertex 4013 to 4098
+create curve spline location vertex 4098 to 4163
+create curve spline location vertex 4163 to 4248
+create curve spline location vertex 4249 to 4334
+create curve spline location vertex 4334 to 4399
+create curve spline location vertex 4399 to 4484
+create curve spline location vertex 4485 to 4570
+create curve spline location vertex 4570 to 4635
+create curve spline location vertex 4635 to 4720
+create curve spline location vertex 4721 to 4806
+create curve spline location vertex 4806 to 4871
+create curve spline location vertex 4871 to 4956
+create curve spline location vertex 4957 to 5042
+create curve spline location vertex 5042 to 5107
+create curve spline location vertex 5107 to 5192
+create curve spline location vertex 5193 to 5278
+create curve spline location vertex 5278 to 5343
+create curve spline location vertex 5343 to 5428
+create curve spline location vertex 5429 to 5514
+create curve spline location vertex 5514 to 5579
+create curve spline location vertex 5579 to 5664
+create curve spline location vertex 5665 to 5750
+create curve spline location vertex 5750 to 5815
+create curve spline location vertex 5815 to 5900
+create curve spline location vertex 5901 to 5986
+create curve spline location vertex 5986 to 6051
+create curve spline location vertex 6051 to 6136
+create curve spline location vertex 6137 to 6222
+create curve spline location vertex 6222 to 6287
+create curve spline location vertex 6287 to 6372
+create curve spline location vertex 6373 to 6458
+create curve spline location vertex 6458 to 6523
+create curve spline location vertex 6523 to 6608
+create curve spline location vertex 6609 to 6694
+create curve spline location vertex 6694 to 6759
+create curve spline location vertex 6759 to 6844
+create curve spline location vertex 6845 to 6930
+create curve spline location vertex 6930 to 6995
+create curve spline location vertex 6995 to 7080
+create curve spline location vertex 7081 to 7166
+create curve spline location vertex 7166 to 7231
+create curve spline location vertex 7231 to 7316
+create curve spline location vertex 7317 to 7402
+create curve spline location vertex 7402 to 7467
+create curve spline location vertex 7467 to 7552
+create curve spline location vertex 7553 to 7638
+create curve spline location vertex 7638 to 7703
+create curve spline location vertex 7703 to 7788
+create curve spline location vertex 7789 to 7874
+create curve spline location vertex 7874 to 7939
+create curve spline location vertex 7939 to 8024
+create curve spline location vertex 8025 to 8110
+create curve spline location vertex 8110 to 8175
+create curve spline location vertex 8175 to 8260
+create curve spline location vertex 8261 to 8346
+create curve spline location vertex 8346 to 8411
+create curve spline location vertex 8411 to 8496
+create curve spline location vertex 8497 to 8582
+create curve spline location vertex 8582 to 8647
+create curve spline location vertex 8647 to 8732
+create curve spline location vertex 8733 to 8818
+create curve spline location vertex 8818 to 8883
+create curve spline location vertex 8883 to 8968
+create curve spline location vertex 8969 to 9054
+create curve spline location vertex 9054 to 9119
+create curve spline location vertex 9119 to 9204
+create curve spline location vertex 9205 to 9290
+create curve spline location vertex 9290 to 9355
+create curve spline location vertex 9355 to 9440
+create curve spline location vertex 9441 to 9526
+create curve spline location vertex 9526 to 9591
+create curve spline location vertex 9591 to 9676
+create curve spline location vertex 9677 to 9762
+create curve spline location vertex 9762 to 9827
+create curve spline location vertex 9827 to 9912
+create curve spline location vertex 9913 to 9998
+create curve spline location vertex 9998 to 10063
+create curve spline location vertex 10063 to 10148
+create curve spline location vertex 10149 to 10234
+create curve spline location vertex 10234 to 10299
+create curve spline location vertex 10299 to 10384
+create curve spline location vertex 10385 to 10470
+create curve spline location vertex 10470 to 10535
+create curve spline location vertex 10535 to 10620
+create curve spline location vertex 10621 to 10706
+create curve spline location vertex 10706 to 10771
+create curve spline location vertex 10771 to 10856
+create curve spline location vertex 10857 to 10942
+create curve spline location vertex 10942 to 11007
+create curve spline location vertex 11007 to 11092
+create curve spline location vertex 11093 to 11178
+create curve spline location vertex 11178 to 11243
+create curve spline location vertex 11243 to 11328
+create curve spline location vertex 11329 to 11414
+create curve spline location vertex 11414 to 11479
+create curve spline location vertex 11479 to 11564
+create curve spline location vertex 11565 to 11650
+create curve spline location vertex 11650 to 11715
+create curve spline location vertex 11715 to 11800
+create curve spline location vertex 11801 to 11886
+create curve spline location vertex 11886 to 11951
+create curve spline location vertex 11951 to 12036
+create curve spline location vertex 12037 to 12122
+create curve spline location vertex 12122 to 12187
+create curve spline location vertex 12187 to 12272
+create curve spline location vertex 12273 to 12358
+create curve spline location vertex 12358 to 12423
+create curve spline location vertex 12423 to 12508
+create curve spline location vertex 12509 to 12594
+create curve spline location vertex 12594 to 12659
+create curve spline location vertex 12659 to 12744
+create curve spline location vertex 12745 to 12830
+create curve spline location vertex 12830 to 12895
+create curve spline location vertex 12895 to 12980
+create curve spline location vertex 12981 to 13066
+create curve spline location vertex 13066 to 13131
+create curve spline location vertex 13131 to 13216
+create curve spline location vertex 13217 to 13302
+create curve spline location vertex 13302 to 13367
+create curve spline location vertex 13367 to 13452
+create curve spline location vertex 13453 to 13538
+create curve spline location vertex 13538 to 13603
+create curve spline location vertex 13603 to 13688
+create curve spline location vertex 13689 to 13774
+create curve spline location vertex 13774 to 13839
+create curve spline location vertex 13839 to 13924
+create curve spline location vertex 13925 to 14010
+create curve spline location vertex 14010 to 14075
+create curve spline location vertex 14075 to 14160
+create curve spline location vertex 14161 to 14246
+create curve spline location vertex 14246 to 14311
+create curve spline location vertex 14311 to 14396
+create curve spline location vertex 14397 to 14482
+create curve spline location vertex 14482 to 14547
+create curve spline location vertex 14547 to 14632
+create curve spline location vertex 14633 to 14718
+create curve spline location vertex 14718 to 14783
+create curve spline location vertex 14783 to 14868
+create curve spline location vertex 14869 to 14954
+create curve spline location vertex 14954 to 15019
+create curve spline location vertex 15019 to 15104
+create curve spline location vertex 15105 to 15190
+create curve spline location vertex 15190 to 15255
+create curve spline location vertex 15255 to 15340
+create curve spline location vertex 15341 to 15426
+create curve spline location vertex 15426 to 15491
+create curve spline location vertex 15491 to 15576
+create curve spline location vertex 15577 to 15662
+create curve spline location vertex 15662 to 15727
+create curve spline location vertex 15727 to 15812
+create curve spline location vertex 15813 to 15898
+create curve spline location vertex 15898 to 15963
+create curve spline location vertex 15963 to 16048
+create curve spline location vertex 16049 to 16134
+create curve spline location vertex 16134 to 16199
+create curve spline location vertex 16199 to 16284
+create curve spline location vertex 16285 to 16370
+create curve spline location vertex 16370 to 16435
+create curve spline location vertex 16435 to 16520
+create curve spline location vertex 16521 to 16606
+create curve spline location vertex 16606 to 16671
+create curve spline location vertex 16671 to 16756
+create curve spline location vertex 16757 to 16842
+create curve spline location vertex 16842 to 16907
+create curve spline location vertex 16907 to 16992
+create curve spline location vertex 16993 to 17078
+create curve spline location vertex 17078 to 17143
+create curve spline location vertex 17143 to 17228
+create curve spline location vertex 17229 to 17314
+create curve spline location vertex 17314 to 17379
+create curve spline location vertex 17379 to 17464
+create curve spline location vertex 17465 to 17550
+create curve spline location vertex 17550 to 17615
+create curve spline location vertex 17615 to 17700
+create curve spline location vertex 17701 to 17786
+create curve spline location vertex 17786 to 17851
+create curve spline location vertex 17851 to 17936
+delete vertex all
+create surface skin curve 1 4
+create surface skin curve 2 5
+create surface skin curve 3 6
+create surface skin curve 4 7
+create surface skin curve 5 8
+create surface skin curve 6 9
+create surface skin curve 7 10
+create surface skin curve 8 11
+create surface skin curve 9 12
+create surface skin curve 10 13
+create surface skin curve 11 14
+create surface skin curve 12 15
+create surface skin curve 13 16
+create surface skin curve 14 17
+create surface skin curve 15 18
+create surface skin curve 16 19
+create surface skin curve 17 20
+create surface skin curve 18 21
+create surface skin curve 19 22
+create surface skin curve 20 23
+create surface skin curve 21 24
+create surface skin curve 22 25
+create surface skin curve 23 26
+create surface skin curve 24 27
+create surface skin curve 25 28
+create surface skin curve 26 29
+create surface skin curve 27 30
+create surface skin curve 28 31
+create surface skin curve 29 32
+create surface skin curve 30 33
+create surface skin curve 31 34
+create surface skin curve 32 35
+create surface skin curve 33 36
+create surface skin curve 34 37
+create surface skin curve 35 38
+create surface skin curve 36 39
+create surface skin curve 37 40
+create surface skin curve 38 41
+create surface skin curve 39 42
+create surface skin curve 40 43
+create surface skin curve 41 44
+create surface skin curve 42 45
+create surface skin curve 43 46
+create surface skin curve 44 47
+create surface skin curve 45 48
+create surface skin curve 46 49
+create surface skin curve 47 50
+create surface skin curve 48 51
+create surface skin curve 49 52
+create surface skin curve 50 53
+create surface skin curve 51 54
+create surface skin curve 52 55
+create surface skin curve 53 56
+create surface skin curve 54 57
+create surface skin curve 55 58
+create surface skin curve 56 59
+create surface skin curve 57 60
+create surface skin curve 58 61
+create surface skin curve 59 62
+create surface skin curve 60 63
+create surface skin curve 61 64
+create surface skin curve 62 65
+create surface skin curve 63 66
+create surface skin curve 64 67
+create surface skin curve 65 68
+create surface skin curve 66 69
+create surface skin curve 67 70
+create surface skin curve 68 71
+create surface skin curve 69 72
+create surface skin curve 70 73
+create surface skin curve 71 74
+create surface skin curve 72 75
+create surface skin curve 73 76
+create surface skin curve 74 77
+create surface skin curve 75 78
+create surface skin curve 76 79
+create surface skin curve 77 80
+create surface skin curve 78 81
+create surface skin curve 79 82
+create surface skin curve 80 83
+create surface skin curve 81 84
+create surface skin curve 82 85
+create surface skin curve 83 86
+create surface skin curve 84 87
+create surface skin curve 85 88
+create surface skin curve 86 89
+create surface skin curve 87 90
+create surface skin curve 88 91
+create surface skin curve 89 92
+create surface skin curve 90 93
+create surface skin curve 91 94
+create surface skin curve 92 95
+create surface skin curve 93 96
+create surface skin curve 94 97
+create surface skin curve 95 98
+create surface skin curve 96 99
+create surface skin curve 97 100
+create surface skin curve 98 101
+create surface skin curve 99 102
+create surface skin curve 100 103
+create surface skin curve 101 104
+create surface skin curve 102 105
+create surface skin curve 103 106
+create surface skin curve 104 107
+create surface skin curve 105 108
+create surface skin curve 106 109
+create surface skin curve 107 110
+create surface skin curve 108 111
+create surface skin curve 109 112
+create surface skin curve 110 113
+create surface skin curve 111 114
+create surface skin curve 112 115
+create surface skin curve 113 116
+create surface skin curve 114 117
+create surface skin curve 115 118
+create surface skin curve 116 119
+create surface skin curve 117 120
+create surface skin curve 118 121
+create surface skin curve 119 122
+create surface skin curve 120 123
+create surface skin curve 121 124
+create surface skin curve 122 125
+create surface skin curve 123 126
+create surface skin curve 124 127
+create surface skin curve 125 128
+create surface skin curve 126 129
+create surface skin curve 127 130
+create surface skin curve 128 131
+create surface skin curve 129 132
+create surface skin curve 130 133
+create surface skin curve 131 134
+create surface skin curve 132 135
+create surface skin curve 133 136
+create surface skin curve 134 137
+create surface skin curve 135 138
+create surface skin curve 136 139
+create surface skin curve 137 140
+create surface skin curve 138 141
+create surface skin curve 139 142
+create surface skin curve 140 143
+create surface skin curve 141 144
+create surface skin curve 142 145
+create surface skin curve 143 146
+create surface skin curve 144 147
+create surface skin curve 145 148
+create surface skin curve 146 149
+create surface skin curve 147 150
+create surface skin curve 148 151
+create surface skin curve 149 152
+create surface skin curve 150 153
+create surface skin curve 151 154
+create surface skin curve 152 155
+create surface skin curve 153 156
+create surface skin curve 154 157
+create surface skin curve 155 158
+create surface skin curve 156 159
+create surface skin curve 157 160
+create surface skin curve 158 161
+create surface skin curve 159 162
+create surface skin curve 160 163
+create surface skin curve 161 164
+create surface skin curve 162 165
+create surface skin curve 163 166
+create surface skin curve 164 167
+create surface skin curve 165 168
+create surface skin curve 166 169
+create surface skin curve 167 170
+create surface skin curve 168 171
+create surface skin curve 169 172
+create surface skin curve 170 173
+create surface skin curve 171 174
+create surface skin curve 172 175
+create surface skin curve 173 176
+create surface skin curve 174 177
+create surface skin curve 175 178
+create surface skin curve 176 179
+create surface skin curve 177 180
+create surface skin curve 178 181
+create surface skin curve 179 182
+create surface skin curve 180 183
+create surface skin curve 181 184
+create surface skin curve 182 185
+create surface skin curve 183 186
+create surface skin curve 184 187
+create surface skin curve 185 188
+create surface skin curve 186 189
+create surface skin curve 187 190
+create surface skin curve 188 191
+create surface skin curve 189 192
+create surface skin curve 190 193
+create surface skin curve 191 194
+create surface skin curve 192 195
+create surface skin curve 193 196
+create surface skin curve 194 197
+create surface skin curve 195 198
+create surface skin curve 196 199
+create surface skin curve 197 200
+create surface skin curve 198 201
+create surface skin curve 199 202
+create surface skin curve 200 203
+create surface skin curve 201 204
+create surface skin curve 202 205
+create surface skin curve 203 206
+create surface skin curve 204 207
+create surface skin curve 205 208
+create surface skin curve 206 209
+create surface skin curve 207 210
+create surface skin curve 208 211
+create surface skin curve 209 212
+create surface skin curve 210 213
+create surface skin curve 211 214
+create surface skin curve 212 215
+create surface skin curve 213 216
+create surface skin curve 214 217
+create surface skin curve 215 218
+create surface skin curve 216 219
+create surface skin curve 217 220
+create surface skin curve 218 221
+create surface skin curve 219 222
+create surface skin curve 220 223
+create surface skin curve 221 224
+create surface skin curve 222 225
+create surface skin curve 223 226
+create surface skin curve 224 227
+create surface skin curve 225 228
+delete curve all
+merge curve all
+compress curve all
