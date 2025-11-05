@@ -28,8 +28,8 @@
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2025-11-05T13:10:48.169865",
-      "md5": "82fa0c8e9a3982f4a393c49418144c44",
+      "modified": "2025-11-05T13:23:56.585129",
+      "md5": "1a144c6aaf6477610238759d4fed2206",
       "type": "file",
       "size": 6
     },
@@ -123,6 +123,13 @@
       "md5": "f6d2a5366d9d3f16fc82d7499ff0ab84",
       "type": "file",
       "size": 4432
+    },
+    "dev_2_2_calculation.ipynb": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_2_calculation.ipynb",
+      "modified": "2025-11-05T13:26:41.224231",
+      "md5": "a53e19aee29187df60adb1a65a23ee06",
+      "type": "file",
+      "size": 9410
     },
     "dev_1_1_material_interpolation_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_1_material_interpolation_summary.md",
@@ -1153,6 +1160,13 @@
       "type": "file",
       "size": 27973421
     },
+    "data/dev_2_2_milen2Do5pore_full.fc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full.fc",
+      "modified": "2025-10-30T11:56:58",
+      "md5": "0f255484346f2dcff8d1e0fd83743909",
+      "type": "file",
+      "size": 186778757
+    },
     "data/dev_1_4_model3_mesh.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_4_model3_mesh.jou",
       "modified": "2025-09-12T16:45:05.367386",
@@ -1694,7 +1708,7 @@
     },
     "src/tesseral_example/.gitignore": {
       "path": "/home/antonov/Base/Research/MilenSem2D/src/tesseral_example/.gitignore",
-      "modified": "2025-11-05T13:10:00.437077",
+      "modified": "2025-11-05T13:16:06.814290",
       "md5": "3389dae361af79b04c9c8e7057f60cc6",
       "type": "file",
       "size": 1
@@ -1729,10 +1743,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2025-09-08T13:09:46.455037",
-      "md5": "31e08191a185e93d4d2865e010399f5a",
+      "modified": "2025-11-05T13:11:34.687650",
+      "md5": "19e1876e53f7dc325284b50143322225",
       "type": "file",
-      "size": 16986
+      "size": 74009
     },
     "test.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/test.fc",
@@ -1778,10 +1792,10 @@
     },
     "README.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/README.md",
-      "modified": "2025-09-12T12:29:00.060480",
-      "md5": "f68d18a9311755f3fffa6eb4dd3f37e2",
+      "modified": "2025-11-05T13:33:00.104919",
+      "md5": "e25cfaf7c4863c4929ca9c9bf327a33d",
       "type": "file",
-      "size": 6464
+      "size": 22849
     },
     "dev_1_5_layer_update.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_5_layer_update.py",
@@ -1822,7 +1836,7 @@
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2025-11-05T13:08:22.873476",
+      "modified": "2025-11-05T13:33:31.747106",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -1864,8 +1878,8 @@
     }
   },
   "statistics": {
-    "total_files": 256,
+    "total_files": 258,
     "total_directories": 9,
-    "total_size": 3247154055
+    "total_size": 3434015630
   }
 }
