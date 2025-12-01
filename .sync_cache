@@ -21,15 +21,15 @@
     },
     "dev_2_1_segy_material.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_1_segy_material.ipynb",
-      "modified": "2025-12-01T13:21:07.680088",
-      "md5": "83a3c3f55df1470913026720836cb6bf",
+      "modified": "2025-12-01T13:26:09.717588",
+      "md5": "d10dd16b72c2c0580b786e9e1659f618",
       "type": "file",
-      "size": 17423
+      "size": 24258
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2025-12-01T13:22:06.497189",
-      "md5": "0bdf1b32e835660948eeb00c0d3c3632",
+      "modified": "2025-12-01T13:26:16.086598",
+      "md5": "65ab4008a57becc3eb8fc27153269b1e",
       "type": "file",
       "size": 6
     },
@@ -978,6 +978,13 @@
       "type": "file",
       "size": 847
     },
+    "data/dev_2_2_milen2Do4pore_full_4s_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do4pore_full_4s_Vx.sgy",
+      "modified": "2025-12-01T17:33:09.709094",
+      "md5": "720a4e395c8a3a086fe5af23aa287380",
+      "type": "file",
+      "size": 19375840
+    },
     "data/dev_1_7_model_mesh_surface.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_mesh_surface.jou",
       "modified": "2025-10-28T21:09:49.504554",
@@ -991,6 +998,13 @@
       "md5": "812803abe95c380a6b896b5ca55ae6fa",
       "type": "file",
       "size": 7217484
+    },
+    "data/dev_2_2_milen2Do4pore_full_4s_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do4pore_full_4s_Vy.sgy",
+      "modified": "2025-12-01T17:32:55.388034",
+      "md5": "89548458184351461878100b0d08a597",
+      "type": "file",
+      "size": 19375840
     },
     "data/dev_1_5_model_mesh_curve.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_5_model_mesh_curve.jou",
@@ -1176,7 +1190,7 @@
     },
     "data/dev_2_1_material_data.csv": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_material_data.csv",
-      "modified": "2025-12-01T13:20:26.090015",
+      "modified": "2025-12-01T13:24:13.190400",
       "md5": "e2481073e2048d366397c94a1748fc1b",
       "type": "file",
       "size": 104699818
@@ -1288,7 +1302,7 @@
     },
     "data/dev_2_1_Density_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Density_model.sgy",
-      "modified": "2025-12-01T13:20:19.128002",
+      "modified": "2025-12-01T13:24:08.849393",
       "md5": "e746438b7640a14ce88fd04175c57b0f",
       "type": "file",
       "size": 5737600
@@ -1358,7 +1372,7 @@
     },
     "data/dev_2_1_Vs_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vs_model.sgy",
-      "modified": "2025-12-01T13:20:19.097003",
+      "modified": "2025-12-01T13:24:08.822393",
       "md5": "ce987b2b24991e6a7ffde0f5a31d8418",
       "type": "file",
       "size": 5737600
@@ -1379,7 +1393,7 @@
     },
     "data/dev_2_1_Vp_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vp_model.sgy",
-      "modified": "2025-12-01T13:20:19.067002",
+      "modified": "2025-12-01T13:24:08.794393",
       "md5": "1e6750230b5b330dcfc28da5b79f8985",
       "type": "file",
       "size": 5737600
@@ -1785,10 +1799,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2025-11-26T17:58:50.836413",
-      "md5": "6cad3605b5fdf0bec4710b5e14f61478",
+      "modified": "2025-12-01T13:22:31.145231",
+      "md5": "35bb6f05f484cdde01c8964bc1f7723a",
       "type": "file",
-      "size": 76509
+      "size": 76787
     },
     "test.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/test.fc",
@@ -1892,7 +1906,7 @@
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2025-12-01T13:20:20.684005",
+      "modified": "2025-12-01T18:47:30.326163",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -1934,8 +1948,8 @@
     }
   },
   "statistics": {
-    "total_files": 266,
+    "total_files": 268,
     "total_directories": 9,
-    "total_size": 3591484737
+    "total_size": 3630243530
   }
 }
