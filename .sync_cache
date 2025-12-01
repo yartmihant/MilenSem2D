@@ -28,8 +28,8 @@
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2025-11-05T13:23:56.585129",
-      "md5": "1a144c6aaf6477610238759d4fed2206",
+      "modified": "2025-11-05T13:58:53.553027",
+      "md5": "a9511cbb502360e254eaf4949b4eeb4b",
       "type": "file",
       "size": 6
     },
@@ -144,13 +144,6 @@
       "md5": "2e565cc8ffe2dd80008e6b5eaa3b9122",
       "type": "file",
       "size": 50554
-    },
-    "dev_1_7_2_build_fc_model.py": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_7_2_build_fc_model.py",
-      "modified": "2025-10-17T18:45:14.258486",
-      "md5": "78e80164f020870bb5dc6ec1126d4b24",
-      "type": "file",
-      "size": 16672
     },
     "dev_2_1_segy_material_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_1_segy_material_summary.md",
@@ -929,12 +922,12 @@
       "type": "file",
       "size": 2031546
     },
-    "data/dev_2_2_milen2Do5pore_full_Vy.sgy": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_Vy.sgy",
-      "modified": "2025-11-01T23:26:08",
-      "md5": "64fb3cc93fceeccf1e487d43480b9d28",
+    "data/dev_2_2_milen2Do5pore_p_full_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_p_full_Vx.sgy",
+      "modified": "2025-11-24T09:19:26",
+      "md5": "d81667ebcdd0fcac16ce3edb22f0df6d",
       "type": "file",
-      "size": 4989840
+      "size": 5272080
     },
     "data/dev_1_6_.pvd": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_6_.pvd",
@@ -950,12 +943,26 @@
       "type": "file",
       "size": 5037503
     },
+    "data/dev_2_2_milen2Do4pore_full_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do4pore_full_Vy.sgy",
+      "modified": "2025-11-26T12:32:48.006902",
+      "md5": "c04f367e08e076a75de28aa913f5aaf3",
+      "type": "file",
+      "size": 5269840
+    },
     "data/dev_1_6_model_material_new.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_6_model_material_new.npz",
       "modified": "2025-10-27T13:07:15.219594",
       "md5": "a238990b3d0b7694c5041e9fb2b47e2c",
       "type": "file",
       "size": 4704634
+    },
+    "data/dev_2_2_milen2Do4pore_full_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do4pore_full_Vx.sgy",
+      "modified": "2025-11-26T12:32:43.430933",
+      "md5": "ea835584918175a89028e07915b25172",
+      "type": "file",
+      "size": 5269840
     },
     "data/dev_1_2_model1_mesh_coords.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_2_model1_mesh_coords.npz",
@@ -1006,6 +1013,13 @@
       "type": "file",
       "size": 38201523
     },
+    "data/dev_2_2_milen2Do6pore_centerl_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do6pore_centerl_Vx.sgy",
+      "modified": "2025-11-20T20:04:26",
+      "md5": "b58271cab49dd0d358b0c7dabd1dbe6d",
+      "type": "file",
+      "size": 1461840
+    },
     "data/dev_1_7_model_mesh_curve.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_mesh_curve.jou",
       "modified": "2025-10-28T21:09:49.498554",
@@ -1019,13 +1033,6 @@
       "md5": "979eacef0e3548bf2460395bd222d597",
       "type": "file",
       "size": 2000640
-    },
-    "data/dev_2_2_milen2Do5pore_full_Vx.sgy": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_Vx.sgy",
-      "modified": "2025-11-01T23:26:06",
-      "md5": "8927cf95ba966e6976c15da9bdb3c2b1",
-      "type": "file",
-      "size": 4989840
     },
     "data/dev_2_1_milen2Do2_pore_center2_simple.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_milen2Do2_pore_center2_simple.fc",
@@ -1054,6 +1061,13 @@
       "md5": "384b23a3acacb42b111085a4396110b6",
       "type": "file",
       "size": 102788
+    },
+    "data/dev_2_2_milen2Do5pore_p_full_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_p_full_Vy.sgy",
+      "modified": "2025-11-24T09:19:28",
+      "md5": "268428fc0988bc016390e6413e4daca9",
+      "type": "file",
+      "size": 5272080
     },
     "data/dev_1_8_Vp_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_8_Vp_model.sgy",
@@ -1251,6 +1265,20 @@
       "type": "file",
       "size": 143634130
     },
+    "data/dev_2_2_milen2Do6pore_full_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do6pore_full_Vy.sgy",
+      "modified": "2025-11-12T12:36:44",
+      "md5": "8b708eb927576108b7d24e192ac152dc",
+      "type": "file",
+      "size": 19375840
+    },
+    "data/dev_2_2_milen2Do6pore_centerl_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do6pore_centerl_Vy.sgy",
+      "modified": "2025-11-20T20:04:28",
+      "md5": "c2158da316fadc949d2bfcc960fcde71",
+      "type": "file",
+      "size": 1461840
+    },
     "data/dev_2_1_Density_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Density_model.sgy",
       "modified": "2025-10-28T17:00:58.371981",
@@ -1299,6 +1327,13 @@
       "md5": "233803a4e9d56fb684f667c438c97b05",
       "type": "file",
       "size": 277
+    },
+    "data/dev_2_2_milen2Do6pore_full_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do6pore_full_Vx.sgy",
+      "modified": "2025-11-12T12:36:36",
+      "md5": "506b98b8c4238d929b43f7c1e4cc3cf9",
+      "type": "file",
+      "size": 19375840
     },
     "data/dev_1_7_model_mesh.fds": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_mesh.fds",
@@ -1743,10 +1778,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2025-11-05T13:11:34.687650",
-      "md5": "19e1876e53f7dc325284b50143322225",
+      "modified": "2025-11-24T20:27:59.075428",
+      "md5": "fed68aca81c2578f458cc3c964ee4ac2",
       "type": "file",
-      "size": 74009
+      "size": 75927
     },
     "test.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/test.fc",
@@ -1754,6 +1789,13 @@
       "md5": "bd07b5a04579dcfea9e8f631f0da30b5",
       "type": "file",
       "size": 8363
+    },
+    "LAST_COMMIT": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/LAST_COMMIT",
+      "modified": "2025-11-05T13:58:48.509000",
+      "md5": "1b636e79636d9e4723638b276d71639d",
+      "type": "file",
+      "size": 264
     },
     "dev_1_1_material_interpolation.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_1_material_interpolation.ipynb",
@@ -1776,6 +1818,13 @@
       "type": "file",
       "size": 16497
     },
+    ".cursor/rules/GIT.mdc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/.cursor/rules/GIT.mdc",
+      "modified": "2025-11-05T13:58:45.845986",
+      "md5": "a8f88c401f486eccd7fb425d9b107056",
+      "type": "file",
+      "size": 958
+    },
     ".cursor/rules/PY_FORMAT_RULES.mdc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.cursor/rules/PY_FORMAT_RULES.mdc",
       "modified": "2025-09-24T12:41:53.965784",
@@ -1792,7 +1841,7 @@
     },
     "README.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/README.md",
-      "modified": "2025-11-05T13:33:00.104919",
+      "modified": "2025-11-05T14:17:39.340456",
       "md5": "e25cfaf7c4863c4929ca9c9bf327a33d",
       "type": "file",
       "size": 22849
@@ -1836,7 +1885,7 @@
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2025-11-05T13:33:31.747106",
+      "modified": "2025-11-26T17:58:30.813331",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -1871,15 +1920,15 @@
     },
     ".cursor/rules": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.cursor/rules",
-      "modified": "2025-09-24T13:34:57.371425",
+      "modified": "2025-11-05T13:34:34.922430",
       "md5": "",
       "type": "dir",
       "size": 0
     }
   },
   "statistics": {
-    "total_files": 258,
+    "total_files": 265,
     "total_directories": 9,
-    "total_size": 3434015630
+    "total_size": 3486781618
   }
 }

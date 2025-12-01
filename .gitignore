@@ -1,1 +1,9 @@
 *.fc
+*.sgy
+*.csv
+*.npz
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz

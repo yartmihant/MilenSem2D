@@ -208,17 +208,99 @@ print("\n" + "="*60)
 print("ЗАВЕРШЕНО")
 print("="*60)
 
+""" #### Задача 3: Экспорт данных в CSV формат #### """
+
+import csv
+
+def export_material_to_csv(filename, material_grid, coords_grid, layer_indexes_grid):
+    """
+    Экспортирует данные материала в CSV формат с сортировкой по X, затем по Z.
+
+    Args:
+        filename: имя выходного CSV файла
+        material_grid: массив материала [nx, ny, 3] (E, nu, rho)
+        coords_grid: массив координат [nx, ny, 2] (x, z)
+        layer_indexes_grid: массив номеров слоев [nx, ny]
+    """
+    nx, ny = material_grid.shape[:2]
+
+    # Создаем список всех ячеек
+    cells_data = []
+
+    for i in range(nx):
+        for j in range(ny):
+            cell_idx = i * ny + j + 1  # Порядковый индекс начиная с 1
+            x_coord = coords_grid[i, j, 0]
+            z_coord = coords_grid[i, j, 1]
+            layer_num = layer_indexes_grid[i, j]
+            E_modulus = material_grid[i, j, 0]
+            poisson_ratio = material_grid[i, j, 1]
+            density = material_grid[i, j, 2]
+
+            cells_data.append([
+                cell_idx, x_coord, z_coord, layer_num,
+                E_modulus, poisson_ratio, density
+            ])
+
+    # Сортируем по X, затем по Z
+    cells_data.sort(key=lambda x: (x[1], x[2]))
+
+    # Записываем в CSV
+    with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+
+        # Заголовки
+        writer.writerow([
+            'Порядковый индекс ячейки',
+            'Координата по X',
+            'Координата по Z',
+            'Номер слоя',
+            'Модуль Юнга',
+            'Коэффициент Пуассона',
+            'Плотность'
+        ])
+
+        # Данные
+        for row in cells_data:
+            writer.writerow(row)
+
+    print(f"Экспортировано {len(cells_data)} ячеек в файл: {filename}")
+
+# Экспортируем данные в CSV
+csv_output = output_dir / 'dev_2_1_material_data.csv'
+export_material_to_csv(str(csv_output), material_grid, coords_grid, layer_indexes_grid)
+
+# Проверяем результат
+print(f"\nПроверка экспорта:")
+print(f"  Файл: {csv_output}")
+print(f"  Существует: {csv_output.exists()}")
+
+if csv_output.exists():
+    # Читаем первые и последние несколько строк
+    with open(csv_output, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        print(f"  Всего строк: {len(lines)}")
+        print("  Первые 5 строк:")
+        for i in range(min(6, len(lines))):  # header + 5 строк
+            print(f"    {lines[i].strip()}")
+        if len(lines) > 10:
+            print("  Последние 5 строк:")
+            for i in range(len(lines)-5, len(lines)):
+                print(f"    {lines[i].strip()}")
+
 """
 ### Выводы
 
-В Главе VIII была выполнена подготовка данных для конечно-разностного моделирования в Tesseral:
+В Главе I части второй была выполнена подготовка данных для конечно-разностного моделирования в Tesseral:
 
 1. **Анализ формата:** Изучена структура файлов SEG-Y из примера Tesseral
 2. **Конвертация данных:** Преобразованы декартовы данные материала в формат SEG-Y
-3. **Выходные файлы:** Созданы три файла для Tesseral:
-   - data/dev_1_8_Vp_model.sgy - модель скоростей продольных волн
-   - data/dev_1_8_Vs_model.sgy - модель скоростей поперечных волн
-   - data/dev_1_8_Density_model.sgy - модель плотности
+3. **Экспорт в CSV:** Создана таблица со всеми данными материала для дополнительного анализа
+4. **Выходные файлы:**
+   - data/dev_2_1_Vp_model.sgy - модель скоростей продольных волн
+   - data/dev_2_1_Vs_model.sgy - модель скоростей поперечных волн
+   - data/dev_2_1_Density_model.sgy - модель плотности
+   - data/dev_2_1_material_data.csv - полная таблица данных материала
 
 Данные готовы для использования в программе Tesseral для конечно-разностного моделирования.
 """
