@@ -28,8 +28,8 @@
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2025-12-01T13:26:16.086598",
-      "md5": "65ab4008a57becc3eb8fc27153269b1e",
+      "modified": "2025-12-01T21:13:24.618039",
+      "md5": "c7af7e1bae75c02918eeeba63c387e9e",
       "type": "file",
       "size": 6
     },
@@ -1048,6 +1048,13 @@
       "type": "file",
       "size": 2000640
     },
+    "data/dev_2_2_milen2Do5pore_full_3s_Vy.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_3s_Vy.sgy",
+      "modified": "2025-12-22T04:22:06",
+      "md5": "1ad4bc836965fd327bd4f4f8f459cebd",
+      "type": "file",
+      "size": 5427312
+    },
     "data/dev_2_1_milen2Do2_pore_center2_simple.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_milen2Do2_pore_center2_simple.fc",
       "modified": "2025-10-28T18:25:49.854060",
@@ -1362,6 +1369,13 @@
       "md5": "31dfea3725e1a27db5f3fb4e939c0d5e",
       "type": "file",
       "size": 22129892
+    },
+    "data/dev_2_2_milen2Do5pore_full_3s_Vx.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_3s_Vx.sgy",
+      "modified": "2025-12-22T04:22:08",
+      "md5": "65f49b2f603f442c6f9ff3a3b1d37cd0",
+      "type": "file",
+      "size": 5427312
     },
     "data/dev_1_6_layered_material.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_6_layered_material.npz",
@@ -1799,10 +1813,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2025-12-01T13:22:31.145231",
-      "md5": "35bb6f05f484cdde01c8964bc1f7723a",
+      "modified": "2025-12-01T18:47:46.602224",
+      "md5": "ab71a41871e734a5fdbf928ed7308068",
       "type": "file",
-      "size": 76787
+      "size": 77383
     },
     "test.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/test.fc",
@@ -1906,7 +1920,7 @@
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2025-12-01T18:47:30.326163",
+      "modified": "2025-12-22T15:23:21.042442",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -1948,8 +1962,8 @@
     }
   },
   "statistics": {
-    "total_files": 268,
+    "total_files": 270,
     "total_directories": 9,
-    "total_size": 3630243530
+    "total_size": 3641098750
   }
 }
