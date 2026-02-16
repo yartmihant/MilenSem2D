@@ -41,7 +41,7 @@ class FCMesh:
     def __init__(self) -> None:
 
         self.nodes_ids = np.array([], dtype=np.int32)
-        self.nodes_xyz = np.array([], dtype=np.float64)
+        self.nodes_xyz = np.empty((0, 3), dtype=np.float64)
 
         self.elements = {}
 
@@ -93,6 +93,7 @@ class FCMesh:
 
         for i, eid in enumerate(elem_ids):
             fc_type_name = FC_ELEMENT_TYPES_KEYID[elem_types[i]]['name']
+
             eid = int(eid)
             if fc_type_name not in self.elements:
                 self.elements[fc_type_name] = {}

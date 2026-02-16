@@ -1,6 +1,8 @@
+from __future__ import annotations
 # Dependency (const_types) enumeration mapping
-from typing import Dict, List, Tuple, Union
+from typing import Dict, List, Literal, Optional, Sequence, Tuple, Union
 
+import numpy as np
 from numpy import dtype, float64, generic
 from numpy.typing import NDArray
 
@@ -49,30 +51,59 @@ class FCData:
     value: FCValue  # Данные для зависимости (e.g., массив ID узлов)
     table: List[FCDependencyColumn]
 
-    def __init__(self, data: Union[NDArray[generic], str], dep_type: Union[List[int], int, str], dep_data: Union[List[NDArray[generic]], List[str], str, None]):
+    def __init__(self, value: FCValue, type_code: Union[int, str] = 0, table: Optional[List[FCDependencyColumn]] = None):
+        self.value = value
+        self.type = type_code
+        self.table = table if table is not None else []
 
+    @classmethod
+    def constant(cls, values: Union[float, int, Sequence[Union[float, int]]]) -> FCData:
+        """
+        Удобный конструктор константного значения (type=0) в формате float64 массива.
+        """
+        if isinstance(values, (list, tuple, np.ndarray)):
+            arr = np.asarray(values, dtype=float64)
+        else:
+            arr = np.asarray([values], dtype=float64)
+        return cls(FCValue(arr, 'array'), 0, [])
+
+    @classmethod
+    def formula(cls, expr: str) -> FCData:
+        """
+        Удобный конструктор формулы (type=6).
+        """
+        return cls(FCValue(expr, 'formula'), 6, [])
+
+    @classmethod
+    def decode(cls, data: Union[NDArray[generic], str], dep_type: Union[List[int], int, str], dep_data: Union[List[NDArray[generic]], List[str], str, None]) -> FCData:
+        
         if isinstance(dep_type, list) and isinstance(dep_data, list):
-            self.value = FCValue(data, dtype(float64))
-            self.type = -1
+            
+            value = FCValue.decode(data, dtype(float64))
+            
             if len(dep_type) != len(dep_data):
                 raise ValueError("FCData: dep_type and dep_data lists must have equal lengths")
-            self.table = [FCDependencyColumn(
+            
+            table = [FCDependencyColumn(
                 type = FC_DEPENDENCY_TYPES_KEYS[deps_type],
-                value = FCValue(dep_data[j], dtype(float64))
+                value = FCValue.decode(dep_data[j], dtype(float64))
             ) for j, deps_type in enumerate(dep_type)]
+            
+            return cls(value, -1, table)
 
         elif (isinstance(dep_type, int) or isinstance(dep_type, str)) and isinstance(dep_data, str):
-            self.value = FCValue(data, dtype(float64), 'formula' if dep_type == 6 else 'array')
-            self.type = dep_type
-            self.table = []
+            val_type:Literal['formula', 'array', 'null'] = 'formula' if dep_type == 6 else 'array'
+            value = FCValue.decode(data, dtype(float64), val_type)
+            return cls(value, dep_type, [])
         else:
-            raise ValueError("Invalid dependency data")
+             raise ValueError("Invalid dependency data for decode")
 
-    def dump(self) -> Union[Tuple[str, List[int], List[str]], Tuple[str, Union[int, str], str]]:
+    def encode(self) -> Union[Tuple[str, List[int], List[str]], Tuple[str, Union[int, str], str]]:
         if self.type == -1:
-            return self.value.dump(), [FC_DEPENDENCY_TYPES_CODES[deps.type] for deps in self.table], [deps.value.dump() for deps in self.table]
+            return self.value.encode(), [FC_DEPENDENCY_TYPES_CODES[deps.type] for deps in self.table], [deps.value.encode() for deps in self.table]
         else:
-            return self.value.dump(), self.type, ""
+            return self.value.encode(), self.type, ""
+
 
     def __len__(self) -> int:
         if not len(self.table):
@@ -85,6 +116,11 @@ class FCData:
         )
 
     def __repr__(self) -> str:
-        return (
-            f"<FCData {self.type!r}({len(self)}))>"
-        )
+        if self.type == -1:
+            return f"<FCData TABLE [{len(self)}])>"
+        elif self.type == 6:
+            return f"<FCData FORMULA {self.value.data}>"
+        elif self.type == 0:
+            return f"<FCData CONST {self.value.data}>"
+        else:
+            return f"<FCData <{self.type}>>"

@@ -28,8 +28,8 @@
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2025-12-01T21:13:24.618039",
-      "md5": "c7af7e1bae75c02918eeeba63c387e9e",
+      "modified": "2025-12-26T19:24:32.362829",
+      "md5": "6c581f84cac13e93ec3960513acb98d3",
       "type": "file",
       "size": 6
     },
@@ -96,6 +96,20 @@
       "type": "file",
       "size": 22983
     },
+    "plot_line1_seismogram.py": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/plot_line1_seismogram.py",
+      "modified": "2026-01-27T13:04:50.135261",
+      "md5": "a8ace280a08139be2bfbe6de44ceaf4c",
+      "type": "file",
+      "size": 5554
+    },
+    "test_work_milen_full.py": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/test_work_milen_full.py",
+      "modified": "2026-01-27T13:00:19.419210",
+      "md5": "cda75d0de011086fa634c97e84d1c88c",
+      "type": "file",
+      "size": 62882
+    },
     "dev_1_5_layer_update.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_5_layer_update.ipynb",
       "modified": "2025-10-27T15:15:50.484288",
@@ -109,6 +123,13 @@
       "md5": "98265098059cb2e1963f3f39fcab781d",
       "type": "file",
       "size": 6704
+    },
+    "create_animations.py": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/create_animations.py",
+      "modified": "2026-01-27T13:12:03.792920",
+      "md5": "96f2d28bcbc9341beac69a07c05aee44",
+      "type": "file",
+      "size": 5410
     },
     ".gitignore": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.gitignore",
@@ -154,301 +175,385 @@
     },
     "fc_model/py.typed": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/py.typed",
-      "modified": "2025-09-08T18:44:31.217301",
+      "modified": "2025-08-21T20:11:42.605527",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "type": "file",
       "size": 0
     },
     "fc_model/__init__.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__init__.py",
-      "modified": "2025-09-08T18:44:31.212301",
-      "md5": "64654c95bc0db91588f9cb64b564459e",
+      "modified": "2025-12-26T19:50:13.679991",
+      "md5": "be9f48a00a48e90936dcd86c496fea5f",
       "type": "file",
-      "size": 16792
+      "size": 19017
+    },
+    "fc_model/HOW_TO_BUILD_PYPI.md": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/HOW_TO_BUILD_PYPI.md",
+      "modified": "2025-12-26T19:50:13.679991",
+      "md5": "5497dd3984d389f692f9b201ab62910e",
+      "type": "file",
+      "size": 136
     },
     "fc_model/fc_materials.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_materials.py",
-      "modified": "2025-09-08T18:44:31.216301",
-      "md5": "6cc98a735c5f25abc16e3a777bba7634",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "fe114aaacb15586a60f2e2a4c0066954",
       "type": "file",
-      "size": 17427
+      "size": 20650
     },
     "fc_model/fc_conditions.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_conditions.py",
-      "modified": "2025-09-08T18:44:31.216301",
-      "md5": "2fefe282ec6215010f5f545c0bbeb9e3",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "5bcfc29796513e6f2e5411c2c63c0a39",
       "type": "file",
-      "size": 16848
+      "size": 17751
     },
     "fc_model/fc_set.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_set.py",
-      "modified": "2025-09-08T18:44:31.217301",
-      "md5": "715d980bd3e0bb1abdfd367f60fe70bc",
+      "modified": "2025-12-26T19:50:13.684991",
+      "md5": "12f39fe8316e227a00886f8579ef341d",
       "type": "file",
-      "size": 943
+      "size": 1187
+    },
+    "fc_model/__pycache__/fc_receivers.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_receivers.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "76685c33b99c1d1fca21d66fa97a3dee",
+      "type": "file",
+      "size": 1826
     },
     "fc_model/__pycache__/fc_constraint.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_constraint.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.030256",
-      "md5": "2723497c9811a73ba192a834d27e78dc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "bf9c1d58460e4ca36a358f1312f6126c",
       "type": "file",
-      "size": 3604
+      "size": 4135
+    },
+    "fc_model/__pycache__/__init__.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/__init__.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.679991",
+      "md5": "eb3f9f8f70f710c0c322a0ae48e34390",
+      "type": "file",
+      "size": 13952
+    },
+    "fc_model/__pycache__/fc_set.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_set.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "35ea84b860630024479d754d32df1a0d",
+      "type": "file",
+      "size": 1608
     },
     "fc_model/__pycache__/fc_coordinate_system.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_coordinate_system.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.030256",
-      "md5": "fe0676f05e6dbda85d45e38956b17ec0",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "3c9abd01c46555b4a30d8e02afd334b6",
       "type": "file",
-      "size": 3017
+      "size": 3660
     },
     "fc_model/__pycache__/fc_value.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_value.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.028255",
-      "md5": "59f4a67e21138bd478a1361e389c60e2",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "e186e7e7646030d3877b4d57e1d0d193",
       "type": "file",
-      "size": 6074
-    },
-    "fc_model/__pycache__/fc_conditions.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_conditions.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.838152",
-      "md5": "09753139f3d5414744bd4bb7b39492e7",
-      "type": "file",
-      "size": 17754
-    },
-    "fc_model/__pycache__/fc_set.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_set.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.909152",
-      "md5": "b7db75d8a6d3121a17ebddcc041ab437",
-      "type": "file",
-      "size": 2338
-    },
-    "fc_model/__pycache__/fc_value.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_value.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.895152",
-      "md5": "724a6ebd57e9bc0359f39d561d555961",
-      "type": "file",
-      "size": 5913
-    },
-    "fc_model/__pycache__/fc_blocks.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_blocks.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.836152",
-      "md5": "4d35b702da883386f9dda4525d4e3dfe",
-      "type": "file",
-      "size": 5003
+      "size": 5945
     },
     "fc_model/__pycache__/fc_set.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_set.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.041255",
-      "md5": "6368f5a4e73207f18d01c700b3c1806e",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "0dbf7b64a8225a490f48f557ceaa3fba",
       "type": "file",
-      "size": 2456
+      "size": 2805
     },
     "fc_model/__pycache__/fc_property_tables.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_property_tables.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.039255",
-      "md5": "855a14217878ad41f90d4cf99b130a2a",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "2bcc3114ba9fdc0bcc03acebff00176a",
       "type": "file",
-      "size": 2395
+      "size": 2626
     },
     "fc_model/__pycache__/fc_data.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_data.cpython-313.pyc",
-      "modified": "2025-10-06T18:50:00.509845",
-      "md5": "cd620dae6d05dbccca0a9c3b4efb5ac8",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "d2bc4615668269d5141a4b3c201ba31d",
       "type": "file",
-      "size": 5717
+      "size": 6326
     },
     "fc_model/__pycache__/fc_materials.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_materials.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.032255",
-      "md5": "4d074db4712f73a01042958cecc73cad",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "293ef61da83d962ed2e3fd7a304d6b04",
       "type": "file",
-      "size": 14035
+      "size": 16295
+    },
+    "fc_model/__pycache__/fc_mesh.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_mesh.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "7b8d3abaef2a2ad986290c0f89f75c73",
+      "type": "file",
+      "size": 7878
+    },
+    "fc_model/__pycache__/fc_conditions.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_conditions.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "6a1a7dbd28eaaac3a5e205522606ca23",
+      "type": "file",
+      "size": 10822
     },
     "fc_model/__pycache__/fc_blocks.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_blocks.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.022256",
-      "md5": "6b6d57ae2ad615d80b26997dfb966cef",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "37ce962d6f311eb84876bedc171ceb3d",
       "type": "file",
-      "size": 5269
+      "size": 5469
+    },
+    "fc_model/__pycache__/fc_blocks.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_blocks.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "342dabc076b778b668d9d796dae267b8",
+      "type": "file",
+      "size": 3684
+    },
+    "fc_model/__pycache__/fc_property_tables.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_property_tables.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "191224cb809b2f3308e1642892cae60c",
+      "type": "file",
+      "size": 1869
     },
     "fc_model/__pycache__/fc_receivers.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_receivers.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.040255",
-      "md5": "666d5337d6caeba94105795e1d627a2b",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "2541c1d48794bf5194e2f21aa6de9f8f",
       "type": "file",
-      "size": 2753
+      "size": 3170
     },
     "fc_model/__pycache__/fc_elements.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_elements.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.038255",
-      "md5": "25f8c4670b1f6f0b9c359975dfe766a4",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "0d7ebec53f009c04d1be55d2b49cf2ba",
       "type": "file",
-      "size": 12016
+      "size": 12003
     },
-    "fc_model/__pycache__/fc_materials.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_materials.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.901152",
-      "md5": "c7936780c520736f0e37adc5a27edd4a",
+    "fc_model/__pycache__/fc_constraint.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_constraint.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "dfbfbfbe84a08ced8a604bc23247a275",
       "type": "file",
-      "size": 13917
+      "size": 2316
+    },
+    "fc_model/__pycache__/fc_value.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_value.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "c99335d9eebef981014c326886fe9334",
+      "type": "file",
+      "size": 3595
+    },
+    "fc_model/__pycache__/fc_blocks.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_blocks.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "deadadb859539876ec632fe150e51a0c",
+      "type": "file",
+      "size": 3392
     },
     "fc_model/__pycache__/fc_mesh.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_mesh.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.034256",
-      "md5": "b97072a0599cf97dd882e6ef3279db1c",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "da03f5f6a5190d885293825f4ccf6828",
       "type": "file",
-      "size": 13581
+      "size": 13586
     },
-    "fc_model/__pycache__/fc_coordinate_system.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_coordinate_system.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.898152",
-      "md5": "1c1a6f40554e2c6a5501b1b26a976aa4",
+    "fc_model/__pycache__/fc_materials.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_materials.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "4cb72ba0fba5a9b0eaa5ee11e097ecc3",
       "type": "file",
-      "size": 2890
+      "size": 12040
     },
-    "fc_model/__pycache__/fc_constraint.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_constraint.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.896152",
-      "md5": "02d450283fdc44b66d0af84f085d8115",
+    "fc_model/__pycache__/fc_data.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_data.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "f421f6d53ad8e4a975b6b9cfcff18d60",
       "type": "file",
-      "size": 3459
+      "size": 5427
     },
     "fc_model/__pycache__/__init__.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/__init__.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.020256",
-      "md5": "9fc47087500f165c6f3c08f67e29f60e",
+      "modified": "2025-12-26T19:50:13.679991",
+      "md5": "30553b22d843a906d681913e930ab89e",
       "type": "file",
-      "size": 20662
+      "size": 16405
     },
     "fc_model/__pycache__/fc_conditions.cpython-313.pyc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_conditions.cpython-313.pyc",
-      "modified": "2025-09-09T15:54:43.025255",
-      "md5": "ae5896025c35c4759df42f5fdfa69489",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "504421f0701d134b9709c953f7f18fe2",
       "type": "file",
-      "size": 18252
+      "size": 19092
     },
-    "fc_model/__pycache__/fc_property_tables.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_property_tables.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.908152",
-      "md5": "760e3b5dd8c0a1b44cf42095ac950b90",
+    "fc_model/__pycache__/fc_coordinate_system.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_coordinate_system.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "c487ac63c3c0c0850a67a422e7befa2e",
       "type": "file",
-      "size": 2280
+      "size": 2416
     },
-    "fc_model/__pycache__/fc_data.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_data.cpython-312.pyc",
-      "modified": "2025-10-06T18:05:29.795995",
-      "md5": "ce74999a6b5f4c59d1471c0e063e135d",
+    "fc_model/__pycache__/fc_materials.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_materials.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "1f27b914de029f197b65f7cc1c671c93",
       "type": "file",
-      "size": 5539
+      "size": 10099
     },
-    "fc_model/__pycache__/__init__.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/__init__.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.835152",
-      "md5": "98a9a722e3951dd0bd3a4165d8047093",
+    "fc_model/__pycache__/fc_coordinate_system.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_coordinate_system.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "5e846f7a1358606ec0b6d6d2ca6d42d8",
       "type": "file",
-      "size": 20354
+      "size": 1985
     },
-    "fc_model/__pycache__/fc_elements.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_elements.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.907152",
-      "md5": "0b77d53f7292e7cc317101dc5098cb8b",
+    "fc_model/__pycache__/fc_receivers.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_receivers.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "3296e4929dfc5831e77f0c613002180f",
       "type": "file",
-      "size": 11887
+      "size": 2177
     },
-    "fc_model/__pycache__/fc_mesh.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_mesh.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.903152",
-      "md5": "a8b00b5b59ec7930f0ea7f38432e9475",
+    "fc_model/__pycache__/fc_mesh.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_mesh.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "368faf9a967651018e2b42cee12b828a",
       "type": "file",
-      "size": 13399
+      "size": 7931
     },
-    "fc_model/__pycache__/fc_receivers.cpython-312.pyc": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_receivers.cpython-312.pyc",
-      "modified": "2025-10-03T16:09:07.908152",
-      "md5": "4a412294112e2eea571de9d58b3e8df8",
+    "fc_model/__pycache__/fc_elements.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_elements.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "0e6c811f774f91d433c807a13a0b19f5",
       "type": "file",
-      "size": 2633
+      "size": 9691
+    },
+    "fc_model/__pycache__/fc_constraint.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_constraint.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "f62db025d8c769deda3b0673d7ed1889",
+      "type": "file",
+      "size": 2714
+    },
+    "fc_model/__pycache__/fc_data.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_data.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "66463af4fe05b787568792293ced4f4d",
+      "type": "file",
+      "size": 3971
+    },
+    "fc_model/__pycache__/fc_property_tables.cpython-310.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_property_tables.cpython-310.pyc",
+      "modified": "2025-12-26T19:50:13.682991",
+      "md5": "70be26a9996dba73d7851c1fb7e9394a",
+      "type": "file",
+      "size": 1626
+    },
+    "fc_model/__pycache__/fc_set.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_set.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "fe7835586538bea7bd355f1098c0defb",
+      "type": "file",
+      "size": 1945
+    },
+    "fc_model/__pycache__/fc_value.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_value.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "f581c4299cdcd7501926bbdcb86192cc",
+      "type": "file",
+      "size": 3794
+    },
+    "fc_model/__pycache__/fc_elements.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_elements.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.681991",
+      "md5": "37bd6920f9fc528452271e17e90e21f5",
+      "type": "file",
+      "size": 8491
+    },
+    "fc_model/__pycache__/__init__.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/__init__.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.679991",
+      "md5": "acb3ba4c2e920e52046c1700072421e5",
+      "type": "file",
+      "size": 17095
+    },
+    "fc_model/__pycache__/fc_conditions.cpython-38.pyc": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__/fc_conditions.cpython-38.pyc",
+      "modified": "2025-12-26T19:50:13.680990",
+      "md5": "27541013b1e82e777ebc638da5923d12",
+      "type": "file",
+      "size": 11612
     },
     "fc_model/fc_receivers.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_receivers.py",
-      "modified": "2025-09-08T18:44:31.217301",
-      "md5": "432d5092aa99d4b187e205b393cce878",
+      "modified": "2025-12-26T19:50:13.684991",
+      "md5": "df8a7515ca2ce8064fc96f1543c6a969",
       "type": "file",
-      "size": 1216
+      "size": 1564
     },
     "fc_model/fc_blocks.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_blocks.py",
-      "modified": "2025-09-08T18:44:31.215301",
-      "md5": "d6f3f457d08d070a8f1433a78db5865b",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "fbfb7cd65a00e2728dfa59677ec84ca3",
       "type": "file",
-      "size": 3282
+      "size": 3571
     },
     "fc_model/fc_elements.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_elements.py",
-      "modified": "2025-09-08T18:44:31.216301",
-      "md5": "810395ee6509414e390f473a65e7851c",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "318851e441f5c7de73bb5eddc04f2051",
       "type": "file",
-      "size": 16499
+      "size": 16501
     },
     "fc_model/fc_value.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_value.py",
-      "modified": "2025-09-08T18:44:31.217301",
-      "md5": "401554fdadba58999b78cbb1432aa268",
+      "modified": "2025-12-26T19:50:13.684991",
+      "md5": "bc632b1eb6b40d1d0dea2ba02ae59a24",
       "type": "file",
-      "size": 3977
+      "size": 3700
     },
     "fc_model/fc_mesh.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_mesh.py",
-      "modified": "2025-09-08T18:44:31.217301",
-      "md5": "0eef0913de3758721aea30f293b97d68",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "1c9e1d04378e338a6a440f3140a0c2ed",
       "type": "file",
-      "size": 9167
-    },
-    "fc_model/LLM_API_INDEX_FC_MODEL.json": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/LLM_API_INDEX_FC_MODEL.json",
-      "modified": "2025-09-08T18:44:31.211301",
-      "md5": "1fc69e0633951bee38d88615a8c639f4",
-      "type": "file",
-      "size": 3786
+      "size": 9172
     },
     "fc_model/fc_coordinate_system.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_coordinate_system.py",
-      "modified": "2025-09-08T18:44:31.216301",
-      "md5": "7c5b1a0054d4801e2aa95fc0707940c6",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "c9318535df08cd06fb5dd0b97ef36940",
       "type": "file",
-      "size": 1414
+      "size": 1857
     },
     "fc_model/fc_data.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_data.py",
-      "modified": "2025-10-06T14:42:01.902942",
-      "md5": "4d4f39f73e499d250aa31f47a66124d9",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "cb2826ba6ba03493435cc9c47065106a",
       "type": "file",
-      "size": 3245
+      "size": 4675
     },
     "fc_model/fc_constraint.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_constraint.py",
-      "modified": "2025-09-08T18:44:31.216301",
-      "md5": "fdcb48ace5da2e5a3434805bdf837dda",
+      "modified": "2025-12-26T19:50:13.683990",
+      "md5": "7f7393fea33ad94b63b7b0d595564467",
       "type": "file",
-      "size": 1845
-    },
-    "fc_model/LLM_CONTEXT_FC_MODEL.md": {
-      "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/LLM_CONTEXT_FC_MODEL.md",
-      "modified": "2025-09-08T18:44:31.211301",
-      "md5": "35c2854a898db7b1007a7196fdf4bd08",
-      "type": "file",
-      "size": 5229
+      "size": 2288
     },
     "fc_model/fc_property_tables.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_property_tables.py",
-      "modified": "2025-09-08T18:44:31.217301",
-      "md5": "617daecfd7b87040fa532f4ee4ddafdf",
+      "modified": "2025-12-26T19:50:13.684991",
+      "md5": "d17764fb72642a5cbff4a2096821888f",
       "type": "file",
-      "size": 1175
+      "size": 1380
     },
     "fc_model/fc_addons.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/fc_addons.py",
-      "modified": "2025-09-08T18:44:31.215301",
+      "modified": "2025-12-26T19:50:13.683990",
       "md5": "fb119a21554a844fecbfa56a3fbd282d",
       "type": "file",
       "size": 4447
@@ -529,6 +634,34 @@
       "md5": "aee5d1ca34a259625bdd0c79e0a30c51",
       "type": "file",
       "size": 37632
+    },
+    "img/dev_2_3_animation/animation_Vx_5900-11500.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_3_animation/animation_Vx_5900-11500.mp4",
+      "modified": "2026-01-27T13:12:11.982951",
+      "md5": "8527e7892c0b9e0dbdf5cc21b16a02b6",
+      "type": "file",
+      "size": 4152649
+    },
+    "img/dev_2_3_animation/animation_Vx_250-5850.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_3_animation/animation_Vx_250-5850.mp4",
+      "modified": "2026-01-27T13:12:09.498942",
+      "md5": "6688d32aed51c7a21678a2d452a1cce5",
+      "type": "file",
+      "size": 8058473
+    },
+    "img/dev_2_3_animation/animation_Vy_5900-11500.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_3_animation/animation_Vy_5900-11500.mp4",
+      "modified": "2026-01-27T13:12:17.471972",
+      "md5": "4f2699807b9b5fbce5cc38d88a523ee1",
+      "type": "file",
+      "size": 6950427
+    },
+    "img/dev_2_3_animation/animation_Vy_250-5850.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_3_animation/animation_Vy_250-5850.mp4",
+      "modified": "2026-01-27T13:12:14.811962",
+      "md5": "48e56b8a4167dc55f9faa03c128f0a0a",
+      "type": "file",
+      "size": 11100957
     },
     "img/model1_50a4p_young.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/model1_50a4p_young.png",
@@ -950,6 +1083,13 @@
       "type": "file",
       "size": 5269840
     },
+    "data/dev_2_3_line1_Vx_x6000p00_d8.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_line1_Vx_x6000p00_d8.sgy",
+      "modified": "2026-01-20T15:46:42.353806",
+      "md5": "346d9a71d98464ab60fbfe72cb32c8ef",
+      "type": "file",
+      "size": 7346544
+    },
     "data/dev_1_6_model_material_new.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_6_model_material_new.npz",
       "modified": "2025-10-27T13:07:15.219594",
@@ -970,6 +1110,13 @@
       "md5": "d9e539180db62d8082e82c02ad919518",
       "type": "file",
       "size": 2045302
+    },
+    "data/dev_2_3_line1_Vy_x6000p00_d8.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_line1_Vy_x6000p00_d8.sgy",
+      "modified": "2026-01-20T15:46:42.365807",
+      "md5": "dfc3a4c005df346a53f8fd85f9888f2d",
+      "type": "file",
+      "size": 7346544
     },
     "data/static_material.csv": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/static_material.csv",
@@ -999,6 +1146,13 @@
       "type": "file",
       "size": 7217484
     },
+    "data/dev_2_3_result1_png.zip": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_result1_png.zip",
+      "modified": "2026-01-27T12:43:03.803051",
+      "md5": "b40ea293bf02ef6891d9996b8e680b50",
+      "type": "file",
+      "size": 84500051
+    },
     "data/dev_2_2_milen2Do4pore_full_4s_Vy.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do4pore_full_4s_Vy.sgy",
       "modified": "2025-12-01T17:32:55.388034",
@@ -1012,6 +1166,13 @@
       "md5": "312b68f14e8135cda4b854562c985bb6",
       "type": "file",
       "size": 18403
+    },
+    "data/dev_2_3_result1_segy.zip": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_result1_segy.zip",
+      "modified": "2026-01-27T12:40:46.350546",
+      "md5": "898b479ce62268617b8936cecae2b46a",
+      "type": "file",
+      "size": 174444742
     },
     "data/dev_1_4_model3_geom.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_4_model3_geom.jou",
@@ -1050,10 +1211,10 @@
     },
     "data/dev_2_2_milen2Do5pore_full_3s_Vy.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_3s_Vy.sgy",
-      "modified": "2025-12-22T04:22:06",
-      "md5": "1ad4bc836965fd327bd4f4f8f459cebd",
+      "modified": "2025-12-26T10:03:44",
+      "md5": "4740e7ec33f2beec7acbe7b187623e94",
       "type": "file",
-      "size": 5427312
+      "size": 11307312
     },
     "data/dev_2_1_milen2Do2_pore_center2_simple.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_milen2Do2_pore_center2_simple.fc",
@@ -1188,6 +1349,13 @@
       "type": "file",
       "size": 13763412
     },
+    "data/dev_2_3_result1_src.zip": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_result1_src.zip",
+      "modified": "2026-01-27T12:43:29.741146",
+      "md5": "acbb5c5860350a993ed6309850a92972",
+      "type": "file",
+      "size": 421689589
+    },
     "data/dev_1_7_all_grids.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_all_grids.npz",
       "modified": "2025-10-16T17:55:03.594430",
@@ -1300,6 +1468,13 @@
       "type": "file",
       "size": 19375840
     },
+    "data/dev_2_3_line1_Vy_x6000p00_d7.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_line1_Vy_x6000p00_d7.sgy",
+      "modified": "2026-01-20T15:43:31.056898",
+      "md5": "c5c4967ea0478e77daea256bf19b60e6",
+      "type": "file",
+      "size": 7346544
+    },
     "data/dev_2_2_milen2Do6pore_centerl_Vy.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do6pore_centerl_Vy.sgy",
       "modified": "2025-11-20T20:04:28",
@@ -1372,10 +1547,10 @@
     },
     "data/dev_2_2_milen2Do5pore_full_3s_Vx.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_2_milen2Do5pore_full_3s_Vx.sgy",
-      "modified": "2025-12-22T04:22:08",
-      "md5": "65f49b2f603f442c6f9ff3a3b1d37cd0",
+      "modified": "2025-12-26T10:03:42",
+      "md5": "28efbf59e0118a69d02db9b39ecd9592",
       "type": "file",
-      "size": 5427312
+      "size": 11307312
     },
     "data/dev_1_6_layered_material.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_6_layered_material.npz",
@@ -1460,6 +1635,13 @@
       "md5": "6ff5a40b4c574227766b724fb84fd50f",
       "type": "file",
       "size": 723630
+    },
+    "data/dev_2_3_line1_Vx_x6000p00_d7.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3_line1_Vx_x6000p00_d7.sgy",
+      "modified": "2026-01-20T15:43:30.740896",
+      "md5": "ccd079486a2201c9bec945935b4e78e6",
+      "type": "file",
+      "size": 7346544
     },
     "data/dev_1_5_model_spline.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_5_model_spline.jou",
@@ -1813,10 +1995,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2025-12-01T18:47:46.602224",
-      "md5": "ab71a41871e734a5fdbf928ed7308068",
+      "modified": "2026-01-27T13:13:55.765346",
+      "md5": "d24f2e9b311d2a7190c480ca16da2d66",
       "type": "file",
-      "size": 77383
+      "size": 85504
     },
     "test.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/test.fc",
@@ -1827,10 +2009,10 @@
     },
     "LAST_COMMIT": {
       "path": "/home/antonov/Base/Research/MilenSem2D/LAST_COMMIT",
-      "modified": "2025-12-01T13:21:29.151125",
-      "md5": "1b0bc5be3f72c37c37227747404cc06a",
+      "modified": "2026-01-27T13:12:26.113005",
+      "md5": "43d707c1ea45a1103454fd977b929835",
       "type": "file",
-      "size": 409
+      "size": 538
     },
     "dev_1_1_material_interpolation.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_1_material_interpolation.ipynb",
@@ -1890,7 +2072,7 @@
     },
     "dev_1_7_material_euler.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_7_material_euler.ipynb",
-      "modified": "2025-10-30T12:48:06.994786",
+      "modified": "2026-01-20T19:17:08.138934",
       "md5": "8795272a52c6b17b023158090cef932d",
       "type": "file",
       "size": 1270626
@@ -1899,35 +2081,42 @@
   "dirs": {
     "fc_model": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model",
-      "modified": "2025-09-09T15:54:43.020256",
+      "modified": "2025-12-26T19:50:13.684991",
       "md5": "",
       "type": "dir",
       "size": 0
     },
     "fc_model/__pycache__": {
       "path": "/home/antonov/Base/Research/MilenSem2D/fc_model/__pycache__",
-      "modified": "2025-10-06T18:50:00.509845",
+      "modified": "2025-12-26T19:50:13.683990",
       "md5": "",
       "type": "dir",
       "size": 0
     },
     "img": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img",
-      "modified": "2025-11-05T13:07:34.224653",
+      "modified": "2026-01-27T13:15:31.705710",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "img/dev_2_3_animation": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_3_animation",
+      "modified": "2026-01-27T13:15:31.705710",
       "md5": "",
       "type": "dir",
       "size": 0
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2025-12-22T15:23:21.042442",
+      "modified": "2026-01-27T13:13:39.187283",
       "md5": "",
       "type": "dir",
       "size": 0
     },
     "src": {
       "path": "/home/antonov/Base/Research/MilenSem2D/src",
-      "modified": "2025-10-27T18:40:38.855612",
+      "modified": "2026-01-22T19:18:56.394170",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -1962,8 +2151,8 @@
     }
   },
   "statistics": {
-    "total_files": 270,
-    "total_directories": 9,
-    "total_size": 3641098750
+    "total_files": 296,
+    "total_directories": 10,
+    "total_size": 4393272790
   }
 }
