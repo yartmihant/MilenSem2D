@@ -1,205 +1,274 @@
 #!/usr/bin/env python3
-"""Сборка shot-файлов SEG-Y в один общий gather-файл с заполнением заголовков."""
+"""
+Сборка сводных сейсмограмм из NPZ-данных (research_seismic_sweep) в формат SEG-Y.
+
+Два шаблона наблюдений (правый и левый), две компоненты (Vx, Vy) — итого 4 выходных файла.
+
+Инструкция по запуску
+---------------------
+    python dev_2_3_2_merge_shots.py
+
+Все параметры задаются глобальным словарём CONFIG (см. ниже).
+"""
 
 from __future__ import annotations
 
-import argparse
-import re
 from pathlib import Path
 
 import numpy as np
 import segyio
 
+# ---------------------------------------------------------------------------
+# Глобальная конфигурация
+# ---------------------------------------------------------------------------
 
-SHOT_RE = re.compile(r"_x(\d+)p00_d8\.sgy$")
+CONFIG = {
+    # Каталог с NPZ-данными: research_seismic_sweep/x_{pos}/data.npz
+    "npz_dir": Path("data/dev_2_3/research_seismic_sweep_7_1_0_full"),
+
+    # Каталог для выходных SEG-Y
+    "output_dir": Path("data/dev_2_3"),
+
+    # Компоненты для записи
+    "components": ["Vx", "Vy"],
+
+    # -----------------------------------------------------------------------
+    # Параметры сейсмограммы (время)
+    # -----------------------------------------------------------------------
+    # Число временных отсчётов в каждой трассе
+    "sample_count": 1501,
+    # Шаг дискретизации, мкс — записывается в заголовок SEG-Y
+    "sample_interval_us": 2000,
+    # Если в NPZ отсчётов БОЛЬШЕ sample_count — берём первые sample_count.
+    # Если МЕНЬШЕ — дополняем нулями справа.
+
+    # -----------------------------------------------------------------------
+    # Правый шаблон (Right spread)
+    # Источник -> приёмники вправо
+    # -----------------------------------------------------------------------
+    "right": {
+        # Координаты источников, м: от 250 до 7500 шаг 50 -> 146 источников
+        "source_x_start": 250,
+        "source_x_stop":  7500,
+        "source_x_step":  50,
+        # Число приёмников, шаг (приёмники правее источника)
+        "receiver_count": 81,
+        "receiver_step_m": 50,
+        # receiver_k: x_r = x_s + receiver_step_m * k, k = 1..receiver_count
+        "receiver_direction": 1,
+    },
+
+    # -----------------------------------------------------------------------
+    # Левый шаблон (Left spread)
+    # Источник -> приёмники влево
+    # -----------------------------------------------------------------------
+    "left": {
+        # Координаты источников, м: от 4250 до 11500 шаг 50 -> 146 источников
+        "source_x_start": 4250,
+        "source_x_stop":  11500,
+        "source_x_step":  50,
+        # Число приёмников, шаг (приёмники левее источника)
+        "receiver_count": 81,
+        "receiver_step_m": 50,
+        # receiver_k: x_r = x_s - receiver_step_m * k, k = 1..receiver_count
+        "receiver_direction": -1,
+    },
+
+    # -----------------------------------------------------------------------
+    # Заголовки SEG-Y (трассовые константы)
+    # -----------------------------------------------------------------------
+    # Скаляр для координат: -100 означает "делить на 100" -> метры.
+    # Координаты хранятся умноженными на 100 (сантиметры).
+    "elevation_scalar":         -100,
+    "source_group_scalar":      -100,
+    # Отметка поверхности, сантиметры: -8 / 100 = -0.08 м ~ 0
+    "receiver_group_elevation": -8,
+    # CoordinateUnits = 1 -> метры
+    "coordinate_units": 1,
+    # TraceIdentificationCode = 1 -> живая трасса
+    "trace_id_code": 1,
+    # DataUse = 1 -> реальные данные
+    "data_use": 1,
+}
+
+# ---------------------------------------------------------------------------
+# Вспомогательные функции
+# ---------------------------------------------------------------------------
 
 
-def parse_shot_x(path: Path) -> int:
-    m = SHOT_RE.search(path.name)
-    if not m:
-        raise ValueError(f"Не удалось извлечь X источника из имени: {path.name}")
-    return int(m.group(1))
+def load_npz(npz_dir: Path, source_x: int) -> dict:
+    """Загружает NPZ-файл для источника source_x (в метрах)."""
+    path = npz_dir / f"x_{source_x}" / "data.npz"
+    if not path.exists():
+        raise FileNotFoundError(f"NPZ не найден: {path}")
+    return dict(np.load(path))
 
 
-def receiver_xs_for_shot(source_x_m: int, shot_index_1b: int, receiver_count: int) -> list[int]:
-    """Возвращает X приемников в метрах для одного источника.
-
-    Правило пользователя:
-    - источники 1..113: справа от источника, шаг 50 м (source+50 ... source+4000)
-    - источники 114..226: слева от источника, 80 приемников, затем источник.
-      По порядку трасс используем возрастающий X (farthest-left -> nearest-left),
-      как в исходных файлах Fidesys.
+def extract_trace(
+    data: dict,
+    component: str,
+    receiver_x: float,
+    sample_count: int,
+) -> np.ndarray:
     """
-    step_m = 50
+    Извлекает трассу для одного приёмника.
 
-    if shot_index_1b <= 113:
-        return [source_x_m + step_m * i for i in range(1, receiver_count + 1)]
+    Шаг sensor_x = 10 м, поэтому индекс = round(receiver_x / sensor_step).
+    Возвращает float32-вектор длиной sample_count.
+    """
+    sensor_x = data["sensor_x"]   # (1176,) отсортированный 0..11750 шаг 10 м
+    sensor_step = sensor_x[1] - sensor_x[0]
+    ix = int(round(receiver_x / sensor_step))
+    if ix < 0 or ix >= len(sensor_x):
+        return np.zeros(sample_count, dtype=np.float32)
 
-    # Слева от источника: source-4000 ... source-50 (возрастающий X)
-    return [source_x_m - step_m * i for i in range(receiver_count, 0, -1)]
+    key = f"seismo_{component.lower()}"  # seismo_vx или seismo_vy
+    raw = data[key][:, ix]               # (2000,)
+
+    n = len(raw)
+    if n >= sample_count:
+        return raw[:sample_count].astype(np.float32)
+    else:
+        out = np.zeros(sample_count, dtype=np.float32)
+        out[:n] = raw.astype(np.float32)
+        return out
 
 
-def build_text_header(component: str) -> str:
+def make_text_header(component: str, spread: str, cfg: dict) -> bytes:
+    """Создаёт 3200-байтовый текстовый заголовок SEG-Y."""
+    scfg = cfg[spread]
+    n_src = len(range(scfg["source_x_start"], scfg["source_x_stop"] + 1, scfg["source_x_step"]))
+    n_rec = scfg["receiver_count"]
+    total = n_src * n_rec
+    direction = "RIGHT" if scfg["receiver_direction"] == 1 else "LEFT"
     lines = {
-        1: "MILEN SEM 2D - SYNTHETIC GATHER",
-        2: "SEGY IN TIME FORMAT (MERGED SHOTS)",
-        3: "START TIME:      0.00 MSEC",
-        4: "STOP TIME:    3000.00 MSEC",
-        5: "SAMPLING STEP:   2.00 MSEC",
-        6: "FORMAT: 4-BYTE IBM FLOAT (SEG-Y FORMAT 1)",
-        7: f"COMPONENT: {component}",
-        8: "GEOMETRY: 226 SOURCES X 80 RECEIVERS = 18080 TRACES",
-        9: "SRC 1..113: RECEIVERS RIGHT, SRC 114..226: RECEIVERS LEFT",
-        10: "COORD UNITS: METERS; STORED AS CENTIMETERS WITH SCALAR -100",
+        1:  "MILEN SEM 2D - SYNTHETIC GATHER",
+        2:  "SEGY IN TIME FORMAT (NPZ -> SEG-Y CONVERSION)",
+        3:  f"COMPONENT: {component}",
+        4:  f"SPREAD: {spread.upper()} ({direction})",
+        5:  f"SOURCES: {scfg['source_x_start']}..{scfg['source_x_stop']} M STEP {scfg['source_x_step']} M  ({n_src} SOURCES)",
+        6:  f"RECEIVERS: {n_rec} PER SOURCE, STEP {scfg['receiver_step_m']} M  (TOTAL {total} TRACES)",
+        7:  f"TIME: {cfg['sample_count']} SAMPLES X {cfg['sample_interval_us']} US",
+        8:  "FORMAT: 4-BYTE IBM FLOAT (SEG-Y FORMAT 1)",
+        9:  "COORD UNITS: METERS; STORED AS CENTIMETERS WITH SCALAR -100",
+        10: "DATA SOURCE: research_seismic_sweep/(x_NNN)/data.npz",
     }
     return segyio.tools.create_text_header(lines)
 
 
-def merge_component(
-    input_dir: Path,
-    output_path: Path,
-    component: str,
-    expected_shots: int,
-    expected_receivers: int,
-) -> None:
-    pattern = f"output_line1_{component}_x*p00_d8.sgy"
-    shot_files = sorted(input_dir.glob(pattern), key=parse_shot_x)
+# ---------------------------------------------------------------------------
+# Основная функция сборки
+# ---------------------------------------------------------------------------
 
-    if len(shot_files) != expected_shots:
-        raise RuntimeError(
-            f"Для {component} найдено {len(shot_files)} shot-файлов, ожидалось {expected_shots}"
-        )
 
-    first_file = shot_files[0]
-    with segyio.open(str(first_file), "r", ignore_geometry=True) as f0:
-        sample_count = len(f0.trace[0])
-        sample_interval_us = f0.header[0][segyio.TraceField.TRACE_SAMPLE_INTERVAL]
-        input_format = f0.format
+def build_gather(component: str, spread: str, cfg: dict) -> None:
+    """
+    Собирает один gather-файл:
+      компонента (Vx/Vy) x шаблон (right/left).
+    """
+    scfg = cfg[spread]
+    npz_dir: Path = cfg["npz_dir"]
+    output_dir: Path = cfg["output_dir"]
+    sample_count: int = cfg["sample_count"]
+    sample_interval_us: int = cfg["sample_interval_us"]
 
-    if sample_count != 1501:
-        raise RuntimeError(f"Ожидалось 1501 сэмпл, получено {sample_count}")
-    if sample_interval_us != 2000:
-        raise RuntimeError(f"Ожидался интервал 2000 us, получено {sample_interval_us}")
+    source_xs = list(range(scfg["source_x_start"], scfg["source_x_stop"] + 1, scfg["source_x_step"]))
+    n_src = len(source_xs)
+    n_rec = scfg["receiver_count"]
+    rec_step = scfg["receiver_step_m"]
+    rec_dir = scfg["receiver_direction"]
+    total_traces = n_src * n_rec
 
-    total_traces = expected_shots * expected_receivers
+    output_path = output_dir / f"output_line_v2_{component}_{spread}.sgy"
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     spec = segyio.spec()
-    spec.format = int(input_format)  # 1 = IBM float
-    spec.samples = range(sample_count)
+    spec.format = 1           # 4-byte IBM float
+    spec.samples = np.arange(sample_count, dtype=np.float32)
     spec.tracecount = total_traces
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
     with segyio.create(str(output_path), spec) as out:
-        out.text[0] = build_text_header(component)
+        out.text[0] = make_text_header(component, spread, cfg)
 
-        out.bin.update(
-            {
-                segyio.BinField.JobID: 1,
-                segyio.BinField.LineNumber: 1,
-                segyio.BinField.ReelNumber: 1,
-                segyio.BinField.Traces: total_traces,
-                segyio.BinField.AuxTraces: 0,
-                segyio.BinField.Interval: sample_interval_us,
-                segyio.BinField.IntervalOriginal: sample_interval_us,
-                segyio.BinField.Samples: sample_count,
-                segyio.BinField.SamplesOriginal: sample_count,
-                segyio.BinField.Format: int(input_format),
-                segyio.BinField.EnsembleFold: 32,
-                segyio.BinField.SortingCode: 5,
-                segyio.BinField.MeasurementSystem: 1,
-                segyio.BinField.SEGYRevision: 0,
-                segyio.BinField.SEGYRevisionMinor: 0,
-            }
-        )
+        out.bin.update({
+            segyio.BinField.JobID:               1,
+            segyio.BinField.LineNumber:          1,
+            segyio.BinField.ReelNumber:          1,
+            segyio.BinField.Traces:              total_traces,
+            segyio.BinField.AuxTraces:           0,
+            segyio.BinField.Interval:            sample_interval_us,
+            segyio.BinField.IntervalOriginal:    sample_interval_us,
+            segyio.BinField.Samples:             sample_count,
+            segyio.BinField.SamplesOriginal:     sample_count,
+            segyio.BinField.Format:              1,
+            segyio.BinField.EnsembleFold:        n_rec,
+            segyio.BinField.SortingCode:         5,   # 5 = common shot point
+            segyio.BinField.MeasurementSystem:   1,   # 1 = metres
+            segyio.BinField.SEGYRevision:        0,
+            segyio.BinField.SEGYRevisionMinor:   0,
+        })
 
         trace_idx = 0
-        for shot_idx_1b, shot_path in enumerate(shot_files, start=1):
-            source_x_m = parse_shot_x(shot_path)
-            receiver_xs_m = receiver_xs_for_shot(source_x_m, shot_idx_1b, expected_receivers)
+        for shot_num_1b, source_x in enumerate(source_xs, start=1):
+            data = load_npz(npz_dir, source_x)
 
-            with segyio.open(str(shot_path), "r", ignore_geometry=True) as shot:
-                if shot.tracecount != expected_receivers:
-                    raise RuntimeError(
-                        f"{shot_path.name}: трасс {shot.tracecount}, ожидалось {expected_receivers}"
-                    )
+            for rec_num_1b in range(0, n_rec):
+                rec_x = source_x + rec_dir * rec_step * rec_num_1b
+                cdp_x = 0.5 * (source_x + rec_x)
+                offset_m = rec_x - source_x   # со знаком
 
-                for rec_idx_1b in range(1, expected_receivers + 1):
-                    rec_x_m = receiver_xs_m[rec_idx_1b - 1]
-                    cdp_x_m = 0.5 * (source_x_m + rec_x_m)
-                    offset_m_signed = rec_x_m - source_x_m
+                trace = extract_trace(data, component, rec_x, sample_count)
 
-                    out.trace[trace_idx] = np.asarray(shot.trace[rec_idx_1b - 1], dtype=np.float32)
+                out.trace[trace_idx] = trace
+                out.header[trace_idx] = {
+                    # Глобальная нумерация
+                    segyio.TraceField.TRACE_SEQUENCE_LINE: trace_idx + 1,
+                    segyio.TraceField.TRACE_SEQUENCE_FILE: trace_idx + 1,
+                    segyio.TraceField.CROSSLINE_3D:        trace_idx + 1,
+                    # Поля источника
+                    segyio.TraceField.FieldRecord:         shot_num_1b,
+                    segyio.TraceField.EnergySourcePoint:   shot_num_1b,
+                    segyio.TraceField.CDP:                 shot_num_1b,
+                    # Поля приёмника
+                    segyio.TraceField.CDP_TRACE:           rec_num_1b,
+                    segyio.TraceField.INLINE_3D:           rec_num_1b,
+                    segyio.TraceField.TraceNumber:         rec_num_1b,
+                    # Координаты x 100 (сантиметры) + скаляр -100
+                    segyio.TraceField.SourceX: int(round(source_x * 100)),
+                    segyio.TraceField.GroupX:  int(round(rec_x    * 100)),
+                    segyio.TraceField.CDP_X:   int(round(cdp_x    * 100)),
+                    # Вынос в метрах (signed)
+                    segyio.TraceField.offset:  int(round(offset_m)),
+                    # Константы
+                    segyio.TraceField.SourceGroupScalar:       cfg["source_group_scalar"],
+                    segyio.TraceField.ElevationScalar:         cfg["elevation_scalar"],
+                    segyio.TraceField.ReceiverGroupElevation:  cfg["receiver_group_elevation"],
+                    segyio.TraceField.CoordinateUnits:         cfg["coordinate_units"],
+                    segyio.TraceField.DataUse:                 cfg["data_use"],
+                    segyio.TraceField.TraceIdentificationCode: cfg["trace_id_code"],
+                    segyio.TraceField.TRACE_SAMPLE_INTERVAL:   sample_interval_us,
+                    segyio.TraceField.TRACE_SAMPLE_COUNT:      sample_count,
+                }
+                trace_idx += 1
 
-                    out.header[trace_idx] = {
-                        # Глобальная нумерация трасс
-                        segyio.TraceField.TRACE_SEQUENCE_FILE: trace_idx + 1,
-                        segyio.TraceField.TRACE_SEQUENCE_LINE: trace_idx + 1,
-                        segyio.TraceField.CROSSLINE_3D: trace_idx + 1,
-                        # Поля источника
-                        segyio.TraceField.FieldRecord: shot_idx_1b,
-                        segyio.TraceField.EnergySourcePoint: shot_idx_1b,
-                        segyio.TraceField.CDP: shot_idx_1b,
-                        # Поля приемника
-                        segyio.TraceField.CDP_TRACE: rec_idx_1b,
-                        segyio.TraceField.INLINE_3D: rec_idx_1b,
-                        segyio.TraceField.TraceNumber: rec_idx_1b,
-                        # Координаты (см) + скаляр -100 => метры
-                        segyio.TraceField.SourceX: int(round(source_x_m * 100)),
-                        segyio.TraceField.GroupX: int(round(rec_x_m * 100)),
-                        segyio.TraceField.CDP_X: int(round(cdp_x_m * 100)),
-                        # Смещение источник-приемник (метры, signed)
-                        segyio.TraceField.offset: int(round(offset_m_signed)),
-                        # Трассовые константы
-                        segyio.TraceField.SourceGroupScalar: -100,
-                        segyio.TraceField.ElevationScalar: -100,
-                        segyio.TraceField.ReceiverGroupElevation: -8,
-                        segyio.TraceField.CoordinateUnits: 1,
-                        segyio.TraceField.DataUse: 1,
-                        segyio.TraceField.TraceIdentificationCode: 1,
-                        segyio.TraceField.TRACE_SAMPLE_INTERVAL: sample_interval_us,
-                        segyio.TraceField.TRACE_SAMPLE_COUNT: sample_count,
-                    }
-                    trace_idx += 1
+            if shot_num_1b % 10 == 0 or shot_num_1b == n_src:
+                print(f"  [{spread}/{component}] shot {shot_num_1b}/{n_src} (x={source_x}m), "
+                      f"трасс записано: {trace_idx}")
 
-    print(f"Готово: {output_path} | component={component} | traces={total_traces}")
+    print(f"Готово: {output_path}  ({total_traces} трасс)\n")
+
+
+# ---------------------------------------------------------------------------
+# Точка входа
+# ---------------------------------------------------------------------------
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Merge MILEN shot SEG-Y files into a single SEG-Y")
-    parser.add_argument(
-        "--input-dir",
-        type=Path,
-        default=Path("data/dev_2_3/sgy"),
-        help="Папка с shot-файлами SEG-Y",
-    )
-    parser.add_argument(
-        "--output-dir",
-        type=Path,
-        default=Path("data/dev_2_3/merged"),
-        help="Папка для объединенных SEG-Y",
-    )
-    parser.add_argument(
-        "--components",
-        nargs="+",
-        default=["Vx", "Vy"],
-        choices=["Vx", "Vy"],
-        help="Компоненты для сборки",
-    )
-    parser.add_argument("--shots", type=int, default=226, help="Ожидаемое число источников")
-    parser.add_argument("--receivers", type=int, default=80, help="Ожидаемое число приемников на источник")
-
-    args = parser.parse_args()
-
-    for component in args.components:
-        output_path = args.output_dir / f"output_line1_{component}_gather_merged.sgy"
-        merge_component(
-            input_dir=args.input_dir,
-            output_path=output_path,
-            component=component,
-            expected_shots=args.shots,
-            expected_receivers=args.receivers,
-        )
+    for component in CONFIG["components"]:
+        for spread in ("right", "left"):
+            print(f"=== {component} / {spread} ===")
+            build_gather(component, spread, CONFIG)
+    print("Все файлы записаны.")
 
 
 if __name__ == "__main__":

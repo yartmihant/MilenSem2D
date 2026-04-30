@@ -8,3 +8,4 @@
 *.pyw
 *.pyz
 *.zip
+.venv/
