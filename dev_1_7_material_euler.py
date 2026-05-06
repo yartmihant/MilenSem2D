@@ -22,7 +22,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 from fc_model import FCModel
-from scipy.interpolate import CloughTocher2DInterpolator, LinearNDInterpolator, NearestNDInterpolator, RBFInterpolator
+from scipy.interpolate import CloughTocher2DInterpolator
 
 # Глобальный флаг для управления отображением графиков
 SHOW_PLOTS = True  # True - показывать графики, False - только сохранять

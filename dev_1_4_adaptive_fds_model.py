@@ -84,7 +84,7 @@ with open('model3_geom.jou', 'w') as f:
 
 """ Скрипт генерирует сплайновую геометрию нужной конфигурации. """
 
-""" ![model3_geom.png](img/model3_geom.png) """
+""" ![model3_geom.png](img/dev_1_4_model3_geom.png) """
 
 """ ### Сетка """
 
