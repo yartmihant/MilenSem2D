@@ -1,0 +1,31 @@
+# Petrel well head
+# Unit in X and Y direction: m
+# Unit in depth: m
+VERSION 1
+BEGIN HEADER
+Name
+UWI
+Well symbol
+Surface X
+Surface Y
+Drilling structure
+Well datum name
+Well datum value
+Well datum description
+TD (MD)
+Cost
+Spud date
+Simulation name
+Simulation export date
+Operator
+TWT auto
+Uncertainty ground level
+Uncertainty radius
+Uncertainty standard deviation factor
+Bottom hole X
+Bottom hole Y
+FLOAT,Ambient temperature
+FLOAT,Heat transfer coefficient
+END HEADER 
+"WELL-1" "" 0 4250.00 0.00   "" "KB" 130.0  "Kelly bushing" 2500.0 -999   "NULL" "" "NULL" "" -999   0.00   0.00   1.00   4250.00 0.00   -999   -999   
+"WELL-2" "" 0 7500.00 0.00   "" "KB" 129.0  "Kelly bushing" 2470.0 -999   "NULL" "" "NULL" "" -999   0.00   0.00   1.00   7500.00 0.00   -999   -999   
