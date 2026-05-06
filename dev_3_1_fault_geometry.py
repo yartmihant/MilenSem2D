@@ -26,7 +26,7 @@ from pathlib import Path
 fault_x = 5875.0  # м, X-координата пересечения с поверхностью
 
 # Угол наклона относительно вертикали (0° — вертикальный разлом)
-fault_angle = 10.0  # градусы
+fault_angle = 0.0  # градусы
 
 # Вертикальное смещение слоёв (положительное — правый блок опущен вниз)
 fault_throw = 50.0  # м
@@ -48,7 +48,7 @@ print(f"Шаг сетки: {distances[1] - distances[0]:.1f} м")
 
 """ ## Построение линии разлома ## """
 
-"""
+r"""
 Линия разлома — прямая, проходящая через точку `(fault_x, 0)` на поверхности
 под углом `fault_angle` от вертикали. При угле 0° разлом вертикальный;
 при положительном угле верхняя часть наклонена вправо (нормальный сброс).
@@ -77,7 +77,7 @@ def fault_line_x(z, fault_x, fault_angle_deg):
 
 # Диапазон глубин модели
 z_max = np.max(layer_boundaries)
-z_range = np.linspace(0, z_max, 100)
+z_range = np.linspace(0, z_max + fault_throw, 100)
 x_fault_line = fault_line_x(z_range, fault_x, fault_angle)
 
 print(f"\nЛиния разлома:")
@@ -95,6 +95,7 @@ print(f"  Смещение (throw): {fault_throw} м")
 2. Разделяем границу на левую и правую части
 3. Правую часть смещаем вниз на `fault_throw`
 
+Разлом резкий: слои слева и справа полностью независимы.
 Смещение производится строго по вертикали — это соответствует модели нормального сброса,
 где вертикальная компонента смещения (`throw`) задана явно.
 """
@@ -126,16 +127,12 @@ def apply_fault_to_boundaries(layer_boundaries, distances, fault_x, fault_angle_
         fault_x_at_depth = fault_line_x(boundary_z, fault_x, fault_angle_deg)
 
         # Находим индекс пересечения: где distances переходит через fault_x_at_depth
-        # Ищем точку, где distances[j] >= fault_x_at_depth[j]
         crossings = distances - fault_x_at_depth
-        # Ищем первый переход через ноль (слева направо)
         sign_changes = np.where(np.diff(np.sign(crossings)))[0]
 
         if len(sign_changes) > 0:
-            # Берём первое пересечение
             fault_idx = sign_changes[0]
         else:
-            # Если разлом выходит за пределы модели — не применяем
             if crossings[0] > 0:
                 fault_idx = 0
             else:
@@ -145,6 +142,9 @@ def apply_fault_to_boundaries(layer_boundaries, distances, fault_x, fault_angle_
 
         # Смещаем правую часть границы вниз на fault_throw
         faulted_boundaries[i, fault_idx + 1:] = boundary_z[fault_idx + 1:] + fault_throw
+
+        # Резкий разрыв: NaN в точке разлома (слои не соединяются)
+        # faulted_boundaries[i, fault_idx] = np.nan
 
     return faulted_boundaries, fault_indices
 
@@ -158,24 +158,45 @@ print(f"Индексы разлома: от {fault_indices.min()} до {fault_in
 print(f"X-координаты разлома: от {distances[fault_indices.min()]:.0f} до {distances[fault_indices.max()]:.0f} м")
 
 
-""" ## Добавление поверхности (z=0) ## """
+""" ## Добавление поверхности (z=0) и плоского дна модели ## """
 
-"""
+r"""
 Исходные данные `layer_boundaries_array` содержат только нижние границы слоёв (75 штук).
-Для полного описания модели нужна верхняя граница (поверхность z=0). Добавим её,
-а также проверим, что последний слой имеет плоское дно на z=2750 м.
+Для полного описания модели нужна верхняя граница (поверхность z=0) и плоское дно.
+
+После разлома правый блок смещён вниз → формируются пустоты:
+- **Вверху справа**: между z=0 и первой границей (заполняется растяжением первого слоя)
+- **Внизу слева**: между последней границей и дном модели (заполняется растяжением последнего слоя)
+
+Дно модели устанавливается плоским на отметке $z_{max} + fault\_throw$, 
+что обеспечивает прямоугольную область расчёта.
 """
 
-# Поверхность — нулевая линия, не затрагивается разломом
+# Глубина плоского дна модели (с учётом смещения)
+model_bottom_depth = z_max + fault_throw
+
+# Поверхность — z=0, с разрывом (NaN) в точке разлома на поверхности
 surface = np.zeros(len(distances))
+surface_fault_idx = np.searchsorted(distances, fault_x)
+surface[surface_fault_idx] = np.nan
+
+# Плоское дно модели — заполняет пустоту внизу слева (растяжение последнего слоя)
+# Вычисляем позицию разлома на глубине model_bottom_depth
+bottom_fault_x = fault_line_x(model_bottom_depth, fault_x, fault_angle)
+bottom_fault_idx = np.searchsorted(distances, bottom_fault_x)
+# Устанавливаем последнюю границу плоской (одинаковая глубина слева и справа)
+faulted_boundaries[-1, :] = model_bottom_depth
+faulted_boundaries[-1, bottom_fault_idx] = np.nan
 
 # Полный массив границ: поверхность + 75 нижних границ = 76 линий
-all_boundaries_original = np.vstack([surface[np.newaxis, :], layer_boundaries])
+all_boundaries_original = np.vstack([np.zeros((1, len(distances))), layer_boundaries])
 all_boundaries_faulted = np.vstack([surface[np.newaxis, :], faulted_boundaries])
 
 print(f"\nПолный массив границ (с поверхностью): {all_boundaries_faulted.shape}")
 print(f"Максимальная глубина (исходная): {layer_boundaries.max():.0f} м")
-print(f"Максимальная глубина (со сбросом): {faulted_boundaries.max():.0f} м")
+print(f"Глубина дна модели (плоское): {model_bottom_depth:.0f} м")
+print(f"Первый слой справа растянут на {fault_throw:.0f} м (заполнение пустоты сверху)")
+print(f"Последний слой слева растянут на {fault_throw:.0f} м (заполнение пустоты снизу)")
 
 
 """ ## Коррекция перехлёстов слоёв ## """
@@ -183,12 +204,13 @@ print(f"Максимальная глубина (со сбросом): {faulted_
 """
 После смещения правого блока возможны перехлёсты: граница верхнего слоя может оказаться 
 глубже нижнего слоя (отрицательная толщина). Это физически невозможно — корректируем, 
-гарантируя минимальную толщину слоя 1 м.
+гарантируя минимальную толщину слоя 1 м. Точки разлома (NaN) пропускаются.
 """
 
 def fix_layer_overlaps(boundaries, min_thickness=1.0):
     """
     Исправляет перехлёсты слоёв, гарантируя минимальную толщину.
+    Пропускает точки с NaN (разлом).
 
     Args:
         boundaries: массив (N_boundaries, N_points), включая поверхность
@@ -204,7 +226,9 @@ def fix_layer_overlaps(boundaries, min_thickness=1.0):
     # Проходим сверху вниз, гарантируя что каждая граница глубже предыдущей
     for i in range(1, len(fixed)):
         diff = fixed[i] - fixed[i - 1]
-        mask = diff < min_thickness
+        # Пропускаем NaN (точки разлома)
+        valid = ~np.isnan(diff)
+        mask = valid & (diff < min_thickness)
         if np.any(mask):
             n_fixes += np.sum(mask)
             fixed[i, mask] = fixed[i - 1, mask] + min_thickness
@@ -304,7 +328,8 @@ np.savez('data/dev_3_1_fault_layer_boundaries.npz',
          fault_x=fault_x,
          fault_angle=fault_angle,
          fault_throw=fault_throw,
-         fault_indices=fault_indices)
+         fault_indices=fault_indices,
+         model_bottom_depth=model_bottom_depth)
 
 print("\nРезультаты сохранены в data/dev_3_1_fault_layer_boundaries.npz")
 print(f"  layer_boundaries_array: {faulted_boundaries.shape}")
@@ -313,6 +338,7 @@ print(f"  distances: {distances.shape}")
 print(f"  fault_x: {fault_x}")
 print(f"  fault_angle: {fault_angle}")
 print(f"  fault_throw: {fault_throw}")
+print(f"  model_bottom_depth: {model_bottom_depth}")
 
 
 """ ## Выводы ## """
@@ -321,12 +347,14 @@ print(f"  fault_throw: {fault_throw}")
 Выполнено построение геометрии модели с тектоническим разломом:
 
 1. Загружена исходная 75-слойная модель из Главы I.5
-2. Задана линия разлома: x₀=5875 м, угол 10° от вертикали
-3. Все 75 границ слоёв рассечены линией разлома
-4. Правый блок смещён вниз на 50 м (нормальный сброс)
-5. Выполнена коррекция перехлёстов слоёв
-6. Построены графики: общий вид и детальный вид зоны разлома
-7. Результаты сохранены в data/dev_3_1_fault_layer_boundaries.npz
+2. Задана линия разлома: x₀=5875 м, угол от вертикали — параметр
+3. Все 75 границ слоёв рассечены линией разлома (резкий разрыв через NaN)
+4. Правый блок смещён вниз на fault_throw (нормальный сброс)
+5. Заполнены пустоты: первый слой справа и последний слой слева растянуты
+   для формирования плоской поверхности сверху (z=0) и снизу (z=z_max+throw)
+6. Выполнена коррекция перехлёстов слоёв (NaN-совместимая)
+7. Построены графики: общий вид и детальный вид зоны разлома
+8. Результаты сохранены в data/dev_3_1_fault_layer_boundaries.npz
 
 Параметры разлома вынесены в начало скрипта и легко изменяются
 для проведения параметрического исследования.

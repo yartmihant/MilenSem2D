@@ -1,0 +1,602 @@
+# Назначение материалов-заглушек и блоков
+
+create material 1
+modify material 1 name 'mat_1'
+modify material 1 set property 'MODULUS' value 1e+10
+modify material 1 set property 'POISSON' value 0.25
+modify material 1 set property 'DENSITY' value 2000
+block 1 add surface 1 76 151 226
+block 1 material 1 cs 1 category plane order 1
+
+create material 2
+modify material 2 name 'mat_2'
+modify material 2 set property 'MODULUS' value 1e+10
+modify material 2 set property 'POISSON' value 0.25
+modify material 2 set property 'DENSITY' value 2000
+block 2 add surface 2 77 152 227
+block 2 material 2 cs 1 category plane order 1
+
+create material 3
+modify material 3 name 'mat_3'
+modify material 3 set property 'MODULUS' value 1e+10
+modify material 3 set property 'POISSON' value 0.25
+modify material 3 set property 'DENSITY' value 2000
+block 3 add surface 3 78 153 228
+block 3 material 3 cs 1 category plane order 1
+
+create material 4
+modify material 4 name 'mat_4'
+modify material 4 set property 'MODULUS' value 1e+10
+modify material 4 set property 'POISSON' value 0.25
+modify material 4 set property 'DENSITY' value 2000
+block 4 add surface 4 79 154 229
+block 4 material 4 cs 1 category plane order 1
+
+create material 5
+modify material 5 name 'mat_5'
+modify material 5 set property 'MODULUS' value 1e+10
+modify material 5 set property 'POISSON' value 0.25
+modify material 5 set property 'DENSITY' value 2000
+block 5 add surface 5 80 155 230
+block 5 material 5 cs 1 category plane order 1
+
+create material 6
+modify material 6 name 'mat_6'
+modify material 6 set property 'MODULUS' value 1e+10
+modify material 6 set property 'POISSON' value 0.25
+modify material 6 set property 'DENSITY' value 2000
+block 6 add surface 6 81 156 231
+block 6 material 6 cs 1 category plane order 1
+
+create material 7
+modify material 7 name 'mat_7'
+modify material 7 set property 'MODULUS' value 1e+10
+modify material 7 set property 'POISSON' value 0.25
+modify material 7 set property 'DENSITY' value 2000
+block 7 add surface 7 82 157 232
+block 7 material 7 cs 1 category plane order 1
+
+create material 8
+modify material 8 name 'mat_8'
+modify material 8 set property 'MODULUS' value 1e+10
+modify material 8 set property 'POISSON' value 0.25
+modify material 8 set property 'DENSITY' value 2000
+block 8 add surface 8 83 158 233
+block 8 material 8 cs 1 category plane order 1
+
+create material 9
+modify material 9 name 'mat_9'
+modify material 9 set property 'MODULUS' value 1e+10
+modify material 9 set property 'POISSON' value 0.25
+modify material 9 set property 'DENSITY' value 2000
+block 9 add surface 9 84 159 234
+block 9 material 9 cs 1 category plane order 1
+
+create material 10
+modify material 10 name 'mat_10'
+modify material 10 set property 'MODULUS' value 1e+10
+modify material 10 set property 'POISSON' value 0.25
+modify material 10 set property 'DENSITY' value 2000
+block 10 add surface 10 85 160 235
+block 10 material 10 cs 1 category plane order 1
+
+create material 11
+modify material 11 name 'mat_11'
+modify material 11 set property 'MODULUS' value 1e+10
+modify material 11 set property 'POISSON' value 0.25
+modify material 11 set property 'DENSITY' value 2000
+block 11 add surface 11 86 161 236
+block 11 material 11 cs 1 category plane order 1
+
+create material 12
+modify material 12 name 'mat_12'
+modify material 12 set property 'MODULUS' value 1e+10
+modify material 12 set property 'POISSON' value 0.25
+modify material 12 set property 'DENSITY' value 2000
+block 12 add surface 12 87 162 237
+block 12 material 12 cs 1 category plane order 1
+
+create material 13
+modify material 13 name 'mat_13'
+modify material 13 set property 'MODULUS' value 1e+10
+modify material 13 set property 'POISSON' value 0.25
+modify material 13 set property 'DENSITY' value 2000
+block 13 add surface 13 88 163 238
+block 13 material 13 cs 1 category plane order 1
+
+create material 14
+modify material 14 name 'mat_14'
+modify material 14 set property 'MODULUS' value 1e+10
+modify material 14 set property 'POISSON' value 0.25
+modify material 14 set property 'DENSITY' value 2000
+block 14 add surface 14 89 164 239
+block 14 material 14 cs 1 category plane order 1
+
+create material 15
+modify material 15 name 'mat_15'
+modify material 15 set property 'MODULUS' value 1e+10
+modify material 15 set property 'POISSON' value 0.25
+modify material 15 set property 'DENSITY' value 2000
+block 15 add surface 15 90 165 240
+block 15 material 15 cs 1 category plane order 1
+
+create material 16
+modify material 16 name 'mat_16'
+modify material 16 set property 'MODULUS' value 1e+10
+modify material 16 set property 'POISSON' value 0.25
+modify material 16 set property 'DENSITY' value 2000
+block 16 add surface 16 91 166 241
+block 16 material 16 cs 1 category plane order 1
+
+create material 17
+modify material 17 name 'mat_17'
+modify material 17 set property 'MODULUS' value 1e+10
+modify material 17 set property 'POISSON' value 0.25
+modify material 17 set property 'DENSITY' value 2000
+block 17 add surface 17 92 167 242
+block 17 material 17 cs 1 category plane order 1
+
+create material 18
+modify material 18 name 'mat_18'
+modify material 18 set property 'MODULUS' value 1e+10
+modify material 18 set property 'POISSON' value 0.25
+modify material 18 set property 'DENSITY' value 2000
+block 18 add surface 18 93 168 243
+block 18 material 18 cs 1 category plane order 1
+
+create material 19
+modify material 19 name 'mat_19'
+modify material 19 set property 'MODULUS' value 1e+10
+modify material 19 set property 'POISSON' value 0.25
+modify material 19 set property 'DENSITY' value 2000
+block 19 add surface 19 94 169 244
+block 19 material 19 cs 1 category plane order 1
+
+create material 20
+modify material 20 name 'mat_20'
+modify material 20 set property 'MODULUS' value 1e+10
+modify material 20 set property 'POISSON' value 0.25
+modify material 20 set property 'DENSITY' value 2000
+block 20 add surface 20 95 170 245
+block 20 material 20 cs 1 category plane order 1
+
+create material 21
+modify material 21 name 'mat_21'
+modify material 21 set property 'MODULUS' value 1e+10
+modify material 21 set property 'POISSON' value 0.25
+modify material 21 set property 'DENSITY' value 2000
+block 21 add surface 21 96 171 246
+block 21 material 21 cs 1 category plane order 1
+
+create material 22
+modify material 22 name 'mat_22'
+modify material 22 set property 'MODULUS' value 1e+10
+modify material 22 set property 'POISSON' value 0.25
+modify material 22 set property 'DENSITY' value 2000
+block 22 add surface 22 97 172 247
+block 22 material 22 cs 1 category plane order 1
+
+create material 23
+modify material 23 name 'mat_23'
+modify material 23 set property 'MODULUS' value 1e+10
+modify material 23 set property 'POISSON' value 0.25
+modify material 23 set property 'DENSITY' value 2000
+block 23 add surface 23 98 173 248
+block 23 material 23 cs 1 category plane order 1
+
+create material 24
+modify material 24 name 'mat_24'
+modify material 24 set property 'MODULUS' value 1e+10
+modify material 24 set property 'POISSON' value 0.25
+modify material 24 set property 'DENSITY' value 2000
+block 24 add surface 24 99 174 249
+block 24 material 24 cs 1 category plane order 1
+
+create material 25
+modify material 25 name 'mat_25'
+modify material 25 set property 'MODULUS' value 1e+10
+modify material 25 set property 'POISSON' value 0.25
+modify material 25 set property 'DENSITY' value 2000
+block 25 add surface 25 100 175 250
+block 25 material 25 cs 1 category plane order 1
+
+create material 26
+modify material 26 name 'mat_26'
+modify material 26 set property 'MODULUS' value 1e+10
+modify material 26 set property 'POISSON' value 0.25
+modify material 26 set property 'DENSITY' value 2000
+block 26 add surface 26 101 176 251
+block 26 material 26 cs 1 category plane order 1
+
+create material 27
+modify material 27 name 'mat_27'
+modify material 27 set property 'MODULUS' value 1e+10
+modify material 27 set property 'POISSON' value 0.25
+modify material 27 set property 'DENSITY' value 2000
+block 27 add surface 27 102 177 252
+block 27 material 27 cs 1 category plane order 1
+
+create material 28
+modify material 28 name 'mat_28'
+modify material 28 set property 'MODULUS' value 1e+10
+modify material 28 set property 'POISSON' value 0.25
+modify material 28 set property 'DENSITY' value 2000
+block 28 add surface 28 103 178 253
+block 28 material 28 cs 1 category plane order 1
+
+create material 29
+modify material 29 name 'mat_29'
+modify material 29 set property 'MODULUS' value 1e+10
+modify material 29 set property 'POISSON' value 0.25
+modify material 29 set property 'DENSITY' value 2000
+block 29 add surface 29 104 179 254
+block 29 material 29 cs 1 category plane order 1
+
+create material 30
+modify material 30 name 'mat_30'
+modify material 30 set property 'MODULUS' value 1e+10
+modify material 30 set property 'POISSON' value 0.25
+modify material 30 set property 'DENSITY' value 2000
+block 30 add surface 30 105 180 255
+block 30 material 30 cs 1 category plane order 1
+
+create material 31
+modify material 31 name 'mat_31'
+modify material 31 set property 'MODULUS' value 1e+10
+modify material 31 set property 'POISSON' value 0.25
+modify material 31 set property 'DENSITY' value 2000
+block 31 add surface 31 106 181 256
+block 31 material 31 cs 1 category plane order 1
+
+create material 32
+modify material 32 name 'mat_32'
+modify material 32 set property 'MODULUS' value 1e+10
+modify material 32 set property 'POISSON' value 0.25
+modify material 32 set property 'DENSITY' value 2000
+block 32 add surface 32 107 182 257
+block 32 material 32 cs 1 category plane order 1
+
+create material 33
+modify material 33 name 'mat_33'
+modify material 33 set property 'MODULUS' value 1e+10
+modify material 33 set property 'POISSON' value 0.25
+modify material 33 set property 'DENSITY' value 2000
+block 33 add surface 33 108 183 258
+block 33 material 33 cs 1 category plane order 1
+
+create material 34
+modify material 34 name 'mat_34'
+modify material 34 set property 'MODULUS' value 1e+10
+modify material 34 set property 'POISSON' value 0.25
+modify material 34 set property 'DENSITY' value 2000
+block 34 add surface 34 109 184 259
+block 34 material 34 cs 1 category plane order 1
+
+create material 35
+modify material 35 name 'mat_35'
+modify material 35 set property 'MODULUS' value 1e+10
+modify material 35 set property 'POISSON' value 0.25
+modify material 35 set property 'DENSITY' value 2000
+block 35 add surface 35 110 185 260
+block 35 material 35 cs 1 category plane order 1
+
+create material 36
+modify material 36 name 'mat_36'
+modify material 36 set property 'MODULUS' value 1e+10
+modify material 36 set property 'POISSON' value 0.25
+modify material 36 set property 'DENSITY' value 2000
+block 36 add surface 36 111 186 261
+block 36 material 36 cs 1 category plane order 1
+
+create material 37
+modify material 37 name 'mat_37'
+modify material 37 set property 'MODULUS' value 1e+10
+modify material 37 set property 'POISSON' value 0.25
+modify material 37 set property 'DENSITY' value 2000
+block 37 add surface 37 112 187 262
+block 37 material 37 cs 1 category plane order 1
+
+create material 38
+modify material 38 name 'mat_38'
+modify material 38 set property 'MODULUS' value 1e+10
+modify material 38 set property 'POISSON' value 0.25
+modify material 38 set property 'DENSITY' value 2000
+block 38 add surface 38 113 188 263
+block 38 material 38 cs 1 category plane order 1
+
+create material 39
+modify material 39 name 'mat_39'
+modify material 39 set property 'MODULUS' value 1e+10
+modify material 39 set property 'POISSON' value 0.25
+modify material 39 set property 'DENSITY' value 2000
+block 39 add surface 39 114 189 264
+block 39 material 39 cs 1 category plane order 1
+
+create material 40
+modify material 40 name 'mat_40'
+modify material 40 set property 'MODULUS' value 1e+10
+modify material 40 set property 'POISSON' value 0.25
+modify material 40 set property 'DENSITY' value 2000
+block 40 add surface 40 115 190 265
+block 40 material 40 cs 1 category plane order 1
+
+create material 41
+modify material 41 name 'mat_41'
+modify material 41 set property 'MODULUS' value 1e+10
+modify material 41 set property 'POISSON' value 0.25
+modify material 41 set property 'DENSITY' value 2000
+block 41 add surface 41 116 191 266
+block 41 material 41 cs 1 category plane order 1
+
+create material 42
+modify material 42 name 'mat_42'
+modify material 42 set property 'MODULUS' value 1e+10
+modify material 42 set property 'POISSON' value 0.25
+modify material 42 set property 'DENSITY' value 2000
+block 42 add surface 42 117 192 267
+block 42 material 42 cs 1 category plane order 1
+
+create material 43
+modify material 43 name 'mat_43'
+modify material 43 set property 'MODULUS' value 1e+10
+modify material 43 set property 'POISSON' value 0.25
+modify material 43 set property 'DENSITY' value 2000
+block 43 add surface 43 118 193 268
+block 43 material 43 cs 1 category plane order 1
+
+create material 44
+modify material 44 name 'mat_44'
+modify material 44 set property 'MODULUS' value 1e+10
+modify material 44 set property 'POISSON' value 0.25
+modify material 44 set property 'DENSITY' value 2000
+block 44 add surface 44 119 194 269
+block 44 material 44 cs 1 category plane order 1
+
+create material 45
+modify material 45 name 'mat_45'
+modify material 45 set property 'MODULUS' value 1e+10
+modify material 45 set property 'POISSON' value 0.25
+modify material 45 set property 'DENSITY' value 2000
+block 45 add surface 45 120 195 270
+block 45 material 45 cs 1 category plane order 1
+
+create material 46
+modify material 46 name 'mat_46'
+modify material 46 set property 'MODULUS' value 1e+10
+modify material 46 set property 'POISSON' value 0.25
+modify material 46 set property 'DENSITY' value 2000
+block 46 add surface 46 121 196 271
+block 46 material 46 cs 1 category plane order 1
+
+create material 47
+modify material 47 name 'mat_47'
+modify material 47 set property 'MODULUS' value 1e+10
+modify material 47 set property 'POISSON' value 0.25
+modify material 47 set property 'DENSITY' value 2000
+block 47 add surface 47 122 197 272
+block 47 material 47 cs 1 category plane order 1
+
+create material 48
+modify material 48 name 'mat_48'
+modify material 48 set property 'MODULUS' value 1e+10
+modify material 48 set property 'POISSON' value 0.25
+modify material 48 set property 'DENSITY' value 2000
+block 48 add surface 48 123 198 273
+block 48 material 48 cs 1 category plane order 1
+
+create material 49
+modify material 49 name 'mat_49'
+modify material 49 set property 'MODULUS' value 1e+10
+modify material 49 set property 'POISSON' value 0.25
+modify material 49 set property 'DENSITY' value 2000
+block 49 add surface 49 124 199 274
+block 49 material 49 cs 1 category plane order 1
+
+create material 50
+modify material 50 name 'mat_50'
+modify material 50 set property 'MODULUS' value 1e+10
+modify material 50 set property 'POISSON' value 0.25
+modify material 50 set property 'DENSITY' value 2000
+block 50 add surface 50 125 200 275
+block 50 material 50 cs 1 category plane order 1
+
+create material 51
+modify material 51 name 'mat_51'
+modify material 51 set property 'MODULUS' value 1e+10
+modify material 51 set property 'POISSON' value 0.25
+modify material 51 set property 'DENSITY' value 2000
+block 51 add surface 51 126 201 276
+block 51 material 51 cs 1 category plane order 1
+
+create material 52
+modify material 52 name 'mat_52'
+modify material 52 set property 'MODULUS' value 1e+10
+modify material 52 set property 'POISSON' value 0.25
+modify material 52 set property 'DENSITY' value 2000
+block 52 add surface 52 127 202 277
+block 52 material 52 cs 1 category plane order 1
+
+create material 53
+modify material 53 name 'mat_53'
+modify material 53 set property 'MODULUS' value 1e+10
+modify material 53 set property 'POISSON' value 0.25
+modify material 53 set property 'DENSITY' value 2000
+block 53 add surface 53 128 203 278
+block 53 material 53 cs 1 category plane order 1
+
+create material 54
+modify material 54 name 'mat_54'
+modify material 54 set property 'MODULUS' value 1e+10
+modify material 54 set property 'POISSON' value 0.25
+modify material 54 set property 'DENSITY' value 2000
+block 54 add surface 54 129 204 279
+block 54 material 54 cs 1 category plane order 1
+
+create material 55
+modify material 55 name 'mat_55'
+modify material 55 set property 'MODULUS' value 1e+10
+modify material 55 set property 'POISSON' value 0.25
+modify material 55 set property 'DENSITY' value 2000
+block 55 add surface 55 130 205 280
+block 55 material 55 cs 1 category plane order 1
+
+create material 56
+modify material 56 name 'mat_56'
+modify material 56 set property 'MODULUS' value 1e+10
+modify material 56 set property 'POISSON' value 0.25
+modify material 56 set property 'DENSITY' value 2000
+block 56 add surface 56 131 206 281
+block 56 material 56 cs 1 category plane order 1
+
+create material 57
+modify material 57 name 'mat_57'
+modify material 57 set property 'MODULUS' value 1e+10
+modify material 57 set property 'POISSON' value 0.25
+modify material 57 set property 'DENSITY' value 2000
+block 57 add surface 57 132 207 282
+block 57 material 57 cs 1 category plane order 1
+
+create material 58
+modify material 58 name 'mat_58'
+modify material 58 set property 'MODULUS' value 1e+10
+modify material 58 set property 'POISSON' value 0.25
+modify material 58 set property 'DENSITY' value 2000
+block 58 add surface 58 133 208 283
+block 58 material 58 cs 1 category plane order 1
+
+create material 59
+modify material 59 name 'mat_59'
+modify material 59 set property 'MODULUS' value 1e+10
+modify material 59 set property 'POISSON' value 0.25
+modify material 59 set property 'DENSITY' value 2000
+block 59 add surface 59 134 209 284
+block 59 material 59 cs 1 category plane order 1
+
+create material 60
+modify material 60 name 'mat_60'
+modify material 60 set property 'MODULUS' value 1e+10
+modify material 60 set property 'POISSON' value 0.25
+modify material 60 set property 'DENSITY' value 2000
+block 60 add surface 60 135 210 285
+block 60 material 60 cs 1 category plane order 1
+
+create material 61
+modify material 61 name 'mat_61'
+modify material 61 set property 'MODULUS' value 1e+10
+modify material 61 set property 'POISSON' value 0.25
+modify material 61 set property 'DENSITY' value 2000
+block 61 add surface 61 136 211 286
+block 61 material 61 cs 1 category plane order 1
+
+create material 62
+modify material 62 name 'mat_62'
+modify material 62 set property 'MODULUS' value 1e+10
+modify material 62 set property 'POISSON' value 0.25
+modify material 62 set property 'DENSITY' value 2000
+block 62 add surface 62 137 212 287
+block 62 material 62 cs 1 category plane order 1
+
+create material 63
+modify material 63 name 'mat_63'
+modify material 63 set property 'MODULUS' value 1e+10
+modify material 63 set property 'POISSON' value 0.25
+modify material 63 set property 'DENSITY' value 2000
+block 63 add surface 63 138 213 288
+block 63 material 63 cs 1 category plane order 1
+
+create material 64
+modify material 64 name 'mat_64'
+modify material 64 set property 'MODULUS' value 1e+10
+modify material 64 set property 'POISSON' value 0.25
+modify material 64 set property 'DENSITY' value 2000
+block 64 add surface 64 139 214 289
+block 64 material 64 cs 1 category plane order 1
+
+create material 65
+modify material 65 name 'mat_65'
+modify material 65 set property 'MODULUS' value 1e+10
+modify material 65 set property 'POISSON' value 0.25
+modify material 65 set property 'DENSITY' value 2000
+block 65 add surface 65 140 215 290
+block 65 material 65 cs 1 category plane order 1
+
+create material 66
+modify material 66 name 'mat_66'
+modify material 66 set property 'MODULUS' value 1e+10
+modify material 66 set property 'POISSON' value 0.25
+modify material 66 set property 'DENSITY' value 2000
+block 66 add surface 66 141 216 291
+block 66 material 66 cs 1 category plane order 1
+
+create material 67
+modify material 67 name 'mat_67'
+modify material 67 set property 'MODULUS' value 1e+10
+modify material 67 set property 'POISSON' value 0.25
+modify material 67 set property 'DENSITY' value 2000
+block 67 add surface 67 142 217 292
+block 67 material 67 cs 1 category plane order 1
+
+create material 68
+modify material 68 name 'mat_68'
+modify material 68 set property 'MODULUS' value 1e+10
+modify material 68 set property 'POISSON' value 0.25
+modify material 68 set property 'DENSITY' value 2000
+block 68 add surface 68 143 218 293
+block 68 material 68 cs 1 category plane order 1
+
+create material 69
+modify material 69 name 'mat_69'
+modify material 69 set property 'MODULUS' value 1e+10
+modify material 69 set property 'POISSON' value 0.25
+modify material 69 set property 'DENSITY' value 2000
+block 69 add surface 69 144 219 294
+block 69 material 69 cs 1 category plane order 1
+
+create material 70
+modify material 70 name 'mat_70'
+modify material 70 set property 'MODULUS' value 1e+10
+modify material 70 set property 'POISSON' value 0.25
+modify material 70 set property 'DENSITY' value 2000
+block 70 add surface 70 145 220 295
+block 70 material 70 cs 1 category plane order 1
+
+create material 71
+modify material 71 name 'mat_71'
+modify material 71 set property 'MODULUS' value 1e+10
+modify material 71 set property 'POISSON' value 0.25
+modify material 71 set property 'DENSITY' value 2000
+block 71 add surface 71 146 221 296
+block 71 material 71 cs 1 category plane order 1
+
+create material 72
+modify material 72 name 'mat_72'
+modify material 72 set property 'MODULUS' value 1e+10
+modify material 72 set property 'POISSON' value 0.25
+modify material 72 set property 'DENSITY' value 2000
+block 72 add surface 72 147 222 297
+block 72 material 72 cs 1 category plane order 1
+
+create material 73
+modify material 73 name 'mat_73'
+modify material 73 set property 'MODULUS' value 1e+10
+modify material 73 set property 'POISSON' value 0.25
+modify material 73 set property 'DENSITY' value 2000
+block 73 add surface 73 148 223 298
+block 73 material 73 cs 1 category plane order 1
+
+create material 74
+modify material 74 name 'mat_74'
+modify material 74 set property 'MODULUS' value 1e+10
+modify material 74 set property 'POISSON' value 0.25
+modify material 74 set property 'DENSITY' value 2000
+block 74 add surface 74 149 224 299
+block 74 material 74 cs 1 category plane order 1
+
+create material 75
+modify material 75 name 'mat_75'
+modify material 75 set property 'MODULUS' value 1e+10
+modify material 75 set property 'POISSON' value 0.25
+modify material 75 set property 'DENSITY' value 2000
+block 75 add surface 75 150 225 300
+block 75 material 75 cs 1 category plane order 1
+
