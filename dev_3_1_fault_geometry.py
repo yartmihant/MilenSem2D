@@ -26,10 +26,14 @@ from pathlib import Path
 fault_x = 5875.0  # м, X-координата пересечения с поверхностью
 
 # Угол наклона относительно вертикали (0° — вертикальный разлом)
-fault_angle = 0.0  # градусы
+fault_angle = 20.0  # градусы
 
 # Вертикальное смещение слоёв (положительное — правый блок опущен вниз)
 fault_throw = 50.0  # м
+
+# Суффикс для имён файлов, зависящих от угла разлома
+angle_suffix = f'_a{int(fault_angle)}'
+print(f"Суффикс файлов: {angle_suffix}")
 
 
 """ ## Загрузка исходной геометрии ## """
@@ -276,10 +280,10 @@ ax.legend(loc='lower right')
 ax.set_xlim(distances[0], distances[-1])
 
 plt.tight_layout()
-plt.savefig('img/dev_3_1_fault_geometry_overview.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_1_fault_geometry_overview{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
 
-print("Сохранено: img/dev_3_1_fault_geometry_overview.png")
+print(f"Сохранено: img/dev_3_1_fault_geometry_overview{angle_suffix}.png")
 
 
 """ ## Визуализация: детальный вид зоны разлома ## """
@@ -313,15 +317,15 @@ ax.legend(loc='lower right', fontsize=12)
 ax.set_xlim(x_left, x_right)
 
 plt.tight_layout()
-plt.savefig('img/dev_3_1_fault_geometry_detail.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_1_fault_geometry_detail{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
 
-print("Сохранено: img/dev_3_1_fault_geometry_detail.png")
+print(f"Сохранено: img/dev_3_1_fault_geometry_detail{angle_suffix}.png")
 
 
 """ ## Сохранение результатов ## """
 
-np.savez('data/dev_3_1_fault_layer_boundaries.npz',
+np.savez(f'data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz',
          layer_boundaries_array=faulted_boundaries,
          formations=formations,
          distances=distances,
@@ -331,7 +335,7 @@ np.savez('data/dev_3_1_fault_layer_boundaries.npz',
          fault_indices=fault_indices,
          model_bottom_depth=model_bottom_depth)
 
-print("\nРезультаты сохранены в data/dev_3_1_fault_layer_boundaries.npz")
+print(f"\nРезультаты сохранены в data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz")
 print(f"  layer_boundaries_array: {faulted_boundaries.shape}")
 print(f"  formations: {formations.shape}")
 print(f"  distances: {distances.shape}")

@@ -3,7 +3,7 @@
 Use only: `from fc_model import ...` (public re-exports). Serialize via `encode()`/`save()` only.
 
 ### Root
-- FCModel()
+- FCModel.load()
   - Fields: `header`, `coordinate_systems: Dict[int, FCCoordinateSystem]`, `mesh: FCMesh`,
     `blocks: Dict[int, FCBlock]`, `materials: Dict[int, FCMaterial]`, `property_tables`,
     `loads: List[FCLoad]`, `restraints`, `initial_sets`, `contact_constraints`,

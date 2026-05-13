@@ -13,7 +13,7 @@
   "root": {
     "class": "FCModel",
     "init": {
-      "signature": "FCModel() -> None",
+      "signature": "FCModel.load() -> None",
       "effects": [
         "Initializes empty collections when filepath is None"
       ]
@@ -103,8 +103,8 @@
   ],
   "examples": {
     "load_save": "from fc_model import FCModel; m = FCModel.load('in.fc'); m.save('out.fc')",
-    "add_material_property": "from fc_model import FCModel; m = FCModel(); mat = m.add_material('Steel'); mat.add_property('common', 'DENSITY', 7850.0, 'USUAL')",
-    "add_restraint": "from fc_model import FCModel; from fc_model import FCData; m = FCModel(); r = m.add_restraint(name='Fix', flags=['UX','UY','UZ'], apply_to='all'); r.data = [FCData.constant(0.0), FCData.constant(0.0), FCData.constant(0.0)]"
+    "add_material_property": "from fc_model import FCModel; m = FCModel.load(); mat = m.add_material('Steel'); mat.add_property('common', 'DENSITY', 7850.0, 'USUAL')",
+    "add_restraint": "from fc_model import FCModel; from fc_model import FCData; m = FCModel.load(); r = m.add_restraint(name='Fix', flags=['UX','UY','UZ'], apply_to='all'); r.data = [FCData.constant(0.0), FCData.constant(0.0), FCData.constant(0.0)]"
   }
 }
 

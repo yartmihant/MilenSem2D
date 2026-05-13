@@ -1,0 +1,1055 @@
+# --- Section 1 horizontal splines ---
+create curve spline location vertex 1 to 87
+create curve spline location vertex 88 to 174
+create curve spline location vertex 175 to 261
+create curve spline location vertex 262 to 348
+create curve spline location vertex 349 to 435
+create curve spline location vertex 436 to 522
+create curve spline location vertex 523 to 609
+create curve spline location vertex 610 to 696
+create curve spline location vertex 697 to 783
+create curve spline location vertex 784 to 870
+create curve spline location vertex 871 to 957
+create curve spline location vertex 958 to 1044
+create curve spline location vertex 1045 to 1131
+create curve spline location vertex 1132 to 1218
+create curve spline location vertex 1219 to 1305
+create curve spline location vertex 1306 to 1392
+create curve spline location vertex 1393 to 1479
+create curve spline location vertex 1480 to 1566
+create curve spline location vertex 1567 to 1653
+create curve spline location vertex 1654 to 1740
+create curve spline location vertex 1741 to 1827
+create curve spline location vertex 1828 to 1914
+create curve spline location vertex 1915 to 2001
+create curve spline location vertex 2002 to 2088
+create curve spline location vertex 2089 to 2175
+create curve spline location vertex 2176 to 2262
+create curve spline location vertex 2263 to 2349
+create curve spline location vertex 2350 to 2436
+create curve spline location vertex 2437 to 2523
+create curve spline location vertex 2524 to 2610
+create curve spline location vertex 2611 to 2697
+create curve spline location vertex 2698 to 2784
+create curve spline location vertex 2785 to 2871
+create curve spline location vertex 2872 to 2958
+create curve spline location vertex 2959 to 3045
+create curve spline location vertex 3046 to 3132
+create curve spline location vertex 3133 to 3219
+create curve spline location vertex 3220 to 3306
+create curve spline location vertex 3307 to 3393
+create curve spline location vertex 3394 to 3480
+create curve spline location vertex 3481 to 3567
+create curve spline location vertex 3568 to 3654
+create curve spline location vertex 3655 to 3741
+create curve spline location vertex 3742 to 3828
+create curve spline location vertex 3829 to 3915
+create curve spline location vertex 3916 to 4002
+create curve spline location vertex 4003 to 4089
+create curve spline location vertex 4090 to 4176
+create curve spline location vertex 4177 to 4263
+create curve spline location vertex 4264 to 4350
+create curve spline location vertex 4351 to 4437
+create curve spline location vertex 4438 to 4524
+create curve spline location vertex 4525 to 4611
+create curve spline location vertex 4612 to 4698
+create curve spline location vertex 4699 to 4785
+create curve spline location vertex 4786 to 4872
+create curve spline location vertex 4873 to 4959
+create curve spline location vertex 4960 to 5046
+create curve spline location vertex 5047 to 5133
+create curve spline location vertex 5134 to 5220
+create curve spline location vertex 5221 to 5307
+create curve spline location vertex 5308 to 5394
+create curve spline location vertex 5395 to 5481
+create curve spline location vertex 5482 to 5568
+create curve spline location vertex 5569 to 5655
+create curve spline location vertex 5656 to 5742
+create curve spline location vertex 5743 to 5829
+create curve spline location vertex 5830 to 5916
+create curve spline location vertex 5917 to 6003
+create curve spline location vertex 6004 to 6090
+create curve spline location vertex 6091 to 6177
+create curve spline location vertex 6178 to 6264
+create curve spline location vertex 6265 to 6351
+create curve spline location vertex 6352 to 6438
+create curve spline location vertex 6439 to 6525
+create curve spline location vertex 6526 to 6612
+# --- Section 2 horizontal splines ---
+create curve spline location vertex 6613 to 6647
+create curve spline location vertex 6648 to 6682
+create curve spline location vertex 6683 to 6717
+create curve spline location vertex 6718 to 6752
+create curve spline location vertex 6753 to 6787
+create curve spline location vertex 6788 to 6822
+create curve spline location vertex 6823 to 6857
+create curve spline location vertex 6858 to 6892
+create curve spline location vertex 6893 to 6927
+create curve spline location vertex 6928 to 6962
+create curve spline location vertex 6963 to 6998
+create curve spline location vertex 6999 to 7034
+create curve spline location vertex 7035 to 7070
+create curve spline location vertex 7071 to 7106
+create curve spline location vertex 7107 to 7142
+create curve spline location vertex 7143 to 7178
+create curve spline location vertex 7179 to 7214
+create curve spline location vertex 7215 to 7250
+create curve spline location vertex 7251 to 7286
+create curve spline location vertex 7287 to 7323
+create curve spline location vertex 7324 to 7360
+create curve spline location vertex 7361 to 7397
+create curve spline location vertex 7398 to 7434
+create curve spline location vertex 7435 to 7471
+create curve spline location vertex 7472 to 7508
+create curve spline location vertex 7509 to 7545
+create curve spline location vertex 7546 to 7583
+create curve spline location vertex 7584 to 7621
+create curve spline location vertex 7622 to 7659
+create curve spline location vertex 7660 to 7697
+create curve spline location vertex 7698 to 7735
+create curve spline location vertex 7736 to 7773
+create curve spline location vertex 7774 to 7811
+create curve spline location vertex 7812 to 7849
+create curve spline location vertex 7850 to 7888
+create curve spline location vertex 7889 to 7927
+create curve spline location vertex 7928 to 7966
+create curve spline location vertex 7967 to 8005
+create curve spline location vertex 8006 to 8044
+create curve spline location vertex 8045 to 8084
+create curve spline location vertex 8085 to 8124
+create curve spline location vertex 8125 to 8164
+create curve spline location vertex 8165 to 8204
+create curve spline location vertex 8205 to 8244
+create curve spline location vertex 8245 to 8284
+create curve spline location vertex 8285 to 8324
+create curve spline location vertex 8325 to 8364
+create curve spline location vertex 8365 to 8404
+create curve spline location vertex 8405 to 8445
+create curve spline location vertex 8446 to 8486
+create curve spline location vertex 8487 to 8527
+create curve spline location vertex 8528 to 8568
+create curve spline location vertex 8569 to 8609
+create curve spline location vertex 8610 to 8650
+create curve spline location vertex 8651 to 8692
+create curve spline location vertex 8693 to 8734
+create curve spline location vertex 8735 to 8776
+create curve spline location vertex 8777 to 8818
+create curve spline location vertex 8819 to 8860
+create curve spline location vertex 8861 to 8902
+create curve spline location vertex 8903 to 8944
+create curve spline location vertex 8945 to 8987
+create curve spline location vertex 8988 to 9030
+create curve spline location vertex 9031 to 9073
+create curve spline location vertex 9074 to 9116
+create curve spline location vertex 9117 to 9159
+create curve spline location vertex 9160 to 9202
+create curve spline location vertex 9203 to 9245
+create curve spline location vertex 9246 to 9288
+create curve spline location vertex 9289 to 9331
+create curve spline location vertex 9332 to 9374
+create curve spline location vertex 9375 to 9417
+create curve spline location vertex 9418 to 9460
+create curve spline location vertex 9461 to 9503
+create curve spline location vertex 9504 to 9546
+create curve spline location vertex 9547 to 9591
+# --- Section 3 horizontal splines ---
+create curve spline location vertex 9592 to 9625
+create curve spline location vertex 9626 to 9659
+create curve spline location vertex 9660 to 9693
+create curve spline location vertex 9694 to 9726
+create curve spline location vertex 9727 to 9759
+create curve spline location vertex 9760 to 9792
+create curve spline location vertex 9793 to 9825
+create curve spline location vertex 9826 to 9858
+create curve spline location vertex 9859 to 9891
+create curve spline location vertex 9892 to 9924
+create curve spline location vertex 9925 to 9957
+create curve spline location vertex 9958 to 9990
+create curve spline location vertex 9991 to 10023
+create curve spline location vertex 10024 to 10055
+create curve spline location vertex 10056 to 10087
+create curve spline location vertex 10088 to 10119
+create curve spline location vertex 10120 to 10151
+create curve spline location vertex 10152 to 10183
+create curve spline location vertex 10184 to 10215
+create curve spline location vertex 10216 to 10247
+create curve spline location vertex 10248 to 10279
+create curve spline location vertex 10280 to 10311
+create curve spline location vertex 10312 to 10342
+create curve spline location vertex 10343 to 10373
+create curve spline location vertex 10374 to 10404
+create curve spline location vertex 10405 to 10435
+create curve spline location vertex 10436 to 10466
+create curve spline location vertex 10467 to 10497
+create curve spline location vertex 10498 to 10528
+create curve spline location vertex 10529 to 10558
+create curve spline location vertex 10559 to 10588
+create curve spline location vertex 10589 to 10618
+create curve spline location vertex 10619 to 10648
+create curve spline location vertex 10649 to 10678
+create curve spline location vertex 10679 to 10708
+create curve spline location vertex 10709 to 10737
+create curve spline location vertex 10738 to 10766
+create curve spline location vertex 10767 to 10795
+create curve spline location vertex 10796 to 10824
+create curve spline location vertex 10825 to 10853
+create curve spline location vertex 10854 to 10882
+create curve spline location vertex 10883 to 10911
+create curve spline location vertex 10912 to 10940
+create curve spline location vertex 10941 to 10968
+create curve spline location vertex 10969 to 10996
+create curve spline location vertex 10997 to 11024
+create curve spline location vertex 11025 to 11052
+create curve spline location vertex 11053 to 11080
+create curve spline location vertex 11081 to 11108
+create curve spline location vertex 11109 to 11136
+create curve spline location vertex 11137 to 11164
+create curve spline location vertex 11165 to 11191
+create curve spline location vertex 11192 to 11218
+create curve spline location vertex 11219 to 11245
+create curve spline location vertex 11246 to 11272
+create curve spline location vertex 11273 to 11299
+create curve spline location vertex 11300 to 11325
+create curve spline location vertex 11326 to 11351
+create curve spline location vertex 11352 to 11377
+create curve spline location vertex 11378 to 11403
+create curve spline location vertex 11404 to 11429
+create curve spline location vertex 11430 to 11455
+create curve spline location vertex 11456 to 11481
+create curve spline location vertex 11482 to 11507
+create curve spline location vertex 11508 to 11533
+create curve spline location vertex 11534 to 11559
+create curve spline location vertex 11560 to 11584
+create curve spline location vertex 11585 to 11609
+create curve spline location vertex 11610 to 11634
+create curve spline location vertex 11635 to 11659
+create curve spline location vertex 11660 to 11684
+create curve spline location vertex 11685 to 11709
+create curve spline location vertex 11710 to 11734
+create curve spline location vertex 11735 to 11759
+create curve spline location vertex 11760 to 11784
+create curve spline location vertex 11785 to 11808
+# --- Section 4 horizontal splines ---
+create curve spline location vertex 11809 to 11896
+create curve spline location vertex 11897 to 11984
+create curve spline location vertex 11985 to 12072
+create curve spline location vertex 12073 to 12160
+create curve spline location vertex 12161 to 12248
+create curve spline location vertex 12249 to 12336
+create curve spline location vertex 12337 to 12424
+create curve spline location vertex 12425 to 12512
+create curve spline location vertex 12513 to 12600
+create curve spline location vertex 12601 to 12688
+create curve spline location vertex 12689 to 12776
+create curve spline location vertex 12777 to 12864
+create curve spline location vertex 12865 to 12952
+create curve spline location vertex 12953 to 13040
+create curve spline location vertex 13041 to 13128
+create curve spline location vertex 13129 to 13216
+create curve spline location vertex 13217 to 13304
+create curve spline location vertex 13305 to 13392
+create curve spline location vertex 13393 to 13480
+create curve spline location vertex 13481 to 13568
+create curve spline location vertex 13569 to 13656
+create curve spline location vertex 13657 to 13744
+create curve spline location vertex 13745 to 13832
+create curve spline location vertex 13833 to 13920
+create curve spline location vertex 13921 to 14008
+create curve spline location vertex 14009 to 14096
+create curve spline location vertex 14097 to 14184
+create curve spline location vertex 14185 to 14272
+create curve spline location vertex 14273 to 14360
+create curve spline location vertex 14361 to 14448
+create curve spline location vertex 14449 to 14536
+create curve spline location vertex 14537 to 14624
+create curve spline location vertex 14625 to 14712
+create curve spline location vertex 14713 to 14800
+create curve spline location vertex 14801 to 14888
+create curve spline location vertex 14889 to 14976
+create curve spline location vertex 14977 to 15064
+create curve spline location vertex 15065 to 15152
+create curve spline location vertex 15153 to 15240
+create curve spline location vertex 15241 to 15328
+create curve spline location vertex 15329 to 15416
+create curve spline location vertex 15417 to 15504
+create curve spline location vertex 15505 to 15592
+create curve spline location vertex 15593 to 15680
+create curve spline location vertex 15681 to 15768
+create curve spline location vertex 15769 to 15856
+create curve spline location vertex 15857 to 15944
+create curve spline location vertex 15945 to 16032
+create curve spline location vertex 16033 to 16120
+create curve spline location vertex 16121 to 16208
+create curve spline location vertex 16209 to 16296
+create curve spline location vertex 16297 to 16384
+create curve spline location vertex 16385 to 16472
+create curve spline location vertex 16473 to 16560
+create curve spline location vertex 16561 to 16648
+create curve spline location vertex 16649 to 16736
+create curve spline location vertex 16737 to 16824
+create curve spline location vertex 16825 to 16912
+create curve spline location vertex 16913 to 17000
+create curve spline location vertex 17001 to 17088
+create curve spline location vertex 17089 to 17176
+create curve spline location vertex 17177 to 17264
+create curve spline location vertex 17265 to 17352
+create curve spline location vertex 17353 to 17440
+create curve spline location vertex 17441 to 17528
+create curve spline location vertex 17529 to 17616
+create curve spline location vertex 17617 to 17704
+create curve spline location vertex 17705 to 17792
+create curve spline location vertex 17793 to 17880
+create curve spline location vertex 17881 to 17968
+create curve spline location vertex 17969 to 18056
+create curve spline location vertex 18057 to 18144
+create curve spline location vertex 18145 to 18232
+create curve spline location vertex 18233 to 18320
+create curve spline location vertex 18321 to 18408
+create curve spline location vertex 18409 to 18496
+
+# --- Vertical edges: x=0 ---
+create curve vertex 1 88
+create curve vertex 88 175
+create curve vertex 175 262
+create curve vertex 262 349
+create curve vertex 349 436
+create curve vertex 436 523
+create curve vertex 523 610
+create curve vertex 610 697
+create curve vertex 697 784
+create curve vertex 784 871
+create curve vertex 871 958
+create curve vertex 958 1045
+create curve vertex 1045 1132
+create curve vertex 1132 1219
+create curve vertex 1219 1306
+create curve vertex 1306 1393
+create curve vertex 1393 1480
+create curve vertex 1480 1567
+create curve vertex 1567 1654
+create curve vertex 1654 1741
+create curve vertex 1741 1828
+create curve vertex 1828 1915
+create curve vertex 1915 2002
+create curve vertex 2002 2089
+create curve vertex 2089 2176
+create curve vertex 2176 2263
+create curve vertex 2263 2350
+create curve vertex 2350 2437
+create curve vertex 2437 2524
+create curve vertex 2524 2611
+create curve vertex 2611 2698
+create curve vertex 2698 2785
+create curve vertex 2785 2872
+create curve vertex 2872 2959
+create curve vertex 2959 3046
+create curve vertex 3046 3133
+create curve vertex 3133 3220
+create curve vertex 3220 3307
+create curve vertex 3307 3394
+create curve vertex 3394 3481
+create curve vertex 3481 3568
+create curve vertex 3568 3655
+create curve vertex 3655 3742
+create curve vertex 3742 3829
+create curve vertex 3829 3916
+create curve vertex 3916 4003
+create curve vertex 4003 4090
+create curve vertex 4090 4177
+create curve vertex 4177 4264
+create curve vertex 4264 4351
+create curve vertex 4351 4438
+create curve vertex 4438 4525
+create curve vertex 4525 4612
+create curve vertex 4612 4699
+create curve vertex 4699 4786
+create curve vertex 4786 4873
+create curve vertex 4873 4960
+create curve vertex 4960 5047
+create curve vertex 5047 5134
+create curve vertex 5134 5221
+create curve vertex 5221 5308
+create curve vertex 5308 5395
+create curve vertex 5395 5482
+create curve vertex 5482 5569
+create curve vertex 5569 5656
+create curve vertex 5656 5743
+create curve vertex 5743 5830
+create curve vertex 5830 5917
+create curve vertex 5917 6004
+create curve vertex 6004 6091
+create curve vertex 6091 6178
+create curve vertex 6178 6265
+create curve vertex 6265 6352
+create curve vertex 6352 6439
+create curve vertex 6439 6526
+
+# --- Vertical edges: x=Well1 ---
+create curve vertex 87 174
+create curve vertex 174 261
+create curve vertex 261 348
+create curve vertex 348 435
+create curve vertex 435 522
+create curve vertex 522 609
+create curve vertex 609 696
+create curve vertex 696 783
+create curve vertex 783 870
+create curve vertex 870 957
+create curve vertex 957 1044
+create curve vertex 1044 1131
+create curve vertex 1131 1218
+create curve vertex 1218 1305
+create curve vertex 1305 1392
+create curve vertex 1392 1479
+create curve vertex 1479 1566
+create curve vertex 1566 1653
+create curve vertex 1653 1740
+create curve vertex 1740 1827
+create curve vertex 1827 1914
+create curve vertex 1914 2001
+create curve vertex 2001 2088
+create curve vertex 2088 2175
+create curve vertex 2175 2262
+create curve vertex 2262 2349
+create curve vertex 2349 2436
+create curve vertex 2436 2523
+create curve vertex 2523 2610
+create curve vertex 2610 2697
+create curve vertex 2697 2784
+create curve vertex 2784 2871
+create curve vertex 2871 2958
+create curve vertex 2958 3045
+create curve vertex 3045 3132
+create curve vertex 3132 3219
+create curve vertex 3219 3306
+create curve vertex 3306 3393
+create curve vertex 3393 3480
+create curve vertex 3480 3567
+create curve vertex 3567 3654
+create curve vertex 3654 3741
+create curve vertex 3741 3828
+create curve vertex 3828 3915
+create curve vertex 3915 4002
+create curve vertex 4002 4089
+create curve vertex 4089 4176
+create curve vertex 4176 4263
+create curve vertex 4263 4350
+create curve vertex 4350 4437
+create curve vertex 4437 4524
+create curve vertex 4524 4611
+create curve vertex 4611 4698
+create curve vertex 4698 4785
+create curve vertex 4785 4872
+create curve vertex 4872 4959
+create curve vertex 4959 5046
+create curve vertex 5046 5133
+create curve vertex 5133 5220
+create curve vertex 5220 5307
+create curve vertex 5307 5394
+create curve vertex 5394 5481
+create curve vertex 5481 5568
+create curve vertex 5568 5655
+create curve vertex 5655 5742
+create curve vertex 5742 5829
+create curve vertex 5829 5916
+create curve vertex 5916 6003
+create curve vertex 6003 6090
+create curve vertex 6090 6177
+create curve vertex 6177 6264
+create curve vertex 6264 6351
+create curve vertex 6351 6438
+create curve vertex 6438 6525
+create curve vertex 6525 6612
+
+# --- Vertical edges: x=Well2 ---
+create curve vertex 11809 11897
+create curve vertex 11897 11985
+create curve vertex 11985 12073
+create curve vertex 12073 12161
+create curve vertex 12161 12249
+create curve vertex 12249 12337
+create curve vertex 12337 12425
+create curve vertex 12425 12513
+create curve vertex 12513 12601
+create curve vertex 12601 12689
+create curve vertex 12689 12777
+create curve vertex 12777 12865
+create curve vertex 12865 12953
+create curve vertex 12953 13041
+create curve vertex 13041 13129
+create curve vertex 13129 13217
+create curve vertex 13217 13305
+create curve vertex 13305 13393
+create curve vertex 13393 13481
+create curve vertex 13481 13569
+create curve vertex 13569 13657
+create curve vertex 13657 13745
+create curve vertex 13745 13833
+create curve vertex 13833 13921
+create curve vertex 13921 14009
+create curve vertex 14009 14097
+create curve vertex 14097 14185
+create curve vertex 14185 14273
+create curve vertex 14273 14361
+create curve vertex 14361 14449
+create curve vertex 14449 14537
+create curve vertex 14537 14625
+create curve vertex 14625 14713
+create curve vertex 14713 14801
+create curve vertex 14801 14889
+create curve vertex 14889 14977
+create curve vertex 14977 15065
+create curve vertex 15065 15153
+create curve vertex 15153 15241
+create curve vertex 15241 15329
+create curve vertex 15329 15417
+create curve vertex 15417 15505
+create curve vertex 15505 15593
+create curve vertex 15593 15681
+create curve vertex 15681 15769
+create curve vertex 15769 15857
+create curve vertex 15857 15945
+create curve vertex 15945 16033
+create curve vertex 16033 16121
+create curve vertex 16121 16209
+create curve vertex 16209 16297
+create curve vertex 16297 16385
+create curve vertex 16385 16473
+create curve vertex 16473 16561
+create curve vertex 16561 16649
+create curve vertex 16649 16737
+create curve vertex 16737 16825
+create curve vertex 16825 16913
+create curve vertex 16913 17001
+create curve vertex 17001 17089
+create curve vertex 17089 17177
+create curve vertex 17177 17265
+create curve vertex 17265 17353
+create curve vertex 17353 17441
+create curve vertex 17441 17529
+create curve vertex 17529 17617
+create curve vertex 17617 17705
+create curve vertex 17705 17793
+create curve vertex 17793 17881
+create curve vertex 17881 17969
+create curve vertex 17969 18057
+create curve vertex 18057 18145
+create curve vertex 18145 18233
+create curve vertex 18233 18321
+create curve vertex 18321 18409
+
+# --- Vertical edges: x=end ---
+create curve vertex 11896 11984
+create curve vertex 11984 12072
+create curve vertex 12072 12160
+create curve vertex 12160 12248
+create curve vertex 12248 12336
+create curve vertex 12336 12424
+create curve vertex 12424 12512
+create curve vertex 12512 12600
+create curve vertex 12600 12688
+create curve vertex 12688 12776
+create curve vertex 12776 12864
+create curve vertex 12864 12952
+create curve vertex 12952 13040
+create curve vertex 13040 13128
+create curve vertex 13128 13216
+create curve vertex 13216 13304
+create curve vertex 13304 13392
+create curve vertex 13392 13480
+create curve vertex 13480 13568
+create curve vertex 13568 13656
+create curve vertex 13656 13744
+create curve vertex 13744 13832
+create curve vertex 13832 13920
+create curve vertex 13920 14008
+create curve vertex 14008 14096
+create curve vertex 14096 14184
+create curve vertex 14184 14272
+create curve vertex 14272 14360
+create curve vertex 14360 14448
+create curve vertex 14448 14536
+create curve vertex 14536 14624
+create curve vertex 14624 14712
+create curve vertex 14712 14800
+create curve vertex 14800 14888
+create curve vertex 14888 14976
+create curve vertex 14976 15064
+create curve vertex 15064 15152
+create curve vertex 15152 15240
+create curve vertex 15240 15328
+create curve vertex 15328 15416
+create curve vertex 15416 15504
+create curve vertex 15504 15592
+create curve vertex 15592 15680
+create curve vertex 15680 15768
+create curve vertex 15768 15856
+create curve vertex 15856 15944
+create curve vertex 15944 16032
+create curve vertex 16032 16120
+create curve vertex 16120 16208
+create curve vertex 16208 16296
+create curve vertex 16296 16384
+create curve vertex 16384 16472
+create curve vertex 16472 16560
+create curve vertex 16560 16648
+create curve vertex 16648 16736
+create curve vertex 16736 16824
+create curve vertex 16824 16912
+create curve vertex 16912 17000
+create curve vertex 17000 17088
+create curve vertex 17088 17176
+create curve vertex 17176 17264
+create curve vertex 17264 17352
+create curve vertex 17352 17440
+create curve vertex 17440 17528
+create curve vertex 17528 17616
+create curve vertex 17616 17704
+create curve vertex 17704 17792
+create curve vertex 17792 17880
+create curve vertex 17880 17968
+create curve vertex 17968 18056
+create curve vertex 18056 18144
+create curve vertex 18144 18232
+create curve vertex 18232 18320
+create curve vertex 18320 18408
+create curve vertex 18408 18496
+
+# --- Fault line edges ---
+create curve vertex 6647 6682
+create curve vertex 6682 6717
+create curve vertex 6717 9626
+create curve vertex 9626 9660
+create curve vertex 9660 6787
+create curve vertex 6787 9694
+create curve vertex 9694 6822
+create curve vertex 6822 6857
+create curve vertex 6857 9727
+create curve vertex 9727 6892
+create curve vertex 6892 9760
+create curve vertex 9760 6927
+create curve vertex 6927 9793
+create curve vertex 9793 9826
+create curve vertex 9826 6962
+create curve vertex 6962 9859
+create curve vertex 9859 6998
+create curve vertex 6998 9892
+create curve vertex 9892 7034
+create curve vertex 7034 9925
+create curve vertex 9925 9958
+create curve vertex 9958 7106
+create curve vertex 7106 9991
+create curve vertex 9991 10024
+create curve vertex 10024 7142
+create curve vertex 7142 7178
+create curve vertex 7178 7214
+create curve vertex 7214 10056
+create curve vertex 10056 7250
+create curve vertex 7250 10088
+create curve vertex 10088 10120
+create curve vertex 10120 10152
+create curve vertex 10152 7323
+create curve vertex 7323 10184
+create curve vertex 10184 10216
+create curve vertex 10216 7397
+create curve vertex 7397 10248
+create curve vertex 10248 7434
+create curve vertex 7434 10280
+create curve vertex 10280 7508
+create curve vertex 7508 10312
+create curve vertex 10312 10343
+create curve vertex 10343 10374
+create curve vertex 10374 7545
+create curve vertex 7545 7583
+create curve vertex 7583 10405
+create curve vertex 10405 7621
+create curve vertex 7621 10436
+create curve vertex 10436 7659
+create curve vertex 7659 7697
+create curve vertex 7697 10467
+create curve vertex 10467 10498
+create curve vertex 10498 10529
+create curve vertex 10529 10559
+create curve vertex 10559 7811
+create curve vertex 7811 10589
+create curve vertex 10589 10619
+create curve vertex 10619 7849
+create curve vertex 7849 10649
+create curve vertex 10649 7888
+create curve vertex 7888 10679
+create curve vertex 10679 7927
+create curve vertex 7927 10709
+create curve vertex 10709 10738
+create curve vertex 10738 8005
+create curve vertex 8005 8044
+create curve vertex 8044 10767
+create curve vertex 10767 8124
+create curve vertex 8124 10796
+create curve vertex 10796 8164
+create curve vertex 8164 8204
+create curve vertex 8204 10825
+create curve vertex 10825 10854
+create curve vertex 10854 10883
+create curve vertex 10883 10912
+create curve vertex 10912 8244
+create curve vertex 8244 8284
+create curve vertex 8284 8324
+create curve vertex 8324 10941
+create curve vertex 10941 10969
+create curve vertex 10969 10997
+create curve vertex 10997 8404
+create curve vertex 8404 11025
+create curve vertex 11025 11053
+create curve vertex 11053 11081
+create curve vertex 11081 8527
+create curve vertex 8527 11109
+create curve vertex 11109 8568
+create curve vertex 8568 11137
+create curve vertex 11137 11165
+create curve vertex 11165 8609
+create curve vertex 8609 8650
+create curve vertex 8650 11192
+create curve vertex 11192 11219
+create curve vertex 11219 8692
+create curve vertex 8692 8734
+create curve vertex 8734 11246
+create curve vertex 11246 8776
+create curve vertex 8776 11273
+create curve vertex 11273 11300
+create curve vertex 11300 8818
+create curve vertex 8818 8860
+create curve vertex 8860 11326
+create curve vertex 11326 8902
+create curve vertex 8902 8944
+create curve vertex 8944 11352
+create curve vertex 11352 11378
+create curve vertex 11378 11404
+create curve vertex 11404 9030
+create curve vertex 9030 11430
+create curve vertex 11430 9116
+create curve vertex 9116 9159
+create curve vertex 9159 9202
+create curve vertex 9202 11456
+create curve vertex 11456 11482
+create curve vertex 11482 11508
+create curve vertex 11508 11534
+create curve vertex 11534 11560
+create curve vertex 11560 11585
+create curve vertex 11585 11610
+create curve vertex 11610 11635
+create curve vertex 11635 11660
+create curve vertex 11660 11685
+create curve vertex 11685 11710
+create curve vertex 11710 11735
+create curve vertex 11735 11760
+create curve vertex 11760 9591
+
+# Merge coincident vertices, delete free
+merge vertex all
+delete vertex all
+
+# --- Surfaces (bounded by curves) ---
+# Section 1
+create surface curve 1 380 2 305
+create surface curve 2 381 3 306
+create surface curve 3 382 4 307
+create surface curve 4 383 5 308
+create surface curve 5 384 6 309
+create surface curve 6 385 7 310
+create surface curve 7 386 8 311
+create surface curve 8 387 9 312
+create surface curve 9 388 10 313
+create surface curve 10 389 11 314
+create surface curve 11 390 12 315
+create surface curve 12 391 13 316
+create surface curve 13 392 14 317
+create surface curve 14 393 15 318
+create surface curve 15 394 16 319
+create surface curve 16 395 17 320
+create surface curve 17 396 18 321
+create surface curve 18 397 19 322
+create surface curve 19 398 20 323
+create surface curve 20 399 21 324
+create surface curve 21 400 22 325
+create surface curve 22 401 23 326
+create surface curve 23 402 24 327
+create surface curve 24 403 25 328
+create surface curve 25 404 26 329
+create surface curve 26 405 27 330
+create surface curve 27 406 28 331
+create surface curve 28 407 29 332
+create surface curve 29 408 30 333
+create surface curve 30 409 31 334
+create surface curve 31 410 32 335
+create surface curve 32 411 33 336
+create surface curve 33 412 34 337
+create surface curve 34 413 35 338
+create surface curve 35 414 36 339
+create surface curve 36 415 37 340
+create surface curve 37 416 38 341
+create surface curve 38 417 39 342
+create surface curve 39 418 40 343
+create surface curve 40 419 41 344
+create surface curve 41 420 42 345
+create surface curve 42 421 43 346
+create surface curve 43 422 44 347
+create surface curve 44 423 45 348
+create surface curve 45 424 46 349
+create surface curve 46 425 47 350
+create surface curve 47 426 48 351
+create surface curve 48 427 49 352
+create surface curve 49 428 50 353
+create surface curve 50 429 51 354
+create surface curve 51 430 52 355
+create surface curve 52 431 53 356
+create surface curve 53 432 54 357
+create surface curve 54 433 55 358
+create surface curve 55 434 56 359
+create surface curve 56 435 57 360
+create surface curve 57 436 58 361
+create surface curve 58 437 59 362
+create surface curve 59 438 60 363
+create surface curve 60 439 61 364
+create surface curve 61 440 62 365
+create surface curve 62 441 63 366
+create surface curve 63 442 64 367
+create surface curve 64 443 65 368
+create surface curve 65 444 66 369
+create surface curve 66 445 67 370
+create surface curve 67 446 68 371
+create surface curve 68 447 69 372
+create surface curve 69 448 70 373
+create surface curve 70 449 71 374
+create surface curve 71 450 72 375
+create surface curve 72 451 73 376
+create surface curve 73 452 74 377
+create surface curve 74 453 75 378
+create surface curve 75 454 76 379
+# Section 2
+create surface curve 77 605 78 380
+create surface curve 78 606 79 381
+create surface curve 79 607 80 382
+create surface curve 80 608 609 81 383
+create surface curve 81 610 611 82 384
+create surface curve 82 612 83 385
+create surface curve 83 613 614 84 386
+create surface curve 84 615 616 85 387
+create surface curve 85 617 618 619 86 388
+create surface curve 86 620 621 87 389
+create surface curve 87 622 623 88 390
+create surface curve 88 624 89 391
+create surface curve 89 625 626 90 392
+create surface curve 90 627 628 629 91 393
+create surface curve 91 630 92 394
+create surface curve 92 631 93 395
+create surface curve 93 632 633 94 396
+create surface curve 94 634 635 95 397
+create surface curve 95 636 637 96 398
+create surface curve 96 638 97 399
+create surface curve 97 639 640 98 400
+create surface curve 98 641 642 99 401
+create surface curve 99 643 100 402
+create surface curve 100 644 101 403
+create surface curve 101 645 646 647 648 102 404
+create surface curve 102 649 103 405
+create surface curve 103 650 651 104 406
+create surface curve 104 652 653 105 407
+create surface curve 105 654 106 408
+create surface curve 106 655 107 409
+create surface curve 107 656 657 108 410
+create surface curve 108 658 659 109 411
+create surface curve 109 660 661 662 110 412
+create surface curve 110 663 664 111 413
+create surface curve 111 665 666 112 414
+create surface curve 112 667 113 415
+create surface curve 113 668 669 114 416
+create surface curve 114 670 115 417
+create surface curve 115 671 116 418
+create surface curve 116 672 117 419
+create surface curve 117 673 674 118 420
+create surface curve 118 675 119 421
+create surface curve 119 676 677 678 679 680 120 422
+create surface curve 120 681 121 423
+create surface curve 121 682 122 424
+create surface curve 122 683 684 685 123 425
+create surface curve 123 686 124 426
+create surface curve 124 687 125 427
+create surface curve 125 688 689 126 428
+create surface curve 126 690 127 429
+create surface curve 127 691 692 128 430
+create surface curve 128 693 694 695 129 431
+create surface curve 129 696 130 432
+create surface curve 130 697 698 699 131 433
+create surface curve 131 700 132 434
+create surface curve 132 701 702 133 435
+create surface curve 133 703 704 705 134 436
+create surface curve 134 706 135 437
+create surface curve 135 707 708 136 438
+create surface curve 136 709 137 439
+create surface curve 137 710 711 138 440
+create surface curve 138 712 713 139 441
+create surface curve 139 714 140 442
+create surface curve 140 715 141 443
+create surface curve 141 716 142 444
+create surface curve 142 717 143 445
+create surface curve 143 718 719 144 446
+create surface curve 144 720 145 447
+create surface curve 145 721 146 448
+create surface curve 146 722 147 449
+create surface curve 147 723 148 450
+create surface curve 148 724 149 451
+create surface curve 149 725 150 452
+create surface curve 150 726 151 453
+create surface curve 151 727 728 729 730 731 152 454
+# Section 3
+create surface curve 153 455 154 605 606 607
+create surface curve 154 456 155 608
+create surface curve 155 457 156 609 610
+create surface curve 156 458 157 611 612 613
+create surface curve 157 459 158 614 615
+create surface curve 158 460 159 616 617
+create surface curve 159 461 160 618
+create surface curve 160 462 161 619 620
+create surface curve 161 463 162 621 622
+create surface curve 162 464 163 623 624
+create surface curve 163 465 164 625
+create surface curve 164 466 165 626 627
+create surface curve 165 467 166 628
+create surface curve 166 468 167 629 630 631 632
+create surface curve 167 469 168 633 634
+create surface curve 168 470 169 635
+create surface curve 169 471 170 636
+create surface curve 170 472 171 637 638
+create surface curve 171 473 172 639
+create surface curve 172 474 173 640 641
+create surface curve 173 475 174 642 643
+create surface curve 174 476 175 644 645
+create surface curve 175 477 176 646
+create surface curve 176 478 177 647
+create surface curve 177 479 178 648 649 650
+create surface curve 178 480 179 651 652
+create surface curve 179 481 180 653 654 655
+create surface curve 180 482 181 656
+create surface curve 181 483 182 657
+create surface curve 182 484 183 658
+create surface curve 183 485 184 659 660
+create surface curve 184 486 185 661
+create surface curve 185 487 186 662 663
+create surface curve 186 488 187 664 665
+create surface curve 187 489 188 666 667
+create surface curve 188 490 189 668
+create surface curve 189 491 190 669 670 671
+create surface curve 190 492 191 672 673
+create surface curve 191 493 192 674 675 676
+create surface curve 192 494 193 677
+create surface curve 193 495 194 678
+create surface curve 194 496 195 679
+create surface curve 195 497 196 680 681 682 683
+create surface curve 196 498 197 684
+create surface curve 197 499 198 685
+create surface curve 198 500 199 686 687
+create surface curve 199 501 200 688
+create surface curve 200 502 201 689
+create surface curve 201 503 202 690 691
+create surface curve 202 504 203 692 693
+create surface curve 203 505 204 694
+create surface curve 204 506 205 695 696 697
+create surface curve 205 507 206 698
+create surface curve 206 508 207 699 700 701
+create surface curve 207 509 208 702 703
+create surface curve 208 510 209 704
+create surface curve 209 511 210 705 706 707
+create surface curve 210 512 211 708 709 710
+create surface curve 211 513 212 711
+create surface curve 212 514 213 712
+create surface curve 213 515 214 713 714
+create surface curve 214 516 215 715 716 717 718
+create surface curve 215 517 216 719
+create surface curve 216 518 217 720
+create surface curve 217 519 218 721
+create surface curve 218 520 219 722
+create surface curve 219 521 220 723
+create surface curve 220 522 221 724
+create surface curve 221 523 222 725
+create surface curve 222 524 223 726
+create surface curve 223 525 224 727
+create surface curve 224 526 225 728
+create surface curve 225 527 226 729
+create surface curve 226 528 227 730
+create surface curve 227 529 228 731
+# Section 4
+create surface curve 229 530 230 455
+create surface curve 230 531 231 456
+create surface curve 231 532 232 457
+create surface curve 232 533 233 458
+create surface curve 233 534 234 459
+create surface curve 234 535 235 460
+create surface curve 235 536 236 461
+create surface curve 236 537 237 462
+create surface curve 237 538 238 463
+create surface curve 238 539 239 464
+create surface curve 239 540 240 465
+create surface curve 240 541 241 466
+create surface curve 241 542 242 467
+create surface curve 242 543 243 468
+create surface curve 243 544 244 469
+create surface curve 244 545 245 470
+create surface curve 245 546 246 471
+create surface curve 246 547 247 472
+create surface curve 247 548 248 473
+create surface curve 248 549 249 474
+create surface curve 249 550 250 475
+create surface curve 250 551 251 476
+create surface curve 251 552 252 477
+create surface curve 252 553 253 478
+create surface curve 253 554 254 479
+create surface curve 254 555 255 480
+create surface curve 255 556 256 481
+create surface curve 256 557 257 482
+create surface curve 257 558 258 483
+create surface curve 258 559 259 484
+create surface curve 259 560 260 485
+create surface curve 260 561 261 486
+create surface curve 261 562 262 487
+create surface curve 262 563 263 488
+create surface curve 263 564 264 489
+create surface curve 264 565 265 490
+create surface curve 265 566 266 491
+create surface curve 266 567 267 492
+create surface curve 267 568 268 493
+create surface curve 268 569 269 494
+create surface curve 269 570 270 495
+create surface curve 270 571 271 496
+create surface curve 271 572 272 497
+create surface curve 272 573 273 498
+create surface curve 273 574 274 499
+create surface curve 274 575 275 500
+create surface curve 275 576 276 501
+create surface curve 276 577 277 502
+create surface curve 277 578 278 503
+create surface curve 278 579 279 504
+create surface curve 279 580 280 505
+create surface curve 280 581 281 506
+create surface curve 281 582 282 507
+create surface curve 282 583 283 508
+create surface curve 283 584 284 509
+create surface curve 284 585 285 510
+create surface curve 285 586 286 511
+create surface curve 286 587 287 512
+create surface curve 287 588 288 513
+create surface curve 288 589 289 514
+create surface curve 289 590 290 515
+create surface curve 290 591 291 516
+create surface curve 291 592 292 517
+create surface curve 292 593 293 518
+create surface curve 293 594 294 519
+create surface curve 294 595 295 520
+create surface curve 295 596 296 521
+create surface curve 296 597 297 522
+create surface curve 297 598 298 523
+create surface curve 298 599 299 524
+create surface curve 299 600 300 525
+create surface curve 300 601 301 526
+create surface curve 301 602 302 527
+create surface curve 302 603 303 528
+create surface curve 303 604 304 529

@@ -64,7 +64,7 @@ def build_fc_model_from_arrays(x_coords, z_coords, vp, density, vs, output_path)
     kriging_params = np.stack([vp, density, vs], axis=2)
 
     # Создание модели
-    model = FCModel()
+    model = FCModel.load()
 
     # Настройки для 2D упругой модели
     model.settings = {

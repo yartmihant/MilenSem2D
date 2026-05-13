@@ -20,15 +20,15 @@ modify table 1 dependency y column 2
 modify table 4 insert row 1
 modify table 4 cell 1 1 value 0.0
 modify table 4 cell 1 2 value 0.0
-modify table 4 cell 1 3 value 2215607159.0627093
+modify table 4 cell 1 3 value 4022981713.2928934
 modify table 3 insert row 1
 modify table 3 cell 1 1 value 0.0
 modify table 3 cell 1 2 value 0.0
-modify table 3 cell 1 3 value 0.28392566012842024
+modify table 3 cell 1 3 value 0.28374057976422873
 modify table 2 insert row 1
 modify table 2 cell 1 1 value 0.0
 modify table 2 cell 1 2 value 0.0
-modify table 2 cell 1 3 value 1823.778212
+modify table 2 cell 1 3 value 1910.8863905
 modify table 1 insert row 1
 modify table 1 cell 1 1 value 0.0
 modify table 1 cell 1 2 value 0.0
@@ -36,15 +36,15 @@ modify table 1 cell 1 3 value 0
 modify table 4 insert row 2
 modify table 4 cell 2 1 value 0.0
 modify table 4 cell 2 2 value 4.957580477234976
-modify table 4 cell 2 3 value 2215607159.0627093
+modify table 4 cell 2 3 value 4022981713.2928934
 modify table 3 insert row 2
 modify table 3 cell 2 1 value 0.0
 modify table 3 cell 2 2 value 4.957580477234976
-modify table 3 cell 2 3 value 0.28392566012842024
+modify table 3 cell 2 3 value 0.28374057976422873
 modify table 2 insert row 2
 modify table 2 cell 2 1 value 0.0
 modify table 2 cell 2 2 value 4.957580477234976
-modify table 2 cell 2 3 value 1823.778212
+modify table 2 cell 2 3 value 1910.8863905
 modify table 1 insert row 2
 modify table 1 cell 2 1 value 0.0
 modify table 1 cell 2 2 value 4.957580477234976
@@ -75,15 +75,15 @@ modify table 5 dependency y column 2
 modify table 8 insert row 1
 modify table 8 cell 1 1 value 0.0
 modify table 8 cell 1 2 value 4.957580477234976
-modify table 8 cell 1 3 value 2215607159.0627093
+modify table 8 cell 1 3 value 4022981713.2928934
 modify table 7 insert row 1
 modify table 7 cell 1 1 value 0.0
 modify table 7 cell 1 2 value 4.957580477234976
-modify table 7 cell 1 3 value 0.28392566012842024
+modify table 7 cell 1 3 value 0.28374057976422873
 modify table 6 insert row 1
 modify table 6 cell 1 1 value 0.0
 modify table 6 cell 1 2 value 4.957580477234976
-modify table 6 cell 1 3 value 1823.778212
+modify table 6 cell 1 3 value 1910.8863905
 modify table 5 insert row 1
 modify table 5 cell 1 1 value 0.0
 modify table 5 cell 1 2 value 4.957580477234976
@@ -91,15 +91,15 @@ modify table 5 cell 1 3 value 0
 modify table 8 insert row 2
 modify table 8 cell 2 1 value 0.0
 modify table 8 cell 2 2 value 9.915160954469952
-modify table 8 cell 2 3 value 2215607159.0627093
+modify table 8 cell 2 3 value 4022981713.2928934
 modify table 7 insert row 2
 modify table 7 cell 2 1 value 0.0
 modify table 7 cell 2 2 value 9.915160954469952
-modify table 7 cell 2 3 value 0.28392566012842024
+modify table 7 cell 2 3 value 0.28374057976422873
 modify table 6 insert row 2
 modify table 6 cell 2 1 value 0.0
 modify table 6 cell 2 2 value 9.915160954469952
-modify table 6 cell 2 3 value 1823.778212
+modify table 6 cell 2 3 value 1910.8863905
 modify table 5 insert row 2
 modify table 5 cell 2 1 value 0.0
 modify table 5 cell 2 2 value 9.915160954469952
@@ -130,15 +130,15 @@ modify table 9 dependency y column 2
 modify table 12 insert row 1
 modify table 12 cell 1 1 value 0.0
 modify table 12 cell 1 2 value 23.135375560429907
-modify table 12 cell 1 3 value 2215607159.0627093
+modify table 12 cell 1 3 value 3701414318.219254
 modify table 11 insert row 1
 modify table 11 cell 1 1 value 0.0
 modify table 11 cell 1 2 value 23.135375560429907
-modify table 11 cell 1 3 value 0.28392566012842024
+modify table 11 cell 1 3 value 0.28376339850712284
 modify table 10 insert row 1
 modify table 10 cell 1 1 value 0.0
 modify table 10 cell 1 2 value 23.135375560429907
-modify table 10 cell 1 3 value 1823.778212
+modify table 10 cell 1 3 value 1897.919631875
 modify table 9 insert row 1
 modify table 9 cell 1 1 value 0.0
 modify table 9 cell 1 2 value 23.135375560429907
@@ -146,15 +146,15 @@ modify table 9 cell 1 3 value 0
 modify table 12 insert row 2
 modify table 12 cell 2 1 value 0.0
 modify table 12 cell 2 2 value 29.74548286340989
-modify table 12 cell 2 3 value 2215607159.0627093
+modify table 12 cell 2 3 value 3434545557.411844
 modify table 11 insert row 2
 modify table 11 cell 2 1 value 0.0
 modify table 11 cell 2 2 value 29.74548286340989
-modify table 11 cell 2 3 value 0.28392566012842024
+modify table 11 cell 2 3 value 0.2837846725429082
 modify table 10 insert row 2
 modify table 10 cell 2 1 value 0.0
 modify table 10 cell 2 2 value 29.74548286340989
-modify table 10 cell 2 3 value 1823.778212
+modify table 10 cell 2 3 value 1886.4863825
 modify table 9 insert row 2
 modify table 9 cell 2 1 value 0.0
 modify table 9 cell 2 2 value 29.74548286340989
@@ -185,15 +185,15 @@ modify table 13 dependency y column 2
 modify table 16 insert row 1
 modify table 16 cell 1 1 value 0.0
 modify table 16 cell 1 2 value 52.054595010967304
-modify table 16 cell 1 3 value 2072138485.797246
+modify table 16 cell 1 3 value 3580173050.674607
 modify table 15 insert row 1
 modify table 15 cell 1 1 value 0.0
 modify table 15 cell 1 2 value 52.054595010967304
-modify table 15 cell 1 3 value 0.2839499093069614
+modify table 15 cell 1 3 value 0.28377270171799707
 modify table 14 insert row 1
 modify table 14 cell 1 1 value 0.0
 modify table 14 cell 1 2 value 52.054595010967304
-modify table 14 cell 1 3 value 1814.8867
+modify table 14 cell 1 3 value 1892.362436875
 modify table 13 insert row 1
 modify table 13 cell 1 1 value 0.0
 modify table 13 cell 1 2 value 52.054595010967304
@@ -201,15 +201,15 @@ modify table 13 cell 1 3 value 0
 modify table 16 insert row 2
 modify table 16 cell 2 1 value 0.0
 modify table 16 cell 2 2 value 59.49096572681978
-modify table 16 cell 2 3 value 2105995378.3751256
+modify table 16 cell 2 3 value 3346023052.6782117
 modify table 15 insert row 2
 modify table 15 cell 2 1 value 0.0
 modify table 15 cell 2 2 value 59.49096572681978
-modify table 15 cell 2 3 value 0.2839439662281126
+modify table 15 cell 2 3 value 0.2837922267515296
 modify table 14 insert row 2
 modify table 14 cell 2 1 value 0.0
 modify table 14 cell 2 2 value 59.49096572681978
-modify table 14 cell 2 3 value 1817.018417
+modify table 14 cell 2 3 value 1882.2615106250003
 modify table 13 insert row 2
 modify table 13 cell 2 1 value 0.0
 modify table 13 cell 2 2 value 59.49096572681978
@@ -240,15 +240,15 @@ modify table 17 dependency y column 2
 modify table 20 insert row 1
 modify table 20 cell 1 1 value 0.0
 modify table 20 cell 1 2 value 89.23644859022966
-modify table 20 cell 1 3 value 2542368222.2847075
+modify table 20 cell 1 3 value 3258332150.294037
 modify table 19 insert row 1
 modify table 19 cell 1 1 value 0.0
 modify table 19 cell 1 2 value 89.23644859022966
-modify table 19 cell 1 3 value 0.2838782334872216
+modify table 19 cell 1 3 value 0.28380020400678657
 modify table 18 insert row 1
 modify table 18 cell 1 1 value 0.0
 modify table 18 cell 1 2 value 89.23644859022966
-modify table 18 cell 1 3 value 1842.7758970000002
+modify table 18 cell 1 3 value 1879.1501068750003
 modify table 17 insert row 1
 modify table 17 cell 1 1 value 0.0
 modify table 17 cell 1 2 value 89.23644859022966
@@ -256,15 +256,15 @@ modify table 17 cell 1 3 value 0
 modify table 20 insert row 2
 modify table 20 cell 2 1 value 0.0
 modify table 20 cell 2 2 value 99.15160954469962
-modify table 20 cell 2 3 value 2737531659.2172923
+modify table 20 cell 2 3 value 3601789818.255933
 modify table 19 insert row 2
 modify table 19 cell 2 1 value 0.0
 modify table 19 cell 2 2 value 99.15160954469962
-modify table 19 cell 2 3 value 0.2838540120997341
+modify table 19 cell 2 3 value 0.28377125200598835
 modify table 18 insert row 2
 modify table 18 cell 2 1 value 0.0
 modify table 18 cell 2 2 value 99.15160954469962
-modify table 18 cell 2 3 value 1853.403197
+modify table 18 cell 2 3 value 1894.8564905
 modify table 17 insert row 2
 modify table 17 cell 2 1 value 0.0
 modify table 17 cell 2 2 value 99.15160954469962

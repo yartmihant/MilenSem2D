@@ -386,7 +386,7 @@ print(f"Средняя плотность: {layer['properties'][:,2].mean():.1f}
 from fc_model import FCModel
 
 # Загрузка полной модели
-fc_model = FCModel('data/dev_1_6_model_material_full.fc')
+fc_model = FCModel.load('data/dev_1_6_model_material_full.fc')
 
 # Доступ к материалу слоя
 layer_idx = 1

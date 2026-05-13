@@ -2,10 +2,10 @@ delete mesh surface all propagate
 delete mesh curve all propagate
 curve 1 scheme equal interval 425
 curve 3 scheme equal interval 425
-curve 12 scheme equal interval 415
-curve 19 scheme equal interval 415
-curve 26 scheme equal interval 395
-curve 33 scheme equal interval 345
+curve 12 scheme equal interval 315
+curve 19 scheme equal interval 315
+curve 26 scheme equal interval 315
+curve 33 scheme equal interval 315
 curve 40 scheme equal interval 315
 curve 47 scheme equal interval 315
 curve 54 scheme equal interval 315
@@ -78,10 +78,10 @@ curve 516 scheme equal interval 165
 curve 523 scheme equal interval 105
 curve 5 scheme equal interval 325
 curve 7 scheme equal interval 325
-curve 15 scheme equal interval 315
-curve 22 scheme equal interval 315
-curve 29 scheme equal interval 305
-curve 36 scheme equal interval 265
+curve 15 scheme equal interval 245
+curve 22 scheme equal interval 245
+curve 29 scheme equal interval 245
+curve 36 scheme equal interval 245
 curve 43 scheme equal interval 245
 curve 50 scheme equal interval 245
 curve 57 scheme equal interval 245
@@ -154,10 +154,10 @@ curve 519 scheme equal interval 125
 curve 526 scheme equal interval 85
 curve 8 scheme equal interval 425
 curve 10 scheme equal interval 425
-curve 17 scheme equal interval 415
-curve 24 scheme equal interval 415
-curve 31 scheme equal interval 395
-curve 38 scheme equal interval 345
+curve 17 scheme equal interval 315
+curve 24 scheme equal interval 315
+curve 31 scheme equal interval 315
+curve 38 scheme equal interval 315
 curve 45 scheme equal interval 315
 curve 52 scheme equal interval 315
 curve 59 scheme equal interval 315
@@ -231,7 +231,7 @@ curve 528 scheme equal interval 105
 curve 2 scheme equal interval 1
 curve 13 scheme equal interval 2
 curve 20 scheme equal interval 3
-curve 27 scheme equal interval 5
+curve 27 scheme equal interval 3
 curve 34 scheme equal interval 2
 curve 41 scheme equal interval 2
 curve 48 scheme equal interval 2
@@ -306,7 +306,7 @@ curve 524 scheme equal interval 7
 curve 4 scheme equal interval 1
 curve 11 scheme equal interval 2
 curve 18 scheme equal interval 3
-curve 25 scheme equal interval 5
+curve 25 scheme equal interval 3
 curve 32 scheme equal interval 2
 curve 39 scheme equal interval 2
 curve 46 scheme equal interval 2

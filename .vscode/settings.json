@@ -1,4 +1,10 @@
 {
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "code-runner.executorMap": {
+        "python": "uv run python"
+        // "python": "/home/antonov/.pyenv/versions/3.13.5/bin/python -u"
+        // "python": "C:\\Users\\Artem\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+    },
+    "code-runner.cwd": "$workspaceRoot",
 }

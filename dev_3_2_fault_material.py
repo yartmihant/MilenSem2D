@@ -21,6 +21,14 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 
+""" ## Параметр угла разлома ## """
+
+# Угол разлома определяет суффикс входных/выходных файлов (должен совпадать с dev_3_1)
+fault_angle_param = 20.0  # градусы
+angle_suffix = f'_a{int(fault_angle_param)}'
+print(f"Суффикс файлов: {angle_suffix}")
+
+
 """ ## Загрузка данных ## """
 
 # Исходный материал на декартовой сетке 5×5 м (из Главы I.7)
@@ -36,7 +44,7 @@ print(f"X: {orig_coords[0,0,0]:.1f} .. {orig_coords[-1,0,0]:.1f} м")
 print(f"Y: {orig_coords[0,0,1]:.1f} .. {orig_coords[0,-1,1]:.1f} м")
 
 # Геометрия с разломом (из Главы III.1)
-fault_data = np.load('data/dev_3_1_fault_layer_boundaries.npz', allow_pickle=True)
+fault_data = np.load(f'data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz', allow_pickle=True)
 faulted_boundaries = fault_data['layer_boundaries_array']  # (75, 1176)
 distances = fault_data['distances']
 fault_x = float(fault_data['fault_x'])
@@ -190,9 +198,9 @@ ax.set_xlim(x_min, x_max)
 ax.set_ylim(y_max, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_2_Vp.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_2_Vp{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
-print("Сохранено: img/dev_3_2_Vp.png")
+print(f"Сохранено: img/dev_3_2_Vp{angle_suffix}.png")
 
 
 """ ## Визуализация: Vs ## """
@@ -208,9 +216,9 @@ ax.set_xlim(x_min, x_max)
 ax.set_ylim(y_max, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_2_Vs.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_2_Vs{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
-print("Сохранено: img/dev_3_2_Vs.png")
+print(f"Сохранено: img/dev_3_2_Vs{angle_suffix}.png")
 
 
 """ ## Визуализация: плотность ## """
@@ -226,9 +234,9 @@ ax.set_xlim(x_min, x_max)
 ax.set_ylim(y_max, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_2_rho.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_2_rho{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
-print("Сохранено: img/dev_3_2_rho.png")
+print(f"Сохранено: img/dev_3_2_rho{angle_suffix}.png")
 
 
 """ ## Визуализация: детальный вид зоны разлома (Vp) ## """
@@ -251,9 +259,9 @@ ax.set_xlim(x_detail_left, x_detail_right)
 ax.set_ylim(y_max, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_2_Vp_detail.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_2_Vp_detail{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.show()
-print("Сохранено: img/dev_3_2_Vp_detail.png")
+print(f"Сохранено: img/dev_3_2_Vp_detail{angle_suffix}.png")
 
 
 """ ## Построение сетки координат для сохранения ## """
@@ -264,7 +272,7 @@ coords_grid = np.stack([X_save, Y_save], axis=-1)
 
 """ ## Сохранение результатов ## """
 
-np.savez_compressed('data/dev_3_2_fault_material.npz',
+np.savez_compressed(f'data/dev_3_2_fault_material{angle_suffix}.npz',
                     material_grid=material_grid,
                     coords_grid=coords_grid,
                     Vp=Vp.astype(np.float32),
@@ -274,7 +282,7 @@ np.savez_compressed('data/dev_3_2_fault_material.npz',
                     fault_throw=fault_throw,
                     model_bottom_depth=model_bottom_depth)
 
-print(f"\nРезультаты сохранены в data/dev_3_2_fault_material.npz")
+print(f"\nРезультаты сохранены в data/dev_3_2_fault_material{angle_suffix}.npz")
 print(f"  material_grid: {material_grid.shape} (E, nu, rho)")
 print(f"  coords_grid: {coords_grid.shape}")
 print(f"  Vp: {Vp.shape}")

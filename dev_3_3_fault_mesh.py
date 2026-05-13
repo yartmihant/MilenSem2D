@@ -25,6 +25,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
+""" ## Параметр угла разлома ## """
+
+# Угол разлома определяет суффикс входных/выходных файлов (должен совпадать с dev_3_1)
+fault_angle_param = 20.0  # градусы
+angle_suffix = f'_a{int(fault_angle_param)}'
+print(f"Суффикс файлов: {angle_suffix}")
+
+
 """ ## Загрузка данных ## """
 
 # Исходная геометрия слоёв (из Главы I.5)
@@ -36,7 +44,7 @@ well1_depths = orig_data['well1_depths']
 well2_depths = orig_data['well2_depths']
 
 # Геометрия с разломом (из Главы III.1)
-fault_data = np.load('data/dev_3_1_fault_layer_boundaries.npz', allow_pickle=True)
+fault_data = np.load(f'data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz', allow_pickle=True)
 faulted_boundaries = fault_data['layer_boundaries_array']  # (75, 1176)
 fault_x = float(fault_data['fault_x'])
 fault_angle = float(fault_data['fault_angle'])
@@ -65,130 +73,194 @@ print(f"Шаг выборки: каждые {sample_step} точек (= {sample_
 
 """ ## Построение массивов вершин для 4 секций ## """
 
+r"""
+Модель делится на 4 секции по горизонтали:
+- Секция 1: $[0, \text{Well1}]$ — левый блок, далеко от разлома  
+- Секция 2: $[\text{Well1}, \text{fault\_line}]$ — левый блок, до линии разлома
+- Секция 3: $[\text{fault\_line}, \text{Well2}]$ — правый блок, от линии разлома
+- Секция 4: $[\text{Well2}, \text{end}]$ — правый блок, далеко от разлома
+
+**Ключевые принципы:**
+1. Линия разлома — строго прямая: $x_{fault}(z) = fault\_x + z \cdot \tan(\alpha)$
+2. Слои остаются горизонтальными (с естественной криволинейностью от каротажа),
+   но разорваны на линии разлома: правый блок смещён на $fault\_throw$ вниз
+3. Плотность опорных вершин сплайнов ≈ `VERTEX_STEP` (50 м) —
+   число вершин на границу **переменное** (зависит от ширины секции на данной глубине)
+4. Глубины: секции 1-2 из `orig_boundaries`, секции 3-4 из `orig_boundaries + throw`
 """
-Вершины берутся из массива `faulted_boundaries` (уже содержит смещение правого блока).
-Каждая граничная линия сэмплируется с шагом 50 м, плюс точка разлома (`fault_x`).
 
-Добавляем поверхность (z=0) и корректируем дно (z=model_bottom_depth).
-"""
+n_layers = len(formations)
+n_boundaries = n_layers + 1  # 76 (поверхность + 75 нижних границ)
+alpha_rad = np.radians(fault_angle)
+tan_alpha = np.tan(alpha_rad)
 
-# Индексы ключевых точек в массиве distances (шаг 10 м)
-idx_well1 = int(WELL1_DISTANCE / 10)  # 425
-idx_fault = int(fault_x / 10)  # 587 (≈5870 м — ближайшая к 5875)
-idx_well2 = int(WELL2_DISTANCE / 10)  # 750
-
-# Для точного попадания в fault_x добавляем дополнительную вершину
-# Вершины секции 1: [0, 50, 100, ..., 4250]
+# --- Секция 1: [0 .. Well1] — фиксированные X, одинаковые для всех границ ---
+idx_well1 = int(WELL1_DISTANCE / 10)
 x_sec1 = distances[0:idx_well1 + 1:sample_step]
 if x_sec1[-1] != WELL1_DISTANCE:
     x_sec1 = np.append(x_sec1, WELL1_DISTANCE)
 
-# Вершины секции 2: [4250, 4300, ..., 5850, 5875]
-x_sec2 = distances[idx_well1:idx_fault + 1:sample_step]
-if x_sec2[0] != WELL1_DISTANCE:
-    x_sec2 = np.concatenate([[WELL1_DISTANCE], x_sec2])
-# Добавляем точную точку разлома
-if x_sec2[-1] != fault_x:
-    x_sec2 = np.append(x_sec2, fault_x)
-
-# Вершины секции 3: [5875, 5900, 5950, ..., 7500]
-x_sec3_start = distances[idx_fault + sample_step:idx_well2 + 1:sample_step]
-x_sec3 = np.concatenate([[fault_x], x_sec3_start])
-if x_sec3[-1] != WELL2_DISTANCE:
-    x_sec3 = np.append(x_sec3, WELL2_DISTANCE)
-
-# Вершины секции 4: [7500, 7550, ..., 11750]
+# --- Секция 4: [Well2 .. end] — фиксированные X ---
+idx_well2 = int(WELL2_DISTANCE / 10)
 x_sec4 = distances[idx_well2::sample_step]
 if x_sec4[0] != WELL2_DISTANCE:
     x_sec4 = np.concatenate([[WELL2_DISTANCE], x_sec4])
 if x_sec4[-1] != PROFILE_LENGTH:
     x_sec4 = np.append(x_sec4, PROFILE_LENGTH)
 
-print(f"\nВершины по секциям:")
-print(f"  Секция 1 [0..{WELL1_DISTANCE:.0f}]: {len(x_sec1)} вершин")
-print(f"  Секция 2 [{WELL1_DISTANCE:.0f}..{fault_x:.0f}]: {len(x_sec2)} вершин")
-print(f"  Секция 3 [{fault_x:.0f}..{WELL2_DISTANCE:.0f}]: {len(x_sec3)} вершин")
-print(f"  Секция 4 [{WELL2_DISTANCE:.0f}..{PROFILE_LENGTH:.0f}]: {len(x_sec4)} вершин")
+# --- Секции 2 и 3: X зависит от глубины ---
+# Для каждой границы определяем X пересечения с прямой линией разлома.
+# Линия разлома: x = fault_x + z·tan(α)
+#
+# Левый блок (секция 2): граница i на глубине z_left = orig_boundaries[i]
+# → пересечение: fault_x + z_left·tan(α)
+# Правый блок (секция 3): граница i на глубине z_right = orig_boundaries[i] + throw
+# → пересечение: fault_x + z_right·tan(α) — дальше вправо!
+#
+# Между этими точками на линии разлома — разрыв (сама поверхность сброса).
 
-# Все X-координаты вершин
-x_all_sections = [x_sec1, x_sec2, x_sec3, x_sec4]
+def find_fault_intersection(bnd_idx, use_throw=False):
+    """Итеративный поиск x-координаты пересечения границы с линией разлома."""
+    if bnd_idx == 0:
+        return fault_x  # поверхность z=0
+    if bnd_idx == n_boundaries - 1:
+        return fault_x + model_bottom_depth * tan_alpha  # дно модели
+    x_iter = fault_x
+    for _ in range(20):
+        z_iter = np.interp(x_iter, distances, orig_boundaries[bnd_idx - 1])
+        if use_throw:
+            z_iter += fault_throw
+        x_new = fault_x + z_iter * tan_alpha
+        if abs(x_new - x_iter) < 0.01:
+            break
+        x_iter = x_new
+    return x_iter
 
-""" ## Интерполяция глубин границ для вершин ## """
+# fault_x для левого блока (секция 2 — правый край)
+fault_x_left = np.array([find_fault_intersection(b, use_throw=False) for b in range(n_boundaries)])
+# fault_x для правого блока (секция 3 — левый край)
+fault_x_right = np.array([find_fault_intersection(b, use_throw=True) for b in range(n_boundaries)])
 
-"""
-Левый блок (секции 1-2): исходные границы без деформации.
-Правый блок (секции 3-4): исходные границы + fault_throw (параллельное смещение вниз).
+print(f"\nX на линии разлома (поверхность): left={fault_x_left[0]:.1f}, right={fault_x_right[0]:.1f}")
+print(f"X на линии разлома (середина):    left={fault_x_left[n_boundaries//2]:.1f}, "
+      f"right={fault_x_right[n_boundaries//2]:.1f}")
+print(f"X на линии разлома (дно):         left={fault_x_left[-1]:.1f}, right={fault_x_right[-1]:.1f}")
 
-Это обеспечивает резкий неконформный разрыв на линии разлома:
-слои слева и справа идентичны по форме, но смещены по вертикали.
-"""
+# Для каждой границы строим X-массивы секций 2 и 3 с шагом ~VERTEX_STEP
+# Число вершин переменное: больше где секция шире, меньше где уже
+sec_data = [[], [], [], []]  # sec_data[sec_idx][bnd_idx] = (x_arr, z_arr)
 
-n_layers = len(formations)
-n_boundaries = n_layers + 1  # 76 (поверхность + 75 нижних границ)
+for bnd_idx in range(n_boundaries):
+    fx_left = fault_x_left[bnd_idx]    # правый край секции 2
+    fx_right = fault_x_right[bnd_idx]  # левый край секции 3
 
-# Массив глубин для каждой секции: [n_boundaries, n_vertices_in_section]
-section_depths = []
-
-for sec_idx, x_sec in enumerate(x_all_sections):
-    depths = np.zeros((n_boundaries, len(x_sec)))
-
-    # Первая граница — поверхность (z=0)
-    depths[0, :] = 0.0
-
-    # Выбираем источник: исходные границы, для правого блока + смещение
-    if sec_idx < 2:
-        # Левый блок — исходная геометрия
-        shift = 0.0
+    # --- Глубины ---
+    if bnd_idx == 0:
+        # Поверхность z=0
+        z_left_fn = lambda x: np.zeros_like(x) if hasattr(x, '__len__') else 0.0
+        z_right_fn = lambda x: np.zeros_like(x) if hasattr(x, '__len__') else 0.0
+    elif bnd_idx == n_boundaries - 1:
+        # Дно модели
+        z_left_fn = lambda x: np.full_like(x, model_bottom_depth) if hasattr(x, '__len__') else model_bottom_depth
+        z_right_fn = lambda x: np.full_like(x, model_bottom_depth) if hasattr(x, '__len__') else model_bottom_depth
     else:
-        # Правый блок — параллельное смещение вниз
-        shift = fault_throw
+        layer_idx = bnd_idx - 1
+        orig_bnd = orig_boundaries[layer_idx]  # (1176,)
+        z_left_fn = lambda x, ob=orig_bnd: np.interp(x, distances, ob)
+        z_right_fn = lambda x, ob=orig_bnd: np.interp(x, distances, ob) + fault_throw
 
-    # Интерполяция каждой из 75 границ из ИСХОДНЫХ данных + смещение
-    for layer_idx in range(n_layers):
-        depths[layer_idx + 1, :] = np.interp(x_sec, distances, orig_boundaries[layer_idx]) + shift
+    # --- Секция 1: фиксированные X ---
+    z1 = z_left_fn(x_sec1)
+    sec_data[0].append((x_sec1.copy(), np.atleast_1d(z1)))
 
-    # Коррекция: последняя граница = model_bottom_depth (плоское дно)
-    depths[-1, :] = model_bottom_depth
+    # --- Секция 2: [Well1 .. fault_x_left], шаг ~VERTEX_STEP ---
+    mask2 = (distances >= WELL1_DISTANCE) & (distances <= fx_left)
+    x2_grid = distances[mask2][::sample_step]
+    x2_list = list(x2_grid)
+    if len(x2_list) == 0 or x2_list[0] != WELL1_DISTANCE:
+        x2_list.insert(0, WELL1_DISTANCE)
+    if x2_list[-1] != fx_left:
+        if fx_left - x2_list[-1] < VERTEX_STEP * 0.3 and len(x2_list) > 1:
+            x2_list[-1] = fx_left
+        else:
+            x2_list.append(fx_left)
+    x2 = np.array(x2_list)
+    z2 = z_left_fn(x2)
+    sec_data[1].append((x2, np.atleast_1d(z2)))
 
-    section_depths.append(depths)
-    print(f"  Секция {sec_idx+1}: depths shape = {depths.shape}, "
-          f"z_min={depths.min():.1f}, z_max={depths.max():.1f}, shift={shift:.0f}")
+    # --- Секция 3: [fault_x_right .. Well2], шаг ~VERTEX_STEP ---
+    mask3 = (distances >= fx_right) & (distances <= WELL2_DISTANCE)
+    x3_grid = distances[mask3][::sample_step]
+    x3_list = list(x3_grid)
+    if len(x3_list) == 0 or x3_list[0] != fx_right:
+        if len(x3_list) > 0 and x3_list[0] - fx_right < VERTEX_STEP * 0.3:
+            x3_list[0] = fx_right
+        else:
+            x3_list.insert(0, fx_right)
+    if x3_list[-1] != WELL2_DISTANCE:
+        x3_list.append(WELL2_DISTANCE)
+    x3 = np.array(x3_list)
+    z3 = z_right_fn(x3)
+    sec_data[2].append((x3, np.atleast_1d(z3)))
 
+    # --- Секция 4: фиксированные X ---
+    z4 = z_right_fn(x_sec4)
+    sec_data[3].append((x_sec4.copy(), np.atleast_1d(z4)))
+
+# Статистика
+for sec_idx in range(4):
+    n_verts_list = [len(sec_data[sec_idx][b][0]) for b in range(n_boundaries)]
+    sec_names = ['[0..Well1]', '[Well1..Fault]', '[Fault..Well2]', '[Well2..End]']
+    print(f"  Секция {sec_idx+1} {sec_names[sec_idx]}: "
+          f"вершин/границу = {min(n_verts_list)}..{max(n_verts_list)}")
 
 """ ## Совмещение близких вершин на линии разлома ## """
 
 """
-После смещения правого блока на линии разлома (x=fault_x) собираются вершины
-из обоих блоков. Если граница A правого блока (= orig[i] + throw) оказывается
-очень близко к границе B левого блока (= orig[j]), то расстояние |A - B| мало,
-и мешер строит вырожденные элементы.
+На линии разлома вершины левого блока (секция 2) и правого блока (секция 3)
+находятся при разных X и Z, но обе — на прямой `x = fault_x + z·tan(α)`.
+Если граница `i` левого блока и граница `j` правого блока оказались очень
+близко по Z, мешер строит вырожденные элементы.
 
-Решение: собрать все z-координаты вершин на линии разлома, найти пары ближе
-порога (5 м), и совместить их усреднением.
+Решение: найти такие пары, усреднить Z и пересчитать X по прямой линии разлома.
+**Инвариант:** каждая крайняя вершина на разломе ВСЕГДА лежит на прямой
+`x = fault_x + z·tan(α)` с машинной точностью.
 """
 
 MERGE_THRESHOLD = 5.0  # м — минимально допустимое расстояние между вершинами
 
-# Вершины на линии разлома: правый край секции 2, левый край секции 3
-z_left_edge = section_depths[1][:, -1]   # (76,) — правый край секции 2
-z_right_edge = section_depths[2][:, 0]   # (76,) — левый край секции 3
+def snap_to_fault_line(z):
+    """Вычислить X на прямой линии разлома для данной глубины Z."""
+    return fault_x + z * tan_alpha
+
+# Z-координаты крайних вершин на линии разлома
+z_left_edge = np.array([sec_data[1][b][1][-1] for b in range(n_boundaries)])   # правый край секции 2
+z_right_edge = np.array([sec_data[2][b][1][0] for b in range(n_boundaries)])   # левый край секции 3
 
 n_merged = 0
 for i in range(len(z_left_edge)):
     for j in range(len(z_right_edge)):
         if i == j:
-            continue  # одна и та же граница — пропускаем (они и так на разных глубинах)
+            continue
         dist_ij = abs(z_left_edge[i] - z_right_edge[j])
         if 0 < dist_ij < MERGE_THRESHOLD:
-            avg = (z_left_edge[i] + z_right_edge[j]) / 2.0
+            avg_z = (z_left_edge[i] + z_right_edge[j]) / 2.0
+            avg_x = snap_to_fault_line(avg_z)
             print(f"  Совмещение: left bnd {i} (z={z_left_edge[i]:.2f}) "
-                  f"↔ right bnd {j} (z={z_right_edge[j]:.2f}) → z={avg:.2f}")
-            # Обновляем ВСЮ граничную линию (не только крайнюю точку)
-            # чтобы не деформировать слой — сдвигаем только крайнюю вершину
-            section_depths[1][i, -1] = avg
-            section_depths[2][j, 0] = avg
-            z_left_edge[i] = avg
-            z_right_edge[j] = avg
+                  f"↔ right bnd {j} (z={z_right_edge[j]:.2f}) → z={avg_z:.2f}, x={avg_x:.2f}")
+            # Обновляем X и Z крайней вершины — она остаётся на линии разлома
+            x_l, z_l = sec_data[1][i]
+            x_l[-1] = avg_x
+            z_l[-1] = avg_z
+            sec_data[1][i] = (x_l, z_l)
+
+            x_r, z_r = sec_data[2][j]
+            x_r[0] = avg_x
+            z_r[0] = avg_z
+            sec_data[2][j] = (x_r, z_r)
+
+            z_left_edge[i] = avg_z
+            z_right_edge[j] = avg_z
             n_merged += 1
 
 print(f"\nСовмещено вершин на линии разлома: {n_merged} (порог = {MERGE_THRESHOLD} м)")
@@ -197,87 +269,233 @@ print(f"\nСовмещено вершин на линии разлома: {n_mer
 
 """
 Генерируем все вершины для 4 секций × 76 граничных линий.
-Вершины создаются в порядке: секция за секцией, линия за линией.
+Число вершин на границу переменное (зависит от ширины секции на данной глубине).
 Каждая вершина — точка (x, z, 0) в плоскости XY (Z=0 — 2D модель).
 
 Формат Fidesys: `create vertex location X Y Z`
 Здесь Y — глубина (вниз), Z = 0 (2D).
 """
 
-vertex_counts = [len(x) for x in x_all_sections]
-total_vertices = sum(vertex_counts) * n_boundaries
-print(f"\nОбщее количество вершин: {total_vertices} "
-      f"({sum(vertex_counts)} на линию × {n_boundaries} линий)")
+total_vertices = sum(len(sec_data[s][b][0])
+                     for s in range(4) for b in range(n_boundaries))
+print(f"\nОбщее количество вершин: {total_vertices}")
 
-with open('data/dev_3_3_model_vertex.jou', 'w') as f:
+with open(f'data/dev_3_3_model_vertex{angle_suffix}.jou', 'w') as f:
     f.write('reset\n')
 
-    for sec_idx, (x_sec, depths) in enumerate(zip(x_all_sections, section_depths)):
-        f.write(f'# --- Section {sec_idx+1}: x=[{x_sec[0]:.0f}..{x_sec[-1]:.0f}] ---\n')
+    for sec_idx in range(4):
+        f.write(f'# --- Section {sec_idx+1} ---\n')
 
         for bnd_idx in range(n_boundaries):
-            for vx_idx in range(len(x_sec)):
-                x = x_sec[vx_idx]
-                y = depths[bnd_idx, vx_idx]
-                f.write(f'create vertex location {x:.2f} {y:.4f} 0\n')
+            x_arr, z_arr = sec_data[sec_idx][bnd_idx]
+            for k in range(len(x_arr)):
+                f.write(f'create vertex location {x_arr[k]:.2f} {z_arr[k]:.4f} 0\n')
 
-print(f"Сохранено: data/dev_3_3_model_vertex.jou ({total_vertices} вершин)")
+print(f"Сохранено: data/dev_3_3_model_vertex{angle_suffix}.jou ({total_vertices} вершин)")
 
-""" ## Генерация JOU-скрипта сплайнов и поверхностей ## """
+""" ## Генерация JOU-скрипта сплайнов, вертикальных рёбер и поверхностей ## """
 
+r"""
+Геометрия модели строится из кривых трёх типов:
+
+1. **Горизонтальные сплайны** — 4 секции × 76 граничных линий = 304 кривых.
+   Создаются из опорных вершин командой `create curve spline location vertex V1 to V2`.
+
+2. **Вертикальные рёбра** на 4 простых линиях раздела секций (x=0, Well1, Well2, end) —
+   по 75 прямых кривых на каждую линию = 300 кривых.
+   Создаются командой `create curve vertex V1 V2`.
+
+3. **Рёбра вдоль линии разлома** — между каждой парой соседних вершин,
+   отсортированных по глубине $z$. Вершины из правого края секции 2 (левый блок)
+   и левого края секции 3 (правый блок) чередуются на прямой $x = fault\_x + z \cdot \tan(\alpha)$.
+   Количество рёбер > 75, так как на одну линию приходятся вершины обоих блоков.
+
+После создания всех кривых выполняется `merge vertex all` для слияния
+совпадающих вершин (на стыках секций и на линии разлома), затем `delete vertex all`.
+
+Поверхности создаются командой `create surface curve c1 c2 c3 ...`
+по замкнутому контуру ограничивающих кривых (≥ 4 кривых на поверхность).
 """
-Для каждой секции:
-1. Создаём сплайны из вершин каждой граничной линии (76 сплайнов на секцию)
-2. Создаём поверхности между парами смежных сплайнов (75 поверхностей на секцию)
-   методом skin curve
 
-Нумерация вершин: секции идут последовательно.
-"""
+# === Маппинг vertex ID: vertex_id[sec][bnd] = [vid_0, vid_1, ..., vid_n] ===
+vertex_id = []
+vid = 1
+for sec_idx in range(4):
+    sec_vids = []
+    for bnd_idx in range(n_boundaries):
+        n_v = len(sec_data[sec_idx][bnd_idx][0])
+        bnd_vids = list(range(vid, vid + n_v))
+        vid += n_v
+        sec_vids.append(bnd_vids)
+    vertex_id.append(sec_vids)
 
-with open('data/dev_3_3_model_spline.jou', 'w') as f:
-    vertex_offset = 1  # Вершины нумеруются с 1 в Fidesys
+with open(f'data/dev_3_3_model_spline{angle_suffix}.jou', 'w') as f:
     curve_id = 1
 
-    # Запоминаем номера кривых для каждой секции и границы
-    # section_curves[sec_idx][bnd_idx] = curve_id
-    section_curves = []
+    # ==================================================================
+    # 1. Горизонтальные сплайны (4 секции × 76 границ = 304 кривых)
+    # ==================================================================
+    horiz_curves = []  # horiz_curves[sec][bnd] = curve_id
 
-    for sec_idx, x_sec in enumerate(x_all_sections):
-        n_verts = len(x_sec)
-        curves_in_section = []
-
-        f.write(f'# --- Section {sec_idx+1} splines ---\n')
+    for sec_idx in range(4):
+        sec_curves = []
+        f.write(f'# --- Section {sec_idx+1} horizontal splines ---\n')
 
         for bnd_idx in range(n_boundaries):
-            v_start = vertex_offset + bnd_idx * n_verts
-            v_end = v_start + n_verts - 1
-            f.write(f'create curve spline location vertex {v_start} to {v_end}\n')
-            curves_in_section.append(curve_id)
+            vids = vertex_id[sec_idx][bnd_idx]
+            f.write(f'create curve spline location vertex {vids[0]} to {vids[-1]}\n')
+            sec_curves.append(curve_id)
             curve_id += 1
 
-        section_curves.append(curves_in_section)
-        vertex_offset += n_boundaries * n_verts
+        horiz_curves.append(sec_curves)
 
-    # Удаляем вершины после создания кривых
+    n_horiz = curve_id - 1
+
+    # ==================================================================
+    # 2. Вертикальные рёбра на 4 простых линиях раздела (4 × 75 = 300)
+    # ==================================================================
+    # x=0: sec1 leftmost (левый край модели)
+    f.write('\n# --- Vertical edges: x=0 ---\n')
+    vert_x0 = []
+    for layer in range(n_layers):
+        v1 = vertex_id[0][layer][0]
+        v2 = vertex_id[0][layer + 1][0]
+        f.write(f'create curve vertex {v1} {v2}\n')
+        vert_x0.append(curve_id)
+        curve_id += 1
+
+    # x=Well1: sec1 rightmost (после merge vertex соединится с sec2 leftmost)
+    f.write('\n# --- Vertical edges: x=Well1 ---\n')
+    vert_well1 = []
+    for layer in range(n_layers):
+        v1 = vertex_id[0][layer][-1]
+        v2 = vertex_id[0][layer + 1][-1]
+        f.write(f'create curve vertex {v1} {v2}\n')
+        vert_well1.append(curve_id)
+        curve_id += 1
+
+    # x=Well2: sec4 leftmost (после merge vertex соединится с sec3 rightmost)
+    f.write('\n# --- Vertical edges: x=Well2 ---\n')
+    vert_well2 = []
+    for layer in range(n_layers):
+        v1 = vertex_id[3][layer][0]
+        v2 = vertex_id[3][layer + 1][0]
+        f.write(f'create curve vertex {v1} {v2}\n')
+        vert_well2.append(curve_id)
+        curve_id += 1
+
+    # x=end: sec4 rightmost (правый край модели)
+    f.write('\n# --- Vertical edges: x=end ---\n')
+    vert_end = []
+    for layer in range(n_layers):
+        v1 = vertex_id[3][layer][-1]
+        v2 = vertex_id[3][layer + 1][-1]
+        f.write(f'create curve vertex {v1} {v2}\n')
+        vert_end.append(curve_id)
+        curve_id += 1
+
+    n_vert_simple = curve_id - 1 - n_horiz
+
+    # ==================================================================
+    # 3. Рёбра вдоль линии разлома
+    # ==================================================================
+    f.write('\n# --- Fault line edges ---\n')
+
+    # Собираем ВСЕ вершины на линии разлома (sec2 правый край + sec3 левый край)
+    fault_verts = []  # (z, vertex_fidesys_id, side, bnd_idx)
+    for bnd_idx in range(n_boundaries):
+        vid_l = vertex_id[1][bnd_idx][-1]
+        z_l = sec_data[1][bnd_idx][1][-1]
+        fault_verts.append((z_l, vid_l, 'L', bnd_idx))
+
+        vid_r = vertex_id[2][bnd_idx][0]
+        z_r = sec_data[2][bnd_idx][1][0]
+        fault_verts.append((z_r, vid_r, 'R', bnd_idx))
+
+    # Сортируем по глубине Z
+    fault_verts.sort(key=lambda x: x[0])
+
+    # Группируем вершины с одинаковой Z (в пределах ε — совпавшие после слияния)
+    eps = 1e-4
+    fault_groups = []  # каждая группа: [(z, vid, side, bnd_idx), ...]
+    current_group = [fault_verts[0]]
+    for fv in fault_verts[1:]:
+        if abs(fv[0] - current_group[0][0]) < eps:
+            current_group.append(fv)
+        else:
+            fault_groups.append(current_group)
+            current_group = [fv]
+    fault_groups.append(current_group)
+
+    # Создаём ребро между каждой парой соседних групп
+    fault_edge_curves = []  # fault_edge_curves[i] = curve_id ребра group[i] → group[i+1]
+    for g_idx in range(len(fault_groups) - 1):
+        v1 = fault_groups[g_idx][0][1]      # первая вершина текущей группы
+        v2 = fault_groups[g_idx + 1][0][1]  # первая вершина следующей группы
+        f.write(f'create curve vertex {v1} {v2}\n')
+        fault_edge_curves.append(curve_id)
+        curve_id += 1
+
+    # Маппинг: (side, bnd_idx) → индекс группы на линии разлома
+    fault_group_map = {}
+    for g_idx, group in enumerate(fault_groups):
+        for (z, v, side, bnd_idx) in group:
+            fault_group_map[(side, bnd_idx)] = g_idx
+
+    n_fault_edges = len(fault_edge_curves)
+    n_total_curves = curve_id - 1
+    print(f"  Горизонтальные сплайны: {n_horiz}")
+    print(f"  Вертикальные рёбра (4 линии): {n_vert_simple}")
+    print(f"  Линия разлома: {len(fault_groups)} позиций, {n_fault_edges} рёбер")
+    print(f"  Всего кривых: {n_total_curves}")
+
+    # ==================================================================
+    # 4. Слияние совпадающих вершин + удаление свободных
+    # ==================================================================
+    f.write('\n# Merge coincident vertices, delete free\n')
+    f.write('merge vertex all\n')
     f.write('delete vertex all\n')
 
-    # Создаём поверхности
-    f.write('\n# --- Surfaces (skin between adjacent boundaries) ---\n')
+    # ==================================================================
+    # 5. Создание поверхностей по ограничивающим кривым
+    # ==================================================================
+    f.write('\n# --- Surfaces (bounded by curves) ---\n')
+
     for sec_idx in range(4):
         f.write(f'# Section {sec_idx+1}\n')
-        for layer_idx in range(n_layers):
-            c_top = section_curves[sec_idx][layer_idx]
-            c_bot = section_curves[sec_idx][layer_idx + 1]
-            f.write(f'create surface skin curve {c_top} {c_bot}\n')
 
-    # Очистка
-    f.write('delete curve all\n')
-    f.write('merge curve all\n')
-    f.write('compress curve all\n')
+        for layer_idx in range(n_layers):
+            c_top = horiz_curves[sec_idx][layer_idx]
+            c_bot = horiz_curves[sec_idx][layer_idx + 1]
+
+            if sec_idx == 0:
+                # Sec1: top, right(Well1), bottom, left(x=0)
+                curves = [c_top, vert_well1[layer_idx], c_bot, vert_x0[layer_idx]]
+
+            elif sec_idx == 1:
+                # Sec2: top, fault edges..., bottom, left(Well1)
+                g_start = fault_group_map[('L', layer_idx)]
+                g_end = fault_group_map[('L', layer_idx + 1)]
+                right_edges = [fault_edge_curves[g] for g in range(g_start, g_end)]
+                curves = [c_top] + right_edges + [c_bot, vert_well1[layer_idx]]
+
+            elif sec_idx == 2:
+                # Sec3: top, right(Well2), bottom, fault edges...
+                g_start = fault_group_map[('R', layer_idx)]
+                g_end = fault_group_map[('R', layer_idx + 1)]
+                left_edges = [fault_edge_curves[g] for g in range(g_start, g_end)]
+                curves = [c_top, vert_well2[layer_idx], c_bot] + left_edges
+
+            elif sec_idx == 3:
+                # Sec4: top, right(end), bottom, left(Well2)
+                curves = [c_top, vert_end[layer_idx], c_bot, vert_well2[layer_idx]]
+
+            curves_str = ' '.join(str(c) for c in curves)
+            f.write(f'create surface curve {curves_str}\n')
 
 n_surfaces = 4 * n_layers  # 300
-print(f"Сохранено: data/dev_3_3_model_spline.jou")
-print(f"  Кривых: {curve_id - 1} ({4} секций × {n_boundaries} границ)")
+print(f"Сохранено: data/dev_3_3_model_spline{angle_suffix}.jou")
+print(f"  Кривых: {n_total_curves}")
 print(f"  Поверхностей: {n_surfaces} ({4} секций × {n_layers} слоёв)")
 
 """ ## Расчёт параметров дискретизации сетки ## """
@@ -330,9 +548,9 @@ layer_el_size = np.interp(layer_mid_depths, y_cells, max_el_size_per_depth)
 # Минимум — 10 м (первый слой для расстановки ресиверов)
 layer_el_size[0] = 10.0
 
-# Длины секций
-sec_lengths = [x_sec[-1] - x_sec[0] for x_sec in x_all_sections]
-print(f"\nДлины секций: {[f'{l:.0f}' for l in sec_lengths]} м")
+# Длины секций (используем поверхностную границу как представительную)
+sec_lengths = [sec_data[s][0][0][-1] - sec_data[s][0][0][0] for s in range(4)]
+print(f"\nДлины секций (поверхность): {[f'{l:.0f}' for l in sec_lengths]} м")
 
 # Число горизонтальных интервалов для каждого слоя и секции
 h_intervals = np.zeros((n_layers + 1, 4), dtype=int)  # +1 для нулевого "индекса поверхности"
@@ -416,7 +634,7 @@ mesh-скрипт с назначением по поверхностям.
 """
 
 # Генерируем общий скрипт построения сетки
-with open('data/dev_3_3_model_mesh.jou', 'w') as f:
+with open(f'data/dev_3_3_model_mesh{angle_suffix}.jou', 'w') as f:
     f.write('# Построение сетки модели с разломом\n')
     f.write('imprint all\n')
     f.write('merge all\n\n')
@@ -440,7 +658,7 @@ with open('data/dev_3_3_model_mesh.jou', 'w') as f:
 
     f.write('\nmesh surface all\n')
 
-print(f"\nСохранено: data/dev_3_3_model_mesh.jou")
+print(f"\nСохранено: data/dev_3_3_model_mesh{angle_suffix}.jou")
 print(f"  Поверхностей: {4 * n_layers}")
 
 
@@ -456,7 +674,7 @@ print(f"  Поверхностей: {4 * n_layers}")
 Блок i содержит поверхности: i, 75+i, 150+i, 225+i.
 """
 
-with open('data/dev_3_3_model_materials.jou', 'w') as f:
+with open(f'data/dev_3_3_model_materials{angle_suffix}.jou', 'w') as f:
     f.write('# Назначение материалов-заглушек и блоков\n\n')
 
     for layer_idx in range(n_layers):
@@ -476,10 +694,10 @@ with open('data/dev_3_3_model_materials.jou', 'w') as f:
 
         # Блок объединяет 4 поверхности одного слоя
         f.write(f'block {mat_id} add surface {s1} {s2} {s3} {s4}\n')
-        f.write(f'block {mat_id} material {mat_id} cs 1 category plane order 1\n')
+        f.write(f'block {mat_id} material {mat_id} cs 1 category plane order 2\n')
         f.write('\n')
 
-print(f"Сохранено: data/dev_3_3_model_materials.jou")
+print(f"Сохранено: data/dev_3_3_model_materials{angle_suffix}.jou")
 print(f"  Материалов: {n_layers}")
 print(f"  Блоков: {n_layers} (по 4 поверхности в каждом)")
 
@@ -492,13 +710,16 @@ colors = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red']
 labels = ['Sec 1: [0..Well1]', 'Sec 2: [Well1..Fault]',
           'Sec 3: [Fault..Well2]', 'Sec 4: [Well2..End]']
 
-for sec_idx, (x_sec, depths) in enumerate(zip(x_all_sections, section_depths)):
+for sec_idx in range(4):
     # Рисуем несколько границ для иллюстрации
     for bnd_idx in range(0, n_boundaries, 5):
-        ax.plot(x_sec, depths[bnd_idx], color=colors[sec_idx],
+        x_arr, z_arr = sec_data[sec_idx][bnd_idx]
+        ax.plot(x_arr, z_arr, color=colors[sec_idx],
                 linewidth=0.5, alpha=0.7)
     # Одну линию с лейблом
-    ax.plot(x_sec, depths[n_boundaries // 2], color=colors[sec_idx],
+    mid = n_boundaries // 2
+    x_arr, z_arr = sec_data[sec_idx][mid]
+    ax.plot(x_arr, z_arr, color=colors[sec_idx],
             linewidth=1.5, label=labels[sec_idx])
 
 # Линия разлома
@@ -519,34 +740,62 @@ ax.legend(loc='lower right')
 ax.set_xlim(0, PROFILE_LENGTH)
 
 plt.tight_layout()
-plt.savefig('img/dev_3_3_sections_overview.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_3_sections_overview{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_3_sections_overview.png")
+print(f"Сохранено: img/dev_3_3_sections_overview{angle_suffix}.png")
+
+
+""" ## Визуализация: узлы (вершины) по секциям ## """
+
+fig, ax = plt.subplots(figsize=(16, 10))
+ax.set_title(f'Вершины модели (angle={fault_angle}°, throw={fault_throw:.0f} м)', fontsize=14)
+
+for sec_idx in range(4):
+    # Все вершины секции
+    all_x = np.concatenate([sec_data[sec_idx][b][0] for b in range(n_boundaries)])
+    all_z = np.concatenate([sec_data[sec_idx][b][1] for b in range(n_boundaries)])
+    ax.scatter(all_x, all_z, s=0.3, color=colors[sec_idx], alpha=0.6, label=labels[sec_idx])
+
+# Линия разлома
+ax.plot(x_line, z_line, 'k--', linewidth=1.5, label='Линия разлома')
+
+ax.set_xlabel('X (м)')
+ax.set_ylabel('Глубина (м)')
+ax.invert_yaxis()
+ax.grid(True, alpha=0.3)
+ax.legend(loc='lower right', markerscale=10)
+ax.set_xlim(0, PROFILE_LENGTH)
+
+plt.tight_layout()
+plt.savefig(f'img/dev_3_3_vertices{angle_suffix}.png', dpi=200, bbox_inches='tight')
+plt.close()
+print(f"Сохранено: img/dev_3_3_vertices{angle_suffix}.png")
+
 
 """ ## Сводка сгенерированных скриптов ## """
 
 """
-Для построения модели в Fidesys необходимо последовательно выполнить:
+Для построения модели в Fidesys необходимо последовательно выполнить (суффикс зависит от угла):
 
 ```
-playback 'data/dev_3_3_model_vertex.jou'      # Создание вершин
-playback 'data/dev_3_3_model_spline.jou'       # Создание кривых и поверхностей
-playback 'data/dev_3_3_model_mesh.jou'         # Построение сетки
-playback 'data/dev_3_3_model_materials.jou'    # Назначение материалов и блоков
+playback 'data/dev_3_3_model_vertex{angle_suffix}.jou'
+playback 'data/dev_3_3_model_spline{angle_suffix}.jou'
+playback 'data/dev_3_3_model_mesh{angle_suffix}.jou'
+playback 'data/dev_3_3_model_materials{angle_suffix}.jou'
 ```
 
 После этого — экспорт FC-модели (заглушка с материалами):
 ```
-export fc 'data/dev_3_3_model_stub.fc'
+export fc 'data/dev_3_3_model_stub{angle_suffix}.fc'
 ```
 """
 
 print("\n=== Сводка ===")
-print(f"Файлы скриптов:")
-print(f"  data/dev_3_3_model_vertex.jou     — {total_vertices} вершин")
-print(f"  data/dev_3_3_model_spline.jou     — {curve_id-1} кривых, {n_surfaces} поверхностей")
-print(f"  data/dev_3_3_model_mesh.jou       — параметры сетки")
-print(f"  data/dev_3_3_model_materials.jou  — {n_layers} материалов + {n_layers} блоков")
+print(f"Файлы скриптов (суффикс {angle_suffix}):")
+print(f"  data/dev_3_3_model_vertex{angle_suffix}.jou     — {total_vertices} вершин")
+print(f"  data/dev_3_3_model_spline{angle_suffix}.jou     — {curve_id-1} кривых, {n_surfaces} поверхностей")
+print(f"  data/dev_3_3_model_mesh{angle_suffix}.jou       — параметры сетки")
+print(f"  data/dev_3_3_model_materials{angle_suffix}.jou  — {n_layers} материалов + {n_layers} блоков")
 print(f"\nМодель: 4 секции × 75 слоёв = 300 поверхностей")
 print(f"Размер элемента: {layer_el_size.min():.1f} .. {layer_el_size.max():.1f} м")
 

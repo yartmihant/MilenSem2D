@@ -436,7 +436,7 @@ with open('data/dev_1_7_model_mesh_surface.jou', 'w') as f:
 fc_model_path = 'data/dev_1_7_model_material_stub.fc'
 print(f"\n{'='*60}")
 print(f"Загрузка FC модели: {fc_model_path}")
-fc_model = FCModel(fc_model_path)
+fc_model = FCModel.load(fc_model_path)
 
 for layer_idx, formation in enumerate(formations):
     mat_idx = layer_idx + 1  # Индексация материалов с 1

@@ -41,7 +41,7 @@ python3 -m pip install -e .
 from fc_model import FCModel
 
 # Загрузка модели из файла
-m = FCModel("path/to/model.fc")
+m = FCModel.load("path/to/model.fc")
 
 # ... чтение/изменение данных модели ...
 
@@ -95,7 +95,7 @@ print(names[0])  # YOUNG_MODULE
 ```python
 from fc_model import FCModel, FCMaterial, FCMaterialProperty, FCData
 
-m = FCModel("case.fc")
+m = FCModel.load("case.fc")
 mat_id = next(iter(m.materials))
 mat = m.materials[mat_id]
 

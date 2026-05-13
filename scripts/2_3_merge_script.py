@@ -83,10 +83,10 @@ import segyio
 
 CONFIG = {
     # Каталог с NPZ-данными: research_seismic_sweep/x_{pos}/data.npz
-    "npz_dir": Path("data/dev_2_3/research_seismic_sweep_7_1_0_full"),
+    "npz_dir": Path("data/dev_3_5/research_seismic_sweep_7_1_0_a0"),
 
     # Каталог для выходных SEG-Y
-    "output_dir": Path("data/dev_2_3"),
+    "output_dir": Path("data/dev_3_5"),
 
     # Компоненты для записи
     "components": ["Vx", "Vy"],

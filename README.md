@@ -300,7 +300,7 @@ with segyio.open('data/dev_2_1_Vp_model.sgy', 'r', ignore_geometry=True) as f:
 from fc_model import FCModel
 
 # Загрузка модели
-fc_model = FCModel('data/dev_1_7_model_material_cartes.fc')
+fc_model = FCModel.load('data/dev_1_7_model_material_cartes.fc')
 
 # Доступ к материалам
 for i, material in enumerate(fc_model.materials):

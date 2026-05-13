@@ -9,8 +9,8 @@
 r"""
 Геометрия границ новой структуры слоев  хранится в data/dev_1_5_2_layer_boundaries_quadratic.npz 
 
-Так же для работы нам потребуются /home/antonov/MilenSem2D/src/well1_Backus_Elast_Vp_Vs_rhob.txt и
-/home/antonov/MilenSem2D/src/well_2_Backus_Elast_param_Vp_Vs_rhob.txt
+Так же для работы нам потребуются src/well1_Backus_Elast_Vp_Vs_rhob.txt и
+src/well_2_Backus_Elast_param_Vp_Vs_rhob.txt
 
 Назовем систему координат x y , вмороженную в пространство, Эйлеровой а систему координат $\xi \psi$ вможенную в телу Лагранджевой. Мне нужно воссоздавать материал в лагранджевой, после чего перевести его в сетку на эйлеровой (тогда история геологических изменений слоев лучше в этом материале отразится). Внутри каждого слоя в координатах Лагранджа нужно создать мелкую структурированную сетку (высотой не более 10, шириной 50), после чего записать инфу о материале в ячейки этой сетки и создать отображение этой сетки в эйлерово пространство.
 """
@@ -26,7 +26,7 @@ warnings.filterwarnings('ignore', category=RuntimeWarning)
 """ #### 1. Загрузка данных #### """
 
 # Глобальный флаг для управления отображением графиков
-SHOW_PLOTS = True # True - показывать графики, False - только сохранять
+SHOW_PLOTS = False # True - показывать графики, False - только сохранять
 
 # Загрузка геометрии новых слоев
 layer_data_path = Path('data/dev_1_5_2_layer_boundaries_quadratic.npz')
@@ -72,6 +72,27 @@ def parse_well_data(filepath):
 
 well1_depth, well1_vp, well1_rhob, well1_vs = parse_well_data('src/well1_Backus_Elast_Vp_Vs_rhob.txt')
 well2_depth, well2_vp, well2_rhob, well2_vs = parse_well_data('src/well_2_Backus_Elast_param_Vp_Vs_rhob.txt')
+
+# Сглаживание верхних слоев каротажек на 50% между скважинами
+# В верхней части каротажек значения Vp между скважинами сильно различаются.
+# Для каждой глубины сдвигаем значение на 50% к среднему обеих скважин:
+#   new_W1 = 0.5 * (W1 + W2)/2 + 0.5 * W1
+#   new_W2 = 0.5 * (W1 + W2)/2 + 0.5 * W2
+SMOOTH_N = 10       # число верхних отсчётов каротажки (10 точек × 10 м = 100 м)
+SMOOTH_FACTOR = 0.75 # доля сглаживания (0 = без изменений, 1 = полное усреднение к среднему)
+
+for w1_arr, w2_arr in [(well1_vp, well2_vp), (well1_rhob, well2_rhob), (well1_vs, well2_vs)]:
+    w1_head = w1_arr[:SMOOTH_N].copy()
+    w2_head = w2_arr[:SMOOTH_N].copy()
+    cross_mean = (w1_head + w2_head) / 2  # среднее между скважинами на каждой глубине
+    w1_arr[:SMOOTH_N] = SMOOTH_FACTOR * cross_mean + (1 - SMOOTH_FACTOR) * w1_head
+    w2_arr[:SMOOTH_N] = SMOOTH_FACTOR * cross_mean + (1 - SMOOTH_FACTOR) * w2_head
+
+print(f"Сглаживание каротажек: первые {SMOOTH_N} точек (0–{SMOOTH_N*10} м), factor={SMOOTH_FACTOR}")
+print(f"  Well1 Vp[0:{SMOOTH_N}]: {well1_vp[:SMOOTH_N].min():.0f}..{well1_vp[:SMOOTH_N].max():.0f} м/с "
+      f"(mean={well1_vp[:SMOOTH_N].mean():.0f})")
+print(f"  Well2 Vp[0:{SMOOTH_N}]: {well2_vp[:SMOOTH_N].min():.0f}..{well2_vp[:SMOOTH_N].max():.0f} м/с "
+      f"(mean={well2_vp[:SMOOTH_N].mean():.0f})")
 
 # Параметры модели
 WELL1_DISTANCE = 4250  # м от начала профиля
@@ -459,7 +480,7 @@ with open('data/dev_1_6_model_material_stub.jou', 'w') as f:
 
 from fc_model import FCModel, FCMaterial, FCBlock, FCMaterialProperty, FCData, FCElement
 
-fc_model = FCModel('/home/antonov/MilenSem2D/data/dev_1_6_model_material_stub.fc')
+fc_model = FCModel.load('data/dev_1_6_model_material_stub.fc')
 
 fc_model.materials[1].properties['elasticity'][0][1].data.table[0].value.data # x коордс
 fc_model.materials[1].properties['elasticity'][0][1].data.table[1].value.data # y коордс
@@ -507,7 +528,7 @@ for layer in layered_material_data:
     fc_model.materials[i].properties['common'][0][1].data.table[1].value.data  = layer["coords"][:, 1]
     fc_model.materials[i].properties['common'][0][1].data.value.data = mass_matrix_dampling
 
-fc_model.save('/home/antonov/MilenSem2D/data/dev_1_6_model_material_full.fc')
+fc_model.save('data/dev_1_6_model_material_full.fc')
 
 with open('data/dev_1_6_material_simple.jou', 'w') as f:
     i = 0

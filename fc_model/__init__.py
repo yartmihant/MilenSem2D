@@ -105,8 +105,8 @@ class FCModel:
     Пример использования:
     
     # Создание или загрузка модели
-    model = FCModel() # Создать пустую модель
-    # model = FCModel(filepath="path/to/model.fc") # Загрузить из файла
+    model = FCModel.load() # Создать пустую модель
+    # model = FCModel.load(filepath="path/to/model.fc") # Загрузить из файла
 
     # ... (добавление узлов, элементов, материалов)
 

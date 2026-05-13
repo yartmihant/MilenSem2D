@@ -28,10 +28,18 @@ from fc_model.fc_data import FCData, FCDependencyColumn
 from fc_model.fc_value import FCValue
 
 
+""" ## Параметр угла разлома ## """
+
+# Угол разлома определяет суффикс входных/выходных файлов (должен совпадать с dev_3_1)
+fault_angle_param = 20.0  # градусы
+angle_suffix = f'_a{int(fault_angle_param)}'
+print(f"Суффикс файлов: {angle_suffix}")
+
+
 """ ## Загрузка данных ## """
 
 # Материал на декартовой сетке (из Главы III.2)
-mat_data = np.load('data/dev_3_2_fault_material.npz')
+mat_data = np.load(f'data/dev_3_2_fault_material{angle_suffix}.npz')
 material_grid = mat_data['material_grid']   # (2350, 560, 3) — E, nu, rho
 coords_grid = mat_data['coords_grid']       # (2350, 560, 2) — x, y
 fault_x = float(mat_data['fault_x'])
@@ -45,7 +53,7 @@ print(f"  Шаг: dx={coords_grid[1,0,0]-coords_grid[0,0,0]:.1f}, "
       f"dy={coords_grid[0,1,1]-coords_grid[0,0,1]:.1f} м")
 
 # Геометрия с разломом (из Главы III.1)
-geo_data = np.load('data/dev_3_1_fault_layer_boundaries.npz', allow_pickle=True)
+geo_data = np.load(f'data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz', allow_pickle=True)
 faulted_boundaries = geo_data['layer_boundaries_array']  # (75, 1176)
 distances = geo_data['distances']                         # (1176,)
 fault_angle = float(geo_data['fault_angle'])
@@ -110,7 +118,7 @@ print(f"Ячеек на слой: min={cells_per_layer.min()}, max={cells_per_la
 
 """ ## Загрузка FC-модели (заглушки) ## """
 
-fc_model_path = 'data/dev_3_3_model_stub.fc'
+fc_model_path = f'data/dev_3_3_model_stub{angle_suffix}.fc'
 print(f"\n{'='*60}")
 print(f"Загрузка FC модели: {fc_model_path}")
 fc = FCModel.load(fc_model_path)
@@ -145,6 +153,18 @@ print(f"  Нижний край: y > {Y_MAX_DAMP:.0f} м")
 print(f"\n{'='*60}")
 print("Заполнение материалов:")
 
+# Вспомогательная функция: создание табличного FCData (зависимость от X, Y)
+def make_table_data(x, y, values):
+    return FCData(
+        value=FCValue(values, 'array'),
+        type_code=-1,
+        table=[
+            FCDependencyColumn('TABULAR_X', FCValue(x, 'array')),
+            FCDependencyColumn('TABULAR_Y', FCValue(y, 'array')),
+        ]
+    )
+
+
 for layer_idx in range(n_layers):
     mat_idx = layer_idx + 1  # Индексация материалов с 1
 
@@ -163,16 +183,6 @@ for layer_idx in range(n_layers):
     nu_data = material_grid[coords_in_layer[:, 0], coords_in_layer[:, 1], 1].astype(np.float64)
     rho_data = material_grid[coords_in_layer[:, 0], coords_in_layer[:, 1], 2].astype(np.float64)
 
-    # Вспомогательная функция: создание табличного FCData (зависимость от X, Y)
-    def make_table_data(x, y, values):
-        return FCData(
-            value=FCValue(values, 'array'),
-            type_code=-1,
-            table=[
-                FCDependencyColumn('TABULAR_X', FCValue(x, 'array')),
-                FCDependencyColumn('TABULAR_Y', FCValue(y, 'array')),
-            ]
-        )
 
     # Обновляем модуль Юнга (YOUNG_MODULE)
     fc.materials[mat_idx].properties['elasticity'][0][0].data = make_table_data(x_coords, y_coords, E_data)
@@ -215,7 +225,7 @@ for layer_idx in range(n_layers):
 
 """ ## Сохранение FC-модели ## """
 
-output_fc_path = 'data/dev_3_4_model_calc.fc'
+output_fc_path = f'data/dev_3_4_model_calc{angle_suffix}.fc'
 fc.save(output_fc_path)
 print(f"\n{'='*60}")
 print(f"FC модель сохранена: {output_fc_path}")
@@ -231,7 +241,9 @@ ax = axes[0]
 X, Y = np.meshgrid(x_cells, y_cells, indexing='ij')
 c = ax.pcolormesh(X, Y, layer_indexes_grid, cmap='prism', shading='auto')
 plt.colorbar(c, ax=ax, label='Номер слоя')
-ax.axvline(fault_x, color='k', linewidth=1.5, linestyle='--', label='Разлом')
+z_fl = np.linspace(0, model_bottom_depth, 100)
+x_fl = fault_x + z_fl * np.tan(np.radians(fault_angle))
+ax.plot(x_fl, z_fl, 'k--', linewidth=1.5, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
 ax.set_title('Индексы слоёв на декартовой сетке')
@@ -258,17 +270,17 @@ for ix in range(nx):
 
 c = ax.pcolormesh(X, Y, damping_map, cmap='hot_r', shading='auto')
 plt.colorbar(c, ax=ax, label='Коэффициент демпфирования')
-ax.axvline(fault_x, color='cyan', linewidth=1, linestyle='--', label='Разлом')
+ax.plot(x_fl, z_fl, 'c--', linewidth=1, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
-ax.set_title('Зоны поглощения (демпфирование)')
+ax.set_title('Зоны поглощения (демпфирования)')
 ax.set_ylim(model_bottom_depth, 0)
 ax.legend()
 
 plt.tight_layout()
-plt.savefig('img/dev_3_4_layers_damping.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_4_layers_damping{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_4_layers_damping.png")
+print(f"Сохранено: img/dev_3_4_layers_damping{angle_suffix}.png")
 
 
 """ ## Визуализация: проверка материала из FC ## """
@@ -312,7 +324,9 @@ print(f"  ρ:  {np.nanmin(rho_check):.0f} .. {np.nanmax(rho_check):.0f} кг/м�
 fig, ax = plt.subplots(figsize=(16, 8))
 c = ax.pcolormesh(X, Y, Vp, cmap='rainbow', shading='auto')
 plt.colorbar(c, ax=ax, label='Vp (м/с)')
-ax.axvline(fault_x, color='k', linewidth=1.5, linestyle='--', label='Разлом')
+z_fl = np.linspace(0, model_bottom_depth, 100)
+x_fl = fault_x + z_fl * np.tan(np.radians(fault_angle))
+ax.plot(x_fl, z_fl, 'k--', linewidth=1.5, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
 ax.set_title(f'Vp — FC-модель с разломом (throw={fault_throw:.0f} м)')
@@ -320,9 +334,9 @@ ax.set_xlim(x_cells[0], x_cells[-1])
 ax.set_ylim(model_bottom_depth, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_4_Vp.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_4_Vp{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_4_Vp.png")
+print(f"Сохранено: img/dev_3_4_Vp{angle_suffix}.png")
 
 
 """ ### Vs — полный вид """
@@ -330,7 +344,9 @@ print("Сохранено: img/dev_3_4_Vp.png")
 fig, ax = plt.subplots(figsize=(16, 8))
 c = ax.pcolormesh(X, Y, Vs, cmap='rainbow', shading='auto')
 plt.colorbar(c, ax=ax, label='Vs (м/с)')
-ax.axvline(fault_x, color='k', linewidth=1.5, linestyle='--', label='Разлом')
+z_fl = np.linspace(0, model_bottom_depth, 100)
+x_fl = fault_x + z_fl * np.tan(np.radians(fault_angle))
+ax.plot(x_fl, z_fl, 'k--', linewidth=1.5, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
 ax.set_title(f'Vs — FC-модель с разломом (throw={fault_throw:.0f} м)')
@@ -338,9 +354,9 @@ ax.set_xlim(x_cells[0], x_cells[-1])
 ax.set_ylim(model_bottom_depth, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_4_Vs.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_4_Vs{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_4_Vs.png")
+print(f"Сохранено: img/dev_3_4_Vs{angle_suffix}.png")
 
 
 """ ### Плотность — полный вид """
@@ -348,7 +364,9 @@ print("Сохранено: img/dev_3_4_Vs.png")
 fig, ax = plt.subplots(figsize=(16, 8))
 c = ax.pcolormesh(X, Y, rho_check, cmap='rainbow', shading='auto')
 plt.colorbar(c, ax=ax, label='ρ (кг/м³)')
-ax.axvline(fault_x, color='k', linewidth=1.5, linestyle='--', label='Разлом')
+z_fl = np.linspace(0, model_bottom_depth, 100)
+x_fl = fault_x + z_fl * np.tan(np.radians(fault_angle))
+ax.plot(x_fl, z_fl, 'k--', linewidth=1.5, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
 ax.set_title(f'Плотность — FC-модель с разломом (throw={fault_throw:.0f} м)')
@@ -356,9 +374,9 @@ ax.set_xlim(x_cells[0], x_cells[-1])
 ax.set_ylim(model_bottom_depth, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_4_rho.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_4_rho{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_4_rho.png")
+print(f"Сохранено: img/dev_3_4_rho{angle_suffix}.png")
 
 
 """ ### Vp — детальный вид зоны разлома """
@@ -372,7 +390,9 @@ fig, ax = plt.subplots(figsize=(12, 10))
 X_d, Y_d = np.meshgrid(x_cells[ix_left:ix_right], y_cells, indexing='ij')
 c = ax.pcolormesh(X_d, Y_d, Vp[ix_left:ix_right, :], cmap='rainbow', shading='auto')
 plt.colorbar(c, ax=ax, label='Vp (м/с)')
-ax.axvline(fault_x, color='k', linewidth=2, linestyle='--', label='Разлом')
+z_fl = np.linspace(0, model_bottom_depth, 100)
+x_fl = fault_x + z_fl * np.tan(np.radians(fault_angle))
+ax.plot(x_fl, z_fl, 'k--', linewidth=2, label='Разлом')
 ax.set_xlabel('X (м)')
 ax.set_ylabel('Глубина (м)')
 ax.set_title('Vp — зона разлома (детальный вид)')
@@ -380,9 +400,9 @@ ax.set_xlim(x_detail_left, x_detail_right)
 ax.set_ylim(model_bottom_depth, 0)
 ax.legend(loc='lower right')
 plt.tight_layout()
-plt.savefig('img/dev_3_4_Vp_detail.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_4_Vp_detail{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("Сохранено: img/dev_3_4_Vp_detail.png")
+print(f"Сохранено: img/dev_3_4_Vp_detail{angle_suffix}.png")
 
 
 """ ## Сводка ## """
@@ -391,10 +411,10 @@ file_size_mb = Path(output_fc_path).stat().st_size / 1024 / 1024
 print(f"\n{'='*60}")
 print(f"=== Сводка Главы IV ===")
 print(f"{'='*60}")
-print(f"Входные данные:")
+print(f"\nВходные данные:")
 print(f"  FC заглушка: {fc_model_path}")
-print(f"  Материал: data/dev_3_2_fault_material.npz ({material_grid.shape})")
-print(f"  Геометрия: data/dev_3_1_fault_layer_boundaries.npz ({n_layers} слоёв)")
+print(f"  Материал: data/dev_3_2_fault_material{angle_suffix}.npz ({material_grid.shape})")
+print(f"  Геометрия: data/dev_3_1_fault_layer_boundaries{angle_suffix}.npz ({n_layers} слоёв)")
 print(f"\nВыходные данные:")
 print(f"  FC модель: {output_fc_path} ({file_size_mb:.1f} МБ)")
 print(f"\nПараметры:")

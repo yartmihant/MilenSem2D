@@ -24,9 +24,17 @@ import segyio
 from pathlib import Path
 
 
+""" ## Параметр угла разлома ## """
+
+# Угол разлома определяет суффикс входных/выходных файлов (должен совпадать с dev_3_1)
+fault_angle_param = 0.0  # градусы
+angle_suffix = f'_a{int(fault_angle_param)}'
+print(f"Суффикс файлов: {angle_suffix}")
+
+
 """ ## Загрузка данных ## """
 
-mat_data = np.load('data/dev_3_2_fault_material.npz')
+mat_data = np.load(f'data/dev_3_2_fault_material{angle_suffix}.npz')
 material_grid = mat_data['material_grid']   # (2350, 560, 3) — E, nu, rho
 coords_grid = mat_data['coords_grid']       # (2350, 560, 2) — x, y
 fault_x = float(mat_data['fault_x'])
@@ -113,17 +121,17 @@ def write_segy_2d(filename, data, dx, dy, x_origin=0.0):
 
 print(f"\nЗапись SEG-Y файлов:")
 
-write_segy_2d('data/dev_3_5_fault_Vp.sgy', Vp_grid, dx=dx, dy=dy, x_origin=x_coords[0])
-write_segy_2d('data/dev_3_5_fault_Vs.sgy', Vs_grid, dx=dx, dy=dy, x_origin=x_coords[0])
-write_segy_2d('data/dev_3_5_fault_Density.sgy', density_grid, dx=dx, dy=dy, x_origin=x_coords[0])
+write_segy_2d(f'data/dev_3_5_fault_Vp{angle_suffix}.sgy', Vp_grid, dx=dx, dy=dy, x_origin=x_coords[0])
+write_segy_2d(f'data/dev_3_5_fault_Vs{angle_suffix}.sgy', Vs_grid, dx=dx, dy=dy, x_origin=x_coords[0])
+write_segy_2d(f'data/dev_3_5_fault_Density{angle_suffix}.sgy', density_grid, dx=dx, dy=dy, x_origin=x_coords[0])
 
 
 """ ## Проверка записанных файлов ## """
 
 print(f"\nПроверка:")
-for name, path in [('Vp', 'data/dev_3_5_fault_Vp.sgy'),
-                   ('Vs', 'data/dev_3_5_fault_Vs.sgy'),
-                   ('Density', 'data/dev_3_5_fault_Density.sgy')]:
+for name, path in [('Vp', f'data/dev_3_5_fault_Vp{angle_suffix}.sgy'),
+                   ('Vs', f'data/dev_3_5_fault_Vs{angle_suffix}.sgy'),
+                   ('Density', f'data/dev_3_5_fault_Density{angle_suffix}.sgy')]:
     with segyio.open(path, 'r', ignore_geometry=True) as f:
         data_check = segyio.tools.collect(f.trace[:])
         header0 = f.header[0]
@@ -155,9 +163,9 @@ for ax, data, title, label in zip(
     ax.set_ylim(model_bottom_depth, 0)
 
 plt.tight_layout()
-plt.savefig('img/dev_3_5_segy_overview.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'img/dev_3_5_segy_overview{angle_suffix}.png', dpi=200, bbox_inches='tight')
 plt.close()
-print("\nСохранено: img/dev_3_5_segy_overview.png")
+print(f"\nСохранено: img/dev_3_5_segy_overview{angle_suffix}.png")
 
 
 """ ## Сводка ## """
@@ -169,9 +177,9 @@ print(f"Модель: {nx}×{ny} (шаг {dx:.0f}×{dy:.0f} м)")
 print(f"Глубина: 0 .. {model_bottom_depth:.0f} м")
 print(f"Разлом: x={fault_x:.0f} м, throw={fault_throw:.0f} м")
 print(f"\nФайлы SEG-Y:")
-print(f"  data/dev_3_5_fault_Vp.sgy      — Vp [{Vp_grid.min():.0f}..{Vp_grid.max():.0f}] м/с")
-print(f"  data/dev_3_5_fault_Vs.sgy      — Vs [{Vs_grid.min():.0f}..{Vs_grid.max():.0f}] м/с")
-print(f"  data/dev_3_5_fault_Density.sgy — ρ  [{density_grid.min():.3f}..{density_grid.max():.3f}] г/см³")
+print(f"  data/dev_3_5_fault_Vp{angle_suffix}.sgy      — Vp [{Vp_grid.min():.0f}..{Vp_grid.max():.0f}] м/с")
+print(f"  data/dev_3_5_fault_Vs{angle_suffix}.sgy      — Vs [{Vs_grid.min():.0f}..{Vs_grid.max():.0f}] м/с")
+print(f"  data/dev_3_5_fault_Density{angle_suffix}.sgy — ρ  [{density_grid.min():.3f}..{density_grid.max():.3f}] г/см³")
 
 
 """ ## Выводы ## """
