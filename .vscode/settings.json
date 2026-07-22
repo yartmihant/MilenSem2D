@@ -1,8 +1,10 @@
 {
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.terminal.activateEnvironment": false,
+    "python.languageServer": "Pylance",
+    "python.analysis.languageServerMode": "light",    
     "code-runner.executorMap": {
-        "python": "uv run python"
+        // "python": "uv run python"
         // "python": "/home/antonov/.pyenv/versions/3.13.5/bin/python -u"
         // "python": "C:\\Users\\Artem\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
     },

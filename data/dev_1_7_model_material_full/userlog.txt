@@ -1,0 +1,20 @@
+reset
+import fidesyscase '/home/antonov/Документы/CAE-Fidesys-8.1/MilenSem2D/dev_1_7_model_material_cartes.fc' mesh_geometry
+block all order 2
+analysis type static elasticity dim2 planestrain
+output nodalforce off energy off midresults off record3d off material on without_smoothing off fullperiodic off
+calculation start path '/home/antonov/Документы/CAE-Fidesys-8.1/MilenSem2D/dev_1_7_model_material_full.pvd'
+
+Available RAM is set to 100% (64112 Mb)
+Available CPU is set to 100% (12 threads)
+Calculation started at 2026-07-22 19:22:46
+Using 12 CPU threads of 12 available.
+WARNING: Model is not fixed along X direction.
+WARNING: Model is not fixed along Y direction.
+Step    1. SubStep    1. Load time  1.00000000. Load step  1.00000000e+00. Done. Successfully.
+Case 1. Done. Successfully.
+Calculation has finished successfully.
+Peak memory (RAM) consumption is: 10.04950333 MB
+Used disk space is: 44.67766571 MB
+Calculation time is: 46 seconds (0 hours 0 min. 46 sec.)
+Calculation finished successfully at 2026-07-22 19:23:33

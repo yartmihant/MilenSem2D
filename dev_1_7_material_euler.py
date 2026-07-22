@@ -225,7 +225,6 @@ for layer_idx, interp_data in enumerate(layer_interpolators):
 
 import matplotlib.pyplot as plt
 
-
 def show_plot(title, field, cmap='viridis'):
 
     fig, ax = plt.subplots(figsize=(16,8))
@@ -337,21 +336,15 @@ v4_line_index = [9] + list(range(16,528,7))
 
 len(h1_line_index)
 
-
 """ Устанавливаем интервалы по горизонтали (с удобным нулевым слоем) """
 
 h1_interval = np.concatenate([[425], np.round(425/max_param_per_layer) * 10 + 5]).astype(int)
 h2_interval = np.concatenate([[325], np.round(325/max_param_per_layer) * 10 + 5]).astype(int)
 h3_interval = np.concatenate([[425], np.round(425/max_param_per_layer) * 10 + 5]).astype(int)
 
-well1_depths
-
 well1_layer_height = np.diff(np.concatenate([[0], well1_depths[:-1], [2650]])).astype(int)
 well2_layer_height = np.diff(np.concatenate([[0], well2_depths[:-1], [2650]])).astype(int)
 
-well1_layer_height
-
-well2_layer_height
 
 well1_layer_interval = np.ceil(well1_layer_height/max_param_per_layer).astype(int)
 well2_layer_interval = np.ceil(well2_layer_height/max_param_per_layer).astype(int)

@@ -75,7 +75,7 @@ curve 495 scheme equal interval 165
 curve 502 scheme equal interval 165
 curve 509 scheme equal interval 165
 curve 516 scheme equal interval 165
-curve 523 scheme equal interval 105
+curve 523 scheme equal interval 135
 curve 5 scheme equal interval 325
 curve 7 scheme equal interval 325
 curve 15 scheme equal interval 245
@@ -151,7 +151,7 @@ curve 498 scheme equal interval 125
 curve 505 scheme equal interval 125
 curve 512 scheme equal interval 125
 curve 519 scheme equal interval 125
-curve 526 scheme equal interval 85
+curve 526 scheme equal interval 105
 curve 8 scheme equal interval 425
 curve 10 scheme equal interval 425
 curve 17 scheme equal interval 315
@@ -227,7 +227,7 @@ curve 500 scheme equal interval 165
 curve 507 scheme equal interval 165
 curve 514 scheme equal interval 165
 curve 521 scheme equal interval 165
-curve 528 scheme equal interval 105
+curve 528 scheme equal interval 135
 curve 2 scheme equal interval 1
 curve 13 scheme equal interval 2
 curve 20 scheme equal interval 3
@@ -452,7 +452,7 @@ curve 497 scheme equal interval 1
 curve 504 scheme equal interval 1
 curve 511 scheme equal interval 1
 curve 518 scheme equal interval 1
-curve 525 scheme equal interval 5
+curve 525 scheme equal interval 7
 curve 9 scheme equal interval 1
 curve 16 scheme equal interval 2
 curve 23 scheme equal interval 3
@@ -527,5 +527,5 @@ curve 499 scheme equal interval 1
 curve 506 scheme equal interval 1
 curve 513 scheme equal interval 1
 curve 520 scheme equal interval 1
-curve 527 scheme equal interval 5
+curve 527 scheme equal interval 7
 mesh curve all

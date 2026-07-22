@@ -694,7 +694,7 @@ with open(f'data/dev_3_3_model_materials{angle_suffix}.jou', 'w') as f:
 
         # Блок объединяет 4 поверхности одного слоя
         f.write(f'block {mat_id} add surface {s1} {s2} {s3} {s4}\n')
-        f.write(f'block {mat_id} material {mat_id} cs 1 category plane order 2\n')
+        f.write(f'block {mat_id} material {mat_id} cs 1 category plane order 1\n')
         f.write('\n')
 
 print(f"Сохранено: data/dev_3_3_model_materials{angle_suffix}.jou")

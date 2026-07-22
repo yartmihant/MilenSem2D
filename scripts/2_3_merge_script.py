@@ -83,10 +83,10 @@ import segyio
 
 CONFIG = {
     # Каталог с NPZ-данными: research_seismic_sweep/x_{pos}/data.npz
-    "npz_dir": Path("data/dev_3_5/research_seismic_sweep_7_1_0_a0"),
-
+    "npz_dir": Path("data/dev_2_3/research_seismic_sweep_7_1_0_full"),
+    "output_name": "output_line_v3_{component}_{spread}.sgy",
     # Каталог для выходных SEG-Y
-    "output_dir": Path("data/dev_3_5"),
+    "output_dir": Path("data/dev_2_3"),
 
     # Компоненты для записи
     "components": ["Vx", "Vy"],
@@ -95,7 +95,7 @@ CONFIG = {
     # Параметры сейсмограммы (время)
     # -----------------------------------------------------------------------
     # Число временных отсчётов в каждой трассе
-    "sample_count": 1501,
+    "sample_count": 2001,
     # Шаг дискретизации, мкс — записывается в заголовок SEG-Y
     "sample_interval_us": 2000,
     # Если в NPZ отсчётов БОЛЬШЕ sample_count — берём первые sample_count.
@@ -230,7 +230,7 @@ def build_gather(component: str, spread: str, cfg: dict) -> None:
     rec_dir = scfg["receiver_direction"]
     total_traces = n_src * n_rec
 
-    output_path = output_dir / f"output_line_v2_{component}_{spread}.sgy"
+    output_path = output_dir / cfg['output_name'].format(component=component, spread=spread)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     spec = segyio.spec()

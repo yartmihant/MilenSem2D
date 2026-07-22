@@ -1,0 +1,2391 @@
+2026-07-22 18:49:30.847.393 [of ][Info   ] FidesysCalc.Version: 8.1.2111.7475
+
+2026-07-22 18:49:30.847.704 [of ][Info   ] Parser. FC: Start
+2026-07-22 18:49:31.193.631 [of ][Debug  ] Parser. Ins: Start
+2026-07-22 18:49:32.487.330 [of ][Debug  ] Parser. Ins: Done
+
+2026-07-22 18:49:32.488.931 [of ][Debug  ] Parser. Solver: Start
+2026-07-22 18:49:32.489.012 [of ][Debug  ] Parser. Solver: Done
+
+2026-07-22 18:49:32.788.702 [of ][Debug  ] Kernel. Linear points search: Start
+2026-07-22 18:49:32.788.740 [of ][Debug  ] Kernel. Linear points search: Done
+
+2026-07-22 18:49:32.802.692 [of ][Info   ] Parser. FC: Done
+
+2026-07-22 18:49:32.802.792 [of ][Debug  ] Kernel. Initializing ancestor: Start
+2026-07-22 18:49:32.876.196 [of ][Debug  ] Kernel. Initializing ancestor: Done
+
+2026-07-22 18:49:32.876.233 [of ][Debug  ] Kernel. Initializing elasticity: Start
+2026-07-22 18:49:32.893.954 [of ][Debug  ] Kernel. Initializing elasticity: Done
+
+2026-07-22 18:49:32.894.548 [of ][Debug  ] Kernel. BeginSteps elasticity: Start
+2026-07-22 18:49:32.894.570 [of ][Debug  ] Kernel. BeginSteps ancestor: Start
+2026-07-22 18:49:32.894.575 [of ][Debug  ] Kernel. Initializing DofsMap: Start
+2026-07-22 18:49:33.044.681 [of ][Debug  ] Kernel. Nodes count: 986557
+2026-07-22 18:49:33.044.733 [of ][Debug  ] Kernel. Dofs count: 1973114
+2026-07-22 18:49:33.044.738 [of ][Debug  ] Kernel. Initializing DofsMap: Done
+2026-07-22 18:49:33.064.491 [of ][Info   ] Kernel. Initialized AgreedSmoothing
+
+2026-07-22 18:49:33.461.278 [of ][Debug  ] Kernel. BeginSteps ancestor: Done
+
+2026-07-22 18:49:34.384.753 [of ][Info   ] Kernel. Initializing resultants: Start
+2026-07-22 18:49:34.576.298 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:34.722.739 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:34.722.835 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:34.740.904 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:34.741.155 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:34.750.285 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:34.750.962 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:34.866.230 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:34.866.324 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:34.870.922 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:34.871.017 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:34.871.387 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:34.871.982 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:34.984.619 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:34.984.705 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:34.989.188 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:34.989.267 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:34.989.641 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:34.990.230 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.122.349 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.122.429 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.129.284 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.129.366 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.129.758 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.130.361 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.278.139 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.278.236 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.282.890 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.282.990 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.283.711 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.284.310 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.396.551 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.396.622 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.401.429 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.401.525 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.402.113 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.402.698 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.514.916 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.514.998 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.519.469 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.519.566 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.520.181 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.520.779 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.639.731 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.639.837 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.644.644 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.644.742 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.645.362 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.645.969 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.760.188 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.760.297 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.766.159 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.766.216 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.766.716 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.767.520 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.877.581 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.877.830 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:35.882.841 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:35.883.157 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:35.883.528 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:35.884.172 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:35.995.230 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:35.995.498 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.000.046 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.000.304 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.001.549 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.002.221 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.120.536 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.120.829 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.127.149 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.127.421 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.128.751 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.129.460 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.241.800 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.242.075 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.246.819 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.247.095 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.247.669 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.248.366 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.360.088 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.360.375 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.366.252 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.366.528 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.367.735 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.368.461 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.484.998 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.485.293 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.490.612 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.490.871 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.491.915 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.492.615 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.605.492 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.605.777 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.610.361 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.610.613 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.610.962 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.611.646 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.723.242 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.723.526 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.728.806 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.729.074 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.730.182 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.730.885 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.844.378 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.844.660 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.850.193 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.850.446 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.851.495 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.852.284 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:36.963.229 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:36.963.510 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:36.970.230 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:36.970.524 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:36.972.853 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:36.973.580 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.084.365 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.084.673 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.090.113 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.090.391 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.091.428 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.092.139 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.208.133 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.208.430 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.213.716 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.214.091 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.216.078 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.216.956 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.326.525 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.326.844 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.333.716 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.334.026 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.335.960 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.336.692 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.449.884 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.450.194 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.455.592 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.455.908 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.456.723 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.457.548 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.596.699 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.596.976 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.605.913 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.606.247 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.609.004 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.609.777 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.722.019 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.722.278 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.729.339 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.729.595 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.731.036 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.731.728 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.850.499 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.850.613 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.856.747 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.856.850 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.857.425 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.858.106 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:37.968.843 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:37.968.951 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:37.974.815 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:37.974.927 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:37.976.392 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:37.977.032 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.112.130 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.112.397 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.118.610 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.118.891 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.122.794 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.123.535 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.289.801 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.289.899 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.294.933 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.295.029 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.295.927 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.296.553 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.410.390 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.410.487 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.416.949 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.417.088 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.418.634 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.419.261 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.539.586 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.539.701 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.545.883 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.545.992 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.546.746 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.547.386 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.660.435 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.660.549 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.665.196 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.665.296 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.665.698 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.666.398 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.779.360 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.779.474 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.787.758 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.787.875 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.790.525 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.791.159 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:38.903.592 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:38.903.701 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:38.908.124 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:38.908.230 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:38.908.593 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:38.909.202 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.023.725 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.023.836 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.038.417 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.038.526 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.039.322 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.039.938 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.152.364 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.152.480 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.157.925 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.158.033 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.158.556 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.159.175 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.271.942 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.272.069 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.277.228 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.277.336 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.278.169 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.278.793 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.390.037 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.390.154 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.395.270 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.395.379 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.396.242 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.396.918 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.512.413 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.512.526 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.520.281 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.520.423 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.522.496 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.523.219 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.641.022 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.641.139 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.647.031 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.647.150 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.648.403 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.649.333 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.767.080 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.767.188 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.773.806 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.773.919 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.775.969 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.776.673 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:39.904.460 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:39.904.563 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:39.910.576 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:39.910.691 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:39.914.224 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:39.914.962 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.033.490 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.033.621 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.044.394 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.044.533 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.046.871 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.047.519 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.160.869 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.160.971 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.166.400 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.166.512 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.167.361 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.167.994 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.280.906 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.281.033 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.286.022 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.286.121 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.286.989 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.287.601 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.399.256 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.399.366 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.405.710 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.405.817 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.406.616 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.407.216 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.522.021 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.522.130 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.527.484 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.527.596 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.527.963 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.529.438 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.645.628 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.645.745 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.650.469 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.650.558 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.651.101 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.651.729 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.764.216 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.764.330 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.777.446 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.777.547 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.778.735 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.779.368 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:40.891.982 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:40.892.091 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:40.897.091 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:40.897.208 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:40.898.005 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:40.898.767 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.014.352 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.014.457 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.023.307 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.023.433 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.030.314 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.033.785 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.147.275 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.147.377 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.151.748 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.151.852 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.152.263 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.152.864 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.265.539 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.265.642 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.270.433 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.270.528 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.271.126 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.271.745 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.384.135 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.384.237 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.389.500 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.389.599 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.390.420 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.391.064 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.505.259 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.505.363 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.510.786 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.510.892 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.513.866 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.514.523 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.630.528 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.630.628 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.636.051 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.636.169 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.637.161 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.637.783 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.751.882 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.751.994 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.757.027 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.757.133 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.758.018 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.758.641 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.875.536 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.875.813 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:41.881.050 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:41.881.305 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:41.882.118 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:41.882.817 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:41.997.703 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:41.997.988 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.004.883 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.005.146 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.005.902 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.006.595 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.122.003 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.122.294 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.127.211 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.127.469 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.127.925 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.128.625 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.242.211 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.242.495 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.247.536 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.247.797 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.248.588 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.249.350 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.361.862 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.362.168 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.368.428 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.368.706 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.370.578 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.371.323 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.484.026 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.484.305 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.489.530 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.489.774 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.490.535 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.491.240 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.604.179 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.604.462 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.609.805 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.610.073 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.611.219 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.611.943 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.725.052 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.725.353 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.730.233 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.730.480 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.731.096 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.731.797 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.844.257 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.844.545 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.851.119 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.851.331 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.852.613 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.853.343 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:42.971.788 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:42.972.124 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:42.977.469 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:42.977.721 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:42.979.291 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:42.980.015 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.093.133 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.093.444 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.100.695 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.100.957 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.101.533 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.102.236 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.214.873 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.215.165 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.220.138 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.220.382 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.220.957 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.221.634 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.332.954 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.333.272 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.338.061 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.338.309 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.338.890 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.339.574 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.452.684 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.452.977 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.457.825 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.458.092 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.458.664 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.459.367 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.571.279 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.571.577 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.577.182 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.577.445 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.578.519 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.579.235 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.693.150 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.693.435 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.698.548 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.698.814 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.699.669 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.700.365 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.813.595 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.813.885 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.818.747 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.819.016 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.819.600 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.820.268 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:49:43.948.771 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:49:43.949.027 [of ][Debug  ] Kernel. Initializing resultant matrix: Start
+2026-07-22 18:49:43.955.262 [of ][Debug  ] Kernel. Initializing resultant matrix: Done
+2026-07-22 18:49:43.955.511 [of ][Debug  ] Kernel. Filling resultant matrix: Start
+2026-07-22 18:49:43.955.861 [of ][Debug  ] Kernel. Filling resultant matrix: Done
+2026-07-22 18:49:43.955.958 [of ][Info   ] Kernel. Initializing resultants: Done
+
+2026-07-22 18:49:43.956.119 [of ][Info   ] Kernel. Solving resultants: Start
+2026-07-22 18:49:43.958.950 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:43.996.156 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:43.996.383 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.446.579 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.446.625 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.477.984 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.478.076 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.478.218 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.478.530 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.480.542 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.480.568 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.490.632 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.490.700 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.492.280 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.492.304 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.492.352 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.492.505 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.494.499 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.494.520 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.504.430 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.504.497 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.506.314 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.506.336 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.506.385 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.506.541 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.508.548 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.508.571 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.518.972 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.519.042 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.519.818 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.519.836 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.520.152 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.520.450 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.522.381 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.522.403 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.542.435 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.542.520 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.543.761 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.543.785 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.543.877 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.544.111 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.546.380 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.546.403 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.565.581 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.565.688 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.566.941 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.566.995 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.567.061 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.567.242 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.568.310 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.568.337 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.578.271 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.578.342 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.579.145 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.579.169 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.579.236 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.579.466 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.581.627 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.581.656 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.606.174 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.606.282 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.635.613 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.635.713 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.635.888 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.636.155 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.638.465 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.638.504 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.661.411 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.661.522 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.664.363 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.664.402 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.664.572 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.664.777 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.666.169 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.666.193 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.677.639 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.677.715 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.678.525 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.678.550 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.678.616 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.678.776 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.679.840 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.679.864 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.691.882 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.691.962 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.692.743 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.692.767 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.692.833 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.693.219 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.695.170 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.695.199 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.717.859 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.717.967 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.719.341 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.719.372 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.719.447 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.719.723 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.721.910 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.721.939 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.743.880 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.743.973 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.745.380 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.745.413 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.745.493 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.746.405 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.751.928 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.751.962 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.796.986 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.797.102 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.799.631 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.799.674 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.799.764 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.800.325 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.805.507 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.805.544 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.851.216 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.851.326 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.856.487 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.856.537 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.856.645 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.856.901 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.858.159 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.858.184 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.869.758 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.869.824 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.870.577 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.870.596 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.870.669 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.871.505 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.874.847 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.874.887 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.908.699 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.908.802 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.910.985 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.911.025 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.911.115 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.911.501 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.918.218 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.918.258 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:44.951.586 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:44.951.690 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:44.955.261 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:44.955.304 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:44.955.398 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:44.957.993 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:44.969.594 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:44.969.642 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.081.395 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.081.528 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.087.532 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.087.595 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.087.715 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.088.412 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.092.853 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.092.893 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.140.783 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.140.893 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.144.178 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.144.222 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.144.308 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.144.606 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.148.244 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.148.272 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.170.625 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.170.729 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.172.303 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.172.336 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.172.421 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.174.731 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.184.976 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.185.018 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.284.903 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.285.037 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.290.166 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.290.222 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.290.325 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.290.816 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.293.980 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.294.016 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.328.276 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.328.389 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.330.255 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.330.290 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.330.373 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.333.517 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.345.811 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.345.847 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.491.741 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.491.871 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.498.908 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.498.976 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.499.097 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.499.586 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.504.267 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.504.309 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.558.610 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.558.726 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.561.220 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.561.263 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.561.375 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.561.714 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.565.958 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.566.001 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.588.356 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.588.455 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.589.783 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.589.814 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.589.889 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.591.291 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.599.629 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.599.669 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.670.615 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.670.727 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.674.189 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.674.234 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.674.329 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.674.714 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.677.831 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.677.863 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.710.779 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.710.884 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.716.627 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.716.679 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.716.789 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.717.062 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.719.199 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.719.231 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.742.106 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.742.208 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.743.570 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.743.599 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.743.678 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.744.593 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.750.013 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.750.050 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.807.093 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.807.204 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.809.959 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.810.007 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.810.091 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.810.446 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.817.011 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.817.050 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.852.517 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.852.602 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.856.789 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.856.824 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.860.719 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.860.937 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.870.152 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.870.200 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:45.882.983 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:45.883.077 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:45.883.772 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:45.883.794 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:45.883.862 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:45.887.393 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:45.899.015 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:45.899.055 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.037.945 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.038.071 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.047.657 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.047.724 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.047.866 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.048.105 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.049.207 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.049.232 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.061.471 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.061.561 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.064.310 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.064.338 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.064.406 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.064.780 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.067.153 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.067.184 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.097.415 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.097.459 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.100.803 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.100.820 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.100.888 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.101.192 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.103.817 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.103.863 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.127.414 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.127.534 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.128.765 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.128.805 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.129.061 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.129.432 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.132.273 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.132.312 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.165.031 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.165.160 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.167.213 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.167.272 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.167.361 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.167.716 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.170.872 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.170.909 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.202.724 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.202.842 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.206.187 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.206.237 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.206.333 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.208.493 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.220.355 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.220.427 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.320.803 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.320.927 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.327.712 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.327.778 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.327.908 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.328.777 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.334.222 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.334.272 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.391.578 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.391.696 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.394.889 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.394.936 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.395.034 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.396.397 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.404.561 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.404.607 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.492.366 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.492.503 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.496.635 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.496.684 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.496.778 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.497.758 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.504.282 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.504.328 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.600.652 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.600.770 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.606.535 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.606.593 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.606.695 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.608.382 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.620.863 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.620.935 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.766.317 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.766.440 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.772.300 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.772.360 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.772.465 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.772.855 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.776.073 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.776.111 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.808.721 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.808.833 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.812.649 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.812.690 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.813.455 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.813.811 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.818.003 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.818.042 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.882.820 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.882.916 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.889.786 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.889.830 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.891.795 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.892.073 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.896.574 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.896.608 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.927.326 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.927.449 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.935.172 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.935.207 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.935.883 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.936.071 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.939.455 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.939.509 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.952.498 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.952.581 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.953.715 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.953.740 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.954.887 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.955.271 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.957.690 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.957.721 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:46.982.625 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:46.982.731 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:46.984.371 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:46.984.404 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:46.984.492 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:46.985.482 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:46.989.955 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:46.989.995 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.043.216 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.043.327 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.046.140 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.046.177 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.046.271 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.046.873 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.050.988 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.051.021 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.085.101 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.085.221 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.087.436 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.087.474 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.087.582 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.092.110 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.113.124 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.113.191 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.305.771 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.305.867 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.318.070 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.318.114 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.318.310 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.318.551 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.319.638 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.319.649 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.331.631 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.331.673 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.332.419 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.332.428 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.332.512 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.332.846 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.334.920 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.334.930 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.356.448 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.356.493 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.357.939 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.357.951 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.358.056 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.358.534 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.363.893 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.363.914 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.397.201 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.397.264 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.399.064 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.399.085 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.399.191 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.399.872 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.404.862 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.404.883 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.449.787 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.449.863 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.452.127 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.452.150 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.452.256 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.452.707 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.456.659 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.456.677 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.503.893 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.503.952 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.508.690 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.508.711 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.511.994 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.512.466 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.517.706 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.517.747 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.555.928 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.556.003 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.558.509 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.558.534 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.558.922 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.559.451 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.564.928 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.564.955 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.598.052 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.598.118 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.600.043 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.600.062 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.600.169 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.600.550 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.602.649 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.602.667 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.626.368 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.626.439 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.627.897 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.627.915 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.628.166 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.628.363 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.629.601 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.629.615 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.641.557 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.641.605 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.642.586 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.642.600 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.642.675 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.643.394 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.646.590 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.646.629 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.680.956 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.681.079 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.682.974 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.683.028 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.683.104 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.684.913 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.692.471 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.692.510 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.772.894 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.773.025 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.777.226 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.777.288 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.777.378 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.777.959 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.781.114 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.781.149 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.817.305 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.817.428 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.819.188 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.819.227 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.819.319 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.819.874 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.824.225 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.824.259 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.868.770 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.868.885 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.871.324 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.871.369 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.871.453 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.871.734 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.873.847 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.873.872 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.898.985 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.899.073 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.900.342 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.900.377 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.900.460 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.901.221 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.907.473 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.907.511 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:47.958.297 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:47.958.401 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:47.963.429 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:47.963.474 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:47.963.693 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:47.964.390 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:47.968.277 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:47.968.312 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.015.651 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.015.770 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.018.166 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.018.209 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.018.312 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.018.651 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.021.018 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.021.049 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.048.347 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.048.392 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.049.666 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.049.672 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.049.681 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.049.942 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.052.399 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.052.433 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.075.679 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.075.797 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.077.144 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.077.188 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.077.264 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.077.552 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.079.795 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.079.826 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.103.068 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.103.176 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.106.402 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.106.437 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.106.518 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.106.773 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.108.892 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.108.923 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.135.821 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.135.926 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.137.815 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.137.850 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.137.934 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.138.743 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.142.827 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.142.865 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.189.389 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.189.502 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.191.902 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.191.948 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.192.037 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.192.592 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.196.098 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.196.133 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.230.005 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.230.110 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.232.029 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.232.076 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.232.162 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.232.474 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.234.595 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.234.626 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.256.512 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.256.618 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.258.553 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.258.585 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.258.687 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.258.891 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:49:48.260.180 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:49:48.260.208 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:49:48.272.040 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:49:48.272.128 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:49:48.273.165 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:49:48.273.191 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:49:48.273.257 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:49:48.273.277 [of ][Info   ] Kernel. Solving resultants: Done
+
+2026-07-22 18:49:52.987.291 [of ][Info   ] Kernel. Write results to file: Start
+2026-07-22 18:50:38.647.752 [of ][Info   ] Kernel. Write results to file: Done
+
+2026-07-22 18:50:38.647.816 [of ][Debug  ] Kernel. BeginSteps elasticity: Done
+
+2026-07-22 18:50:38.647.826 [of ][Debug  ] Kernel. NextStep elasticity: Start
+2026-07-22 18:50:38.694.835 [of ][Info   ] Kernel. Preparing matrix for step: Start
+2026-07-22 18:50:38.698.628 [of ][Debug  ] Kernel. Filling contact continuity: Start
+2026-07-22 18:50:38.698.643 [of ][Debug  ] Kernel. Filling contact continuity: Done
+2026-07-22 18:50:38.698.646 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Start
+2026-07-22 18:50:38.835.142 [of ][Debug  ] Kernel. Initializing SparseAPI from FEM: Done
+2026-07-22 18:50:38.835.181 [of ][Info   ] Kernel. Preparing matrix for step: Done
+
+2026-07-22 18:50:39.213.702 [of ][Info   ] Kernel. Filling internal fields: Start
+2026-07-22 18:50:41.466.333 [of ][Info   ] Kernel. Filling internal fields: Done
+
+2026-07-22 18:50:41.469.471 [of ][Info   ] Kernel. Applying constraints: Start
+2026-07-22 18:50:41.469.876 [of ][Info   ] Kernel. Applying constraints: Done
+
+2026-07-22 18:50:41.469.890 [of ][Info   ] Kernel. Solving constraints: Start
+2026-07-22 18:50:41.470.030 [of ][Debug  ] SparseAPI: Incomplete Problem solution starting...
+2026-07-22 18:50:41.470.040 [of ][Debug  ]    Matrix Input row count = 0
+2026-07-22 18:50:41.470.045 [of ][Debug  ]    Matrix Input non-zero count = 0
+2026-07-22 18:50:41.470.924 [of ][Info   ] Kernel.luq_handler: Start
+2026-07-22 18:50:41.485.360 [of ][Info   ] Kernel.luq_handler : Done
+
+2026-07-22 18:50:41.503.169 [of ][Debug  ]    Matrix Output row count = 0
+2026-07-22 18:50:41.503.253 [of ][Debug  ]    Matrix Output non-zero count = 0
+2026-07-22 18:50:41.503.269 [of ][Debug  ] SparseAPI: Incomplete Problem solution completed successfully
+2026-07-22 18:50:41.503.284 [of ][Debug  ] SparseAPI: Incomplete Problem solution starting...
+2026-07-22 18:50:41.503.298 [of ][Debug  ]    Matrix Input row count = 0
+2026-07-22 18:50:41.503.313 [of ][Debug  ]    Matrix Input non-zero count = 0
+2026-07-22 18:50:41.503.790 [of ][Debug  ] SparseAPI: Incomplete problem residual: 0
+2026-07-22 18:50:41.507.564 [of ][Debug  ]    Matrix Output row count = 0
+2026-07-22 18:50:41.507.641 [of ][Debug  ]    Matrix Output non-zero count = 0
+2026-07-22 18:50:41.507.656 [of ][Debug  ] SparseAPI: Incomplete Problem solution completed successfully
+2026-07-22 18:50:41.507.669 [of ][Info   ] Kernel. Solving constraints: Done
+
+2026-07-22 18:50:41.517.673 [of ][Warning] Model is not fixed along X direction.
+2026-07-22 18:50:41.519.066 [of ][Warning] Model is not fixed along Y direction.
+2026-07-22 18:50:41.540.045 [of ][Info   ] Kernel. Initializing matrix: Start
+2026-07-22 18:50:42.351.485 [of ][Info   ] Kernel. Initializing matrix: Done
+
+2026-07-22 18:50:42.379.615 [of ][Info   ] Kernel. Filling matrix and internal forces: Start
+2026-07-22 18:50:45.134.956 [of ][Info   ] Kernel. Filling matrix and internal forces: Done
+
+2026-07-22 18:50:45.135.115 [of ][Info   ] Kernel. Filling external forces: Start
+2026-07-22 18:50:45.148.864 [of ][Info   ] Kernel. Filling external forces: Done
+
+2026-07-22 18:50:45.148.979 [of ][Info   ] Kernel. Applying constraints to matrix: Start
+2026-07-22 18:50:45.149.020 [of ][Info   ] Kernel. Applying constraints to matrix: Done
+
+2026-07-22 18:50:45.164.954 [of ][Info   ] Kernel. Preparing rhs to solve: Start
+2026-07-22 18:50:45.215.766 [of ][Info   ] Kernel. Preparing rhs to solve: Done
+
+2026-07-22 18:50:45.218.109 [of ][Info   ] Kernel. Preparing matrix to solve: Start
+2026-07-22 18:50:45.218.365 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:46.032.008 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:46.032.136 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:46.251.905 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:46.251.931 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:46.251.936 [of ][Info   ] Kernel. Preparing matrix to solve: Done
+
+2026-07-22 18:50:46.251.942 [of ][Info   ] Kernel. Solving matrix: Start
+2026-07-22 18:50:46.252.927 [of ][Debug  ] SparseAPI: LAES Problem solution starting...
+2026-07-22 18:50:46.316.357 [of ][Debug  ]    Matrix row count = 1973114
+2026-07-22 18:50:46.316.392 [of ][Debug  ]    Matrix non-zero count = 61687820
+2026-07-22 18:50:46.316.395 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:46.316.397 [of ][Debug  ]    Matrix is not positive
+2026-07-22 18:50:46.316.399 [of ][Debug  ]    Right hand sides count = 1
+2026-07-22 18:50:46.320.758 [of ][Info   ]    Starting Direct Solver
+2026-07-22 18:50:46.320.778 [of ][Debug  ]    PARDISO
+2026-07-22 18:50:46.320.780 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:46.382.803 [of ][Debug  ]    Converted to UPPER
+2026-07-22 18:50:46.382.844 [of ][Debug  ]    Phase 0 starting
+2026-07-22 18:50:46.382.850 [of ][Debug  ]    Phase 0 completed
+2026-07-22 18:50:46.382.853 [of ][Debug  ]    Phase 1 starting
+2026-07-22 18:50:51.275.213 [of ][Debug  ]    Phase 1 completed
+2026-07-22 18:50:51.275.261 [of ][Debug  ]    Phase 2 starting
+2026-07-22 18:50:52.982.053 [of ][Debug  ]    Phase 2 completed
+2026-07-22 18:50:52.982.095 [of ][Debug  ]    Phase 3 starting
+2026-07-22 18:50:53.930.311 [of ][Debug  ]    Phase 3 completed
+2026-07-22 18:50:54.584.585 [of ][Debug  ]    Converted to FULL
+2026-07-22 18:50:54.584.657 [of ][Debug  ]    Solver Completed successfully
+2026-07-22 18:50:54.584.666 [of ][Debug  ] SparseAPI: LAES Problem solution completed successfully
+2026-07-22 18:50:54.588.691 [of ][Debug  ] Kernel. Reset solver: Start
+2026-07-22 18:50:54.752.579 [of ][Debug  ] Kernel. Reset solver: Done
+
+2026-07-22 18:50:54.752.676 [of ][Info   ] Kernel. Solving matrix: Done
+
+2026-07-22 18:50:54.803.188 [of ][Info   ] Kernel. Filling internal fields: Start
+2026-07-22 18:50:56.964.509 [of ][Info   ] Kernel. Filling internal fields: Done
+
+2026-07-22 18:50:58.189.631 [of ][Info   ] Kernel. Solving resultants: Start
+2026-07-22 18:50:58.193.035 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.243.714 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.243.805 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.255.606 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.255.700 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.271.313 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.285.090 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.285.204 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.289.906 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.289.930 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.764.063 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.764.099 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.796.685 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.796.759 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.796.923 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.797.074 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.799.828 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.799.852 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.803.398 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.803.424 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.804.432 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.805.012 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.805.025 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.805.168 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.805.172 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.817.015 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.817.081 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.818.966 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.818.982 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.819.041 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.819.170 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.821.304 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.821.311 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.825.010 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.825.110 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.829.557 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.830.261 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.830.307 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.830.454 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.830.469 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.841.957 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.842.060 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.846.061 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.846.114 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.846.558 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.846.735 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.848.863 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.848.908 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.852.402 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.852.481 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.854.560 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.855.144 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.855.184 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.855.327 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.855.343 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.866.913 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.867.019 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.869.162 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.869.192 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.869.242 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.869.433 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.872.983 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.873.018 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.876.799 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.876.880 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.882.194 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.883.587 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.883.623 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.883.898 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.883.914 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.912.001 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.912.093 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.915.652 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.915.698 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.916.276 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.916.504 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.921.994 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.922.064 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.925.734 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.925.800 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.928.643 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.929.575 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.929.618 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.929.898 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.929.914 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.951.839 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.951.952 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.955.445 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.955.484 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.955.565 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.955.708 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.959.359 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.959.400 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.962.947 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.963.032 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.964.382 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.965.013 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.965.055 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.965.205 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.965.220 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:58.976.809 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:58.976.925 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:58.980.787 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:58.980.850 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:58.980.929 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:58.981.132 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:58.984.933 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:58.984.966 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:58.988.628 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:58.988.687 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:58.992.446 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:58.993.983 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:58.994.037 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:58.994.304 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:58.994.320 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.018.521 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.018.636 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.021.708 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.021.747 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.022.254 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.022.478 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.027.693 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.027.764 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.031.477 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.031.540 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.033.523 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.034.438 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.034.482 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.034.786 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.034.801 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.058.433 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.058.542 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.064.856 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.064.934 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.064.990 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.065.142 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.067.384 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.067.426 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.070.815 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.070.875 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.071.782 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.072.696 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.072.729 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.072.894 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.072.909 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.084.540 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.084.639 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.086.937 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.086.967 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.087.019 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.087.159 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.089.285 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.089.306 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.092.705 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.092.768 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.094.201 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.094.788 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.094.827 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.094.996 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.095.013 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.107.269 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.107.794 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.112.392 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.112.750 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.113.081 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.113.480 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.117.080 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.117.369 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.121.205 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.121.567 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.123.971 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.125.183 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.125.514 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.126.074 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.126.345 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.148.792 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.149.345 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.153.361 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.153.709 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.154.012 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.154.474 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.158.426 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.158.751 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.162.955 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.163.403 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.164.983 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.166.097 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.166.420 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.166.968 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.167.239 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.189.685 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.190.162 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.200.191 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.200.223 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.200.293 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.200.636 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.208.059 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.208.088 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.212.869 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.213.273 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.217.992 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.219.755 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.220.146 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.220.966 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.221.231 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.265.377 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.266.033 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.271.076 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.271.466 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.271.781 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.272.377 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.280.032 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.280.403 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.284.786 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.285.191 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.287.655 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.289.377 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.289.668 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.290.158 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.290.162 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.334.980 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.335.512 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.340.083 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.340.496 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.340.816 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.341.225 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.343.617 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.343.919 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.347.588 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.347.946 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.349.111 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.349.957 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.350.278 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.350.701 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.350.956 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.362.846 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.363.357 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.366.048 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.366.387 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.366.731 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.367.269 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.373.716 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.374.109 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.378.331 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.378.711 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.380.888 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.382.572 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.382.929 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.383.637 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.383.910 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.416.939 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.417.475 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.423.519 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.423.857 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.424.210 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.424.499 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.430.709 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.431.061 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.435.256 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.435.657 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.437.769 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.439.246 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.439.586 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.440.287 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.440.544 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.473.432 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.473.959 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.478.168 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.478.544 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.478.851 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.479.794 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.497.950 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.498.472 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.505.795 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.506.297 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.511.426 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.519.977 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.521.136 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.526.829 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.527.243 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.699.203 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.699.255 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.713.220 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.713.311 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.715.007 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.715.424 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.723.382 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.723.435 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.728.191 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.728.281 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.731.113 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.733.333 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.733.395 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.734.028 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.734.050 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.796.397 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.796.520 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.804.681 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.804.718 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.805.785 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.806.024 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.810.453 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.810.489 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.814.340 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.814.367 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.819.021 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.820.166 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.820.187 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.820.497 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.820.501 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.845.502 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.845.622 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.848.756 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.848.826 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:50:59.849.291 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:50:59.849.978 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:50:59.865.711 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:50:59.865.757 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:50:59.871.206 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:50:59.871.284 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:50:59.876.245 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:50:59.880.044 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:50:59.880.166 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:50:59.881.267 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:50:59.881.291 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:50:59.986.402 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:50:59.986.530 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:50:59.999.596 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:50:59.999.687 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.001.026 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.001.402 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.007.405 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.007.470 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.011.978 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.012.083 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.014.396 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.015.811 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.015.870 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.016.343 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.016.363 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.053.835 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.053.947 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.059.131 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.059.209 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.060.664 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.061.600 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.085.041 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.085.132 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.091.586 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.091.686 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.097.862 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.103.161 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.103.260 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.104.883 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.104.907 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.258.782 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.258.886 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.274.175 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.274.273 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.275.124 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.275.484 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.282.749 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.282.792 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.287.704 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.287.785 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.291.425 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.293.346 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.293.412 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.293.940 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.293.955 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.346.117 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.346.203 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.353.738 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.353.823 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.354.583 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.354.821 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.358.880 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.358.897 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.364.154 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.364.400 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.366.346 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.368.167 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.368.250 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.368.812 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.368.830 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.393.837 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.393.945 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.397.283 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.397.367 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.398.047 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.398.657 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.411.700 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.411.784 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.421.094 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.421.187 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.424.947 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.429.965 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.430.036 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.431.452 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.431.474 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.498.579 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.498.703 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.507.116 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.507.195 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.507.927 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.508.234 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.515.703 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.515.768 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.519.762 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.519.832 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.522.355 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.523.793 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.523.843 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.524.236 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.524.243 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.569.213 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.569.322 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.573.341 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.573.387 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.573.441 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.573.662 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.577.631 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.577.676 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.581.603 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.581.692 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.583.895 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.584.995 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.585.039 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.585.517 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.585.532 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.610.348 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.610.460 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.615.183 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.615.238 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.615.291 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.615.696 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.623.555 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.623.613 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.628.822 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.628.918 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.632.380 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.634.609 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.634.672 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.635.329 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.635.344 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.691.229 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.691.346 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.696.990 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.697.035 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.697.763 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.698.076 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.713.040 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.713.143 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.717.652 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.717.759 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.726.425 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.728.454 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.728.850 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.729.594 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.729.859 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.767.781 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.768.297 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.771.981 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.772.328 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.772.655 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.773.018 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.775.045 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.775.366 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.779.157 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.779.555 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.780.937 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.781.881 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.782.193 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.782.602 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.782.857 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.795.444 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.795.908 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:00.797.760 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:00.798.067 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:00.798.360 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:00.799.474 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:00.817.085 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:00.817.563 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:00.824.182 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:00.824.650 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:00.832.001 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:00.837.240 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:00.837.739 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:00.839.675 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:00.839.937 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:00.997.488 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:00.998.072 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.012.358 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.012.872 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.015.754 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.016.174 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.018.203 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.018.500 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.022.163 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.022.519 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.023.685 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.025.118 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.025.467 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.025.995 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.026.422 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.047.307 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.047.817 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.051.883 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.052.480 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.052.838 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.053.272 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.057.244 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.057.544 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.061.746 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.062.185 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.063.997 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.065.786 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.066.126 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.066.767 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.067.085 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.106.226 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.106.897 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.109.992 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.110.478 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.111.116 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.111.578 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.115.482 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.115.838 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.120.163 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.120.507 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.122.168 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.123.639 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.123.901 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.124.495 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.124.706 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.164.698 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.165.238 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.168.369 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.168.736 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.169.044 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.169.518 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.174.867 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.174.901 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.178.876 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.178.935 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.181.923 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.183.747 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.183.803 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.184.188 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.184.204 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.235.210 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.235.296 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.238.999 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.239.048 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.239.521 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.239.794 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.245.294 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.245.344 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.249.564 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.249.623 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.252.710 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.253.930 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.253.971 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.254.367 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.254.384 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.291.429 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.291.528 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.297.886 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.297.939 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.298.461 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.299.077 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.314.126 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.314.201 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.319.420 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.319.493 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.323.977 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.327.109 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.327.182 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.328.229 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.328.246 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.441.441 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.441.568 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.452.687 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.452.765 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.453.300 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.453.740 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.463.573 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.463.639 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.468.380 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.468.449 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.471.619 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.480.285 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.480.929 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.481.895 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.481.903 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.552.861 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.553.917 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.560.039 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.560.099 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.560.615 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.561.200 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.574.574 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.574.639 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.580.225 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.580.308 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.584.388 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.587.071 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.587.151 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.588.104 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.588.121 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.677.553 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.677.668 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.685.995 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.686.081 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.686.588 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.687.092 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.698.605 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.698.658 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.703.488 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.703.567 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.707.237 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.709.609 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.709.690 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.710.546 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.710.565 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.786.921 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.787.044 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.793.775 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.793.856 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.794.409 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.795.183 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.812.495 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.812.590 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.818.610 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.818.676 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.823.789 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.830.260 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.830.363 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.831.598 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.831.615 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:01.950.070 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:01.950.186 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:01.963.475 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:01.963.601 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:01.964.140 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:01.964.455 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:01.970.456 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:01.970.512 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:01.974.544 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:01.974.611 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:01.976.464 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:01.978.147 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:01.978.206 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:01.978.649 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:01.978.665 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.023.724 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.023.843 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.031.098 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.031.179 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.031.644 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.031.941 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.037.600 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.037.647 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.041.732 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.041.805 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.043.959 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.045.416 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.045.473 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.045.883 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.045.899 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.084.804 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.085.016 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.089.371 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.089.426 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.089.886 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.090.144 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.094.154 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.094.186 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.098.059 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.098.120 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.099.831 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.101.720 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.101.780 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.102.093 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.102.109 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.128.401 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.128.930 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.131.858 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.132.131 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.132.435 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.132.586 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.134.884 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.135.170 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.138.854 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.139.208 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.140.380 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.141.307 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.141.658 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.142.090 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.142.349 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.154.685 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.155.197 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.157.058 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.157.368 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.157.659 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.158.122 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.162.467 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.162.782 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.166.968 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.167.355 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.168.985 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.170.152 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.170.463 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.170.983 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.171.240 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.196.075 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.196.615 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.199.980 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.200.391 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.201.501 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.202.152 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.210.327 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.210.653 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.215.816 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.216.285 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.218.906 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.220.872 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.221.163 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.221.699 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.221.703 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.269.223 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.269.781 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.274.833 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.275.407 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.275.743 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.276.353 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.282.860 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.283.262 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.287.850 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.288.244 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.290.437 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.295.336 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.295.370 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.295.790 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.295.793 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.346.935 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.347.588 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.353.394 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.353.810 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.354.125 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.355.561 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.383.383 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.384.565 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.392.214 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.392.681 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.400.422 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.407.302 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.407.725 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.411.129 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.411.422 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.618.186 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.618.295 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.635.028 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.635.125 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.635.713 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.635.908 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.637.965 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.638.012 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.641.553 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.641.625 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.642.985 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.643.572 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.643.610 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.643.798 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.643.822 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.655.603 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.655.693 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.657.999 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.658.060 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.658.513 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.658.762 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.663.513 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.663.561 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.667.721 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.667.808 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.669.678 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.670.668 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.670.722 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.671.069 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.671.095 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.694.147 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.694.253 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.697.306 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.697.383 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.697.846 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.698.195 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.704.031 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.704.104 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.708.229 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.708.315 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.710.898 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.712.858 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.712.929 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.713.403 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.713.407 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.752.971 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.753.092 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.757.119 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.757.183 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.757.241 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.757.603 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.765.077 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.765.143 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.769.557 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.769.643 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.772.355 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.773.982 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.774.191 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.774.777 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.774.797 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.830.830 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.831.339 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.836.189 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.836.562 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.836.864 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.837.380 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.843.076 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.843.400 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.847.689 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.848.056 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.850.503 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.852.808 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.853.163 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.853.809 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.853.814 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.912.883 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.913.418 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.930.218 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.930.755 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.934.008 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.940.298 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:02.946.040 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:02.946.091 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:02.951.672 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:02.952.203 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:02.955.776 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:02.958.265 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:02.958.639 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:02.959.047 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:02.959.051 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:02.993.820 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:02.994.372 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:02.998.074 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:02.998.530 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:02.998.839 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:02.999.424 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.008.170 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.008.716 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.013.392 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.013.914 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.019.128 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.020.935 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.021.394 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.022.158 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.022.421 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.057.929 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.058.505 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.064.650 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.064.965 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.065.313 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.065.956 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.070.224 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.070.562 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.074.724 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.075.265 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.076.939 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.078.397 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.078.771 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.079.365 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.079.621 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.106.401 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.106.928 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.119.622 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.120.191 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.120.530 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.120.961 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.123.305 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.123.590 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.127.435 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.127.882 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.129.236 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.130.118 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.130.440 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.130.918 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.131.865 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.144.146 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.144.584 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.148.658 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.148.934 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.149.256 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.149.560 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.156.012 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.156.373 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.160.710 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.161.127 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.164.491 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.166.747 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.167.190 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.167.940 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.168.216 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.205.590 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.206.157 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.212.803 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.213.264 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.214.264 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.215.124 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.228.981 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.229.433 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.235.579 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.236.012 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.239.996 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.242.869 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.243.306 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.244.530 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.244.786 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.337.766 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.337.808 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.345.590 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.345.961 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.346.020 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.346.314 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.351.934 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.352.304 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.356.525 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.356.928 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.358.975 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.363.128 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.363.539 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.364.261 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.364.591 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.402.305 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.402.836 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.406.599 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.406.941 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.407.261 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.407.866 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.416.748 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.417.114 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.421.612 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.421.915 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.424.410 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.428.239 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.428.650 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.429.490 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.429.750 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.480.339 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.480.771 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.486.941 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.487.335 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.487.644 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.487.961 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.492.352 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.492.639 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.496.667 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.496.962 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.498.619 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.499.789 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.500.135 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.500.672 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.500.678 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.532.834 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.533.358 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.536.748 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.537.084 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.537.401 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.537.976 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.545.814 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.546.215 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.550.902 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.551.304 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.555.288 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.557.827 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.558.282 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.559.150 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.559.408 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.612.771 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.613.348 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.619.709 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.620.091 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.620.402 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.620.993 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.628.559 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.628.911 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.633.289 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.633.649 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.636.118 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.637.922 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.638.274 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.639.115 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.639.374 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.687.852 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.688.335 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.692.851 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.693.183 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.693.479 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.693.941 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.698.223 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.698.514 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.702.569 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.702.912 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.704.566 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.705.833 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.706.139 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.706.698 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.706.948 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.735.005 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.735.526 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.738.475 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.738.751 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.739.034 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.739.256 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.743.200 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.743.506 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.747.537 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.747.911 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.749.579 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.752.495 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.752.848 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.753.423 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.753.677 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.779.068 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.779.584 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.784.259 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.784.670 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.784.981 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.785.461 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.789.731 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.790.038 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.793.975 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.794.423 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.796.028 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.797.242 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.797.561 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.798.117 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.798.367 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.831.823 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.832.346 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.835.484 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.835.813 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.836.102 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.836.323 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.840.285 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.840.588 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.844.575 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.844.921 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.846.744 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.847.954 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.848.282 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.848.843 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.849.097 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.877.546 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.878.070 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.881.528 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.881.918 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.882.249 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.882.851 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.890.759 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.891.095 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.895.489 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.895.839 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.898.328 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.900.102 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.900.506 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.901.349 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.901.609 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:03.955.541 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:03.956.052 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:03.963.755 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:03.964.217 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:03.964.565 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:03.965.110 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:03.971.482 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:03.971.756 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:03.976.076 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:03.976.435 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:03.978.591 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:03.980.497 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:03.980.937 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:03.981.650 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:03.981.866 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:04.023.418 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:04.023.942 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:04.031.411 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:04.031.862 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:04.032.184 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:04.032.684 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:04.036.992 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:04.037.308 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:04.041.283 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:04.041.706 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:04.043.387 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:04.044.557 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:04.044.876 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:04.045.425 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:04.045.678 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:04.073.886 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:04.074.438 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:04.077.473 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:04.077.794 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:04.078.114 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:04.078.280 [of ][Debug  ] Kernel. Filling resultant vector: Start
+2026-07-22 18:51:04.080.276 [of ][Debug  ] Kernel. Filling resultant vector: Done
+2026-07-22 18:51:04.080.547 [of ][Debug  ] Kernel. Solving resultant matrix: Start
+2026-07-22 18:51:04.084.273 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Start
+2026-07-22 18:51:04.084.664 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Start
+2026-07-22 18:51:04.085.824 [of ][Debug  ] SparseMatrixSEQ: Insert buffer to matrix: Done
+2026-07-22 18:51:04.086.664 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Start
+2026-07-22 18:51:04.086.972 [of ][Debug  ]    Matrix is symmetric
+2026-07-22 18:51:04.087.388 [of ][Debug  ] Kernel. K_reduced_matrix.CheckSymValues: Done
+
+2026-07-22 18:51:04.087.643 [of ][Debug  ] Kernel. Solving matrix. Direct elimination matrix transformation: Done
+2026-07-22 18:51:04.099.791 [of ][Debug  ] Kernel. Solving resultant matrix: Done
+2026-07-22 18:51:04.100.288 [of ][Debug  ] Kernel. Filling resultant fields: Start
+2026-07-22 18:51:04.103.646 [of ][Debug  ] Kernel. Filling resultant fields: Done
+2026-07-22 18:51:04.103.958 [of ][Debug  ] Kernel. Update resultant results: Start
+2026-07-22 18:51:04.104.283 [of ][Debug  ] Kernel. Update resultant results: Done
+2026-07-22 18:51:04.104.506 [of ][Info   ] Kernel. Solving resultants: Done
+
+2026-07-22 18:51:09.545.658 [of ][Info   ] Kernel. Write results to file: Start
+2026-07-22 18:51:50.036.676 [of ][Info   ] Kernel. Write results to file: Done
+
+2026-07-22 18:51:50.036.739 [of ][Debug  ] Kernel. NextStep elasticity: Done
+
+2026-07-22 18:51:50.036.749 [of ][Debug  ] Kernel. EndSteps elasticity: Start
+2026-07-22 18:51:50.036.878 [of ][Debug  ] Kernel. EndSteps elasticity: Done
+

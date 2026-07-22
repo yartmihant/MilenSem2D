@@ -488,7 +488,6 @@ for i in range(len(layer_depths_mean) - 1):
         plt.fill_between([], [], [], color=color, alpha=0.6, linewidth=2.0, label=formation)
         legend_entries.add(formation)
 
-
 # Скважины
 plt.axvline(WELL1_DISTANCE, color='black', linestyle='--', alpha=0.7, label='Скважина 1')
 plt.axvline(WELL2_DISTANCE, color='black', linestyle='--', alpha=0.7, label='Скважина 2')
@@ -604,6 +603,45 @@ UPDЖ Ниже представлен старый, не совсем верны
 
 """ Строим сетку методами map (стурктурированные слои) и pave (нестуктурированные слои) """
 
+""" Рассчитываем число вертикальных интервалов по толщинам слоев в скважинах """
+
+VERTICAL_ELEMENT_SIZE = 10.0  # целевой размер элемента по глубине, м
+
+well1_grid_index = np.argmin(np.abs(distances - WELL1_DISTANCE))
+well2_grid_index = np.argmin(np.abs(distances - WELL2_DISTANCE))
+
+well1_layer_heights = np.diff(np.concatenate([
+    [0.0],
+    layer_boundaries_array[:, well1_grid_index],
+]))
+well2_layer_heights = np.diff(np.concatenate([
+    [0.0],
+    layer_boundaries_array[:, well2_grid_index],
+]))
+
+if np.any(well1_layer_heights <= 0) or np.any(well2_layer_heights <= 0):
+    raise ValueError("Толщины всех слоев в скважинах должны быть положительными")
+
+well1_layer_intervals = np.maximum(
+    1,
+    np.ceil(well1_layer_heights / VERTICAL_ELEMENT_SIZE - 1e-9).astype(int),
+)
+well2_layer_intervals = np.maximum(
+    1,
+    np.ceil(well2_layer_heights / VERTICAL_ELEMENT_SIZE - 1e-9).astype(int),
+)
+
+# Схеме pave нужна четная сумма интервалов на границе поверхности.
+for layer_index in range(len(well1_layer_intervals)):
+    if well1_layer_intervals[layer_index] % 2 != well2_layer_intervals[layer_index] % 2:
+        if well1_layer_intervals[layer_index] > well2_layer_intervals[layer_index]:
+            well1_layer_intervals[layer_index] += 1
+        else:
+            well2_layer_intervals[layer_index] += 1
+
+print(f"Интервалы слоев в скважине 1: {well1_layer_intervals.tolist()}")
+print(f"Интервалы слоев в скважине 2: {well2_layer_intervals.tolist()}")
+
 """ /home/antonov/Base/Research/MilenSem2D/data/dev_1_5_model_mesh_curve.jou """
 
 with open('data/dev_1_5_model_mesh_curve.jou', 'w') as f:
@@ -620,16 +658,16 @@ with open('data/dev_1_5_model_mesh_curve.jou', 'w') as f:
         f.write(f'curve {curve_id} scheme equal interval 425\n')
 
     for i, curve_id in enumerate([2] + list(range(13,525,7)) ):
-        f.write(f'curve {curve_id} scheme equal interval {layer_count_depth_left[i]}\n')
+        f.write(f'curve {curve_id} scheme equal interval {well1_layer_intervals[i]}\n')
 
     for i, curve_id in enumerate([4] + list(range(11,523,7))):
-        f.write(f'curve {curve_id} scheme equal interval {layer_count_depth_left[i]}\n')
+        f.write(f'curve {curve_id} scheme equal interval {well1_layer_intervals[i]}\n')
 
     for i, curve_id in enumerate([6] + list(range(14,526,7)) ):
-        f.write(f'curve {curve_id} scheme equal interval {layer_count_depth_right[i]}\n')
+        f.write(f'curve {curve_id} scheme equal interval {well2_layer_intervals[i]}\n')
 
     for i, curve_id in enumerate([9] + list(range(16,528,7)) ):
-        f.write(f'curve {curve_id} scheme equal interval {layer_count_depth_right[i]}\n')
+        f.write(f'curve {curve_id} scheme equal interval {well2_layer_intervals[i]}\n')
 
     f.write(f'mesh curve all\n')
 
@@ -644,10 +682,17 @@ with open('data/dev_1_5_model_mesh_surface.jou', 'w') as f:
         f.write(f'surface {surf_id} scheme map\n')
         f.write(f'mesh surface {surf_id}\n')
     for i, surf_id in enumerate(range(2,225,3)):
-        if layer_count_depth_left[i] == layer_count_depth_right[i]:
+        if well1_layer_intervals[i] == well2_layer_intervals[i]:
             f.write(f'surface {surf_id} scheme map\n')
         else:
             f.write(f'surface {surf_id} scheme pave\n')
         f.write(f'mesh surface {surf_id}\n')
 
-""" Далее мы поговорим о материале и гранусловиях. """
+""" ## Выводы задачи 3 ## """
+
+"""
+Сформированы JOU-скрипты вершин, сплайнов и сетки для 75-слойной модели.
+Вертикальная дискретизация рассчитана по толщинам слоев в двух скважинах при целевом размере элемента 10 м.
+Четность пар интервалов согласована для корректного построения центральных поверхностей схемой pave.
+Дальнейшая переработка сетки и задание материала выполняются в главах I.6–I.7.
+"""

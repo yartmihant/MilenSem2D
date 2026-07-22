@@ -1,0 +1,64 @@
+2026-07-22 18:49:30.[Info   ] FidesysCalc.Version: 8.1.2111.7475
+
+2026-07-22 18:49:30.[Info   ] Parser. FC: Start
+2026-07-22 18:49:32.[Info   ] Parser. FC: Done
+
+2026-07-22 18:49:33.[Info   ] Kernel. Initialized AgreedSmoothing
+
+2026-07-22 18:49:34.[Info   ] Kernel. Initializing resultants: Start
+2026-07-22 18:49:43.[Info   ] Kernel. Initializing resultants: Done
+
+2026-07-22 18:49:43.[Info   ] Kernel. Solving resultants: Start
+2026-07-22 18:49:48.[Info   ] Kernel. Solving resultants: Done
+
+2026-07-22 18:49:52.[Info   ] Kernel. Write results to file: Start
+2026-07-22 18:50:38.[Info   ] Kernel. Write results to file: Done
+
+2026-07-22 18:50:38.[Info   ] Kernel. Preparing matrix for step: Start
+2026-07-22 18:50:38.[Info   ] Kernel. Preparing matrix for step: Done
+
+2026-07-22 18:50:39.[Info   ] Kernel. Filling internal fields: Start
+2026-07-22 18:50:41.[Info   ] Kernel. Filling internal fields: Done
+
+2026-07-22 18:50:41.[Info   ] Kernel. Applying constraints: Start
+2026-07-22 18:50:41.[Info   ] Kernel. Applying constraints: Done
+
+2026-07-22 18:50:41.[Info   ] Kernel. Solving constraints: Start
+2026-07-22 18:50:41.[Info   ] Kernel.luq_handler: Start
+2026-07-22 18:50:41.[Info   ] Kernel.luq_handler : Done
+
+2026-07-22 18:50:41.[Info   ] Kernel. Solving constraints: Done
+
+2026-07-22 18:50:41.[Warning] Model is not fixed along X direction.
+2026-07-22 18:50:41.[Warning] Model is not fixed along Y direction.
+2026-07-22 18:50:41.[Info   ] Kernel. Initializing matrix: Start
+2026-07-22 18:50:42.[Info   ] Kernel. Initializing matrix: Done
+
+2026-07-22 18:50:42.[Info   ] Kernel. Filling matrix and internal forces: Start
+2026-07-22 18:50:45.[Info   ] Kernel. Filling matrix and internal forces: Done
+
+2026-07-22 18:50:45.[Info   ] Kernel. Filling external forces: Start
+2026-07-22 18:50:45.[Info   ] Kernel. Filling external forces: Done
+
+2026-07-22 18:50:45.[Info   ] Kernel. Applying constraints to matrix: Start
+2026-07-22 18:50:45.[Info   ] Kernel. Applying constraints to matrix: Done
+
+2026-07-22 18:50:45.[Info   ] Kernel. Preparing rhs to solve: Start
+2026-07-22 18:50:45.[Info   ] Kernel. Preparing rhs to solve: Done
+
+2026-07-22 18:50:45.[Info   ] Kernel. Preparing matrix to solve: Start
+2026-07-22 18:50:46.[Info   ] Kernel. Preparing matrix to solve: Done
+
+2026-07-22 18:50:46.[Info   ] Kernel. Solving matrix: Start
+2026-07-22 18:50:46.[Info   ]    Starting Direct Solver
+2026-07-22 18:50:54.[Info   ] Kernel. Solving matrix: Done
+
+2026-07-22 18:50:54.[Info   ] Kernel. Filling internal fields: Start
+2026-07-22 18:50:56.[Info   ] Kernel. Filling internal fields: Done
+
+2026-07-22 18:50:58.[Info   ] Kernel. Solving resultants: Start
+2026-07-22 18:51:04.[Info   ] Kernel. Solving resultants: Done
+
+2026-07-22 18:51:09.[Info   ] Kernel. Write results to file: Start
+2026-07-22 18:51:50.[Info   ] Kernel. Write results to file: Done
+

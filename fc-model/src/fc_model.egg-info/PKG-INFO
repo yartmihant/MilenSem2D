@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: fc-model
+Version: 0.1.0
+Summary: Parser and data model for Fidesys .fc files
+Author-email: Artem Antonov <artem@example.com>
+Requires-Python: >=3.8
+Requires-Dist: numpy

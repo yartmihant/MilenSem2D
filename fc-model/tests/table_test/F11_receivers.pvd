@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+  <Collection>
+    <DataSet timestep="0" step="0" part="0" file="F11_receivers/case1_step00000000.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.1006689397409721" step="146" part="0" file="F11_receivers/case1_step00000146.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.2013378794819431" step="292" part="0" file="F11_receivers/case1_step00000292.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.3020068192229137" step="438" part="0" file="F11_receivers/case1_step00000438.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.4026757589638843" step="584" part="0" file="F11_receivers/case1_step00000584.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.5033446987048549" step="730" part="0" file="F11_receivers/case1_step00000730.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.6040136384458255" step="876" part="0" file="F11_receivers/case1_step00000876.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.704682578186796" step="1022" part="0" file="F11_receivers/case1_step00001022.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.8053515179277666" step="1168" part="0" file="F11_receivers/case1_step00001168.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="0.9060204576687372" step="1314" part="0" file="F11_receivers/case1_step00001314.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+    <DataSet timestep="1" step="1451" part="0" file="F11_receivers/case1_step00001451.vtu" name="Asmb: Part: Matl:ELASTIC"/>
+  </Collection>
+</VTKFile>

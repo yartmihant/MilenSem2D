@@ -1,4 +1,4 @@
-""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая."""
+""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая. """
 
 """ ## Глава II: Построение геометрии конечно-элементной сетки """
 
@@ -47,7 +47,7 @@ SHOW_PLOTS = True  # True - показывать графики, False - тол�
 """ #### 3.2. Загрузка и анализ поверхностей """
 
 # Путь к папке с поверхностями
-surfaces_path = 'src/Depth_surfaces_for_Fidesys/'
+surfaces_path = "src/Depth_surfaces_for_Fidesys/Time_3D_surf/"
 
 # Найдем все файлы поверхностей
 surface_files = glob(os.path.join(surfaces_path, 'hrz__*.txt'))
@@ -60,6 +60,7 @@ for i, file in enumerate(surface_files, 1):
     print(f"{i:2d}. {filename}")
 
 # Функция для загрузки данных поверхности
+
 def load_surface_data(filename):
     """
     Загрузка данных поверхности из файла
@@ -96,6 +97,7 @@ for file in surface_files:
     print()
 
 # Создание карт глубин для всех поверхностей
+
 def create_depth_maps(surfaces_data):
     """
     Создание карт глубин для всех поверхностей
@@ -195,7 +197,8 @@ print("="*80)
 2. Симметричное перемещение вдоль направления 
 """
 
-# Загрузка координат скважин
+""" # Загрузка координат скважин """
+
 def load_well_coordinates(filename):
     """
     Загружает координаты скважин из файла
@@ -387,6 +390,7 @@ print(f"Скважина 1 находится на расстоянии {profile
 print(f"Скважина 2 находится на расстоянии {profile['well2_distance_from_start']:.0f} м от начала профиля")
 
 # Создание сетки интерполяции вдоль профиля
+
 def create_profile_grid(profile, step=10):
     """
     Создает регулярную сетку точек вдоль профиля с заданным шагом
@@ -423,6 +427,7 @@ expected_points = int(11750 / 10) + 1
 print(f"Ожидалось точек: {expected_points}, получено: {profile_grid['n_points']}")
 
 # Интерполяция глубин всех поверхностей вдоль профиля
+
 def interpolate_surface_along_profile(surface_data, profile_x, profile_y):
     """
     Интерполирует глубины поверхности вдоль профиля
@@ -479,6 +484,7 @@ print(f"\nИнтерполяция завершена!")
 print(f"Размер итогового массива: {all_profiles.shape} (точки x поверхности)")
 
 # Сохранение данных сечений в npz файл
+
 def save_profile_sections_data(all_profiles, profile_depths, profile_grid, surface_names, wells_final, profile):
     """
     Сохраняет данные сечений поверхностей в npz файл
@@ -529,6 +535,7 @@ for i, name in enumerate(surface_names):
 print("="*80)
 
 # Построение сводного графика со всеми сечениями поверхностей
+
 def plot_all_profiles_combined(profile_depths, profile_grid, wells_final, profile):
     """
     Строит все сечения поверхностей на одном графике для сравнения
@@ -622,6 +629,7 @@ print("-" * 70)
 """
 
 # Определение глубин пересечения поверхностей со скважиной 1
+
 def find_surface_depths_at_well(surfaces_data, well_x, well_y):
     """
     Находит глубины всех поверхностей в точке скважины через интерполяцию
@@ -703,6 +711,7 @@ Z(x) = Z₁(x) + α·[Z₂(x) - Z₁(x)]
 """
 
 # Создание базовой сетки координат для узлов модели
+
 def create_base_grid():
     """
     Создает базовые координаты сетки узлов модели
@@ -751,6 +760,7 @@ def create_base_grid():
 grid_params = create_base_grid()
 
 # Определение слоев модели между поверхностями
+
 def define_model_layers(sorted_well_depths):
     """
     Определяет слои модели между поверхностями глубин
@@ -801,6 +811,7 @@ print("=" * 80)
 print(f"Всего слоев: {len(model_layers)}")
 
 # Функция для вычисления реальных Z-координат узлов сетки
+
 def calculate_grid_z_coordinates(grid_params, model_layers, profile_depths, profile_grid):
     """
     Вычисляет реальные Z-координаты для всех узлов сетки
@@ -904,6 +915,7 @@ print(f"Z-координаты: {grid_z_coords.shape}")
 print(f"Диапазон Z: {np.min(grid_z_coords):.1f} - {np.max(grid_z_coords):.1f} м")
 
 # Визуализация полученной сетки узлов с градиентом по глубине
+
 def visualize_grid(x_coords, grid_z_coords, grid_params, model_layers):
     """
     Создает визуализацию полученной сетки узлов модели с градиентом цвета по глубине
@@ -999,6 +1011,7 @@ vis_file = visualize_grid(grid_params['x_coords'], grid_z_coords, grid_params, m
 print(f"Визуализация структуры сетки сохранена в файл: {vis_file}")
 
 # Сохранение итоговых результатов и создание отчета
+
 def save_grid_results(x_coords, grid_z_coords, grid_params, model_layers):
     """
     Сохраняет все результаты построения сетки

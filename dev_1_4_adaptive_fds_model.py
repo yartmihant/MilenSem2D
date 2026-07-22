@@ -1,4 +1,4 @@
-""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая."""
+""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая. """
 
 """ ## Глава IV: Построение сплайновой модели с адаптированной длине волны сеткой """
 
@@ -20,7 +20,6 @@
 
 import numpy as np
 
-
 # Загрузка данных профильных сечений геологических поверхностей
 
 # Загружаем файл с профильными сечениями
@@ -33,7 +32,7 @@ layers_sep=[0, 17, 30, 48, 90, 112, 121, 137, 165, 220, 222, 224, 226, 228, 230,
 import pandas as pd
 
 # Загружаем данные из CSV файла
-static_material = pd.read_csv('data/static_material.csv', sep='\t')
+static_material = pd.read_csv('src/static_material.csv', sep='\t')
 
 # Выводим информацию о загруженных данных
 print("Форма данных:", static_material.shape)
@@ -91,7 +90,6 @@ with open('model3_geom.jou', 'w') as f:
 """ Для грамотного неструктурированного мешинга нужно задать количество интервалов вдоль кривых. Зададим их в виде массива размера 18. Для этого извлечем данные о средних материалах в слое: """
 
 """ Нам удоблее будет поделить на h_max длину слоя и получить число интервалов: """
-
 
 layer_len = 11750
 
@@ -164,7 +162,6 @@ static_material
 
 SEM_DEG = 3
 
-
 with open('data/dev_1_4_model3_material.jou', 'w') as f:
     f.write(f"remove material all\n")
     f.write(f"delete block all\n")
@@ -199,7 +196,6 @@ with open('data/dev_1_4_model3_calc.jou', 'w') as f:
     f.write(f"dynamic results everytime 0.1\n")
     f.write(f"create absorption on curve {' '.join(map(str, range(4, 17*3+2, 3)))}\n")
     f.write(f"output nodalforce off energy off record3d off material off without_smoothing off fullperiodic off\n")
-
 
 """ Результат расчета дает нам достаточно грубую сейсмограмму, которую мы не будем здесь анализировать (можно посмотреть её в  model3/model3_Vx.sgy и model3/model3_Vy.sgy) """
 

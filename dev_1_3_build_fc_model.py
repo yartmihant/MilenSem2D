@@ -1,4 +1,4 @@
-""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая."""
+""" # Численное моделирование распространения сейсмических волн в двумерной среде MILEN SEM 2D. Часть первая. """
 
 """ ## Глава III: Построение модели в формате fc """
 
@@ -12,13 +12,20 @@
 
 """ Загружаем библиотеки, включая fc_model """
 
-import numpy as np
-import sys
-import matplotlib.pyplot as plt
-from pathlib import Path
-from typing import Tuple, List, Dict, Any
+from typing import List
 
-from fc_model import FCModel, FCMaterial, FCBlock, FCMaterialProperty, FCData, FCElement
+import matplotlib.pyplot as plt
+import numpy as np
+
+from fc_model import (
+    FCBlock,
+    FCData,
+    FCDependencyColumn,
+    FCElement,
+    FCMaterialProperty,
+    FCModel,
+    FCValue,
+)
 
 """ Загружаем данные """
 
@@ -44,6 +51,29 @@ def load_original_data():
 # Загрузка оригинальных данных
 kriging_params, x_coords, z_coords = load_original_data()
 
+""" Формируем табличные свойства материала по идентификаторам элементов """
+
+def create_element_table(values, element_ids):
+    """Создает FCData с табличной зависимостью от ID элемента."""
+    values_array = np.asarray(values, dtype=np.float64)
+    element_ids_array = np.asarray(element_ids, dtype=np.float64)
+
+    if values_array.shape != element_ids_array.shape:
+        raise ValueError(
+            "Число значений свойства должно совпадать с числом ID элементов"
+        )
+
+    element_id_column = FCDependencyColumn(
+        type="TABULAR_ELEMENT_ID",
+        value=FCValue(element_ids_array, "array"),
+    )
+
+    return FCData(
+        value=FCValue(values_array, "array"),
+        type_code="TABLE",
+        table=[element_id_column],
+    )
+
 """ Пишем функцию генерации fc-моделей """
 
 def build_fc_model_from_arrays(x_coords, z_coords, vp, density, vs, output_path):
@@ -60,11 +90,8 @@ def build_fc_model_from_arrays(x_coords, z_coords, vp, density, vs, output_path)
     """
     print(f"Построение FC модели: {vp.shape[0]}×{vp.shape[1]} элементов")
 
-    # Объединяем свойства в один массив
-    kriging_params = np.stack([vp, density, vs], axis=2)
-
     # Создание модели
-    model = FCModel.load()
+    model = FCModel()
 
     # Настройки для 2D упругой модели
     model.settings = {
@@ -98,8 +125,6 @@ def build_fc_model_from_arrays(x_coords, z_coords, vp, density, vs, output_path)
     # Добавление элементов
     element_id = 1
     elements_created = 0
-
-    layers = [0, 17, 30, 48, 90, 112, 121, 137, 165, 220, 222, 224, 226, 228, 230, 232, 240, 242]
 
     for i in range(nx - 1):
         for j in range(nz - 1):
@@ -140,46 +165,41 @@ def build_fc_model_from_arrays(x_coords, z_coords, vp, density, vs, output_path)
     poisson_ratios = (vp2 - 2 * vs2) / (2 * (vp2 - vs2))
     densities = density_kgm3
 
-    elements_ids = np.arange(1, num_elements + 1, dtype=np.float64)
+    element_ids = np.arange(1, num_elements + 1, dtype=np.float64)
 
     # Создаем материал с табличными свойствами
-    material_dict = {
-        'id': 1,
-        'name': f'model_{nx-1}x{nz-1}_material',
-    }
-
-    material = FCMaterial(material_dict)
+    material = model.add_material(f'model_{nx-1}x{nz-1}_material')
     material.properties = {
         'elasticity': [[
             FCMaterialProperty(
-                'HOOK', "YOUNG_MODULE",
-                FCData(young_moduli.astype(np.float64), [10], [elements_ids])
+                type='HOOK',
+                name="YOUNG_MODULE",
+                data=create_element_table(young_moduli, element_ids),
             ),
             FCMaterialProperty(
-                'HOOK', "POISSON_RATIO",
-                FCData(poisson_ratios.astype(np.float64), [10], [elements_ids])
-            )
+                type='HOOK',
+                name="POISSON_RATIO",
+                data=create_element_table(poisson_ratios, element_ids),
+            ),
         ]],
         'common': [[
             FCMaterialProperty(
-                'USUAL', "DENSITY",
-                FCData(densities.astype(np.float64), [10], [elements_ids])
-            )
-        ]]
+                type='USUAL',
+                name="DENSITY",
+                data=create_element_table(densities, element_ids),
+            ),
+        ]],
     }
 
-    model.materials[1] = material
-
     # Создание блока
-    block = FCBlock({
-        'id': 1,
-        'cs_id': 0,
-        'material_id': 1,
-        'property_id': 0
-    })
-
-
-    model.blocks[1] = block
+    base_coordinate_system_id = min(model.coordinate_systems)
+    block = FCBlock(
+        id=1,
+        cs_id=base_coordinate_system_id,
+        material_id=material.id,
+        property_id=0,
+    )
+    model.blocks[block.id] = block
 
     # Сохранение модели
     print(f"Сохранение модели в {output_path}...")
@@ -363,7 +383,6 @@ def build_adaptive_fc_model(kriging_params: np.ndarray, x_coords: np.ndarray, z_
 
     return elements_count, nodes_count, merge_info
 
-
 def merge_similar_layers(coarse_kriging: np.ndarray, coarse_z: np.ndarray,
                                    threshold_percent: float, max_merge_layers: int):
     """
@@ -467,9 +486,6 @@ def merge_similar_layers(coarse_kriging: np.ndarray, coarse_z: np.ndarray,
     print(f"Результат: {len(merged_layers)} объединенных слоев из {nz} оригинальных")
 
     return merged_kriging, merged_z_array_fixed, merge_info
-
-
-
 
 def create_adaptive_models(thresholds):
     """
@@ -594,6 +610,7 @@ def extract_density_profile_at_x(density_array: np.ndarray, x_coords: np.ndarray
     z_values = z_coords[z_center_idx, :-1]  # Z-координаты элементов (без последней границы)
 
     return z_values, density_profile
+
 def plot_density_profiles_comparison(thresholds: List[float] = [1.0, 2.0, 3.0, 4.0, 5.0]):
     """
     Строит график сравнения профилей плотности для всех моделей вдоль X=4250.
@@ -697,7 +714,6 @@ def plot_density_profiles_comparison(thresholds: List[float] = [1.0, 2.0, 3.0, 4
 
 plot_density_profiles_comparison([1,2,4])
 
-
 """
 Будем использовать data/dev_1_3_model1_50a4p.fc (4% сглаживания) как каноническую модель *data/dev_1_3_model1.fc*
 
@@ -725,7 +741,7 @@ plot_density_profiles_comparison([1,2,4])
 
 Были выполнены следующие задачи:
 1. Загрузка данных материалов и геометрии сетки из предыдущих глав
-2. Построение моделей с различными уровнями огрубления (10×10, 25×25, 50×50 м)
+2. Построение моделей с различными уровнями огрубления (10×10, 50×10, 50×40 м)
 3. Создание адаптивных моделей с автоматическим объединением слоев по критерию схожести свойств
 4. Выбор оптимальной модели data/dev_1_3_model1_50x10.fc с огрублением до 50×10 м
 
