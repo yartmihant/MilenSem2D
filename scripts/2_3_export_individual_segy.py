@@ -17,7 +17,7 @@ import segyio
 """ ## Параметры экспорта ## """
 
 CONFIG = {
-    "npz_dir": Path("data/dev_2_3/research_seismic_sweep_7_1_0_full"),
+    "npz_dir": Path("data/dev_2_3/line_v4"),
     "components": ("vx", "vy"),
     "output_name": "seismogram_{component}.sgy",
     "sample_count": 2001,
@@ -83,6 +83,8 @@ def validate_npz_arrays(
         raise ValueError(f"{source_dir / 'data.npz'}: sensor_x и seismo_times должны быть одномерными")
     if len(sensor_x) == 0 or input_sample_count == 0:
         raise ValueError(f"{source_dir / 'data.npz'}: обнаружена пустая координатная или временная ось")
+    if not np.isfinite(sensor_x).all() or not np.isfinite(seismo_times).all():
+        raise ValueError(f"{source_dir / 'data.npz'}: координаты или временная ось содержат NaN/Inf")
     if not np.all(np.diff(sensor_x) > 0):
         raise ValueError(f"{source_dir / 'data.npz'}: координаты приёмников не возрастают строго")
 
@@ -93,12 +95,15 @@ def validate_npz_arrays(
         )
 
     for component in CONFIG["components"]:
-        actual_shape = data[f"seismo_{component}"].shape
+        seismogram = data[f"seismo_{component}"]
+        actual_shape = seismogram.shape
         if actual_shape != expected_shape:
             raise ValueError(
                 f"{source_dir / 'data.npz'}: seismo_{component}{actual_shape}, "
                 f"ожидается {expected_shape}"
             )
+        if not np.isfinite(seismogram).all():
+            raise ValueError(f"{source_dir / 'data.npz'}: seismo_{component} содержит NaN/Inf")
 
     if input_sample_count > 1:
         actual_interval_us = float(np.median(np.diff(seismo_times)) * 1_000_000)

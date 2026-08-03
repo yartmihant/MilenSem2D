@@ -83,8 +83,8 @@ import segyio
 
 CONFIG = {
     # Каталог с NPZ-данными: research_seismic_sweep/x_{pos}/data.npz
-    "npz_dir": Path("data/dev_2_3/research_seismic_sweep_7_1_0_full"),
-    "output_name": "output_line_v3_{component}_{spread}.sgy",
+    "npz_dir": Path("data/dev_2_3/line_v4"),
+    "output_name": "output_line_v4_{component}_{spread}.sgy",
     # Каталог для выходных SEG-Y
     "output_dir": Path("data/dev_2_3"),
 
@@ -156,7 +156,17 @@ def load_npz(npz_dir: Path, source_x: int) -> dict:
     path = npz_dir / f"x_{source_x}" / "data.npz"
     if not path.exists():
         raise FileNotFoundError(f"NPZ не найден: {path}")
-    return dict(np.load(path))
+    data = dict(np.load(path))
+    required_keys = {"x_center", "sensor_x", "seismo_times", "seismo_vx", "seismo_vy"}
+    missing_keys = sorted(required_keys.difference(data))
+    if missing_keys:
+        raise KeyError(f"{path}: отсутствуют поля {missing_keys}")
+    if not np.isclose(float(data["x_center"]), source_x, atol=1e-6, rtol=0.0):
+        raise ValueError(f"{path}: x_center не совпадает с координатой источника")
+    for field in required_keys:
+        if not np.isfinite(data[field]).all():
+            raise ValueError(f"{path}: поле {field} содержит NaN/Inf")
+    return data
 
 
 def extract_trace(
