@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEMGPU — Elastic pressure animation</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090d12;
+      --panel: #111821;
+      --panel-2: #17212d;
+      --line: #2a3949;
+      --text: #e8eef5;
+      --muted: #91a2b5;
+      --accent: #53b8ff;
+      --accent-strong: #168bd8;
+      --danger: #ff8d8d;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 18px;
+    }
+
+    .player {
+      width: min(1600px, 100%);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+      box-shadow: 0 22px 70px rgb(0 0 0 / 38%);
+    }
+
+    .header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .title {
+      min-width: 0;
+      font-size: 15px;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .stage {
+      position: relative;
+      display: grid;
+      min-height: 260px;
+      place-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(45deg, #0c1219 25%, transparent 25%) 0 0 / 20px 20px,
+        linear-gradient(45deg, transparent 75%, #0c1219 75%) 0 0 / 20px 20px,
+        linear-gradient(45deg, transparent 75%, #0c1219 75%) 10px -10px / 20px 20px,
+        linear-gradient(45deg, #0c1219 25%, #0a0f15 25%) 10px -10px / 20px 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .stage:fullscreen {
+      background: #000;
+    }
+
+    .stage img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: calc(100vh - 210px);
+      object-fit: contain;
+    }
+
+    .stage:fullscreen img {
+      width: 100vw;
+      height: 100vh;
+      max-height: none;
+    }
+
+    .overlay {
+      position: absolute;
+      right: 12px;
+      bottom: 10px;
+      padding: 5px 8px;
+      border: 1px solid rgb(255 255 255 / 14%);
+      border-radius: 6px;
+      background: rgb(4 8 12 / 76%);
+      color: #d9e7f4;
+      font: 12px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      pointer-events: none;
+    }
+
+    .error {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+      padding: 24px;
+      background: rgb(9 13 18 / 90%);
+      color: var(--danger);
+      text-align: center;
+    }
+
+    .error.visible {
+      display: grid;
+    }
+
+    .controls {
+      display: grid;
+      gap: 11px;
+      padding: 13px 16px 15px;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: auto minmax(100px, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .time-label {
+      min-width: 72px;
+      color: var(--muted);
+      font: 12px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-align: center;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px 14px;
+    }
+
+    .button-group,
+    .option-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+    }
+
+    button,
+    select {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel-2);
+      color: var(--text);
+      font: inherit;
+    }
+
+    button {
+      min-width: 38px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    button:hover,
+    select:hover {
+      border-color: #466077;
+      background: #1c2936;
+    }
+
+    button:focus-visible,
+    select:focus-visible,
+    input:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .play {
+      min-width: 76px;
+      border-color: var(--accent-strong);
+      background: #123c58;
+    }
+
+    select {
+      padding: 5px 26px 5px 9px;
+      cursor: pointer;
+    }
+
+    label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding: 0;
+      }
+
+      .player {
+        min-height: 100vh;
+        border: 0;
+        border-radius: 0;
+      }
+
+      .header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .stage img {
+        max-height: 60vh;
+      }
+
+      .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="player" aria-label="Плеер анимации упругого давления">
+    <header class="header">
+      <div class="title">SEMGPU · Elastic pressure</div>
+      <div class="subtitle">source x=3700 m · fixed LUT ±1.0e5 Pa · 401 frames</div>
+    </header>
+
+    <section class="stage" id="stage" title="Клик: воспроизведение / пауза">
+      <img id="frameImage" alt="Кадр поля упругого давления" draggable="false">
+      <div class="overlay" id="overlay">frame 00000 · t=0.000 s</div>
+      <div class="error" id="errorMessage"></div>
+    </section>
+
+    <section class="controls">
+      <div class="timeline">
+        <span class="time-label" id="currentTime">0.000 s</span>
+        <input id="timeline" type="range" min="0" max="400" step="1" value="0" aria-label="Номер кадра">
+        <span class="time-label">4.000 s</span>
+      </div>
+
+      <div class="toolbar">
+        <div class="button-group">
+          <button id="firstButton" type="button" title="Первый кадр (Home)">|◀</button>
+          <button id="previousButton" type="button" title="Предыдущий кадр (←)">◀</button>
+          <button class="play" id="playButton" type="button" title="Воспроизведение / пауза (Space)">▶ Play</button>
+          <button id="nextButton" type="button" title="Следующий кадр (→)">▶</button>
+          <button id="lastButton" type="button" title="Последний кадр (End)">▶|</button>
+        </div>
+
+        <div class="option-group">
+          <label>
+            Скорость
+            <select id="speedSelect" aria-label="Скорость воспроизведения">
+              <option value="0.25">0.25× · 5 fps</option>
+              <option value="0.5">0.5× · 10 fps</option>
+              <option value="1" selected>1× · 20 fps</option>
+              <option value="1.5">1.5× · 30 fps</option>
+              <option value="2">2× · 40 fps</option>
+            </select>
+          </label>
+          <label><input id="loopCheckbox" type="checkbox" checked> Цикл</label>
+          <button id="openButton" type="button" title="Открыть текущий PNG">PNG</button>
+          <button id="fullscreenButton" type="button" title="Полноэкранный режим">⛶</button>
+          <span class="status" id="status">buffer: 0</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    "use strict";
+
+    const config = Object.freeze({
+      frameDirectory: "x_3700/elastic_pressure_png",
+      framePrefix: "elastic_pressure_",
+      frameCount: 401,
+      frameDigits: 5,
+      frameDt: 0.01,
+      baseFps: 20,
+      preloadBehind: 2,
+      preloadAhead: 8,
+    });
+
+    const elements = {
+      stage: document.getElementById("stage"),
+      image: document.getElementById("frameImage"),
+      overlay: document.getElementById("overlay"),
+      error: document.getElementById("errorMessage"),
+      timeline: document.getElementById("timeline"),
+      currentTime: document.getElementById("currentTime"),
+      play: document.getElementById("playButton"),
+      first: document.getElementById("firstButton"),
+      previous: document.getElementById("previousButton"),
+      next: document.getElementById("nextButton"),
+      last: document.getElementById("lastButton"),
+      speed: document.getElementById("speedSelect"),
+      loop: document.getElementById("loopCheckbox"),
+      open: document.getElementById("openButton"),
+      fullscreen: document.getElementById("fullscreenButton"),
+      status: document.getElementById("status"),
+    };
+
+    const state = {
+      frame: 0,
+      playing: false,
+      speed: 1,
+      lastTick: 0,
+      accumulator: 0,
+      animationRequest: 0,
+    };
+
+    const imageCache = new Map();
+
+    function clamp(value, minimum, maximum) {
+      return Math.min(Math.max(value, minimum), maximum);
+    }
+
+    function frameUrl(frame) {
+      const index = String(frame).padStart(config.frameDigits, "0");
+      return `${config.frameDirectory}/${config.framePrefix}${index}.png`;
+    }
+
+    function frameTime(frame) {
+      return frame * config.frameDt;
+    }
+
+      function updateStatus() {
+        const fps = config.baseFps * state.speed;
+        const fpsLabel = Number.isInteger(fps) ? fps.toString() : fps.toFixed(1);
+        elements.status.textContent = `buffer: ${imageCache.size} · ${fpsLabel} fps`;
+      }
+
+    function preloadAround(center) {
+      const keep = new Set();
+      const start = Math.max(0, center - config.preloadBehind);
+      const end = Math.min(config.frameCount - 1, center + config.preloadAhead);
+
+      for (let frame = start; frame <= end; frame += 1) {
+        keep.add(frame);
+        if (!imageCache.has(frame)) {
+          const image = new Image();
+          image.decoding = "async";
+          image.src = frameUrl(frame);
+          imageCache.set(frame, image);
+        }
+      }
+
+      for (const [frame, image] of imageCache) {
+        if (!keep.has(frame)) {
+          image.src = "";
+          imageCache.delete(frame);
+        }
+      }
+      updateStatus();
+    }
+
+    function setFrame(requestedFrame) {
+      const nextFrame = clamp(Math.round(requestedFrame), 0, config.frameCount - 1);
+      state.frame = nextFrame;
+      elements.timeline.value = String(nextFrame);
+
+      const time = frameTime(nextFrame);
+      const paddedFrame = String(nextFrame).padStart(config.frameDigits, "0");
+      elements.currentTime.textContent = `${time.toFixed(3)} s`;
+      elements.overlay.textContent = `frame ${paddedFrame} · t=${time.toFixed(3)} s`;
+      elements.error.classList.remove("visible");
+      elements.image.src = frameUrl(nextFrame);
+      preloadAround(nextFrame);
+    }
+
+    function setPlaying(playing) {
+      state.playing = playing;
+      elements.play.textContent = playing ? "❚❚ Pause" : "▶ Play";
+      elements.play.setAttribute("aria-pressed", String(playing));
+      state.lastTick = 0;
+      state.accumulator = 0;
+
+      if (playing) {
+        cancelAnimationFrame(state.animationRequest);
+        state.animationRequest = requestAnimationFrame(animationTick);
+      } else {
+        cancelAnimationFrame(state.animationRequest);
+      }
+    }
+
+    function advance(step) {
+      const target = state.frame + step;
+      if (target >= config.frameCount) {
+        if (elements.loop.checked) {
+          setFrame(target % config.frameCount);
+        } else {
+          setFrame(config.frameCount - 1);
+          setPlaying(false);
+        }
+        return;
+      }
+      if (target < 0) {
+        setFrame(0);
+        return;
+      }
+      setFrame(target);
+    }
+
+    function animationTick(timestamp) {
+      if (!state.playing) {
+        return;
+      }
+      if (state.lastTick === 0) {
+        state.lastTick = timestamp;
+      }
+
+      state.accumulator += timestamp - state.lastTick;
+      state.lastTick = timestamp;
+      const interval = 1000 / (config.baseFps * state.speed);
+      if (state.accumulator >= interval) {
+        const steps = Math.max(1, Math.floor(state.accumulator / interval));
+        state.accumulator %= interval;
+        advance(steps);
+      }
+      state.animationRequest = requestAnimationFrame(animationTick);
+    }
+
+    function openCurrentFrame() {
+      const anchor = document.createElement("a");
+      anchor.href = frameUrl(state.frame);
+      anchor.target = "_blank";
+      anchor.rel = "noopener";
+      anchor.click();
+    }
+
+    async function toggleFullscreen() {
+      if (document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else {
+        await elements.stage.requestFullscreen();
+      }
+    }
+
+    elements.image.addEventListener("load", () => {
+      elements.error.classList.remove("visible");
+    });
+
+    elements.image.addEventListener("error", () => {
+      elements.error.textContent = `Не удалось загрузить ${frameUrl(state.frame)}`;
+      elements.error.classList.add("visible");
+      setPlaying(false);
+    });
+
+    elements.stage.addEventListener("click", () => setPlaying(!state.playing));
+    elements.timeline.addEventListener("input", (event) => setFrame(Number(event.target.value)));
+    elements.play.addEventListener("click", () => setPlaying(!state.playing));
+    elements.first.addEventListener("click", () => setFrame(0));
+    elements.previous.addEventListener("click", () => advance(-1));
+    elements.next.addEventListener("click", () => advance(1));
+    elements.last.addEventListener("click", () => setFrame(config.frameCount - 1));
+    elements.speed.addEventListener("change", (event) => {
+      state.speed = Number(event.target.value);
+      state.lastTick = 0;
+      state.accumulator = 0;
+      updateStatus();
+    });
+    elements.open.addEventListener("click", openCurrentFrame);
+    elements.fullscreen.addEventListener("click", () => {
+      toggleFullscreen().catch((error) => {
+        elements.error.textContent = `Fullscreen error: ${error.message}`;
+        elements.error.classList.add("visible");
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      const activeTag = document.activeElement?.tagName;
+      if (activeTag === "INPUT" || activeTag === "SELECT") {
+        return;
+      }
+      if (event.code === "Space") {
+        event.preventDefault();
+        setPlaying(!state.playing);
+      } else if (event.code === "ArrowLeft") {
+        event.preventDefault();
+        advance(-1);
+      } else if (event.code === "ArrowRight") {
+        event.preventDefault();
+        advance(1);
+      } else if (event.code === "Home") {
+        event.preventDefault();
+        setFrame(0);
+      } else if (event.code === "End") {
+        event.preventDefault();
+        setFrame(config.frameCount - 1);
+      }
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        setPlaying(false);
+      }
+    });
+
+    setFrame(0);
+  </script>
+</body>
+</html>
