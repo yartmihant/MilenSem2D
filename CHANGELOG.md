@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.0.69 [2026-09-01 13:22:10]
+
+### Добавлено
+- `data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/` — 26 PNG-кадров встроенной GIF-анимации расчёта MSU SEM для источника X=3700 м.
+- `data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/` — 26 PNG-кадров встроенной GIF-анимации расчёта Tesseral FD для источника X=3700 м.
+- `data/dev_2_3/x3700_elastic_wavefield_msu_sem.mp4` — MP4-видео расчёта MSU SEM, собранное из PNG-кадров с исходной длительностью 4,68 с.
+- `data/dev_2_3/x3700_elastic_wavefield_tesseral_fd.mp4` — MP4-видео расчёта Tesseral FD, собранное из PNG-кадров с исходной длительностью 4,68 с.
+
 ## 0.0.71 [2025-09-05 12:00:00]
 
 ### Добавлено

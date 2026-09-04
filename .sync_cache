@@ -749,8 +749,8 @@
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2026-08-03T15:40:12.639421",
-      "md5": "12935f4461a22c68350d85da9eba9851",
+      "modified": "2026-08-11T19:13:38.087763",
+      "md5": "f84ff27417ddee8cb83061e3a975eabe",
       "type": "file",
       "size": 6
     },
@@ -819,10 +819,10 @@
     },
     "CHANGELOG.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/CHANGELOG.md",
-      "modified": "2026-08-03T15:40:12.642421",
-      "md5": "3c061e0b6b8b5fa84c8ce7a717f9fbb1",
+      "modified": "2026-08-11T19:13:38.090763",
+      "md5": "bfb833f227a95a53953cde0f0491bcb7",
       "type": "file",
-      "size": 7659
+      "size": 7646
     },
     "model3_mesh.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/model3_mesh.jou",
@@ -13382,6 +13382,2813 @@
       "type": "file",
       "size": 1360
     },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00040.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00040.png",
+      "modified": "2026-08-11T17:55:21",
+      "md5": "a8297b180e1540a7f2a156a517b7da11",
+      "type": "file",
+      "size": 196148
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00372.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00372.png",
+      "modified": "2026-08-11T18:49:32",
+      "md5": "15a06327a83a16c9c261f32870c9c410",
+      "type": "file",
+      "size": 1723799
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00170.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00170.png",
+      "modified": "2026-08-11T18:15:56",
+      "md5": "828a2ce7fdf9e08e238a080ab2455a34",
+      "type": "file",
+      "size": 1427740
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00368.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00368.png",
+      "modified": "2026-08-11T18:48:52",
+      "md5": "f5dcd02d5de0d0b969ef75516cbafdde",
+      "type": "file",
+      "size": 1730712
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00384.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00384.png",
+      "modified": "2026-08-11T18:51:32",
+      "md5": "0fa42a87b98e2e0cd3cd5ddd7481215b",
+      "type": "file",
+      "size": 1713205
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00038.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00038.png",
+      "modified": "2026-08-11T17:55:03",
+      "md5": "7dddacbdfdd0f927adbbe05c75c9ddbb",
+      "type": "file",
+      "size": 188144
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00321.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00321.png",
+      "modified": "2026-08-11T18:40:55",
+      "md5": "8a826cf8b6c597a5b692a48ba13c0725",
+      "type": "file",
+      "size": 1814539
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00196.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00196.png",
+      "modified": "2026-08-11T18:20:11",
+      "md5": "8727110a9e78c09add16a323dc7ff329",
+      "type": "file",
+      "size": 1542635
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00317.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00317.png",
+      "modified": "2026-08-11T18:40:15",
+      "md5": "fe005af096a9127505fd152c855406f3",
+      "type": "file",
+      "size": 1812189
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00398.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00398.png",
+      "modified": "2026-08-11T18:53:53",
+      "md5": "aeb1f93b8c8405707a46df0056bf0b71",
+      "type": "file",
+      "size": 1709721
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00182.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00182.png",
+      "modified": "2026-08-11T18:17:53",
+      "md5": "f09a1703baab2f2df50e16f47fbf0b73",
+      "type": "file",
+      "size": 1494620
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00334.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00334.png",
+      "modified": "2026-08-11T18:43:06",
+      "md5": "949f175909fe26b60f20e0cd793fa0d4",
+      "type": "file",
+      "size": 1801525
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00218.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00218.png",
+      "modified": "2026-08-11T18:23:47",
+      "md5": "899bc90d8fee87bceb2a65c4004f93a2",
+      "type": "file",
+      "size": 1600380
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00310.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00310.png",
+      "modified": "2026-08-11T18:39:05",
+      "md5": "5ac0d74fec046e9169a21cad7b7ef32f",
+      "type": "file",
+      "size": 1796550
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00308.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00308.png",
+      "modified": "2026-08-11T18:38:45",
+      "md5": "095c36cd50a1079c6bd1658f1d59a522",
+      "type": "file",
+      "size": 1795759
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00343.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00343.png",
+      "modified": "2026-08-11T18:44:38",
+      "md5": "7f2915900a62f11313971be41720975a",
+      "type": "file",
+      "size": 1782833
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00373.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00373.png",
+      "modified": "2026-08-11T18:49:42",
+      "md5": "8a7450ec842f1bc56250913c7d219b4b",
+      "type": "file",
+      "size": 1718257
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00290.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00290.png",
+      "modified": "2026-08-11T18:35:44",
+      "md5": "29a57938a17cc32a1fc1615a62ad3d9b",
+      "type": "file",
+      "size": 1775126
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00394.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00394.png",
+      "modified": "2026-08-11T18:53:13",
+      "md5": "72f614e02461107ebf1261f6edf8a089",
+      "type": "file",
+      "size": 1705021
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00288.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00288.png",
+      "modified": "2026-08-11T18:35:24",
+      "md5": "e593f7735b401b0344c6765c47d94b1c",
+      "type": "file",
+      "size": 1772833
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00311.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00311.png",
+      "modified": "2026-08-11T18:39:15",
+      "md5": "0c2fd53af1c7e3d054f2316928328ed2",
+      "type": "file",
+      "size": 1797008
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00365.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00365.png",
+      "modified": "2026-08-11T18:48:21",
+      "md5": "9bde40657ec248874e0187d03c4e4341",
+      "type": "file",
+      "size": 1734852
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00158.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00158.png",
+      "modified": "2026-08-11T18:14:00",
+      "md5": "4cbe0e45dded25257575bec3666e2598",
+      "type": "file",
+      "size": 1344709
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00138.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00138.png",
+      "modified": "2026-08-11T18:10:46",
+      "md5": "7997ab12a69f1454606026f745b6290b",
+      "type": "file",
+      "size": 1204737
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00058.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00058.png",
+      "modified": "2026-08-11T17:58:08",
+      "md5": "6fae09f46b545093e7c21e7617fdd9de",
+      "type": "file",
+      "size": 304399
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00205.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00205.png",
+      "modified": "2026-08-11T18:21:39",
+      "md5": "6884a3ec97957fa0ef4dc3fbe031126d",
+      "type": "file",
+      "size": 1569819
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00221.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00221.png",
+      "modified": "2026-08-11T18:24:17",
+      "md5": "c110ddce748a50bff25cc6d03000b02f",
+      "type": "file",
+      "size": 1611711
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00282.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00282.png",
+      "modified": "2026-08-11T18:34:24",
+      "md5": "18530712fffe2e77008ea62eac3fad6a",
+      "type": "file",
+      "size": 1770832
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00030.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00030.png",
+      "modified": "2026-08-11T17:53:48",
+      "md5": "be012873faea94adf462df370e686387",
+      "type": "file",
+      "size": 152275
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00049.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00049.png",
+      "modified": "2026-08-11T17:56:45",
+      "md5": "69ecad869da6b45c4ad1f28517b2045a",
+      "type": "file",
+      "size": 246955
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00107.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00107.png",
+      "modified": "2026-08-11T18:05:50",
+      "md5": "9c24bb754ec5079dc7c2c6545c16775d",
+      "type": "file",
+      "size": 846104
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00168.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00168.png",
+      "modified": "2026-08-11T18:15:37",
+      "md5": "6090ada0eca24a585dd61b1b2e065e47",
+      "type": "file",
+      "size": 1416877
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00005.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00005.png",
+      "modified": "2026-08-11T17:49:58",
+      "md5": "d8ec6898944d69cca66e2d2015ff90d9",
+      "type": "file",
+      "size": 88089
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00151.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00151.png",
+      "modified": "2026-08-11T18:12:52",
+      "md5": "56594d4fcd84de20c1a0cc1126236122",
+      "type": "file",
+      "size": 1296120
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00123.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00123.png",
+      "modified": "2026-08-11T18:08:22",
+      "md5": "35d86083a077cea74931918738e04395",
+      "type": "file",
+      "size": 1059600
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00006.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00006.png",
+      "modified": "2026-08-11T17:50:07",
+      "md5": "bfa9a565ac5209271d7cec13598eb23b",
+      "type": "file",
+      "size": 89722
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00263.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00263.png",
+      "modified": "2026-08-11T18:31:14",
+      "md5": "e2b30e2c9129baf0a0824ad83f17f3ad",
+      "type": "file",
+      "size": 1740708
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00125.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00125.png",
+      "modified": "2026-08-11T18:08:41",
+      "md5": "8a3ac9a61535c96aff82a6f133f9759a",
+      "type": "file",
+      "size": 1081397
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00270.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00270.png",
+      "modified": "2026-08-11T18:32:24",
+      "md5": "dd7111ad75afb08bbea7ff1c5e38e207",
+      "type": "file",
+      "size": 1750467
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00176.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00176.png",
+      "modified": "2026-08-11T18:16:55",
+      "md5": "3c7af6259829b8e8bcc3bb933bf1559a",
+      "type": "file",
+      "size": 1463971
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00211.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00211.png",
+      "modified": "2026-08-11T18:22:38",
+      "md5": "c3b8dbd35124f4efb8c5ba633b4cfd4e",
+      "type": "file",
+      "size": 1584802
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00137.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00137.png",
+      "modified": "2026-08-11T18:10:37",
+      "md5": "6e830a0e7d42de46a0d326997b827ebb",
+      "type": "file",
+      "size": 1197822
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00212.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00212.png",
+      "modified": "2026-08-11T18:22:48",
+      "md5": "f3ca6887614ad77f94abc63500c3524a",
+      "type": "file",
+      "size": 1585073
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00094.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00094.png",
+      "modified": "2026-08-11T18:03:47",
+      "md5": "40ece8e57950df92bdbc0215e4ecaba7",
+      "type": "file",
+      "size": 680065
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00074.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00074.png",
+      "modified": "2026-08-11T18:00:39",
+      "md5": "2d8f3f10ab3d1c4af2387301cc9e9f25",
+      "type": "file",
+      "size": 438046
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00338.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00338.png",
+      "modified": "2026-08-11T18:43:47",
+      "md5": "43f43028d72085fe598d5859bdd13c3b",
+      "type": "file",
+      "size": 1790659
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00156.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00156.png",
+      "modified": "2026-08-11T18:13:40",
+      "md5": "b4a7f83bd6edd68a0efccf1cfaa2d524",
+      "type": "file",
+      "size": 1333184
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00283.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00283.png",
+      "modified": "2026-08-11T18:34:34",
+      "md5": "65ec46b009a3ab8c9d7559f07e69a547",
+      "type": "file",
+      "size": 1773066
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00276.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00276.png",
+      "modified": "2026-08-11T18:33:24",
+      "md5": "66df570d4d9c54c97baeff177302e8e7",
+      "type": "file",
+      "size": 1758366
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00160.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00160.png",
+      "modified": "2026-08-11T18:14:19",
+      "md5": "a921350c4a21012dbae3aa66e681443d",
+      "type": "file",
+      "size": 1357815
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00314.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00314.png",
+      "modified": "2026-08-11T18:39:45",
+      "md5": "c4881074a15ae4ab023a857228eaa14d",
+      "type": "file",
+      "size": 1802709
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00104.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00104.png",
+      "modified": "2026-08-11T18:05:21",
+      "md5": "90a7f4c4c841c3f219ab1aaf931b6aff",
+      "type": "file",
+      "size": 806233
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00083.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00083.png",
+      "modified": "2026-08-11T18:02:03",
+      "md5": "24e7d9b3aea87fe3c30d90f48a783f3e",
+      "type": "file",
+      "size": 537113
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00274.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00274.png",
+      "modified": "2026-08-11T18:33:04",
+      "md5": "bad4af949660f1e37beec9da570f0e3f",
+      "type": "file",
+      "size": 1756307
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00133.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00133.png",
+      "modified": "2026-08-11T18:09:58",
+      "md5": "006b27448bbb5dbbde0e6d6d01495487",
+      "type": "file",
+      "size": 1168327
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00323.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00323.png",
+      "modified": "2026-08-11T18:41:15",
+      "md5": "e49da87dc2b29bd1d53533b2cc97f6c8",
+      "type": "file",
+      "size": 1817633
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00019.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00019.png",
+      "modified": "2026-08-11T17:52:07",
+      "md5": "81647f54195594f84d16f2cc8bba85f4",
+      "type": "file",
+      "size": 115528
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00064.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00064.png",
+      "modified": "2026-08-11T17:59:05",
+      "md5": "0f40cb06373e5417a7dcf136a34217b1",
+      "type": "file",
+      "size": 349447
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00109.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00109.png",
+      "modified": "2026-08-11T18:06:09",
+      "md5": "9317de7cf9927dd6d8e111027c85218d",
+      "type": "file",
+      "size": 876231
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00246.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00246.png",
+      "modified": "2026-08-11T18:28:25",
+      "md5": "075e51529cb6ebd061224a38a559db08",
+      "type": "file",
+      "size": 1695855
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00126.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00126.png",
+      "modified": "2026-08-11T18:08:51",
+      "md5": "78998f15f56234a9b2e39f119b5481ca",
+      "type": "file",
+      "size": 1095262
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00084.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00084.png",
+      "modified": "2026-08-11T18:02:13",
+      "md5": "54f5df050c50683e3b7578f7328beb97",
+      "type": "file",
+      "size": 546444
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00356.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00356.png",
+      "modified": "2026-08-11T18:46:50",
+      "md5": "52583b2371d757d72c2b659fe5e34348",
+      "type": "file",
+      "size": 1746438
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00260.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00260.png",
+      "modified": "2026-08-11T18:30:45",
+      "md5": "733d3b945e8b6a5a0584a5f37c56424f",
+      "type": "file",
+      "size": 1737605
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00371.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00371.png",
+      "modified": "2026-08-11T18:49:22",
+      "md5": "85d6c065635a7c7c57f411884bc4250b",
+      "type": "file",
+      "size": 1725599
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00012.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00012.png",
+      "modified": "2026-08-11T17:51:02",
+      "md5": "bbb72f8135fe8f249062172d652d9978",
+      "type": "file",
+      "size": 98956
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00099.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00099.png",
+      "modified": "2026-08-11T18:04:34",
+      "md5": "3996d4d17b267d9524f8231be8eb7f59",
+      "type": "file",
+      "size": 743189
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00388.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00388.png",
+      "modified": "2026-08-11T18:52:12",
+      "md5": "129419c98113104ab445eb8420385f8a",
+      "type": "file",
+      "size": 1708865
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00357.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00357.png",
+      "modified": "2026-08-11T18:47:00",
+      "md5": "680a708c9e6fc94d2940acfbaa22654c",
+      "type": "file",
+      "size": 1740823
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00119.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00119.png",
+      "modified": "2026-08-11T18:07:44",
+      "md5": "8979757e3c565442d78f6bc52a700cc9",
+      "type": "file",
+      "size": 1016574
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00327.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00327.png",
+      "modified": "2026-08-11T18:41:55",
+      "md5": "b856d2ff18acf2205be409e6b6080204",
+      "type": "file",
+      "size": 1818536
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00095.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00095.png",
+      "modified": "2026-08-11T18:03:56",
+      "md5": "5315f1819c96eb7dca36d7565aa9c75f",
+      "type": "file",
+      "size": 693882
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00108.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00108.png",
+      "modified": "2026-08-11T18:05:59",
+      "md5": "198e6ae2b34d46c5047bf7ed2b87ec7b",
+      "type": "file",
+      "size": 859874
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00284.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00284.png",
+      "modified": "2026-08-11T18:34:44",
+      "md5": "5a3728ea29766964dc081e1dd0dcfe39",
+      "type": "file",
+      "size": 1773113
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00225.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00225.png",
+      "modified": "2026-08-11T18:24:57",
+      "md5": "11afe347b0bef5e50aee3bc1f40ab9a9",
+      "type": "file",
+      "size": 1626740
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00031.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00031.png",
+      "modified": "2026-08-11T17:53:57",
+      "md5": "f7df965fe26866ad91fdcf7f9c92936c",
+      "type": "file",
+      "size": 155585
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00112.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00112.png",
+      "modified": "2026-08-11T18:06:37",
+      "md5": "a15f7ec8b96dd083734302d82baa8fbd",
+      "type": "file",
+      "size": 921734
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00199.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00199.png",
+      "modified": "2026-08-11T18:20:40",
+      "md5": "955e8e065797df86b2c4fae6a48c12f3",
+      "type": "file",
+      "size": 1551069
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00178.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00178.png",
+      "modified": "2026-08-11T18:17:14",
+      "md5": "f8af964098a465a8942d7caa8d8e497c",
+      "type": "file",
+      "size": 1475355
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00267.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00267.png",
+      "modified": "2026-08-11T18:31:54",
+      "md5": "e1e29329ffd76f9819b99d17d74f9bb9",
+      "type": "file",
+      "size": 1747493
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00354.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00354.png",
+      "modified": "2026-08-11T18:46:30",
+      "md5": "859a429f1e000f919da08118526d0aab",
+      "type": "file",
+      "size": 1755002
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00194.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00194.png",
+      "modified": "2026-08-11T18:19:51",
+      "md5": "7666390a30319982bc15a506dc95ad8c",
+      "type": "file",
+      "size": 1537810
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00229.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00229.png",
+      "modified": "2026-08-11T18:25:36",
+      "md5": "ee6929cdb7c6d0318e5232809b354bf6",
+      "type": "file",
+      "size": 1643090
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00105.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00105.png",
+      "modified": "2026-08-11T18:05:31",
+      "md5": "4cb277adba1e7b5f715676688f726d4d",
+      "type": "file",
+      "size": 820837
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00348.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00348.png",
+      "modified": "2026-08-11T18:45:29",
+      "md5": "3f39f79d3fa515a72cb51c1a9d3c2907",
+      "type": "file",
+      "size": 1774105
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00122.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00122.png",
+      "modified": "2026-08-11T18:08:13",
+      "md5": "0d5bb592d048a72dcbb786d55d7ddf39",
+      "type": "file",
+      "size": 1048145
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00060.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00060.png",
+      "modified": "2026-08-11T17:58:27",
+      "md5": "e32786f742c43615ea66ec85dbbebb74",
+      "type": "file",
+      "size": 318917
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00014.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00014.png",
+      "modified": "2026-08-11T17:51:20",
+      "md5": "2b45bcfe72c7bd7e776cf237c59a24a3",
+      "type": "file",
+      "size": 102563
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00063.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00063.png",
+      "modified": "2026-08-11T17:58:55",
+      "md5": "2085c13776404ccc0adc1ed43824e537",
+      "type": "file",
+      "size": 340966
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00233.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00233.png",
+      "modified": "2026-08-11T18:26:16",
+      "md5": "a556d6307361f35021d949e5065fdd17",
+      "type": "file",
+      "size": 1655233
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00347.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00347.png",
+      "modified": "2026-08-11T18:45:19",
+      "md5": "b9ac44ebbacc2d525c837c416d2cb1bf",
+      "type": "file",
+      "size": 1776255
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00048.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00048.png",
+      "modified": "2026-08-11T17:56:36",
+      "md5": "c2cd89623f9d5263636f94f2d2fd0013",
+      "type": "file",
+      "size": 241620
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00172.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00172.png",
+      "modified": "2026-08-11T18:16:16",
+      "md5": "ae621735b817ce586cddb7b615d16bb2",
+      "type": "file",
+      "size": 1439070
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00029.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00029.png",
+      "modified": "2026-08-11T17:53:39",
+      "md5": "7aa055fb4a87a41228d53283679fd5ec",
+      "type": "file",
+      "size": 148823
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00175.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00175.png",
+      "modified": "2026-08-11T18:16:45",
+      "md5": "77941c3ef9773d0a68c678bce904312b",
+      "type": "file",
+      "size": 1457804
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00093.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00093.png",
+      "modified": "2026-08-11T18:03:37",
+      "md5": "cc94479199d555ee44349a4972c5b0ca",
+      "type": "file",
+      "size": 666690
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00135.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00135.png",
+      "modified": "2026-08-11T18:10:17",
+      "md5": "13f264c499306a6f95d16b022f861951",
+      "type": "file",
+      "size": 1182479
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00238.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00238.png",
+      "modified": "2026-08-11T18:27:05",
+      "md5": "24833b0baef835f04d81938ed8a43948",
+      "type": "file",
+      "size": 1673385
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00355.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00355.png",
+      "modified": "2026-08-11T18:46:40",
+      "md5": "3a3f28608aa10f203a725415323c30d7",
+      "type": "file",
+      "size": 1750939
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00080.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00080.png",
+      "modified": "2026-08-11T18:01:35",
+      "md5": "402cba6db6904dacead579f701cd359a",
+      "type": "file",
+      "size": 504116
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00190.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00190.png",
+      "modified": "2026-08-11T18:19:12",
+      "md5": "0ab1e52f2c47b94c490b9d161646a589",
+      "type": "file",
+      "size": 1529402
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00249.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00249.png",
+      "modified": "2026-08-11T18:28:55",
+      "md5": "64c5bab8337988bf356e4f891471beb6",
+      "type": "file",
+      "size": 1705382
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00009.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00009.png",
+      "modified": "2026-08-11T17:50:34",
+      "md5": "ae6c14d97f2f3f1ceec8443a0ce90772",
+      "type": "file",
+      "size": 94231
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00301.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00301.png",
+      "modified": "2026-08-11T18:37:35",
+      "md5": "936a3db838d135df8ead6ed9fb05780b",
+      "type": "file",
+      "size": 1787326
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00320.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00320.png",
+      "modified": "2026-08-11T18:40:45",
+      "md5": "771aa273f7200a36953dd1060bd4e4a1",
+      "type": "file",
+      "size": 1814144
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00374.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00374.png",
+      "modified": "2026-08-11T18:49:52",
+      "md5": "65e3cfe080ba68f9baaffe31e42c7ecd",
+      "type": "file",
+      "size": 1718579
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00201.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00201.png",
+      "modified": "2026-08-11T18:21:00",
+      "md5": "c454cfc66ff17e61b64641fd15483d83",
+      "type": "file",
+      "size": 1555574
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00102.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00102.png",
+      "modified": "2026-08-11T18:05:02",
+      "md5": "63c0dfa4d5993dc98b87defd68f6800c",
+      "type": "file",
+      "size": 781687
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00161.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00161.png",
+      "modified": "2026-08-11T18:14:29",
+      "md5": "f7f1bd6f3a6c4633235ae3106c2e0a16",
+      "type": "file",
+      "size": 1366666
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00173.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00173.png",
+      "modified": "2026-08-11T18:16:26",
+      "md5": "425b0a03122f89e778258edec7b072cd",
+      "type": "file",
+      "size": 1444951
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00275.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00275.png",
+      "modified": "2026-08-11T18:33:14",
+      "md5": "aafe1b86b8ae244b0dba8615f9adefa0",
+      "type": "file",
+      "size": 1757521
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00351.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00351.png",
+      "modified": "2026-08-11T18:45:59",
+      "md5": "2359afc8a228051f138eee5dc274dc4d",
+      "type": "file",
+      "size": 1760418
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00214.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00214.png",
+      "modified": "2026-08-11T18:23:08",
+      "md5": "65aad51a48f9bdb52adb37126eeeb284",
+      "type": "file",
+      "size": 1589329
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00096.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00096.png",
+      "modified": "2026-08-11T18:04:06",
+      "md5": "7f60aad07e3df0d86db44a0af9e7e4c9",
+      "type": "file",
+      "size": 705841
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00232.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00232.png",
+      "modified": "2026-08-11T18:26:06",
+      "md5": "c0cc588b3ea192c1ea372b926d07c78f",
+      "type": "file",
+      "size": 1652391
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00375.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00375.png",
+      "modified": "2026-08-11T18:50:02",
+      "md5": "de497e0affcd2c8c0254184f887e133c",
+      "type": "file",
+      "size": 1717050
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00148.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00148.png",
+      "modified": "2026-08-11T18:12:23",
+      "md5": "6223225b3cb852e656ccfa3f2b1d889c",
+      "type": "file",
+      "size": 1270330
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00250.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00250.png",
+      "modified": "2026-08-11T18:29:05",
+      "md5": "5e7c9846592bb812a79c6568c44f4c59",
+      "type": "file",
+      "size": 1706726
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00382.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00382.png",
+      "modified": "2026-08-11T18:51:12",
+      "md5": "914a5c0e1076f477d2da03a380e0de61",
+      "type": "file",
+      "size": 1714085
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00350.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00350.png",
+      "modified": "2026-08-11T18:45:49",
+      "md5": "4a12b271b9ba0d64781f16b7b5ee682c",
+      "type": "file",
+      "size": 1764461
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00312.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00312.png",
+      "modified": "2026-08-11T18:39:25",
+      "md5": "361e2a41d37cb63f54cb5b1102189f84",
+      "type": "file",
+      "size": 1798533
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00220.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00220.png",
+      "modified": "2026-08-11T18:24:07",
+      "md5": "c08970d3d3ef9e5466d2f2dc00627d3d",
+      "type": "file",
+      "size": 1607093
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00245.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00245.png",
+      "modified": "2026-08-11T18:28:15",
+      "md5": "4220d44c2941aea22e9d74669f3edd1b",
+      "type": "file",
+      "size": 1692011
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00155.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00155.png",
+      "modified": "2026-08-11T18:13:31",
+      "md5": "300bea14e3c67706202d72f4c7fb590b",
+      "type": "file",
+      "size": 1324927
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00395.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00395.png",
+      "modified": "2026-08-11T18:53:23",
+      "md5": "3d5d0cf65c2fe023ca138a67f510d72f",
+      "type": "file",
+      "size": 1706977
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00050.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00050.png",
+      "modified": "2026-08-11T17:56:54",
+      "md5": "42275d7e46115bdf8d48f08e832edbff",
+      "type": "file",
+      "size": 252129
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00035.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00035.png",
+      "modified": "2026-08-11T17:54:35",
+      "md5": "b458aad9f2537922c91d4fb74c543543",
+      "type": "file",
+      "size": 173288
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00100.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00100.png",
+      "modified": "2026-08-11T18:04:43",
+      "md5": "1f850c199942fb46ab18a296916e22ec",
+      "type": "file",
+      "size": 756924
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00174.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00174.png",
+      "modified": "2026-08-11T18:16:35",
+      "md5": "5305f2d9fbfc894a8d61353fbde54c24",
+      "type": "file",
+      "size": 1449941
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00285.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00285.png",
+      "modified": "2026-08-11T18:34:54",
+      "md5": "b732856d6fcd41fe59872ca283a40cd3",
+      "type": "file",
+      "size": 1773222
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00358.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00358.png",
+      "modified": "2026-08-11T18:47:11",
+      "md5": "a54763e9563be5b81ceddc80a378609a",
+      "type": "file",
+      "size": 1739418
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00367.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00367.png",
+      "modified": "2026-08-11T18:48:42",
+      "md5": "be2333ff8398854fd44db6fef144277b",
+      "type": "file",
+      "size": 1731162
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00366.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00366.png",
+      "modified": "2026-08-11T18:48:32",
+      "md5": "ba36d0674a194e43c068b7b19d09ecad",
+      "type": "file",
+      "size": 1733179
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00273.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00273.png",
+      "modified": "2026-08-11T18:32:54",
+      "md5": "b3efa5ef0af43388b7e089d3f5be2c11",
+      "type": "file",
+      "size": 1754749
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00110.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00110.png",
+      "modified": "2026-08-11T18:06:18",
+      "md5": "2244a75abe22fef861a1e20bd6f3eeb2",
+      "type": "file",
+      "size": 889943
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00090.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00090.png",
+      "modified": "2026-08-11T18:03:09",
+      "md5": "e656d9ae87b2df57b2b2c9ba8e488d86",
+      "type": "file",
+      "size": 625606
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00068.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00068.png",
+      "modified": "2026-08-11T17:59:42",
+      "md5": "91f51812c24c99d2afc8c149a5373c3d",
+      "type": "file",
+      "size": 384499
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00132.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00132.png",
+      "modified": "2026-08-11T18:09:48",
+      "md5": "46312695a5a99e4b914a706b317698b1",
+      "type": "file",
+      "size": 1160234
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00153.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00153.png",
+      "modified": "2026-08-11T18:13:11",
+      "md5": "7ceffcfc1089dd7b08e542dcd641526b",
+      "type": "file",
+      "size": 1307893
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00022.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00022.png",
+      "modified": "2026-08-11T17:52:34",
+      "md5": "faf287ef54f57c73e980c88fc298ad72",
+      "type": "file",
+      "size": 124177
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00299.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00299.png",
+      "modified": "2026-08-11T18:37:15",
+      "md5": "c5aaccf047c5aa205a56ace57d12f2eb",
+      "type": "file",
+      "size": 1786982
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00226.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00226.png",
+      "modified": "2026-08-11T18:25:07",
+      "md5": "d76f18bb7baf2b7aab6c5319def12bdc",
+      "type": "file",
+      "size": 1630115
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00198.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00198.png",
+      "modified": "2026-08-11T18:20:30",
+      "md5": "a80a85f1e92c7f8c87a2b95d49749116",
+      "type": "file",
+      "size": 1549449
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00207.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00207.png",
+      "modified": "2026-08-11T18:21:59",
+      "md5": "915066cb535a4cb76e1eca7c27f81a4f",
+      "type": "file",
+      "size": 1574148
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00364.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00364.png",
+      "modified": "2026-08-11T18:48:11",
+      "md5": "712de531f18149514dfbf41682b5121a",
+      "type": "file",
+      "size": 1733279
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00217.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00217.png",
+      "modified": "2026-08-11T18:23:38",
+      "md5": "fe73bad505d865be23508abcf24bb855",
+      "type": "file",
+      "size": 1595440
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00134.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00134.png",
+      "modified": "2026-08-11T18:10:08",
+      "md5": "9b582eb7625a2510d0071f34c20512a3",
+      "type": "file",
+      "size": 1175848
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00076.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00076.png",
+      "modified": "2026-08-11T18:00:58",
+      "md5": "517722b88362f27ab7a98748ca420cb1",
+      "type": "file",
+      "size": 459050
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00177.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00177.png",
+      "modified": "2026-08-11T18:17:05",
+      "md5": "9d06323f7639a40dbc63cdd8c29d5047",
+      "type": "file",
+      "size": 1469598
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00352.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00352.png",
+      "modified": "2026-08-11T18:46:09",
+      "md5": "c6686ca0920cefb39a37e120f0f71992",
+      "type": "file",
+      "size": 1760183
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00251.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00251.png",
+      "modified": "2026-08-11T18:29:15",
+      "md5": "a0f1b7b0b3ec1879fde71e0276b86c95",
+      "type": "file",
+      "size": 1709150
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00136.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00136.png",
+      "modified": "2026-08-11T18:10:27",
+      "md5": "91bb8482bdfdc4d41fd4a7500c415eca",
+      "type": "file",
+      "size": 1190254
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00024.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00024.png",
+      "modified": "2026-08-11T17:52:53",
+      "md5": "15beea8f14fe6a249a523ec79607190b",
+      "type": "file",
+      "size": 130074
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00017.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00017.png",
+      "modified": "2026-08-11T17:51:48",
+      "md5": "d17fadb68e3cdd7d9abe93172a7fbcf8",
+      "type": "file",
+      "size": 109714
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00131.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00131.png",
+      "modified": "2026-08-11T18:09:39",
+      "md5": "af63949ec086a600d1a1104de54e5132",
+      "type": "file",
+      "size": 1150278
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00044.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00044.png",
+      "modified": "2026-08-11T17:55:58",
+      "md5": "a13e8ffe4f06123e96a7bb6ebe1cde55",
+      "type": "file",
+      "size": 217294
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00124.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00124.png",
+      "modified": "2026-08-11T18:08:32",
+      "md5": "7d404a88cac24ed194b74548c4a1deb0",
+      "type": "file",
+      "size": 1071767
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00203.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00203.png",
+      "modified": "2026-08-11T18:21:19",
+      "md5": "b8291b45d91f03e1f60f7e2f5e6fb77b",
+      "type": "file",
+      "size": 1562759
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00337.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00337.png",
+      "modified": "2026-08-11T18:43:37",
+      "md5": "a1697d31e57e84e4988c037a02506de1",
+      "type": "file",
+      "size": 1790855
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00244.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00244.png",
+      "modified": "2026-08-11T18:28:05",
+      "md5": "8a57563db4ffaab7adf4593a548fbad0",
+      "type": "file",
+      "size": 1690190
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00159.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00159.png",
+      "modified": "2026-08-11T18:14:09",
+      "md5": "e0a2462183a46a4c658c1c06873c38b5",
+      "type": "file",
+      "size": 1350271
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00018.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00018.png",
+      "modified": "2026-08-11T17:51:57",
+      "md5": "e65c138409f76c0333ed96d2e2866684",
+      "type": "file",
+      "size": 113476
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00085.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00085.png",
+      "modified": "2026-08-11T18:02:22",
+      "md5": "22323d14103e8bb5165a43e951487cc6",
+      "type": "file",
+      "size": 557955
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00001.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00001.png",
+      "modified": "2026-08-11T17:49:21",
+      "md5": "364977f17598ac97c5713a0ab14d573b",
+      "type": "file",
+      "size": 84819
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00127.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00127.png",
+      "modified": "2026-08-11T18:09:00",
+      "md5": "275b65054853e55d4e1834bd870e8f0e",
+      "type": "file",
+      "size": 1106055
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00345.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00345.png",
+      "modified": "2026-08-11T18:44:58",
+      "md5": "1a27745ee88f45eaca0671c47c0f8709",
+      "type": "file",
+      "size": 1782655
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00106.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00106.png",
+      "modified": "2026-08-11T18:05:40",
+      "md5": "bde964fbd613917ea288b9e5c5de0fb5",
+      "type": "file",
+      "size": 831769
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00149.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00149.png",
+      "modified": "2026-08-11T18:12:32",
+      "md5": "7f1506d41cc5453a860e776d09c32af8",
+      "type": "file",
+      "size": 1278226
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00043.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00043.png",
+      "modified": "2026-08-11T17:55:49",
+      "md5": "45f3a44f8f76792412b274532210fd7a",
+      "type": "file",
+      "size": 211839
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00054.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00054.png",
+      "modified": "2026-08-11T17:57:31",
+      "md5": "35039f7cb5a8b37b2e53f71712c11e19",
+      "type": "file",
+      "size": 276057
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00087.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00087.png",
+      "modified": "2026-08-11T18:02:41",
+      "md5": "6967dfe0429bd7b6f3569f491db08e04",
+      "type": "file",
+      "size": 581520
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00037.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00037.png",
+      "modified": "2026-08-11T17:54:53",
+      "md5": "ace707ed1fdbfad25baf3766d7ea0303",
+      "type": "file",
+      "size": 182339
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00318.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00318.png",
+      "modified": "2026-08-11T18:40:25",
+      "md5": "acf7fbbba8b1340cedaed8e5072ecf20",
+      "type": "file",
+      "size": 1813817
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00268.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00268.png",
+      "modified": "2026-08-11T18:32:04",
+      "md5": "01b2b781ef6176eb405c490cf6460016",
+      "type": "file",
+      "size": 1747467
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00186.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00186.png",
+      "modified": "2026-08-11T18:18:33",
+      "md5": "1b1c4600a05fc2a6365f8c91f95b76c8",
+      "type": "file",
+      "size": 1516707
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00069.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00069.png",
+      "modified": "2026-08-11T17:59:52",
+      "md5": "a2d80e9739ae0c071321e1ecd9c396ba",
+      "type": "file",
+      "size": 392895
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00279.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00279.png",
+      "modified": "2026-08-11T18:33:54",
+      "md5": "9499f89b68db73c9e5e7da9ae770821a",
+      "type": "file",
+      "size": 1764338
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00349.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00349.png",
+      "modified": "2026-08-11T18:45:39",
+      "md5": "0401be126969c0b3f13fa9a95fd26747",
+      "type": "file",
+      "size": 1767677
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00259.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00259.png",
+      "modified": "2026-08-11T18:30:35",
+      "md5": "b96e70075c26caefd728472ceed62624",
+      "type": "file",
+      "size": 1734598
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00091.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00091.png",
+      "modified": "2026-08-11T18:03:18",
+      "md5": "769fd7a80faf62a40ceeea2aab0fb63f",
+      "type": "file",
+      "size": 638168
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00062.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00062.png",
+      "modified": "2026-08-11T17:58:46",
+      "md5": "0cf192dab0d4612134993b47286e4ad4",
+      "type": "file",
+      "size": 334950
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00400.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00400.png",
+      "modified": "2026-08-11T18:54:12",
+      "md5": "c602ef38a4e4664c70a77686bda1bd65",
+      "type": "file",
+      "size": 1708414
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00381.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00381.png",
+      "modified": "2026-08-11T18:51:02",
+      "md5": "9df7d0c0ade4c558055478204a4af261",
+      "type": "file",
+      "size": 1713834
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00070.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00070.png",
+      "modified": "2026-08-11T18:00:01",
+      "md5": "256ed3313b18af36998b4733757d8b64",
+      "type": "file",
+      "size": 399063
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00339.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00339.png",
+      "modified": "2026-08-11T18:43:57",
+      "md5": "61ecebc56df2f589d0e897916d506ac8",
+      "type": "file",
+      "size": 1786286
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00331.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00331.png",
+      "modified": "2026-08-11T18:42:35",
+      "md5": "13d442505ee67d4b929557d9725a39bf",
+      "type": "file",
+      "size": 1805375
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00150.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00150.png",
+      "modified": "2026-08-11T18:12:42",
+      "md5": "cbfab629d77d2bd82cd7c190cd2a07ef",
+      "type": "file",
+      "size": 1287271
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00003.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00003.png",
+      "modified": "2026-08-11T17:49:39",
+      "md5": "c5dfea40a578b022fbb51dd068d7fbb5",
+      "type": "file",
+      "size": 85833
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00101.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00101.png",
+      "modified": "2026-08-11T18:04:53",
+      "md5": "8ee0feee32c981dd9b368b30d68a68b2",
+      "type": "file",
+      "size": 767624
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00145.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00145.png",
+      "modified": "2026-08-11T18:11:54",
+      "md5": "81390f37a075c4ce9df3c2345e6dfc04",
+      "type": "file",
+      "size": 1249875
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00098.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00098.png",
+      "modified": "2026-08-11T18:04:25",
+      "md5": "52734ffd65021b43ecbee888e93c1e87",
+      "type": "file",
+      "size": 731559
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00209.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00209.png",
+      "modified": "2026-08-11T18:22:19",
+      "md5": "858c725c601ac989f675f04fb6083774",
+      "type": "file",
+      "size": 1582369
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00187.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00187.png",
+      "modified": "2026-08-11T18:18:42",
+      "md5": "977f0950f60c7df4a34134b4830abb7a",
+      "type": "file",
+      "size": 1521245
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00053.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00053.png",
+      "modified": "2026-08-11T17:57:22",
+      "md5": "32328bf8967b55bd22e2299bcbbed8be",
+      "type": "file",
+      "size": 269259
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00316.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00316.png",
+      "modified": "2026-08-11T18:40:05",
+      "md5": "c5d1244d8384c807368dfe678ea70ee7",
+      "type": "file",
+      "size": 1808327
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00223.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00223.png",
+      "modified": "2026-08-11T18:24:37",
+      "md5": "cbb97125fa35a3c65af67e4544fd996f",
+      "type": "file",
+      "size": 1618116
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00078.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00078.png",
+      "modified": "2026-08-11T18:01:16",
+      "md5": "e15968a0923d9df7abeaa68fe5d28308",
+      "type": "file",
+      "size": 481788
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00216.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00216.png",
+      "modified": "2026-08-11T18:23:28",
+      "md5": "be49fe20776d3245def53ef6b05eb343",
+      "type": "file",
+      "size": 1593979
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00386.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00386.png",
+      "modified": "2026-08-11T18:51:52",
+      "md5": "38900bcdd90aa4461e20c715b22c985e",
+      "type": "file",
+      "size": 1711716
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00239.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00239.png",
+      "modified": "2026-08-11T18:27:15",
+      "md5": "33f2c99612a3aac84102f20d7b0a0e02",
+      "type": "file",
+      "size": 1676743
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00071.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00071.png",
+      "modified": "2026-08-11T18:00:11",
+      "md5": "9bc069c3a22f23f6bc785ce2b5c2f18e",
+      "type": "file",
+      "size": 409237
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00237.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00237.png",
+      "modified": "2026-08-11T18:26:56",
+      "md5": "7b4179a091ff010053485541e7a909b9",
+      "type": "file",
+      "size": 1667864
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00391.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00391.png",
+      "modified": "2026-08-11T18:52:42",
+      "md5": "c47c7ab6378a3980055f799a1ad98e1c",
+      "type": "file",
+      "size": 1708424
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00305.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00305.png",
+      "modified": "2026-08-11T18:38:15",
+      "md5": "10df41c998b9a3910758ebcea47c4cab",
+      "type": "file",
+      "size": 1790567
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00042.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00042.png",
+      "modified": "2026-08-11T17:55:40",
+      "md5": "8fe8e88d8ec9ec0f920a6e173be5f5de",
+      "type": "file",
+      "size": 206716
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00307.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00307.png",
+      "modified": "2026-08-11T18:38:35",
+      "md5": "cf520281f190db850ce3a6a688573d3a",
+      "type": "file",
+      "size": 1793916
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00045.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00045.png",
+      "modified": "2026-08-11T17:56:08",
+      "md5": "db8063b7313fdd56731b000bf763b11b",
+      "type": "file",
+      "size": 222946
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00325.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00325.png",
+      "modified": "2026-08-11T18:41:35",
+      "md5": "2e20e0b909d09cf91c7fc7c0eb471144",
+      "type": "file",
+      "size": 1818113
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00021.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00021.png",
+      "modified": "2026-08-11T17:52:25",
+      "md5": "6726ce4cbe0fe641b01fab0c4d79f01c",
+      "type": "file",
+      "size": 120978
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00252.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00252.png",
+      "modified": "2026-08-11T18:29:25",
+      "md5": "1e311d0e2361907517442ffa14df06bb",
+      "type": "file",
+      "size": 1711248
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00141.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00141.png",
+      "modified": "2026-08-11T18:11:15",
+      "md5": "148f53f36df2e60e3da14f36b995a676",
+      "type": "file",
+      "size": 1221437
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00295.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00295.png",
+      "modified": "2026-08-11T18:36:34",
+      "md5": "ef57b8d978d595881e241c2d97b52972",
+      "type": "file",
+      "size": 1781961
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00219.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00219.png",
+      "modified": "2026-08-11T18:23:57",
+      "md5": "3f0cb34252d13e83fea159bc4c8b32f3",
+      "type": "file",
+      "size": 1602817
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00353.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00353.png",
+      "modified": "2026-08-11T18:46:20",
+      "md5": "c0926a639a58ab3d5b7a9720f4d9cc7d",
+      "type": "file",
+      "size": 1757396
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00389.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00389.png",
+      "modified": "2026-08-11T18:52:21",
+      "md5": "7adcf583c33ae66c376e9c5e7f194c9d",
+      "type": "file",
+      "size": 1710561
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00057.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00057.png",
+      "modified": "2026-08-11T17:57:59",
+      "md5": "432df439725a184086455f83a16863f6",
+      "type": "file",
+      "size": 297361
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00200.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00200.png",
+      "modified": "2026-08-11T18:20:50",
+      "md5": "462bff4edb5d4673503cc1bf906d2283",
+      "type": "file",
+      "size": 1553345
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00189.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00189.png",
+      "modified": "2026-08-11T18:19:02",
+      "md5": "8f05014dd1cd0fbe83051dba8b34ba25",
+      "type": "file",
+      "size": 1527418
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00315.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00315.png",
+      "modified": "2026-08-11T18:39:55",
+      "md5": "11e35d923c983e30e57eb3de66deabf6",
+      "type": "file",
+      "size": 1806008
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00118.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00118.png",
+      "modified": "2026-08-11T18:07:34",
+      "md5": "765b73143af3f4785ff60e67e395d689",
+      "type": "file",
+      "size": 1008664
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00162.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00162.png",
+      "modified": "2026-08-11T18:14:39",
+      "md5": "b29ea6c2ab1749c34084cb61b87732dd",
+      "type": "file",
+      "size": 1374491
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00041.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00041.png",
+      "modified": "2026-08-11T17:55:30",
+      "md5": "045cde75b29fc93df2f9706d3c803e6a",
+      "type": "file",
+      "size": 200620
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00378.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00378.png",
+      "modified": "2026-08-11T18:50:32",
+      "md5": "fcd39d6bd17c7aa2f839af05848eb1d7",
+      "type": "file",
+      "size": 1717117
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00039.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00039.png",
+      "modified": "2026-08-11T17:55:12",
+      "md5": "571665c42d57b158fa2fb1c7f2f8099c",
+      "type": "file",
+      "size": 192063
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00213.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00213.png",
+      "modified": "2026-08-11T18:22:58",
+      "md5": "5fc512365c42513636645f34794b5756",
+      "type": "file",
+      "size": 1586313
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00185.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00185.png",
+      "modified": "2026-08-11T18:18:23",
+      "md5": "89c1333fbdc78184eba041ab04e048be",
+      "type": "file",
+      "size": 1512274
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00281.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00281.png",
+      "modified": "2026-08-11T18:34:14",
+      "md5": "5a1dfc8b71975e153713b807c02ee199",
+      "type": "file",
+      "size": 1768467
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00139.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00139.png",
+      "modified": "2026-08-11T18:10:56",
+      "md5": "ec09ed4f864ec50ef6d3280929e6a99b",
+      "type": "file",
+      "size": 1209146
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00300.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00300.png",
+      "modified": "2026-08-11T18:37:25",
+      "md5": "fe2cf3f833cb6a9b336e03484e1b7e56",
+      "type": "file",
+      "size": 1787308
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00082.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00082.png",
+      "modified": "2026-08-11T18:01:54",
+      "md5": "59a6e38f35e03ad352639bfe8a6dcaaa",
+      "type": "file",
+      "size": 526493
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00067.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00067.png",
+      "modified": "2026-08-11T17:59:33",
+      "md5": "a50a56d8887d8832ddfb587fb663a388",
+      "type": "file",
+      "size": 373334
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00210.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00210.png",
+      "modified": "2026-08-11T18:22:28",
+      "md5": "4fc4df6c63c7762966bd0213bbc4865e",
+      "type": "file",
+      "size": 1584132
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00306.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00306.png",
+      "modified": "2026-08-11T18:38:25",
+      "md5": "45758397dd23425e2b8465533205a2d6",
+      "type": "file",
+      "size": 1793339
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00277.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00277.png",
+      "modified": "2026-08-11T18:33:34",
+      "md5": "4f76f23fa022cbf1ab1ee4573e3e0083",
+      "type": "file",
+      "size": 1760262
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00016.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00016.png",
+      "modified": "2026-08-11T17:51:39",
+      "md5": "16811478bc8d884f24cf01efa417fd8d",
+      "type": "file",
+      "size": 107460
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00397.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00397.png",
+      "modified": "2026-08-11T18:53:43",
+      "md5": "3f24e3527d8d782913ad68930bca7742",
+      "type": "file",
+      "size": 1708062
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00361.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00361.png",
+      "modified": "2026-08-11T18:47:41",
+      "md5": "a4cc4cac1baa8aa873e93cb4890ffdb8",
+      "type": "file",
+      "size": 1735269
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00147.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00147.png",
+      "modified": "2026-08-11T18:12:13",
+      "md5": "65d4bd8484abdfabccac768dc44592f6",
+      "type": "file",
+      "size": 1262449
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00303.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00303.png",
+      "modified": "2026-08-11T18:37:55",
+      "md5": "3a35ef5a5443cd7244b71c86eed54367",
+      "type": "file",
+      "size": 1791130
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00195.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00195.png",
+      "modified": "2026-08-11T18:20:01",
+      "md5": "e3734520b112b9cf4d1f63d2ab88603e",
+      "type": "file",
+      "size": 1540111
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00265.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00265.png",
+      "modified": "2026-08-11T18:31:34",
+      "md5": "d38d935fbb9b67845de7de2d2d926076",
+      "type": "file",
+      "size": 1745475
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00291.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00291.png",
+      "modified": "2026-08-11T18:35:54",
+      "md5": "0f0bd6c87a91b2a0c1c6e25b9622239c",
+      "type": "file",
+      "size": 1776441
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00234.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00234.png",
+      "modified": "2026-08-11T18:26:26",
+      "md5": "3200f96e90c50757a89d44a89fd06a45",
+      "type": "file",
+      "size": 1657200
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00192.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00192.png",
+      "modified": "2026-08-11T18:19:31",
+      "md5": "568dd281c1abeaf1d32d0e50a16c53f7",
+      "type": "file",
+      "size": 1533398
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00073.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00073.png",
+      "modified": "2026-08-11T18:00:29",
+      "md5": "574be405af39ba353b2421fae89be398",
+      "type": "file",
+      "size": 427973
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00025.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00025.png",
+      "modified": "2026-08-11T17:53:02",
+      "md5": "6886792e398a5638ca853c92a45999b7",
+      "type": "file",
+      "size": 133622
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00328.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00328.png",
+      "modified": "2026-08-11T18:42:05",
+      "md5": "34f5e0a480562e6e5ed03e61cee41b26",
+      "type": "file",
+      "size": 1818624
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00181.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00181.png",
+      "modified": "2026-08-11T18:17:44",
+      "md5": "aa4ddc235778adafc0156efd44887a3b",
+      "type": "file",
+      "size": 1487043
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00013.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00013.png",
+      "modified": "2026-08-11T17:51:11",
+      "md5": "06fdf6c3a2f07ebe4a6bbe0ab3f32eb6",
+      "type": "file",
+      "size": 100285
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00264.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00264.png",
+      "modified": "2026-08-11T18:31:24",
+      "md5": "b27f1d2bc9401d1f13dfc15ea5caaccd",
+      "type": "file",
+      "size": 1743013
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00383.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00383.png",
+      "modified": "2026-08-11T18:51:22",
+      "md5": "3821e7e069c0a2ce5e8690230b7f560f",
+      "type": "file",
+      "size": 1713944
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00396.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00396.png",
+      "modified": "2026-08-11T18:53:33",
+      "md5": "54b0df240736490e90d9eb0a27fc1c73",
+      "type": "file",
+      "size": 1708814
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00103.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00103.png",
+      "modified": "2026-08-11T18:05:12",
+      "md5": "3117cb5e824ef802e2148bcf55c1bdbe",
+      "type": "file",
+      "size": 792782
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00269.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00269.png",
+      "modified": "2026-08-11T18:32:14",
+      "md5": "df48ea2a26c0bafc06b845731d412634",
+      "type": "file",
+      "size": 1749059
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00326.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00326.png",
+      "modified": "2026-08-11T18:41:45",
+      "md5": "6b3db8c278b15d38d2eb857403292ee8",
+      "type": "file",
+      "size": 1819119
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00370.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00370.png",
+      "modified": "2026-08-11T18:49:12",
+      "md5": "c8c9c1557b9f46a29928ada52cf1e30a",
+      "type": "file",
+      "size": 1727535
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00380.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00380.png",
+      "modified": "2026-08-11T18:50:52",
+      "md5": "12c37de2a0838529dc61db18c7013bb2",
+      "type": "file",
+      "size": 1715288
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00296.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00296.png",
+      "modified": "2026-08-11T18:36:44",
+      "md5": "e7333bb2be696e57797d38b8990ab94e",
+      "type": "file",
+      "size": 1783383
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00010.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00010.png",
+      "modified": "2026-08-11T17:50:44",
+      "md5": "9477d3fb6c654b3b37cd685a10998470",
+      "type": "file",
+      "size": 95350
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00129.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00129.png",
+      "modified": "2026-08-11T18:09:20",
+      "md5": "f364a77abebcadd490bbf1168d6128f8",
+      "type": "file",
+      "size": 1130495
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00152.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00152.png",
+      "modified": "2026-08-11T18:13:01",
+      "md5": "8a91617c7541b7a578055777b0bcfeb5",
+      "type": "file",
+      "size": 1303293
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00051.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00051.png",
+      "modified": "2026-08-11T17:57:03",
+      "md5": "fd8fcd3b42500ba5aad1b63ab72f4425",
+      "type": "file",
+      "size": 257154
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00011.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00011.png",
+      "modified": "2026-08-11T17:50:53",
+      "md5": "d1c911aeeedd4d41430caae5344cada6",
+      "type": "file",
+      "size": 96588
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00166.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00166.png",
+      "modified": "2026-08-11T18:15:17",
+      "md5": "eb0bfeeaead73f0d9411aa339ffb6d96",
+      "type": "file",
+      "size": 1402418
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00236.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00236.png",
+      "modified": "2026-08-11T18:26:46",
+      "md5": "5d44d7e8c22aa6c88a28715972f5d133",
+      "type": "file",
+      "size": 1664629
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00163.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00163.png",
+      "modified": "2026-08-11T18:14:48",
+      "md5": "d579cdb54d164939eddc0e64b0ceb7ce",
+      "type": "file",
+      "size": 1380831
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00020.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00020.png",
+      "modified": "2026-08-11T17:52:16",
+      "md5": "05c04c63952e2c0c7f512d431b08d106",
+      "type": "file",
+      "size": 118160
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00075.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00075.png",
+      "modified": "2026-08-11T18:00:48",
+      "md5": "eed7ec5280e1e5bf6d3de2e45a1e5b59",
+      "type": "file",
+      "size": 448789
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00257.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00257.png",
+      "modified": "2026-08-11T18:30:15",
+      "md5": "7e2ea59c6adb566499259b61cf8e4eed",
+      "type": "file",
+      "size": 1724575
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00266.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00266.png",
+      "modified": "2026-08-11T18:31:44",
+      "md5": "b5bdecd23ee0ce9886099ab44fd94b45",
+      "type": "file",
+      "size": 1748201
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00329.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00329.png",
+      "modified": "2026-08-11T18:42:15",
+      "md5": "e78326cee5610c6bdbc755e300d73ef4",
+      "type": "file",
+      "size": 1817567
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00081.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00081.png",
+      "modified": "2026-08-11T18:01:44",
+      "md5": "4d4324831905f99445a6e93139caa69b",
+      "type": "file",
+      "size": 514533
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00197.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00197.png",
+      "modified": "2026-08-11T18:20:20",
+      "md5": "17c8c0d6c8692b982eb558600fa03fd6",
+      "type": "file",
+      "size": 1545486
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00154.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00154.png",
+      "modified": "2026-08-11T18:13:21",
+      "md5": "bb2bbfa0805fe4348fee20a0921a943e",
+      "type": "file",
+      "size": 1317162
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00204.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00204.png",
+      "modified": "2026-08-11T18:21:29",
+      "md5": "3299a056f9235b5a1fa6fdb2210b6cca",
+      "type": "file",
+      "size": 1566626
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00363.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00363.png",
+      "modified": "2026-08-11T18:48:01",
+      "md5": "70188d03f81042b986fd9abd0bb8b2d9",
+      "type": "file",
+      "size": 1733506
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00335.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00335.png",
+      "modified": "2026-08-11T18:43:16",
+      "md5": "addb706db54a52ebdb5e502759e2e59f",
+      "type": "file",
+      "size": 1798656
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00027.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00027.png",
+      "modified": "2026-08-11T17:53:20",
+      "md5": "138ab4e1a5ba2ea13a6d1a8be62e923e",
+      "type": "file",
+      "size": 140830
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00330.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00330.png",
+      "modified": "2026-08-11T18:42:25",
+      "md5": "dca9bd7810e0c6e999e42cd475713ed3",
+      "type": "file",
+      "size": 1812288
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00243.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00243.png",
+      "modified": "2026-08-11T18:27:55",
+      "md5": "352525643cab1e5c702df1ff46484ba1",
+      "type": "file",
+      "size": 1687731
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00077.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00077.png",
+      "modified": "2026-08-11T18:01:07",
+      "md5": "1144dc305d1234a0ab06d25820270c7f",
+      "type": "file",
+      "size": 468490
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00324.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00324.png",
+      "modified": "2026-08-11T18:41:25",
+      "md5": "1c6fa562fa918520516de8b62145e6ea",
+      "type": "file",
+      "size": 1818717
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00004.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00004.png",
+      "modified": "2026-08-11T17:49:48",
+      "md5": "7c4443976be2221a63f1046999251cbb",
+      "type": "file",
+      "size": 87080
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00286.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00286.png",
+      "modified": "2026-08-11T18:35:04",
+      "md5": "aeb659a976d376b0a4908220b9736af5",
+      "type": "file",
+      "size": 1774044
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00113.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00113.png",
+      "modified": "2026-08-11T18:06:47",
+      "md5": "c32571093690b6fdb9c34ba12985f865",
+      "type": "file",
+      "size": 940142
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00230.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00230.png",
+      "modified": "2026-08-11T18:25:46",
+      "md5": "d3cd529199edea819c24750701ba5586",
+      "type": "file",
+      "size": 1646521
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00032.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00032.png",
+      "modified": "2026-08-11T17:54:07",
+      "md5": "1e6da24a61729407c3e021dbf98f1010",
+      "type": "file",
+      "size": 160098
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00015.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00015.png",
+      "modified": "2026-08-11T17:51:30",
+      "md5": "fc0fcf20d3b2693b95cfaa11a5d1c8d4",
+      "type": "file",
+      "size": 104825
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00336.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00336.png",
+      "modified": "2026-08-11T18:43:26",
+      "md5": "6de85d7a4923fde9425b85ec7b7cbafe",
+      "type": "file",
+      "size": 1796458
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00046.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00046.png",
+      "modified": "2026-08-11T17:56:17",
+      "md5": "9bb36e4f29247ddd04013422fc46ce8d",
+      "type": "file",
+      "size": 228276
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00028.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00028.png",
+      "modified": "2026-08-11T17:53:30",
+      "md5": "eb3bd35c85532fee6ad742189dccad71",
+      "type": "file",
+      "size": 145832
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00033.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00033.png",
+      "modified": "2026-08-11T17:54:16",
+      "md5": "1c9cceb9b935f290022c564287505eb8",
+      "type": "file",
+      "size": 163825
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00128.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00128.png",
+      "modified": "2026-08-11T18:09:10",
+      "md5": "393adeabec585d4dbde3141e27c22579",
+      "type": "file",
+      "size": 1119290
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00379.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00379.png",
+      "modified": "2026-08-11T18:50:42",
+      "md5": "aae4200ae66dfbdbf9fa64c099f915b8",
+      "type": "file",
+      "size": 1716700
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00256.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00256.png",
+      "modified": "2026-08-11T18:30:05",
+      "md5": "8a537126bbfdcc83f7e973c530a9c838",
+      "type": "file",
+      "size": 1722284
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00242.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00242.png",
+      "modified": "2026-08-11T18:27:45",
+      "md5": "5d9df27db949a5e8108313a22eb192e1",
+      "type": "file",
+      "size": 1685283
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00222.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00222.png",
+      "modified": "2026-08-11T18:24:27",
+      "md5": "9de2782402d538f10e8e6cc65ff23ad6",
+      "type": "file",
+      "size": 1617072
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00115.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00115.png",
+      "modified": "2026-08-11T18:07:06",
+      "md5": "dd92ffab023cbc647ebb3d7d1cbe27d4",
+      "type": "file",
+      "size": 972396
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00056.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00056.png",
+      "modified": "2026-08-11T17:57:50",
+      "md5": "52c1787840a5b61b84d0df4c81e3022b",
+      "type": "file",
+      "size": 290542
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00188.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00188.png",
+      "modified": "2026-08-11T18:18:52",
+      "md5": "7adc834f7a698253bef5379ca630993b",
+      "type": "file",
+      "size": 1523922
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00248.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00248.png",
+      "modified": "2026-08-11T18:28:45",
+      "md5": "f0e68ac665d9a4d8e3f0598bef7c2e13",
+      "type": "file",
+      "size": 1701613
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00079.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00079.png",
+      "modified": "2026-08-11T18:01:26",
+      "md5": "6d71778fdedb386eb4e6414ff62a1cb5",
+      "type": "file",
+      "size": 490647
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00097.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00097.png",
+      "modified": "2026-08-11T18:04:15",
+      "md5": "8f00fd4ae494b6b86f52b0b54b169fe9",
+      "type": "file",
+      "size": 718105
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00369.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00369.png",
+      "modified": "2026-08-11T18:49:02",
+      "md5": "b9492d8c9025cc16a4ee90168a9839f2",
+      "type": "file",
+      "size": 1730574
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00377.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00377.png",
+      "modified": "2026-08-11T18:50:22",
+      "md5": "3d393c9d3169ebbdb38cf93da4aeb152",
+      "type": "file",
+      "size": 1715631
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00059.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00059.png",
+      "modified": "2026-08-11T17:58:18",
+      "md5": "ca0830db5b6d7fb765567375963db680",
+      "type": "file",
+      "size": 310645
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00231.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00231.png",
+      "modified": "2026-08-11T18:25:56",
+      "md5": "9f395a499b0bfdb78ab869fcd3e76815",
+      "type": "file",
+      "size": 1649323
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00114.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00114.png",
+      "modified": "2026-08-11T18:06:56",
+      "md5": "73325aaea6fc807309e5e384a0c04756",
+      "type": "file",
+      "size": 957019
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00322.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00322.png",
+      "modified": "2026-08-11T18:41:05",
+      "md5": "aa4a04f62caba8231063c312a192ce93",
+      "type": "file",
+      "size": 1816394
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00261.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00261.png",
+      "modified": "2026-08-11T18:30:55",
+      "md5": "96b87b974ee1a995a33a18edac71e501",
+      "type": "file",
+      "size": 1738355
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00183.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00183.png",
+      "modified": "2026-08-11T18:18:03",
+      "md5": "78e3528885ded29bb85b6f0b3dce30e9",
+      "type": "file",
+      "size": 1499736
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00065.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00065.png",
+      "modified": "2026-08-11T17:59:14",
+      "md5": "660d7fb4cd3d7b65b8569a424d1f5312",
+      "type": "file",
+      "size": 358726
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00206.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00206.png",
+      "modified": "2026-08-11T18:21:49",
+      "md5": "95d74463963871cbbc88d5518939e6ed",
+      "type": "file",
+      "size": 1573530
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00121.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00121.png",
+      "modified": "2026-08-11T18:08:03",
+      "md5": "cfccbd8ed7aefdd40e6fb71831199a2a",
+      "type": "file",
+      "size": 1039964
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00000.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00000.png",
+      "modified": "2026-08-11T17:49:12",
+      "md5": "f9b85f790c68df7509a59628b4edc910",
+      "type": "file",
+      "size": 84460
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00191.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00191.png",
+      "modified": "2026-08-11T18:19:22",
+      "md5": "d8072f60753354127021db4178af0618",
+      "type": "file",
+      "size": 1531016
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00304.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00304.png",
+      "modified": "2026-08-11T18:38:05",
+      "md5": "c7fa7ec439f32bddcc6459839103cb13",
+      "type": "file",
+      "size": 1791618
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00227.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00227.png",
+      "modified": "2026-08-11T18:25:16",
+      "md5": "58ca749eab52ece47c28a78e531d22e8",
+      "type": "file",
+      "size": 1633199
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00088.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00088.png",
+      "modified": "2026-08-11T18:02:50",
+      "md5": "2269c72dc98d314e2431dccf289574c6",
+      "type": "file",
+      "size": 596707
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00208.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00208.png",
+      "modified": "2026-08-11T18:22:09",
+      "md5": "a4ffbd81b02a3da5d759eb44f2177803",
+      "type": "file",
+      "size": 1582166
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00309.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00309.png",
+      "modified": "2026-08-11T18:38:55",
+      "md5": "ef73ecb0703563e9718067086450379d",
+      "type": "file",
+      "size": 1795837
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00052.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00052.png",
+      "modified": "2026-08-11T17:57:13",
+      "md5": "2456beaafbb2b4d78e2e55e7d0192077",
+      "type": "file",
+      "size": 263747
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00258.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00258.png",
+      "modified": "2026-08-11T18:30:25",
+      "md5": "3bad572a1dbf1a40c598bac1864f8dcd",
+      "type": "file",
+      "size": 1730202
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00047.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00047.png",
+      "modified": "2026-08-11T17:56:26",
+      "md5": "a6c027d8c85b856b092b1bb58ad4ceab",
+      "type": "file",
+      "size": 234386
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00142.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00142.png",
+      "modified": "2026-08-11T18:11:25",
+      "md5": "109d27bc359d77c0d456cff98d6b826c",
+      "type": "file",
+      "size": 1227251
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00271.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00271.png",
+      "modified": "2026-08-11T18:32:34",
+      "md5": "47b0b61206837fb10622ca82718618af",
+      "type": "file",
+      "size": 1751425
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00393.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00393.png",
+      "modified": "2026-08-11T18:53:03",
+      "md5": "aeaec3b08b4294f482b56e93d73f1b16",
+      "type": "file",
+      "size": 1704993
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00157.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00157.png",
+      "modified": "2026-08-11T18:13:50",
+      "md5": "92a2f35b174f35c49a5d82bce0c95e37",
+      "type": "file",
+      "size": 1338590
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00359.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00359.png",
+      "modified": "2026-08-11T18:47:21",
+      "md5": "3449aa1ce77d75fd1b2d1bfbe34d5feb",
+      "type": "file",
+      "size": 1738895
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00360.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00360.png",
+      "modified": "2026-08-11T18:47:31",
+      "md5": "189c9fedfb4ba893b90eb04f70f98dcd",
+      "type": "file",
+      "size": 1737569
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00255.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00255.png",
+      "modified": "2026-08-11T18:29:55",
+      "md5": "edcf5240fd9e1bc2b641922baf0c9fbd",
+      "type": "file",
+      "size": 1717230
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00180.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00180.png",
+      "modified": "2026-08-11T18:17:34",
+      "md5": "68610e6919c66f891960d5124d7df80e",
+      "type": "file",
+      "size": 1483809
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00111.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00111.png",
+      "modified": "2026-08-11T18:06:28",
+      "md5": "ded4eaa4da09e92a72703c26a4d2a71e",
+      "type": "file",
+      "size": 905587
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00026.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00026.png",
+      "modified": "2026-08-11T17:53:11",
+      "md5": "ca87cc0dd14fd2b7a3456354208dee51",
+      "type": "file",
+      "size": 137687
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00165.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00165.png",
+      "modified": "2026-08-11T18:15:08",
+      "md5": "d41a4a6a85ef6431df9ed51b1f4f2649",
+      "type": "file",
+      "size": 1392792
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00390.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00390.png",
+      "modified": "2026-08-11T18:52:31",
+      "md5": "d74be3ddf57561b4b415787295c37341",
+      "type": "file",
+      "size": 1708998
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00399.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00399.png",
+      "modified": "2026-08-11T18:54:03",
+      "md5": "0a01634c91e1c31103954fcbe0c3724f",
+      "type": "file",
+      "size": 1708162
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00385.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00385.png",
+      "modified": "2026-08-11T18:51:42",
+      "md5": "ebfebb8d0fa582c705c9f4e93669fe23",
+      "type": "file",
+      "size": 1713061
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00292.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00292.png",
+      "modified": "2026-08-11T18:36:04",
+      "md5": "6ba375801f5945302cf66ea428f26312",
+      "type": "file",
+      "size": 1778438
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00066.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00066.png",
+      "modified": "2026-08-11T17:59:24",
+      "md5": "3602e0c8c7b91a5f8db1e87b83e578fc",
+      "type": "file",
+      "size": 365692
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00023.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00023.png",
+      "modified": "2026-08-11T17:52:43",
+      "md5": "cc30c16123b8576c27c5047fc428f9d5",
+      "type": "file",
+      "size": 126686
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00144.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00144.png",
+      "modified": "2026-08-11T18:11:44",
+      "md5": "23569edd05a26646001d3a300da0747c",
+      "type": "file",
+      "size": 1241619
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00341.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00341.png",
+      "modified": "2026-08-11T18:44:18",
+      "md5": "ac9dee12648a22dd372d4491b2641131",
+      "type": "file",
+      "size": 1782587
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00297.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00297.png",
+      "modified": "2026-08-11T18:36:55",
+      "md5": "0eea8f16357910b63c09acb908cd5f27",
+      "type": "file",
+      "size": 1783629
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00333.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00333.png",
+      "modified": "2026-08-11T18:42:56",
+      "md5": "69fcedb084fe26ebacd524ba5d907d73",
+      "type": "file",
+      "size": 1803010
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00116.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00116.png",
+      "modified": "2026-08-11T18:07:15",
+      "md5": "647121ec464294eb626bada877e283cd",
+      "type": "file",
+      "size": 986828
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00179.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00179.png",
+      "modified": "2026-08-11T18:17:24",
+      "md5": "59afd1ced686006f2fc8e7eda358cf6a",
+      "type": "file",
+      "size": 1478956
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00193.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00193.png",
+      "modified": "2026-08-11T18:19:41",
+      "md5": "29df6d9d69953f761b524ab004aab32c",
+      "type": "file",
+      "size": 1535784
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00362.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00362.png",
+      "modified": "2026-08-11T18:47:51",
+      "md5": "08337fb2f7f9cc358fd3999d66a8cc7f",
+      "type": "file",
+      "size": 1735183
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00202.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00202.png",
+      "modified": "2026-08-11T18:21:10",
+      "md5": "dd082d77eaa11667724bffbd5bcaddd6",
+      "type": "file",
+      "size": 1559507
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00287.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00287.png",
+      "modified": "2026-08-11T18:35:14",
+      "md5": "44a35154644bdfe3459caeacbf9248c4",
+      "type": "file",
+      "size": 1772345
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00344.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00344.png",
+      "modified": "2026-08-11T18:44:48",
+      "md5": "18d58baf39232d333b05490357aeae06",
+      "type": "file",
+      "size": 1782807
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00164.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00164.png",
+      "modified": "2026-08-11T18:14:58",
+      "md5": "dbdc242f85599e8b18ff60f931b55363",
+      "type": "file",
+      "size": 1386411
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00120.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00120.png",
+      "modified": "2026-08-11T18:07:53",
+      "md5": "2ab7be3c54249d52cc5860b25cd9ffca",
+      "type": "file",
+      "size": 1028627
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00387.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00387.png",
+      "modified": "2026-08-11T18:52:02",
+      "md5": "29709571a405ad9189841d04a34b51b4",
+      "type": "file",
+      "size": 1709917
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00228.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00228.png",
+      "modified": "2026-08-11T18:25:26",
+      "md5": "8135d11e4556baaa3f7144b663bb9770",
+      "type": "file",
+      "size": 1638574
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00340.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00340.png",
+      "modified": "2026-08-11T18:44:08",
+      "md5": "63deccc12f777f13241ac5a3132f2d70",
+      "type": "file",
+      "size": 1784160
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00072.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00072.png",
+      "modified": "2026-08-11T18:00:20",
+      "md5": "143dfe55e77447a3cb025f51f8fceb3c",
+      "type": "file",
+      "size": 419314
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00293.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00293.png",
+      "modified": "2026-08-11T18:36:14",
+      "md5": "eba0a7527d2086131d40d07625c1956d",
+      "type": "file",
+      "size": 1778746
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00254.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00254.png",
+      "modified": "2026-08-11T18:29:45",
+      "md5": "d89cc6e4586fc313ea825ae577e2cd8e",
+      "type": "file",
+      "size": 1715465
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00171.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00171.png",
+      "modified": "2026-08-11T18:16:06",
+      "md5": "ad0005f6268ffdd11b6829da4107610e",
+      "type": "file",
+      "size": 1433633
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00247.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00247.png",
+      "modified": "2026-08-11T18:28:35",
+      "md5": "731a79321c452765308a0f99393556c9",
+      "type": "file",
+      "size": 1697218
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00298.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00298.png",
+      "modified": "2026-08-11T18:37:05",
+      "md5": "1b1e7895fd20d7432c6e9a6ff3a17d63",
+      "type": "file",
+      "size": 1785547
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00169.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00169.png",
+      "modified": "2026-08-11T18:15:47",
+      "md5": "3dd239e66c9e4ec358dd5f2f808e1d07",
+      "type": "file",
+      "size": 1422624
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00289.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00289.png",
+      "modified": "2026-08-11T18:35:34",
+      "md5": "cadda79ed787ae4d963253a204ec4ca3",
+      "type": "file",
+      "size": 1774566
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00092.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00092.png",
+      "modified": "2026-08-11T18:03:28",
+      "md5": "8fb0ae7d927258a3ca1863870bd4c244",
+      "type": "file",
+      "size": 654186
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00240.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00240.png",
+      "modified": "2026-08-11T18:27:25",
+      "md5": "54ba8b2979b63b3e15112392ddeb0a3e",
+      "type": "file",
+      "size": 1679148
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00235.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00235.png",
+      "modified": "2026-08-11T18:26:36",
+      "md5": "955f335cc83e4bdac61acdc6663acc30",
+      "type": "file",
+      "size": 1661482
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00055.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00055.png",
+      "modified": "2026-08-11T17:57:41",
+      "md5": "77bf4c7f6255ee5d8db4c9b24ec9e502",
+      "type": "file",
+      "size": 282161
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00008.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00008.png",
+      "modified": "2026-08-11T17:50:25",
+      "md5": "f269bd0055158a1a386652ca55639c31",
+      "type": "file",
+      "size": 93030
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00302.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00302.png",
+      "modified": "2026-08-11T18:37:45",
+      "md5": "9ec2403fbf8d030eec6ae9b7f3d307d2",
+      "type": "file",
+      "size": 1788677
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00140.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00140.png",
+      "modified": "2026-08-11T18:11:05",
+      "md5": "1ba79db46d80705b7f26f4a5de4d8633",
+      "type": "file",
+      "size": 1216079
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00278.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00278.png",
+      "modified": "2026-08-11T18:33:44",
+      "md5": "bcdbc4a81e085b8a3f442316e91b3f00",
+      "type": "file",
+      "size": 1764008
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00294.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00294.png",
+      "modified": "2026-08-11T18:36:24",
+      "md5": "cea957323a3a974bf15033553bed1c78",
+      "type": "file",
+      "size": 1779907
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00089.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00089.png",
+      "modified": "2026-08-11T18:03:00",
+      "md5": "6104e84c17c893d29d230546be8b992c",
+      "type": "file",
+      "size": 609549
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00253.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00253.png",
+      "modified": "2026-08-11T18:29:35",
+      "md5": "559951ba929572d302c8d51dfb37882a",
+      "type": "file",
+      "size": 1711931
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00184.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00184.png",
+      "modified": "2026-08-11T18:18:13",
+      "md5": "cfefa5b66ca40bb2be93bbb30fa03324",
+      "type": "file",
+      "size": 1504405
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00313.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00313.png",
+      "modified": "2026-08-11T18:39:35",
+      "md5": "0a5a6d99eef9c7e62a0af2fd8280fb42",
+      "type": "file",
+      "size": 1799161
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00262.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00262.png",
+      "modified": "2026-08-11T18:31:04",
+      "md5": "75d3020bf1de53643340a55406d8d275",
+      "type": "file",
+      "size": 1739198
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00392.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00392.png",
+      "modified": "2026-08-11T18:52:52",
+      "md5": "0ee9bfd9641937ad6b1782216e9d9995",
+      "type": "file",
+      "size": 1706457
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00280.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00280.png",
+      "modified": "2026-08-11T18:34:04",
+      "md5": "41e271c56a621ef7e15c844592926f5d",
+      "type": "file",
+      "size": 1767639
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00376.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00376.png",
+      "modified": "2026-08-11T18:50:12",
+      "md5": "c5114edf45f8a94612b9952a8169e9e9",
+      "type": "file",
+      "size": 1716198
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00036.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00036.png",
+      "modified": "2026-08-11T17:54:44",
+      "md5": "f9141ff8fbbea49000885a734a001255",
+      "type": "file",
+      "size": 178581
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00146.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00146.png",
+      "modified": "2026-08-11T18:12:03",
+      "md5": "c05491592cc4000a14851f4793ba1e7f",
+      "type": "file",
+      "size": 1257923
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00224.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00224.png",
+      "modified": "2026-08-11T18:24:47",
+      "md5": "5eafaf01a67ee77490205d0d729ca817",
+      "type": "file",
+      "size": 1620803
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00332.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00332.png",
+      "modified": "2026-08-11T18:42:46",
+      "md5": "a437e95858e30c4a49d5781854764214",
+      "type": "file",
+      "size": 1804493
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00241.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00241.png",
+      "modified": "2026-08-11T18:27:35",
+      "md5": "894ca6c64766fce2bd08f69a7efcea4c",
+      "type": "file",
+      "size": 1681676
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00272.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00272.png",
+      "modified": "2026-08-11T18:32:44",
+      "md5": "8448e055ff15b248dc167d2e63afb627",
+      "type": "file",
+      "size": 1752729
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00034.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00034.png",
+      "modified": "2026-08-11T17:54:25",
+      "md5": "555a44ee7727ad20a5db2c43c7081fee",
+      "type": "file",
+      "size": 168492
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00086.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00086.png",
+      "modified": "2026-08-11T18:02:31",
+      "md5": "8a63bb41ba4a66da3221cb08fd63c498",
+      "type": "file",
+      "size": 572102
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00007.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00007.png",
+      "modified": "2026-08-11T17:50:16",
+      "md5": "cf086c0164da54e64aa80ac7f363c38a",
+      "type": "file",
+      "size": 90672
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00143.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00143.png",
+      "modified": "2026-08-11T18:11:34",
+      "md5": "b84751efdda823fe6ec1e44cf92dec1b",
+      "type": "file",
+      "size": 1232769
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00167.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00167.png",
+      "modified": "2026-08-11T18:15:27",
+      "md5": "847fd8059013055481c6b60e25e7d63a",
+      "type": "file",
+      "size": 1409041
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00346.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00346.png",
+      "modified": "2026-08-11T18:45:09",
+      "md5": "fc9b676bbab5b0eefc234959561c0d78",
+      "type": "file",
+      "size": 1781185
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00130.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00130.png",
+      "modified": "2026-08-11T18:09:29",
+      "md5": "f0925818cc37643ab7c4fc0cfc735b86",
+      "type": "file",
+      "size": 1141603
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00342.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00342.png",
+      "modified": "2026-08-11T18:44:28",
+      "md5": "e7ab68da9013b63f6e23d4c874deae52",
+      "type": "file",
+      "size": 1783125
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00061.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00061.png",
+      "modified": "2026-08-11T17:58:36",
+      "md5": "d7a1dee91c3676e012cb2a912d8a0a82",
+      "type": "file",
+      "size": 326171
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00215.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00215.png",
+      "modified": "2026-08-11T18:23:18",
+      "md5": "28f14726d388edbe62b73e3702d31a43",
+      "type": "file",
+      "size": 1591728
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00117.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00117.png",
+      "modified": "2026-08-11T18:07:25",
+      "md5": "4debe4ee0aa4e7b5ce3c2596658e703a",
+      "type": "file",
+      "size": 998099
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00002.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00002.png",
+      "modified": "2026-08-11T17:49:30",
+      "md5": "081c2305fd4c9870cbc4b5559f00d4a4",
+      "type": "file",
+      "size": 85594
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00319.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png/elastic_pressure_00319.png",
+      "modified": "2026-08-11T18:40:35",
+      "md5": "b67636e8eae9963485543a7159a7a23a",
+      "type": "file",
+      "size": 1812667
+    },
     "data/dev_2_3/output_line_v3_Vx_left.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/output_line_v3_Vx_left.sgy",
       "modified": "2026-06-01T13:55:50.504943",
@@ -21333,6 +24140,13 @@
       "md5": "c006145fda54bf225cb540ace6c83792",
       "type": "file",
       "size": 73845144
+    },
+    "data/dev_2_3/elastic_pressure_player.html": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/elastic_pressure_player.html",
+      "modified": "2026-08-11T19:14:14.770725",
+      "md5": "7f931fe1922029d22de66071b530fc1e",
+      "type": "file",
+      "size": 15248
     },
     "data/dev_2_3/output_line_v4_Vy_left.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/output_line_v4_Vy_left.sgy",
@@ -34209,10 +37023,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2026-08-03T16:59:36.537671",
-      "md5": "079f47309a9acb632934c7863ff0727a",
+      "modified": "2026-08-11T19:19:35.891399",
+      "md5": "673b3153c1ed12d9da74fdf630665c3f",
       "type": "file",
-      "size": 1776501
+      "size": 1922594
     },
     "dev_3_4_fault_fc_model_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_3_4_fault_fc_model_summary.md",
@@ -37697,7 +40511,21 @@
     },
     "data/dev_2_3": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3",
-      "modified": "2026-08-03T15:32:28.179500",
+      "modified": "2026-08-11T19:12:50.892811",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "data/dev_2_3/x_3700": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700",
+      "modified": "2026-08-11T19:24:00.233131",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "data/dev_2_3/x_3700/elastic_pressure_png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x_3700/elastic_pressure_png",
+      "modified": "2026-08-11T18:54:12",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -40973,8 +43801,8 @@
     }
   },
   "statistics": {
-    "total_files": 4902,
-    "total_directories": 950,
-    "total_size": 54968571192
+    "total_files": 5304,
+    "total_directories": 952,
+    "total_size": 55470941245
   }
 }
