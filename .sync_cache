@@ -742,15 +742,15 @@
     },
     "dev_2_1_segy_material.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_1_segy_material.ipynb",
-      "modified": "2026-07-22T19:24:15.323684",
-      "md5": "c19da5da18a3ad701db11275241838b0",
+      "modified": "2026-09-04T18:52:37.773655",
+      "md5": "ebf498a8788b9b23e89347e8f9827f9c",
       "type": "file",
-      "size": 24285
+      "size": 3415808
     },
     "VERSION": {
       "path": "/home/antonov/Base/Research/MilenSem2D/VERSION",
-      "modified": "2026-08-11T19:13:38.087763",
-      "md5": "f84ff27417ddee8cb83061e3a975eabe",
+      "modified": "2026-09-04T18:52:40.534667",
+      "md5": "fb782a73a3fb26b9e7eb51e99dffa240",
       "type": "file",
       "size": 6
     },
@@ -791,10 +791,10 @@
     },
     "dev_1_7_material_euler.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_7_material_euler.py",
-      "modified": "2026-07-22T18:12:40.220648",
-      "md5": "cfcb18f6b33ea7bda31669340896096c",
+      "modified": "2026-09-04T18:32:02.876338",
+      "md5": "f676136cf8082e93ec650e0a7c45ce8a",
       "type": "file",
-      "size": 22667
+      "size": 22428
     },
     "dev_1_3_build_fc_model.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_3_build_fc_model.ipynb",
@@ -819,10 +819,10 @@
     },
     "CHANGELOG.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/CHANGELOG.md",
-      "modified": "2026-08-11T19:13:38.090763",
-      "md5": "bfb833f227a95a53953cde0f0491bcb7",
+      "modified": "2026-09-04T18:52:40.537667",
+      "md5": "aa112bb5c5b1e1816c776da4c83837bd",
       "type": "file",
-      "size": 7646
+      "size": 10102
     },
     "model3_mesh.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/model3_mesh.jou",
@@ -840,10 +840,10 @@
     },
     "dev_1_7_material_euler_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_7_material_euler_summary.md",
-      "modified": "2025-10-27T18:45:44.759854",
-      "md5": "343b52228f5957d757924cee88dded82",
+      "modified": "2026-09-04T18:39:13.126191",
+      "md5": "d8916f73ae8f153c975e8384b2185cd0",
       "type": "file",
-      "size": 30732
+      "size": 30906
     },
     "dev_1_1_material_interpolation.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_1_material_interpolation.py",
@@ -896,10 +896,10 @@
     },
     ".gitignore": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.gitignore",
-      "modified": "2026-08-03T15:39:08.207461",
-      "md5": "f0eefa20fb32ff2b115c435df29d80b6",
+      "modified": "2026-09-04T17:45:31.643322",
+      "md5": "c4a2a2176b8383adbd46a03d74ed700f",
       "type": "file",
-      "size": 524
+      "size": 405
     },
     "model3_geom.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/model3_geom.jou",
@@ -959,10 +959,10 @@
     },
     "dev_2_1_segy_material_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_1_segy_material_summary.md",
-      "modified": "2025-10-27T18:55:35.367242",
-      "md5": "ba4666d5b9231b195c5bbf51be4b3e63",
+      "modified": "2026-09-04T18:39:13.125191",
+      "md5": "9a8e0325eff9810ee893eb3cf5d5d4b5",
       "type": "file",
-      "size": 27080
+      "size": 33716
     },
     "scripts/2_3_merge_script.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/scripts/2_3_merge_script.py",
@@ -1043,7 +1043,7 @@
     },
     "img/dev_1_7_Vs_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_Vs_layers.png",
-      "modified": "2026-07-22T18:56:47.804821",
+      "modified": "2026-09-04T18:45:22.163779",
       "md5": "25ec899c7edfb5c72ae251d5ba87bf67",
       "type": "file",
       "size": 367970
@@ -1174,6 +1174,13 @@
       "type": "file",
       "size": 301739
     },
+    "img/dev_2_1_material_relative_difference.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_2_1_material_relative_difference.png",
+      "modified": "2026-09-04T18:46:58.056192",
+      "md5": "18c7bae62132d549ac518606e8465901",
+      "type": "file",
+      "size": 9134241
+    },
     "img/dev_3_1_fault_geometry_overview.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_3_1_fault_geometry_overview.png",
       "modified": "2026-05-13T14:33:49.206799",
@@ -1211,10 +1218,10 @@
     },
     "img/dev_1_7_grid_10x5_density.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_grid_10x5_density.png",
-      "modified": "2025-10-16T15:06:44.879849",
-      "md5": "1c151896582743452e3a3aa124c456b3",
+      "modified": "2026-09-01T17:53:38.953152",
+      "md5": "1595fa45c4c195821c2763227b72be8f",
       "type": "file",
-      "size": 345129
+      "size": 248269
     },
     "img/dev_3_2_rho_a10.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_3_2_rho_a10.png",
@@ -1589,7 +1596,7 @@
     },
     "img/dev_1_7_E_grid_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_E_grid_layers.png",
-      "modified": "2026-07-22T18:56:40.836825",
+      "modified": "2026-09-04T18:45:15.009749",
       "md5": "14f73ef02ed3bad0a378d9fde25cfe2b",
       "type": "file",
       "size": 307660
@@ -1624,7 +1631,7 @@
     },
     "img/dev_1_7_nu_values_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_nu_values_layers.png",
-      "modified": "2026-07-22T18:56:43.596823",
+      "modified": "2026-09-04T18:45:17.787761",
       "md5": "3ac45eb8c4d0b6a154282013335f8a26",
       "type": "file",
       "size": 418192
@@ -1729,7 +1736,7 @@
     },
     "img/dev_1_7_Layers_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_Layers_layers.png",
-      "modified": "2026-07-22T18:56:42.200824",
+      "modified": "2026-09-04T18:45:16.410755",
       "md5": "3d0e01412e0cd849cea9b6904058b95f",
       "type": "file",
       "size": 132579
@@ -1757,7 +1764,7 @@
     },
     "img/dev_1_7_pho_values_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_pho_values_layers.png",
-      "modified": "2026-07-22T18:56:45.019822",
+      "modified": "2026-09-04T18:45:19.273767",
       "md5": "ba8688398522a4e8342c1f42c604ba90",
       "type": "file",
       "size": 387867
@@ -1820,7 +1827,7 @@
     },
     "img/dev_1_7_Vp_layers.png": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img/dev_1_7_Vp_layers.png",
-      "modified": "2026-07-22T18:56:46.408822",
+      "modified": "2026-09-04T18:45:20.712773",
       "md5": "80243d0bf793b019a074a605efd01c92",
       "type": "file",
       "size": 368137
@@ -1908,6 +1915,13 @@
       "md5": "9e75528b21a59413b6a8adaf11e412f7",
       "type": "file",
       "size": 22117113
+    },
+    "data/dev_2_1_material_relative_difference.npz": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_material_relative_difference.npz",
+      "modified": "2026-09-04T18:46:53.245172",
+      "md5": "6f2053052411b6c0ae0ab05413a51b60",
+      "type": "file",
+      "size": 29281869
     },
     "data/dev_3_4_model_calc_a10.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_3_4_model_calc_a10.fc",
@@ -2023,7 +2037,7 @@
     },
     "data/dev_1_7_model_mesh_surface.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_mesh_surface.jou",
-      "modified": "2026-07-22T18:56:49.918819",
+      "modified": "2026-09-04T18:45:24.265789",
       "md5": "161cbf67fa8ea882b5326404e1996562",
       "type": "file",
       "size": 8907
@@ -3164,7 +3178,7 @@
     },
     "data/dev_1_7_model_mesh_curve.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_mesh_curve.jou",
-      "modified": "2026-07-22T18:56:49.917819",
+      "modified": "2026-09-04T18:45:24.264789",
       "md5": "2ed64204cad38885d1a62e5f420ccd66",
       "type": "file",
       "size": 18383
@@ -12962,9 +12976,16 @@
       "type": "file",
       "size": 421689589
     },
+    "data/dev_2_1_Vs_model_node_aligned.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vs_model_node_aligned.sgy",
+      "modified": "2026-09-04T18:46:51.276163",
+      "md5": "075df7fa613fb68c6ee54caf8cd65c53",
+      "type": "file",
+      "size": 5749444
+    },
     "data/dev_2_1_material_data.csv": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_material_data.csv",
-      "modified": "2026-07-22T19:24:09.496687",
+      "modified": "2026-09-04T18:46:50.937162",
       "md5": "ea2426b955ce076d5ec943e3d1ed15aa",
       "type": "file",
       "size": 104708202
@@ -13038,6 +13059,13 @@
       "md5": "78957b1f97abaa4f1d58b4d93a4c06a0",
       "type": "file",
       "size": 8819807
+    },
+    "data/dev_2_1_Density_model_node_aligned.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Density_model_node_aligned.sgy",
+      "modified": "2026-09-04T18:46:51.306163",
+      "md5": "9a5e707be8f5c41ab3acf4b4a5c03f26",
+      "type": "file",
+      "size": 5749444
     },
     "data/dev_3_1_fault_layer_boundaries_a10.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_3_1_fault_layer_boundaries_a10.npz",
@@ -13305,6 +13333,13 @@
       "type": "file",
       "size": 182212084
     },
+    "data/dev_2_1_Vp_model_node_aligned.sgy": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vp_model_node_aligned.sgy",
+      "modified": "2026-09-04T18:46:51.245163",
+      "md5": "c64a55c73fe7522755cf169034bf5937",
+      "type": "file",
+      "size": 5749444
+    },
     "data/dev_3_3_model_spline_a10.jou": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_3_3_model_spline_a10.jou",
       "modified": "2026-05-13T19:19:13.301364",
@@ -13314,8 +13349,8 @@
     },
     "data/dev_2_1_Density_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Density_model.sgy",
-      "modified": "2026-07-22T19:24:01.707693",
-      "md5": "f5a40139b8a87720a20450f0accca2d4",
+      "modified": "2026-09-04T18:46:44.520134",
+      "md5": "1f1424a1a6977fbf18471ef2a3e5e096",
       "type": "file",
       "size": 5737600
     },
@@ -16195,6 +16230,13 @@
       "md5": "3b2bc81ae107ce25d1e0c882dddccf78",
       "type": "file",
       "size": 97497144
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_tesseral_fd.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_tesseral_fd.mp4",
+      "modified": "2026-09-01T19:14:38.618137",
+      "md5": "d64af2900638310099562fab1fd69ba5",
+      "type": "file",
+      "size": 629073
     },
     "data/dev_2_3/example/21-01-26+GathAP-X.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/example/21-01-26+GathAP-X.sgy",
@@ -24119,6 +24161,384 @@
       "md5": "e7521b10e81db02712587f428ba6484a",
       "type": "file",
       "size": 9698544
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_008.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_008.png",
+      "modified": "2026-09-01T13:21:48.096984",
+      "md5": "074f77cf9f88af08887792563681488b",
+      "type": "file",
+      "size": 116037
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_022.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_022.png",
+      "modified": "2026-09-01T13:21:48.168984",
+      "md5": "0bda63a72d1f8ccdc2888d80df80cdfb",
+      "type": "file",
+      "size": 222166
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_025.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_025.png",
+      "modified": "2026-09-01T13:21:48.172984",
+      "md5": "fd19a99510ef086f2bed948d4519c2f2",
+      "type": "file",
+      "size": 205754
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_005.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_005.png",
+      "modified": "2026-09-01T13:21:48.077984",
+      "md5": "8b17fa940d12a9ebd209fbe0d2bae6c3",
+      "type": "file",
+      "size": 74763
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_006.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_006.png",
+      "modified": "2026-09-01T13:21:48.084984",
+      "md5": "a10a9e9feceeb58d5ec278fe6677ebcd",
+      "type": "file",
+      "size": 85728
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_024.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_024.png",
+      "modified": "2026-09-01T13:21:48.172984",
+      "md5": "fb464bb340c4ca9a4aca7d65ab0530f9",
+      "type": "file",
+      "size": 213654
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_016.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_016.png",
+      "modified": "2026-09-01T13:21:48.135984",
+      "md5": "6282eae7034825b5b2abec5bb645e92c",
+      "type": "file",
+      "size": 229363
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_009.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_009.png",
+      "modified": "2026-09-01T13:21:48.102984",
+      "md5": "896659f57b431f844000e853e9185de6",
+      "type": "file",
+      "size": 132448
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_014.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_014.png",
+      "modified": "2026-09-01T13:21:48.128984",
+      "md5": "408fd42bf013c87a391da13ebfc5547d",
+      "type": "file",
+      "size": 210388
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_018.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_018.png",
+      "modified": "2026-09-01T13:21:48.147984",
+      "md5": "0297dee1a4b9461475175b0095a9856d",
+      "type": "file",
+      "size": 243341
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_015.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_015.png",
+      "modified": "2026-09-01T13:21:48.132984",
+      "md5": "6bccc3ac575258384459a8390b1f2fd4",
+      "type": "file",
+      "size": 221502
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_002.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_002.png",
+      "modified": "2026-09-01T13:21:48.069984",
+      "md5": "907249e253f269d0247463a0b5b60411",
+      "type": "file",
+      "size": 55726
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_021.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_021.png",
+      "modified": "2026-09-01T13:21:48.162984",
+      "md5": "6677259dd87b26b9fbfaf9223d2423ce",
+      "type": "file",
+      "size": 227614
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_020.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_020.png",
+      "modified": "2026-09-01T13:21:48.162984",
+      "md5": "5444b8b02c6fc8d3764e39b85cd46934",
+      "type": "file",
+      "size": 242335
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_013.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_013.png",
+      "modified": "2026-09-01T13:21:48.119984",
+      "md5": "bfd73fc9b47d96b6d07db0dec250655a",
+      "type": "file",
+      "size": 201007
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_001.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_001.png",
+      "modified": "2026-09-01T13:21:48.064984",
+      "md5": "92f06b3ac1caf1ae9c6a09682a574573",
+      "type": "file",
+      "size": 52898
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_023.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_023.png",
+      "modified": "2026-09-01T13:21:48.170984",
+      "md5": "8a58ba5b8b9963275a8a1c80f83e47b7",
+      "type": "file",
+      "size": 215991
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_000.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_000.png",
+      "modified": "2026-09-01T13:21:48.061984",
+      "md5": "9a69b4b2cfa6e7bd23daac9e2abda6ac",
+      "type": "file",
+      "size": 51503
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_019.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_019.png",
+      "modified": "2026-09-01T13:21:48.162984",
+      "md5": "ac96d2bdfa8a719e685fb6f455ebbe95",
+      "type": "file",
+      "size": 243404
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_004.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_004.png",
+      "modified": "2026-09-01T13:21:48.073984",
+      "md5": "23b13d5bf9f19c8d5e5b114eed5a481d",
+      "type": "file",
+      "size": 66897
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_010.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_010.png",
+      "modified": "2026-09-01T13:21:48.106984",
+      "md5": "a15d697fda4a7c535eef5b1cebfbfb2d",
+      "type": "file",
+      "size": 148525
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_012.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_012.png",
+      "modified": "2026-09-01T13:21:48.115984",
+      "md5": "87c1b2f26f6ee57e5fc129d62e895d96",
+      "type": "file",
+      "size": 181069
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_017.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_017.png",
+      "modified": "2026-09-01T13:21:48.139984",
+      "md5": "8b757af2ac3484a9e1b9af8268f8bc73",
+      "type": "file",
+      "size": 237823
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_003.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_003.png",
+      "modified": "2026-09-01T13:21:48.071984",
+      "md5": "364ed090216f449fa9d05172eb7a623a",
+      "type": "file",
+      "size": 60575
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_011.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_011.png",
+      "modified": "2026-09-01T13:21:48.111984",
+      "md5": "4c63813e345ed03c2fc659bc9987b19d",
+      "type": "file",
+      "size": 166345
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_007.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd/frame_007.png",
+      "modified": "2026-09-01T13:21:48.086984",
+      "md5": "26e4acbd43ac3ea709aed715988ec85d",
+      "type": "file",
+      "size": 99754
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_008.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_008.png",
+      "modified": "2026-09-01T13:21:47.893984",
+      "md5": "130b97691403f2df30184b91a683f56f",
+      "type": "file",
+      "size": 154351
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_022.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_022.png",
+      "modified": "2026-09-01T13:21:47.978984",
+      "md5": "3ec52127c11cbffaa10a7801d3b2e0e5",
+      "type": "file",
+      "size": 257987
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_025.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_025.png",
+      "modified": "2026-09-01T13:21:47.987984",
+      "md5": "778cf7d23316f010aeb441115c71d6e3",
+      "type": "file",
+      "size": 258031
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_005.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_005.png",
+      "modified": "2026-09-01T13:21:47.877984",
+      "md5": "9eb63155491f18bed9501342716b16f1",
+      "type": "file",
+      "size": 97892
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_006.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_006.png",
+      "modified": "2026-09-01T13:21:47.887984",
+      "md5": "3c8dbaac33663ae4041d395ec2299209",
+      "type": "file",
+      "size": 112979
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_024.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_024.png",
+      "modified": "2026-09-01T13:21:47.987984",
+      "md5": "fbe0033d5f7204635e2b23aa9ebe0716",
+      "type": "file",
+      "size": 256824
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_016.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_016.png",
+      "modified": "2026-09-01T13:21:47.948984",
+      "md5": "d0f9d1feb111af99c274695148520247",
+      "type": "file",
+      "size": 275169
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_009.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_009.png",
+      "modified": "2026-09-01T13:21:47.906984",
+      "md5": "257c485df75bdf794eb100fab665f820",
+      "type": "file",
+      "size": 174995
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_014.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_014.png",
+      "modified": "2026-09-01T13:21:47.938984",
+      "md5": "223b68c8003e79b7441746d9c8c988b7",
+      "type": "file",
+      "size": 262157
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_018.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_018.png",
+      "modified": "2026-09-01T13:21:47.963984",
+      "md5": "00042ec86363605ae166143671f74b60",
+      "type": "file",
+      "size": 277884
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_015.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_015.png",
+      "modified": "2026-09-01T13:21:47.943984",
+      "md5": "37d812567f70c3b351791463ad8166b8",
+      "type": "file",
+      "size": 266474
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_002.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_002.png",
+      "modified": "2026-09-01T13:21:47.865984",
+      "md5": "216584d6591adef38e41daf2f6b0c7ef",
+      "type": "file",
+      "size": 64026
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_021.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_021.png",
+      "modified": "2026-09-01T13:21:47.977984",
+      "md5": "766f1e15a144190516dd22b3735354be",
+      "type": "file",
+      "size": 263611
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_020.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_020.png",
+      "modified": "2026-09-01T13:21:47.973984",
+      "md5": "4b69c61f3ec18014d5ce95313d8fb1a1",
+      "type": "file",
+      "size": 272531
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_013.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_013.png",
+      "modified": "2026-09-01T13:21:47.933984",
+      "md5": "f9c41b856a7367badbec9dc56c3b559e",
+      "type": "file",
+      "size": 244320
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_001.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_001.png",
+      "modified": "2026-09-01T13:21:47.861984",
+      "md5": "29ec9c6d06dbd3807e3eac72ee5a2120",
+      "type": "file",
+      "size": 57744
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_023.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_023.png",
+      "modified": "2026-09-01T13:21:47.987984",
+      "md5": "ef7c2db9d1686fb662f8278eca429a77",
+      "type": "file",
+      "size": 261178
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_000.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_000.png",
+      "modified": "2026-09-01T13:21:47.859984",
+      "md5": "579e5983a36bada129b164cb35faf124",
+      "type": "file",
+      "size": 50940
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_019.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_019.png",
+      "modified": "2026-09-01T13:21:47.971984",
+      "md5": "d8f6fe26d1f3a77299b6211538e9f362",
+      "type": "file",
+      "size": 274046
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_004.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_004.png",
+      "modified": "2026-09-01T13:21:47.872984",
+      "md5": "67f1fc46f593e2923578dcdc3b9bbd1d",
+      "type": "file",
+      "size": 85504
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_010.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_010.png",
+      "modified": "2026-09-01T13:21:47.910984",
+      "md5": "07b5378170b25060e5c071d35143aff2",
+      "type": "file",
+      "size": 197753
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_012.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_012.png",
+      "modified": "2026-09-01T13:21:47.926984",
+      "md5": "39af47b62f585e3621a00ab3a48dfc35",
+      "type": "file",
+      "size": 228929
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_017.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_017.png",
+      "modified": "2026-09-01T13:21:47.948984",
+      "md5": "bb16d47d4de88acfc51282cabd48d83f",
+      "type": "file",
+      "size": 279496
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_003.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_003.png",
+      "modified": "2026-09-01T13:21:47.868984",
+      "md5": "b5bc4597e9417d90333dd318cc701f86",
+      "type": "file",
+      "size": 73460
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_011.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_011.png",
+      "modified": "2026-09-01T13:21:47.922984",
+      "md5": "4d5eeab73853a2085a50f3369c5d6c61",
+      "type": "file",
+      "size": 214075
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_007.png": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem/frame_007.png",
+      "modified": "2026-09-01T13:21:47.890984",
+      "md5": "20f6ee2aaebe2355a9f5090d2985a23e",
+      "type": "file",
+      "size": 132564
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_msu_sem.mp4": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_msu_sem.mp4",
+      "modified": "2026-09-01T19:14:38.259137",
+      "md5": "934d41cadc3ef6c9bee3265db7d12f86",
+      "type": "file",
+      "size": 739211
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison.html": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison.html",
+      "modified": "2026-08-11T13:46:32.006705",
+      "md5": "04a695a23322da298f66245e8c4677a7",
+      "type": "file",
+      "size": 11593266
     },
     "data/dev_2_3/output_line_v2_Vy_left.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/output_line_v2_Vy_left.sgy",
@@ -35350,14 +35770,14 @@
     },
     "data/dev_2_1_Vs_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vs_model.sgy",
-      "modified": "2026-07-22T19:24:01.669693",
-      "md5": "f8fdf30c4385a4b56cd8d7b44403abad",
+      "modified": "2026-09-04T18:46:44.490134",
+      "md5": "0cda454d1a9aee20804443b5df4252a6",
       "type": "file",
       "size": 5737600
     },
     "data/dev_1_7_model_material_cartes.fc": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_model_material_cartes.fc",
-      "modified": "2026-07-22T19:20:49.503825",
+      "modified": "2026-09-04T18:45:25.659795",
       "md5": "4667bbd5bd491386d60fd37af8c79e20",
       "type": "file",
       "size": 184967055
@@ -35371,8 +35791,8 @@
     },
     "data/dev_2_1_Vp_model.sgy": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_1_Vp_model.sgy",
-      "modified": "2026-07-22T19:24:01.629693",
-      "md5": "dc15560878b1b5edfaff3f52cf841d06",
+      "modified": "2026-09-04T18:46:44.457134",
+      "md5": "1f4f8c97eae0588f24e603a5458f158c",
       "type": "file",
       "size": 5737600
     },
@@ -35392,7 +35812,7 @@
     },
     "data/dev_1_7_material_grids.npz": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_1_7_material_grids.npz",
-      "modified": "2026-07-22T18:56:49.773819",
+      "modified": "2026-09-04T18:45:24.118788",
       "md5": "fc6d981a679f78592151dd4e21525854",
       "type": "file",
       "size": 30143083
@@ -36561,10 +36981,10 @@
     },
     "dev_2_1_segy_material.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_2_1_segy_material.py",
-      "modified": "2026-07-22T19:23:32.325713",
-      "md5": "95c5b2e236347de0636ef860edb67b09",
+      "modified": "2026-09-04T18:34:32.349982",
+      "md5": "704656da18b728e76bfd61dd4d8afc53",
       "type": "file",
-      "size": 13482
+      "size": 32047
     },
     "src/Vp,Vs,phob,litho_column.xltx": {
       "path": "/home/antonov/Base/Research/MilenSem2D/src/Vp,Vs,phob,litho_column.xltx",
@@ -37023,10 +37443,10 @@
     },
     ".sync_cache": {
       "path": "/home/antonov/Base/Research/MilenSem2D/.sync_cache",
-      "modified": "2026-08-11T19:19:35.891399",
-      "md5": "673b3153c1ed12d9da74fdf630665c3f",
+      "modified": "2026-08-11T19:26:08.884000",
+      "md5": "7f8b425826df84aa86d049ca05175ff3",
       "type": "file",
-      "size": 1922594
+      "size": 1914270
     },
     "dev_3_4_fault_fc_model_summary.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_3_4_fault_fc_model_summary.md",
@@ -37107,10 +37527,10 @@
     },
     "README.md": {
       "path": "/home/antonov/Base/Research/MilenSem2D/README.md",
-      "modified": "2026-05-13T14:33:48.768795",
-      "md5": "53fe6cb258503b887a34d7f965e1df00",
+      "modified": "2026-09-04T18:38:56.509119",
+      "md5": "9c024489f19036c5b14d86a9b4aba74b",
       "type": "file",
-      "size": 22854
+      "size": 23616
     },
     "dev_1_5_layer_update.py": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_5_layer_update.py",
@@ -37128,10 +37548,10 @@
     },
     "dev_1_7_material_euler.ipynb": {
       "path": "/home/antonov/Base/Research/MilenSem2D/dev_1_7_material_euler.ipynb",
-      "modified": "2026-07-22T19:23:17.401723",
-      "md5": "4c3b518c2a6c703abc1772594e769006",
+      "modified": "2026-09-04T18:45:52.389910",
+      "md5": "bdc96595a0a1a76e7a5dc24d5707583d",
       "type": "file",
-      "size": 1265249
+      "size": 1265100
     }
   },
   "dirs": {
@@ -37263,7 +37683,7 @@
     },
     "img": {
       "path": "/home/antonov/Base/Research/MilenSem2D/img",
-      "modified": "2026-05-13T14:33:49.218799",
+      "modified": "2026-09-04T18:36:10.895406",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -37284,7 +37704,7 @@
     },
     "data": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data",
-      "modified": "2026-08-03T15:27:12.969802",
+      "modified": "2026-09-04T18:36:07.140390",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -40511,7 +40931,7 @@
     },
     "data/dev_2_3": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3",
-      "modified": "2026-08-11T19:12:50.892811",
+      "modified": "2026-09-01T19:14:38.302137",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -42122,6 +42542,27 @@
     "data/dev_2_3/line_v3/x_9850": {
       "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/line_v3/x_9850",
       "modified": "2026-07-22T16:50:53.578034",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames",
+      "modified": "2026-09-01T13:21:47.531985",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/tesseral_fd",
+      "modified": "2026-09-01T13:21:48.172984",
+      "md5": "",
+      "type": "dir",
+      "size": 0
+    },
+    "data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem": {
+      "path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_3/x3700_elastic_wavefield_comparison_frames/msu_sem",
+      "modified": "2026-09-01T13:21:47.987984",
       "md5": "",
       "type": "dir",
       "size": 0
@@ -43801,8 +44242,8 @@
     }
   },
   "statistics": {
-    "total_files": 5304,
-    "total_directories": 952,
-    "total_size": 55470941245
+    "total_files": 5364,
+    "total_directories": 955,
+    "total_size": 55552183192
   }
 }

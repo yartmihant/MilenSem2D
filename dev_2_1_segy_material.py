@@ -296,89 +296,13 @@ if csv_output.exists():
                 print(f"    {lines[i].strip()}")
 
 
-""" #### Задача 4: Создание отдельного SEG-Y без сдвига на половину ячейки #### """
+""" #### Узловой комплект перенесён в главу II.5 #### """
 
 """
-Исходный NPZ хранит значения в центрах ячеек с координатами 2.5, 7.5, ... м.
-Стандартное поле начала вертикальных отсчетов SEG-Y не позволяет точно сохранить
-дробное начало 2.5 м через `segyio`: после чтения ось начинается с 0 м.
-
-Поэтому не изменяем существующие SEG-Y, а создаем отдельный узловой вариант.
-Восстанавливаем кусочно-постоянное поле ячеек на узлах 0, 5, ... м. На общей
-границе двух ячеек используем значение ячейки справа и снизу; на правой и нижней
-границах модели продолжаем значение последней ячейки.
+Проверка прежнего np.pad-варианта и корректный перенос из центров ячеек
+в узлы находятся в dev_2_5_material_consistency.py. Используем результаты
+этой главы; исходные растры II.1 остаются материалом в центрах ячеек.
 """
-
-def convert_cell_centers_to_nodes(data):
-    """
-    Переносит кусочно-постоянное поле с центров ячеек на узлы сетки.
-
-    Args:
-        data: массив значений в центрах ячеек [nx, ny]
-
-    Returns:
-        Массив узловых значений [nx + 1, ny + 1]
-    """
-    return np.pad(data, ((0, 1), (0, 1)), mode='edge')
-
-
-Vp_grid_node_aligned = convert_cell_centers_to_nodes(Vp_grid)
-Vs_grid_node_aligned = convert_cell_centers_to_nodes(Vs_grid)
-density_grid_node_aligned = convert_cell_centers_to_nodes(density_grid)
-
-vp_node_aligned_output = output_dir / 'dev_2_1_Vp_model_node_aligned.sgy'
-vs_node_aligned_output = output_dir / 'dev_2_1_Vs_model_node_aligned.sgy'
-density_node_aligned_output = output_dir / 'dev_2_1_Density_model_node_aligned.sgy'
-
-print("\n" + "="*60)
-print("ЗАПИСЬ ОТДЕЛЬНЫХ SEG-Y НА УЗЛОВОЙ СЕТКЕ")
-print("="*60 + "\n")
-
-write_segy_2d(
-    str(vp_node_aligned_output),
-    Vp_grid_node_aligned,
-    dx=dx,
-    dy=dy,
-    x_origin=0.0,
-    y_origin=0.0,
-)
-write_segy_2d(
-    str(vs_node_aligned_output),
-    Vs_grid_node_aligned,
-    dx=dx,
-    dy=dy,
-    x_origin=0.0,
-    y_origin=0.0,
-)
-write_segy_2d(
-    str(density_node_aligned_output),
-    density_grid_node_aligned,
-    dx=dx,
-    dy=dy,
-    x_origin=0.0,
-    y_origin=0.0,
-)
-
-for param_name, output_file, expected_data in [
-    ('Vp', vp_node_aligned_output, Vp_grid_node_aligned),
-    ('Vs', vs_node_aligned_output, Vs_grid_node_aligned),
-    ('Density', density_node_aligned_output, density_grid_node_aligned),
-]:
-    with segyio.open(str(output_file), 'r', ignore_geometry=True) as f:
-        data_check = segyio.tools.collect(f.trace[:])
-        x_first = f.header[0][segyio.TraceField.CDP_X]
-        x_last = f.header[f.tracecount - 1][segyio.TraceField.CDP_X]
-
-        assert data_check.shape == expected_data.shape
-        assert np.allclose(data_check, expected_data.astype(np.float32))
-        assert x_first == 0
-        assert x_last == 11750
-        assert np.isclose(f.samples[0], 0.0)
-        assert np.isclose(f.samples[-1], 2750.0)
-
-        print(f"{param_name}: проверена узловая сетка {data_check.shape}")
-        print(f"  X = {x_first} - {x_last} м")
-        print(f"  Y = {f.samples[0]:.1f} - {f.samples[-1]:.1f} м")
 
 
 """ #### Задача 5: Сравнение материалов Fidesys и Tesseral #### """
@@ -731,15 +655,12 @@ plt.show()
 1. **Анализ формата:** Изучена структура файлов SEG-Y из примера Tesseral
 2. **Конвертация данных:** Преобразованы декартовы данные материала в формат SEG-Y
 3. **Экспорт в CSV:** Создана таблица со всеми данными материала для дополнительного анализа
-4. **Исправление привязки:** Созданы отдельные SEG-Y на узловой сетке 5×5 м без сдвига на половину ячейки; исходные файлы сохранены без изменений
+4. **Узловая привязка:** Перенесена в главу II.5; прежний np.pad не является линейной реинтерполяцией
 5. **Сравнение сеток:** Построены карты подписанных относительных различий Vp, Vs и плотности между узловым материалом Fidesys и растром Tesseral
 6. **Выходные файлы:**
    - data/dev_2_1_Vp_model.sgy - модель скоростей продольных волн
    - data/dev_2_1_Vs_model.sgy - модель скоростей поперечных волн
    - data/dev_2_1_Density_model.sgy - модель плотности
-   - data/dev_2_1_Vp_model_node_aligned.sgy - отдельная узловая модель Vp
-   - data/dev_2_1_Vs_model_node_aligned.sgy - отдельная узловая модель Vs
-   - data/dev_2_1_Density_model_node_aligned.sgy - отдельная узловая модель плотности
    - data/dev_2_1_material_relative_difference.npz - данные сравнения материалов
    - data/dev_2_1_material_data.csv - полная таблица данных материала
    - img/dev_2_1_material_relative_difference.png - карты относительных различий

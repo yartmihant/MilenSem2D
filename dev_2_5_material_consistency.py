@@ -1,0 +1,425 @@
+""" # Численное моделирование сейсмических волн MILEN SEM 2D. Часть II # """
+
+""" ## Глава V. Согласование материала и геометрии FC и SEG-Y ## """
+
+"""
+### Задача
+
+Создадим FC-модель и набор SEG-Y, максимально согласованные при разных
+способах задания геометрии и неизбежной реинтерполяции материала.
+Сохраним 75 слоёв FC и прямоугольную область 11750×2750 м. Проверим
+перенос материала из центров ячеек 5×5 м в узлы конечно-разностной сетки.
+В SEM используем линейную интерполяцию E, nu, rho по отдельной
+триангуляции Делоне каждого материала и ближайшего соседа вне оболочки.
+
+### Почему понадобилась эта глава
+
+Исследование началось с яркого отражения около 2.15 с на x=6000 м.
+Проверка обнаружила три независимые причины несогласованности: загрузчик
+принимал TABLE за константу первой строки; расчётный FC и растры содержали
+разные поколения материала; дно FC было 2650 м, а таблицы и SEG-Y — 2750 м.
+Верхние слои изменились после сглаживания каротажа, последний — после
+удаления его нижних строк. Историческое восстановление воспроизвело оба
+поколения до машинной точности. Подробные этапы сохранены в задачах
+dev_2_5_1…dev_2_5_6, предварительная оценка отражения помечена отозванной.
+
+В задаче 6 уже добавлены четыре ряда QUAD8 по 25 м в материал 75,
+нижнее поглощение перенесено на 2750 м, боковые границы продлены.
+Теперь повторно проверим качество прежнего узлового экспорта и получим
+окончательную согласованную пару файлов. Прежние промежуточные файлы
+остаются свидетельствами исследования, но не являются итоговыми входами.
+"""
+
+"""
+### Ход исследования: задачи 1–6
+
+1. В исходной оценке интегрировали 1/Vp на вертикали x=6000 м, учитывая
+   глубину источника 5 м и время максимума Рикера 1/30 с. Гипотеза о
+   внутреннем отражателе около 2495 м отозвана после проверки загрузчика.
+2. При чтении FC тип таблицы оказался строкой TABLE, тогда как код
+   сравнивал его с числом −1. В результате выбиралось первое значение
+   каждого слоя. Для этого ошибочного материала границы 73/74 и 74/75
+   на 2401.84 и 2411.84 м давали вертикальные времена около 2.155 и 2.160 с.
+   Это объяснило исходный подозрительный пакет; точная волновая атрибуция
+   всё равно требует учёта многомерного распространения.
+3. Послойная линейная интерполяция уменьшала ошибку загрузки, но не
+   устраняла различие исходных таблиц. Разности существовали ещё до
+   применения какой-либо сеточной интерполяции.
+4. Промежуточный FC I.7 побитово совпал с источником SEG-Y. В расчётном
+   FC сохранилось прежнее поколение: без сглаживания первых десяти
+   отсчётов с коэффициентом 0.75 и с нижними строками каротажа Vp=5139.81.
+   Исторические каротажи без сглаживания воспроизвели изменённые слои
+   1–5 и 75 до относительной невязки менее 4×10⁻¹²% по физическим свойствам.
+5. Таблицы расчётного FC были приведены к прежнему узловому растру,
+   с сохранением сетки и прочих полей. Повторная проверка в этой главе
+   показывает, почему тот узловой растр следовало дополнительно исправить.
+6. Дно материала 2750 м оказалось явно заданным техническим продолжением
+   слоя в I.5. Расчётный FC заканчивался на 2650 м. Добавлены 1180 QUAD8,
+   3548 узлов и продлены внешние условия; 75-й слой теперь доходит до
+   глубины узлового SEG-Y. Сетка содержит 110039 элементов и 331948 узлов.
+
+Ни одна из этих причин не эквивалентна погрешности float32. В отчётах
+разделяем смену исходных данных, неверное чтение таблиц, геометрическую
+привязку и остаток от разных способов интерполяции.
+"""
+
+import copy
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+import matplotlib.pyplot as plt
+from matplotlib.collections import PolyCollection
+import numpy as np
+from scipy.interpolate import LinearNDInterpolator
+from scipy.spatial import Delaunay, KDTree
+import segyio
+
+root = Path(__file__).resolve().parent if "__file__" in globals() else Path.cwd()
+sys.path.insert(0, str(root/"fc-model/src"))
+from fc_model import FCModel, FCValue
+
+prefix = "dev_2_5"
+manifest = {}
+properties = ("Vp", "Vs", "Density")
+base_fc_name = "data/dev_2_5_6_milen2Do5pore_full_aligned_2750.fc"
+final_fc_name = "data/dev_2_5_milen2Do5pore_full_aligned_2750.fc"
+
+
+""" ## 1. Проверим прежний перенос из центров в узлы ## """
+
+def checked_path(name):
+    """Регистрирует SHA-256 входа и возвращает путь."""
+    path = root/name
+    with path.open("rb") as stream:
+        manifest[name] = hashlib.file_digest(stream, "sha256").hexdigest()
+    return path
+
+
+def read_segy(path):
+    """Читает массив, координаты CDP_X и ось глубины по принятому соглашению."""
+    with segyio.open(str(path), "r", ignore_geometry=True) as stream:
+        return (np.asarray(stream.trace.raw[:], dtype=float),
+                np.asarray(stream.attributes(segyio.TraceField.CDP_X)[:], dtype=float),
+                np.asarray(stream.samples, dtype=float))
+
+
+cells, legacy = [], []
+for name in properties:
+    c, x, z = read_segy(checked_path(f"data/dev_2_1_{name}_model.sgy"))
+    l, lx, lz = read_segy(checked_path(f"data/dev_2_5_legacy_{name}_model_node_aligned.sgy"))
+    assert c.shape == (2350, 550) and l.shape == (2351, 551)
+    assert np.array_equal(x, np.arange(2350)*5) and np.array_equal(z, np.arange(550)*5)
+    assert np.array_equal(lx, np.arange(2351)*5) and np.array_equal(lz, np.arange(551)*5)
+    assert np.array_equal(l, np.pad(c, ((0, 1), (0, 1)), mode="edge"))
+    cells.append(c)
+    legacy.append(l)
+cells, legacy = np.stack(cells, axis=-1), np.stack(legacy, axis=-1)
+cells[..., 2] *= 1000
+legacy[..., 2] *= 1000
+geometry = np.load(checked_path("data/dev_1_7_material_grids.npz"))
+assert np.array_equal(geometry["coords_grid"][..., 0], (np.arange(2350)[:, None]+.5)*5+np.zeros((1, 550)))
+assert np.array_equal(geometry["coords_grid"][..., 1], (np.arange(550)[None, :]+.5)*5+np.zeros((2350, 1)))
+
+r"""
+У исходного SEG-Y заголовки отсчётов начинаются с нуля, но происхождение
+NPZ однозначно задаёт физические центры 2.5, 7.5, … м. Простое np.pad
+переносит значение из (x+2.5,z+2.5) в узел (x,z). Это допустимое
+одностороннее соглашение для ступенчатого поля, но оно не воспроизводит
+линейное поле на истинных координатах узлов. Поэтому прежнее утверждение
+«исправлена половина ячейки» было слишком сильным.
+
+Для внутреннего узла возьмём билинейную интерполяцию четырёх центров:
+$q_{ij}^{node}=(q_{i-1,j-1}+q_{i,j-1}+q_{i-1,j}+q_{i,j})/4$.
+Внешнюю полосу шириной 2.5 м продолжим константой по нормали к границе.
+На границах слоёв это усреднение, а не восстановление неизвестных
+односторонних значений. Оно неизбежно несколько сглаживает скачки:
+единственный узловой растр не хранит два значения в одном узле.
+"""
+
+
+def centers_to_nodes(values):
+    """Билинейно переносит центры в узлы с постоянным продолжением краёв."""
+    pad_width = ((1, 1), (1, 1))+((0, 0),)*(values.ndim-2)
+    padded = np.pad(values, pad_width, mode="edge")
+    return .25*(padded[:-1, :-1]+padded[1:, :-1]+padded[:-1, 1:]+padded[1:, 1:])
+
+
+nodes_exact = centers_to_nodes(cells)
+cx, cz = np.meshgrid((np.arange(8)+.5)*5, (np.arange(6)+.5)*5, indexing="ij")
+affine = 1000+2*cx+3*cz
+expected = 1000+2*np.arange(9)[:, None]*5+3*np.arange(7)[None, :]*5
+assert np.array_equal(centers_to_nodes(affine)[1:-1, 1:-1], expected[1:-1, 1:-1])
+legacy_affine_error = float(np.max(abs(np.pad(affine, ((0, 1), (0, 1)), mode="edge")[1:-1, 1:-1]-expected[1:-1, 1:-1])))
+assert legacy_affine_error == 12.5
+assert np.array_equal(centers_to_nodes(np.full((8, 6), 1234.)), np.full((9, 7), 1234.))
+wx, wz = np.ones(2351), np.ones(551)
+wx[[0, -1]] = .5
+wz[[0, -1]] = .5
+area_weights_nodes = wx[:, None]*wz[None, :]*25
+source_integrals = cells.sum(axis=(0, 1))*25
+node_integrals = np.sum(nodes_exact*area_weights_nodes[..., None], axis=(0, 1))
+assert np.allclose(source_integrals, node_integrals, rtol=1e-11, atol=0)
+assert (nodes_exact.min(axis=(0, 1)) >= cells.min(axis=(0, 1))).all()
+assert (nodes_exact.max(axis=(0, 1)) <= cells.max(axis=(0, 1))).all()
+print("Old nodes are edge padding; affine bias=12.5; corrected nodes reproduce affine interior and preserve integral", flush=True)
+
+
+""" ## 2. Запишем и повторно прочитаем исправленные узловые SEG-Y ## """
+
+def write_node_segy(path, values, property_name):
+    """Записывает узловую модель 5×5 м в IEEE float32 с явным описанием осей."""
+    nx, nz = values.shape
+    spec = segyio.spec()
+    spec.format, spec.tracecount = 5, nx
+    spec.samples = np.arange(nz)*5
+    with segyio.create(str(path), spec) as stream:
+        stream.text[0] = segyio.tools.create_text_header({1:"MILEN SEM 2D CHAPTER II.5: NODE MATERIAL",
+            2:f"PROPERTY {property_name}; VP VS M/S; DENSITY G/CM3",
+            3:"X=0..11750 M; DEPTH=0..2750 M; DX=DZ=5 M",
+            4:"BILINEAR CELL-CENTER TO NODE; CONSTANT OUTER EXTENSION",
+            5:"DEPTH MODEL: SAMPLE INTERVAL 5000 REPRESENTS 5 M, NOT TRAVEL TIME"})
+        stream.bin = {segyio.BinField.Samples:nz, segyio.BinField.Interval:5000, segyio.BinField.Format:5}
+        for i in range(nx):
+            stream.header[i] = {segyio.TraceField.TRACE_SEQUENCE_FILE:i+1,
+                segyio.TraceField.TRACE_SEQUENCE_LINE:i+1, segyio.TraceField.INLINE_3D:i+1,
+                segyio.TraceField.CROSSLINE_3D:1, segyio.TraceField.CDP_X:i*5,
+                segyio.TraceField.CDP_Y:0, segyio.TraceField.SourceGroupScalar:1,
+                segyio.TraceField.CoordinateUnits:1, segyio.TraceField.TRACE_SAMPLE_COUNT:nz,
+                segyio.TraceField.TRACE_SAMPLE_INTERVAL:5000, segyio.TraceField.DelayRecordingTime:0}
+            stream.trace[i] = values[i].astype(np.float32)
+
+
+nodes, final_segy_names = [], []
+for k, name in enumerate(properties):
+    filename = f"data/dev_2_5_{name}_model_node_aligned.sgy"
+    physical_units = nodes_exact[..., k]/(1000 if k == 2 else 1)
+    write_node_segy(root/filename, physical_units, name)
+    readback, x, z = read_segy(root/filename)
+    assert np.array_equal(readback, physical_units.astype(np.float32))
+    assert np.array_equal(x, np.arange(2351)*5) and np.array_equal(z, np.arange(551)*5)
+    nodes.append(readback*(1000 if k == 2 else 1))
+    final_segy_names.append(filename)
+nodes = np.stack(nodes, axis=-1)
+serialized_integral_error = np.sum(nodes*area_weights_nodes[..., None], axis=(0, 1))/source_integrals-1
+assert np.max(abs(serialized_integral_error)) < 1e-7
+
+
+""" ## 3. Согласуем FC с этими же узловыми значениями ## """
+
+r"""
+Для каждого сохранённого узла таблицы FC возьмём соответствующее значение
+нового SEG-Y и вычислим упругие параметры:
+$\nu=(V_p^2-2V_s^2)/(2(V_p^2-V_s^2))$,
+$E=2\rho V_s^2(1+\nu)$.
+Используем уже округлённые записанные значения SEG-Y, чтобы округление
+не добавляло отдельного расхождения. Число точек и принадлежность слоям
+сохраняются. Геометрия, источник, приёмники и поглощение не меняются.
+"""
+
+source = json.loads(checked_path(base_fc_name).read_text())
+output = copy.deepcopy(source)
+model = FCModel.decode(source)
+vp, vs, rho = np.moveaxis(nodes, -1, 0)
+nu = (vp**2-2*vs**2)/(2*(vp**2-vs**2))
+primitive_grid = np.stack((2*rho*vs**2*(1+nu), nu, rho), axis=-1)
+replacements = (("elasticity", 0, "YOUNG_MODULE"), ("elasticity", 1, "POISSON_RATIO"), ("common", 0, "DENSITY"))
+output_materials = {material["id"]:material for material in output["materials"]}
+tables = {}
+for mid, material in model.materials.items():
+    fields = {prop.name:prop.data for groups in material.properties.values() for group in groups for prop in group}
+    columns = {column.type:column.value.data for column in fields["YOUNG_MODULE"].table}
+    xy = np.column_stack((columns["TABULAR_X"], columns["TABULAR_Y"]))
+    ij = np.rint(xy/5).astype(int)
+    assert np.array_equal(xy, ij*5)
+    primitive = primitive_grid[ij[:, 0], ij[:, 1]]
+    tables[mid] = (xy, primitive)
+    for k, (group_name, code, name) in enumerate(replacements):
+        other = {column.type:column.value.data for column in fields[name].table}
+        assert np.array_equal(xy, np.column_stack((other["TABULAR_X"], other["TABULAR_Y"])))
+        group = next(group for group in output_materials[mid][group_name] if code in group["const_names"])
+        index = group["const_names"].index(code)
+        group["constants"][index] = FCValue(primitive[:, k], "array").encode()
+restored = copy.deepcopy(output)
+for before, after in zip(source["materials"], restored["materials"]):
+    for group_name, code, _ in replacements:
+        for old_group, new_group in zip(before[group_name], after[group_name]):
+            if code in old_group["const_names"]:
+                i = old_group["const_names"].index(code)
+                new_group["constants"][i] = old_group["constants"][i]
+assert restored == source
+del restored
+(root/final_fc_name).write_text(json.dumps(output, ensure_ascii=False, indent=2)+"\n")
+reloaded_raw = json.loads((root/final_fc_name).read_text())
+assert reloaded_raw == output
+final_fc = FCModel.decode(reloaded_raw)
+
+
+""" ## 4. Проверим линейное SEM-поле по всей модели до 2750 м ## """
+
+def shape_quad8(r, s):
+    """Возвращает функции формы серендипова QUAD8."""
+    return np.array([.25*(1-r)*(1-s)*(-r-s-1), .25*(1+r)*(1-s)*(r-s-1),
+        .25*(1+r)*(1+s)*(r+s-1), .25*(1-r)*(1+s)*(-r+s-1),
+        .5*(1-r*r)*(1-s), .5*(1+r)*(1-s*s), .5*(1-r*r)*(1+s), .5*(1-r)*(1-s*s)])
+
+
+def physical(primitive):
+    """Вычисляет Vp, Vs, rho, Zp из E, nu, rho."""
+    young, nu, rho = np.moveaxis(primitive, -1, 0)
+    vp = np.sqrt(young*(1-nu)/(rho*(1+nu)*(1-2*nu)))
+    vs = np.sqrt(young/(2*rho*(1+nu)))
+    return np.stack((vp, vs, rho, rho*vp), axis=-1)
+
+
+def sample_nodes(query, raster):
+    """Билинейно восстанавливает физические свойства из заданного узлового растра."""
+    q = np.clip(query/5, [0, 0], np.array(raster.shape[:2])-1)
+    ij = np.minimum(np.floor(q).astype(int), np.array(raster.shape[:2])-2)
+    ix, iz = np.moveaxis(ij, -1, 0)
+    a, b = np.moveaxis(q-ij, -1, 0)
+    result = ((1-a)*(1-b))[..., None]*raster[ix, iz] + (a*(1-b))[..., None]*raster[ix+1, iz] + ((1-a)*b)[..., None]*raster[ix, iz+1] + (a*b)[..., None]*raster[ix+1, iz+1]
+    return np.concatenate((result, (result[..., 0]*result[..., 2])[..., None]), axis=-1)
+
+
+elements = sorted(final_fc.mesh.elements["QUAD8"].values(), key=lambda element:element.id)
+lookup = {int(nid):i for i,nid in enumerate(final_fc.mesh.nodes_ids)}
+enodes = final_fc.mesh.nodes_xyz[np.array([[lookup[int(nid)] for nid in element.nodes] for element in elements]), :2]
+material_ids = np.array([final_fc.blocks[int(element.block)].material_id for element in elements])
+assert np.allclose(final_fc.mesh.nodes_xyz.max(axis=0), [11750, 2750, 0])
+gauss, gauss_weights = np.polynomial.legendre.leggauss(5)
+queries, weights = [], []
+for j, s in enumerate(gauss):
+    for i, r in enumerate(gauss):
+        a = np.einsum("i,eij->ej", shape_quad8(r+1e-30j,s).imag/1e-30, enodes)
+        b = np.einsum("i,eij->ej", shape_quad8(r,s+1e-30j).imag/1e-30, enodes)
+        jac = a[:, 0]*b[:, 1]-a[:, 1]*b[:, 0]
+        assert (jac > 0).all()
+        queries.append(np.einsum("i,eij->ej", shape_quad8(r,s), enodes))
+        weights.append(jac*gauss_weights[i]*gauss_weights[j])
+queries, weights = np.stack(queries, axis=1), np.stack(weights, axis=1)
+assert np.isclose(weights.sum(), 11750*2750, rtol=1e-9)
+reference = sample_nodes(queries, nodes)
+actual = np.empty_like(reference)
+outside = np.empty(weights.shape, dtype=bool)
+gll = np.r_[-1, np.polynomial.legendre.Legendre.basis(7).deriv().roots(), 1]
+gll_shapes = np.array([shape_quad8(r,s) for s in gll for r in gll])
+layer_reports = []
+for mid, (xy, primitive) in tables.items():
+    origin = xy.mean(axis=0)
+    interpolation = LinearNDInterpolator(Delaunay(xy-origin), primitive)
+    nearest = KDTree(xy)
+    mask = material_ids == mid
+    points = queries[mask]
+    result = interpolation(points-origin)
+    missing = ~np.isfinite(result).all(axis=-1)
+    if missing.any():
+        _, indices = nearest.query(points[missing])
+        result[missing] = primitive[indices]
+    actual[mask] = physical(result)
+    outside[mask] = missing
+    gll_points = np.einsum("qi,eij->eqj", gll_shapes, enodes[mask])
+    gll_result = interpolation(gll_points-origin)
+    gll_missing = ~np.isfinite(gll_result).all(axis=-1)
+    if gll_missing.any():
+        _, indices = nearest.query(gll_points[gll_missing])
+        gll_result[gll_missing] = primitive[indices]
+    assert np.isfinite(gll_result).all() and (gll_result[..., [0, 2]] > 0).all()
+    assert ((gll_result[..., 1] > -1) & (gll_result[..., 1] < .5)).all()
+    # Проверяем весь набор записанных таблиц после декодирования готового FC.
+    fields = {p.name:p.data for gs in final_fc.materials[mid].properties.values() for group in gs for p in group}
+    assert np.array_equal(np.column_stack([fields[name].value.data for _,_,name in replacements]), primitive)
+    check = np.unique(np.linspace(0, len(xy)-1, min(200,len(xy))).astype(int))
+    assert np.allclose(interpolation(xy[check]-origin), primitive[check], rtol=1e-9, atol=1e-9)
+    layer_reports.append(dict(id=int(mid), points=len(xy), gll_count=int(gll_missing.size), gll_nearest=int(gll_missing.sum())))
+    print(f"Layer {mid}: {gll_missing.size} GLL checked", flush=True)
+
+
+def metrics(relative, area_weights):
+    """Средняя абсолютная разность, P95 и максимум, с весами площади."""
+    d, w = abs(relative).ravel(), area_weights.ravel()
+    order = np.argsort(d)
+    return dict(mae=float(np.average(d, weights=w)),
+        p95=float(np.interp(.95, np.cumsum(w[order])/w.sum(), d[order])), max_abs=float(d.max()))
+
+
+difference = 100*(actual/reference-1)
+pair_metrics = [metrics(difference[..., k], weights) for k in range(4)]
+node_change = 100*(nodes/legacy-1)
+# Обратное чтение обоих узловых вариантов в исходных центрах показывает
+# сглаживание и сдвиг отдельно; точное восстановление скачков не обещается.
+cell_xy = geometry["coords_grid"]
+legacy_at_centers = sample_nodes(cell_xy, legacy)[..., :3]
+corrected_at_centers = sample_nodes(cell_xy, nodes)[..., :3]
+quality = {name:[metrics(100*(array[..., k]/cells[..., k]-1), np.ones(cells.shape[:2])) for k in range(3)]
+           for name,array in (("legacy_back_to_centers", legacy_at_centers), ("corrected_back_to_centers", corrected_at_centers))}
+print("Final FC vs nodal SEG-Y:", pair_metrics, flush=True)
+print("Back to original centers:", quality, flush=True)
+
+
+""" ## 5. Сохраним рисунки, численные результаты и паспорт пары ## """
+
+labels = ["Vp", "Vs", "Плотность", "P-импеданс"]
+element_maps = np.sum(difference*weights[..., None], axis=1)/weights.sum(axis=1)[:, None]
+fig, axes = plt.subplots(4, 1, figsize=(14, 11), layout="constrained", sharex=True)
+polygons = enodes[:, [0,4,1,5,2,6,3,7]]
+for k, ax in enumerate(axes):
+    limit = .5 if k != 2 else .15
+    pc = PolyCollection(polygons, array=element_maps[:, k], cmap="RdBu_r", clim=(-limit, limit), rasterized=True)
+    ax.add_collection(pc)
+    ax.set(xlim=(0,11750), ylim=(2750,0), ylabel="Глубина, м", title=f"{labels[k]}: MAE={pair_metrics[k]['mae']:.4f}%")
+    fig.colorbar(pc, ax=ax, label="(FC − узловой SEG-Y) / SEG-Y, %", extend="both")
+axes[-1].set_xlabel("x, м")
+fig.suptitle("Глава II.5. Итоговая пара: линейный материал FC и билинейный узловой растр")
+fig.savefig(root/"img/dev_2_5_final_pair_difference.png", dpi=170)
+plt.close(fig)
+fig, axes = plt.subplots(3, 1, figsize=(14, 9), layout="constrained", sharex=True)
+for k, ax in enumerate(axes):
+    pc = ax.imshow(node_change[..., k].T, extent=(0,11750,2750,0), aspect="auto", cmap="RdBu_r", vmin=-2, vmax=2)
+    ax.set(ylabel="Глубина, м", title=f"{labels[k]}: исправленные узлы относительно прежнего np.pad")
+    fig.colorbar(pc, ax=ax, label="Разность, %", extend="both")
+axes[-1].set_xlabel("x, м")
+fig.suptitle("Результат реального переноса из центров в узлы; оба растра отображены на узловой оси")
+fig.savefig(root/"img/dev_2_5_node_transfer_difference.png", dpi=170)
+plt.close(fig)
+output_hashes = {}
+for name in [final_fc_name, *final_segy_names]:
+    with (root/name).open("rb") as stream:
+        output_hashes[name] = hashlib.file_digest(stream, "sha256").hexdigest()
+report = dict(input_hashes=manifest, output_hashes=output_hashes, final_fc=final_fc_name, final_segy=final_segy_names,
+    node_transfer="bilinear center-to-node with constant outer extension, then float32 serialization",
+    legacy_equals_padding=True, affine_legacy_bias=legacy_affine_error, affine_corrected_interior_error=0,
+    integral_relative_error_before_float32=(node_integrals/source_integrals-1).tolist(),
+    integral_relative_error_after_float32=serialized_integral_error.tolist(),
+    quality=quality, properties=["Vp", "Vs", "rho", "Zp"], statistics=pair_metrics,
+    area_m2=float(weights.sum()), quadrature_count=int(weights.size), quadrature_order=5,
+    gll_order=7, gll_count=sum(x["gll_count"] for x in layer_reports), layers=layer_reports,
+    nearest_area_percent=float(100*np.sum(weights*outside)/weights.sum()),
+    mesh_and_conditions_unchanged=True, changed_fc_property_count=225,
+    limitations=["bilinear raster smooths layer jumps", "FC layer membership is preserved",
+                "nearest extension differs near layer boundaries", "Tesseral internal staggering/averaging not verified",
+                "no claim of a global optimum or identical wavefields"])
+(root/"data/dev_2_5_final_pair_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
+np.savez_compressed(root/"data/dev_2_5_final_pair_check.npz", element_relative_difference=element_maps,
+    node_relative_change=node_change.astype(np.float32))
+for name, expected in manifest.items():
+    with (root/name).open("rb") as stream:
+        assert hashlib.file_digest(stream,"sha256").hexdigest() == expected
+
+
+""" ## Выводы ## """
+
+"""
+Объединили исследование в главу II.5. Проверили происхождение разных
+материалов и прежнюю привязку узлов. Исправили перенос из центров в узлы:
+линейное поле воспроизводится внутри области, интегралы Vp/Vs/rho
+сохраняются до округления, новых экстремумов не возникает. Записали
+согласованный с этими узлами FC на области 11750×2750 м и проверили
+материал во всех GLL-узлах порядка 7. Остаточные различия измерены
+на физической площади, включая зоны около границ слоёв.
+
+Основные выходы — dev_2_5_milen2Do5pore_full_aligned_2750.fc и три
+dev_2_5_*_model_node_aligned.sgy. Файлы legacy и задачи 1–6 служат
+историей проверки, их нельзя смешивать с итоговым комплектом.
+"""

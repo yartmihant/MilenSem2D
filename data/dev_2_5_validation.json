@@ -1,0 +1,59 @@
+{
+  "python": [
+    {
+      "file": "dev_2_5_1_reflection_depth.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "b0c6041f1c304a6130bd23b6774d750763fc8eb3e943fd35f5b925f30ca7b0ea"
+    },
+    {
+      "file": "dev_2_5_2_fc_segy_audit.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "60f0cfea3ea3c1e37e20b522c0ea66d7d782c2097792d3ccb272552cdbee080d"
+    },
+    {
+      "file": "dev_2_5_3_linear_material.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "96aca09549204d9714978c549203543ffcd94baccda8698a1a8061e3944df1fe"
+    },
+    {
+      "file": "dev_2_5_4_material_provenance.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "215bd4c81903a661587870398e41e38671117e2592dcd61e387d7e3ff9c380fb"
+    },
+    {
+      "file": "dev_2_5_5_build_segy_matched_fc.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "7cdc33756fb29262e2b9b49882014957981dd9577d5426438dc1760c2f6886ea"
+    },
+    {
+      "file": "dev_2_5_6_extend_bottom.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "ca3a389bed81e24895646397f3454c6272cad4bdc5e216424aac442e1f8e73bf"
+    },
+    {
+      "file": "dev_2_5_material_consistency.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "1a7571314a79e1b5278f8175a251e72426a7a826e2a1ce0cb1f2ec8859ec9cab"
+    },
+    {
+      "file": "dev_2_1_segy_material.py",
+      "syntax": true,
+      "in_memory_notebook_roundtrip": true,
+      "sha256": "95c980c36f18dd5d50ec0b9df7f828bf8b65735029b074aad9a60f2d220b5c6d"
+    }
+  ],
+  "renamed_files": 50,
+  "all_renamed_paths_exist": true,
+  "all_final_hashes_valid": true,
+  "all_chapter_links_valid": true,
+  "final_sem_loader_passed": true,
+  "notebook_files_read_or_written": false,
+  "conversion_method": "Python AST -> nbformat 4.5 JSON in memory -> Python AST equality (no py2jupyter executable installed)"
+}

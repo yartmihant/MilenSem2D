@@ -1,0 +1,4 @@
+Added 3548 nodes and 1180 QUAD8 in 4 rows
+Conforming interface; ABC exterior only; min Jacobian 238.970588; added area 1175000.0
+Added strip Vp, Vs, rho, Zp relative %: [{'mae': 0.0042498311904710815, 'p95': 0.025721052251076515, 'max_abs': 1.3514078760484605}, {'mae': 0.004250864361982032, 'p95': 0.025728032000377127, 'max_abs': 1.3518632496564376}, {'mae': 0.0011164852578452616, 'p95': 0.006728760432844946, 'max_abs': 0.41686603775351605}, {'mae': 0.0053303678656167145, 'p95': 0.03199276278700575, 'max_abs': 1.7626403533352097}]
+Saved and verified /home/antonov/Base/Research/MilenSem2D/data/dev_2_5_6_milen2Do5pore_full_aligned_2750.fc

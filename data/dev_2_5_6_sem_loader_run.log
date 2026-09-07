@@ -1,0 +1,190 @@
+[sweep/fc] loading: /home/antonov/Base/Research/MilenSem2D/data/dev_2_5_6_milen2Do5pore_full_aligned_2750.fc
+[sweep/fc] mesh ready in 21.97s: N=5398317, E2=110039, order=7
+[sweep/material] Material 1: nearest extrapolation outside hull at 37616/75200 P-points
+[sweep/material] 1/75: material=1, P=75200, Delaunay linear in 0.34s
+[sweep/material] Material 2: nearest extrapolation outside hull at 18520/149440 P-points
+[sweep/material] 2/75: material=2, P=149440, Delaunay linear in 0.29s
+[sweep/material] Material 3: nearest extrapolation outside hull at 15404/219840 P-points
+[sweep/material] 3/75: material=3, P=219840, Delaunay linear in 0.24s
+[sweep/material] Material 4: nearest extrapolation outside hull at 6555/207488 P-points
+[sweep/material] 4/75: material=4, P=207488, Delaunay linear in 0.19s
+[sweep/material] Material 5: nearest extrapolation outside hull at 4346/135296 P-points
+[sweep/material] 5/75: material=5, P=135296, Delaunay linear in 0.10s
+[sweep/material] Material 6: nearest extrapolation outside hull at 1899/107392 P-points
+[sweep/material] 6/75: material=6, P=107392, Delaunay linear in 0.09s
+[sweep/material] Material 7: nearest extrapolation outside hull at 3417/112000 P-points
+[sweep/material] 7/75: material=7, P=112000, Delaunay linear in 0.10s
+[sweep/material] Material 8: nearest extrapolation outside hull at 1407/112000 P-points
+[sweep/material] 8/75: material=8, P=112000, Delaunay linear in 0.09s
+[sweep/material] Material 9: nearest extrapolation outside hull at 2586/159168 P-points
+[sweep/material] 9/75: material=9, P=159168, Delaunay linear in 0.17s
+[sweep/material] Material 10: nearest extrapolation outside hull at 3420/168000 P-points
+[sweep/material] 10/75: material=10, P=168000, Delaunay linear in 0.19s
+[sweep/material] Material 11: nearest extrapolation outside hull at 4551/112000 P-points
+[sweep/material] 11/75: material=11, P=112000, Delaunay linear in 0.09s
+[sweep/material] Material 12: nearest extrapolation outside hull at 4230/152640 P-points
+[sweep/material] 12/75: material=12, P=152640, Delaunay linear in 0.18s
+[sweep/material] Material 13: nearest extrapolation outside hull at 5344/152512 P-points
+[sweep/material] 13/75: material=13, P=152512, Delaunay linear in 0.15s
+[sweep/material] Material 14: nearest extrapolation outside hull at 8631/246016 P-points
+[sweep/material] 14/75: material=14, P=246016, Delaunay linear in 0.33s
+[sweep/material] Material 15: nearest extrapolation outside hull at 9156/147456 P-points
+[sweep/material] 15/75: material=15, P=147456, Delaunay linear in 0.19s
+[sweep/material] Material 16: nearest extrapolation outside hull at 7287/54080 P-points
+[sweep/material] 16/75: material=16, P=54080, Delaunay linear in 0.09s
+[sweep/material] Material 17: nearest extrapolation outside hull at 5502/73664 P-points
+[sweep/material] 17/75: material=17, P=73664, Delaunay linear in 0.13s
+[sweep/material] Material 18: nearest extrapolation outside hull at 3796/100480 P-points
+[sweep/material] 18/75: material=18, P=100480, Delaunay linear in 0.14s
+[sweep/material] Material 19: nearest extrapolation outside hull at 4531/137152 P-points
+[sweep/material] 19/75: material=19, P=137152, Delaunay linear in 0.14s
+[sweep/material] Material 20: nearest extrapolation outside hull at 6386/100480 P-points
+[sweep/material] 20/75: material=20, P=100480, Delaunay linear in 0.12s
+[sweep/material] Material 21: nearest extrapolation outside hull at 7555/137152 P-points
+[sweep/material] 21/75: material=21, P=137152, Delaunay linear in 0.17s
+[sweep/material] Material 22: nearest extrapolation outside hull at 7035/137152 P-points
+[sweep/material] 22/75: material=22, P=137152, Delaunay linear in 0.15s
+[sweep/material] Material 23: nearest extrapolation outside hull at 6858/100480 P-points
+[sweep/material] 23/75: material=23, P=100480, Delaunay linear in 0.10s
+[sweep/material] Material 24: nearest extrapolation outside hull at 6739/50240 P-points
+[sweep/material] 24/75: material=24, P=50240, Delaunay linear in 0.05s
+[sweep/material] Material 25: nearest extrapolation outside hull at 4330/440256 P-points
+[sweep/material] 25/75: material=25, P=440256, Delaunay linear in 0.88s
+[sweep/material] Material 26: nearest extrapolation outside hull at 4780/87744 P-points
+[sweep/material] 26/75: material=26, P=87744, Delaunay linear in 0.17s
+[sweep/material] Material 27: nearest extrapolation outside hull at 5034/113792 P-points
+[sweep/material] 27/75: material=27, P=113792, Delaunay linear in 0.22s
+[sweep/material] Material 28: nearest extrapolation outside hull at 6993/71680 P-points
+[sweep/material] 28/75: material=28, P=71680, Delaunay linear in 0.13s
+[sweep/material] Material 29: nearest extrapolation outside hull at 6892/41280 P-points
+[sweep/material] 29/75: material=29, P=41280, Delaunay linear in 0.05s
+[sweep/material] Material 30: nearest extrapolation outside hull at 7006/82560 P-points
+[sweep/material] 30/75: material=30, P=82560, Delaunay linear in 0.09s
+[sweep/material] Material 31: nearest extrapolation outside hull at 4394/77888 P-points
+[sweep/material] 31/75: material=31, P=77888, Delaunay linear in 0.13s
+[sweep/material] Material 32: nearest extrapolation outside hull at 4674/80000 P-points
+[sweep/material] 32/75: material=32, P=80000, Delaunay linear in 0.16s
+[sweep/material] Material 33: nearest extrapolation outside hull at 3946/164480 P-points
+[sweep/material] 33/75: material=33, P=164480, Delaunay linear in 0.48s
+[sweep/material] Material 34: nearest extrapolation outside hull at 5631/108800 P-points
+[sweep/material] 34/75: material=34, P=108800, Delaunay linear in 0.29s
+[sweep/material] Material 35: nearest extrapolation outside hull at 2949/140992 P-points
+[sweep/material] 35/75: material=35, P=140992, Delaunay linear in 0.34s
+[sweep/material] Material 36: nearest extrapolation outside hull at 3511/114240 P-points
+[sweep/material] 36/75: material=36, P=114240, Delaunay linear in 0.25s
+[sweep/material] Material 37: nearest extrapolation outside hull at 3555/144512 P-points
+[sweep/material] 37/75: material=37, P=144512, Delaunay linear in 0.38s
+[sweep/material] Material 38: nearest extrapolation outside hull at 5415/65920 P-points
+[sweep/material] 38/75: material=38, P=65920, Delaunay linear in 0.12s
+[sweep/material] Material 39: nearest extrapolation outside hull at 4219/65920 P-points
+[sweep/material] 39/75: material=39, P=65920, Delaunay linear in 0.11s
+[sweep/material] Material 40: nearest extrapolation outside hull at 4775/57344 P-points
+[sweep/material] 40/75: material=40, P=57344, Delaunay linear in 0.08s
+[sweep/material] Material 41: nearest extrapolation outside hull at 3989/61504 P-points
+[sweep/material] 41/75: material=41, P=61504, Delaunay linear in 0.09s
+[sweep/material] Material 42: nearest extrapolation outside hull at 4230/32960 P-points
+[sweep/material] 42/75: material=42, P=32960, Delaunay linear in 0.04s
+[sweep/material] Material 43: nearest extrapolation outside hull at 3074/164800 P-points
+[sweep/material] 43/75: material=43, P=164800, Delaunay linear in 0.56s
+[sweep/material] Material 44: nearest extrapolation outside hull at 4368/32960 P-points
+[sweep/material] 44/75: material=44, P=32960, Delaunay linear in 0.04s
+[sweep/material] Material 45: nearest extrapolation outside hull at 3214/61504 P-points
+[sweep/material] 45/75: material=45, P=61504, Delaunay linear in 0.13s
+[sweep/material] Material 46: nearest extrapolation outside hull at 4064/88512 P-points
+[sweep/material] 46/75: material=46, P=88512, Delaunay linear in 0.22s
+[sweep/material] Material 47: nearest extrapolation outside hull at 2457/32320 P-points
+[sweep/material] 47/75: material=47, P=32320, Delaunay linear in 0.08s
+[sweep/material] Material 48: nearest extrapolation outside hull at 2978/56320 P-points
+[sweep/material] 48/75: material=48, P=56320, Delaunay linear in 0.13s
+[sweep/material] Material 49: nearest extrapolation outside hull at 3139/71104 P-points
+[sweep/material] 49/75: material=49, P=71104, Delaunay linear in 0.26s
+[sweep/material] Material 50: nearest extrapolation outside hull at 1864/31040 P-points
+[sweep/material] 50/75: material=50, P=31040, Delaunay linear in 0.08s
+[sweep/material] Material 51: nearest extrapolation outside hull at 2241/56128 P-points
+[sweep/material] 51/75: material=51, P=56128, Delaunay linear in 0.15s
+[sweep/material] Material 52: nearest extrapolation outside hull at 1548/148288 P-points
+[sweep/material] 52/75: material=52, P=148288, Delaunay linear in 0.58s
+[sweep/material] Material 53: nearest extrapolation outside hull at 1656/62080 P-points
+[sweep/material] 53/75: material=53, P=62080, Delaunay linear in 0.13s
+[sweep/material] Material 54: nearest extrapolation outside hull at 1297/116096 P-points
+[sweep/material] 54/75: material=54, P=116096, Delaunay linear in 0.39s
+[sweep/material] Material 55: nearest extrapolation outside hull at 1149/31040 P-points
+[sweep/material] 55/75: material=55, P=31040, Delaunay linear in 0.08s
+[sweep/material] Material 56: nearest extrapolation outside hull at 1166/56896 P-points
+[sweep/material] 56/75: material=56, P=56896, Delaunay linear in 0.18s
+[sweep/material] Material 57: nearest extrapolation outside hull at 1043/110976 P-points
+[sweep/material] 57/75: material=57, P=110976, Delaunay linear in 0.44s
+[sweep/material] Material 58: nearest extrapolation outside hull at 1316/58240 P-points
+[sweep/material] 58/75: material=58, P=58240, Delaunay linear in 0.13s
+[sweep/material] Material 59: nearest extrapolation outside hull at 1052/58240 P-points
+[sweep/material] 59/75: material=59, P=58240, Delaunay linear in 0.13s
+[sweep/material] Material 60: nearest extrapolation outside hull at 1419/29120 P-points
+[sweep/material] 60/75: material=60, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 61: nearest extrapolation outside hull at 1001/51200 P-points
+[sweep/material] 61/75: material=61, P=51200, Delaunay linear in 0.14s
+[sweep/material] Material 62: nearest extrapolation outside hull at 805/58240 P-points
+[sweep/material] 62/75: material=62, P=58240, Delaunay linear in 0.15s
+[sweep/material] Material 63: nearest extrapolation outside hull at 978/29120 P-points
+[sweep/material] 63/75: material=63, P=29120, Delaunay linear in 0.06s
+[sweep/material] Material 64: nearest extrapolation outside hull at 887/29120 P-points
+[sweep/material] 64/75: material=64, P=29120, Delaunay linear in 0.06s
+[sweep/material] Material 65: nearest extrapolation outside hull at 1159/29120 P-points
+[sweep/material] 65/75: material=65, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 66: nearest extrapolation outside hull at 1423/29120 P-points
+[sweep/material] 66/75: material=66, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 67: nearest extrapolation outside hull at 702/29120 P-points
+[sweep/material] 67/75: material=67, P=29120, Delaunay linear in 0.08s
+[sweep/material] Material 68: nearest extrapolation outside hull at 772/29120 P-points
+[sweep/material] 68/75: material=68, P=29120, Delaunay linear in 0.06s
+[sweep/material] Material 69: nearest extrapolation outside hull at 829/29120 P-points
+[sweep/material] 69/75: material=69, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 70: nearest extrapolation outside hull at 670/29120 P-points
+[sweep/material] 70/75: material=70, P=29120, Delaunay linear in 0.06s
+[sweep/material] Material 71: nearest extrapolation outside hull at 602/29120 P-points
+[sweep/material] 71/75: material=71, P=29120, Delaunay linear in 0.05s
+[sweep/material] Material 72: nearest extrapolation outside hull at 741/29120 P-points
+[sweep/material] 72/75: material=72, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 73: nearest extrapolation outside hull at 592/29120 P-points
+[sweep/material] 73/75: material=73, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 74: nearest extrapolation outside hull at 700/29120 P-points
+[sweep/material] 74/75: material=74, P=29120, Delaunay linear in 0.04s
+[sweep/material] Material 75: nearest extrapolation outside hull at 4873/218752 P-points
+[sweep/material] 75/75: material=75, P=218752, Delaunay linear in 1.86s
+{
+  "fc_path": "/home/antonov/Base/Research/MilenSem2D/data/dev_2_5_6_milen2Do5pore_full_aligned_2750.fc",
+  "fc_sha256": "2ac3da1f8166951fb0b226de3bcdb4e8f937362a77d19bcd574a1f60d1fe02aa",
+  "loader_path": "/home/antonov/Base/Research/TrySEMGPU/research/seismic/fc_material.py",
+  "loader_sha256": "11835b99da46bfb88aacf7401fa45b1d05c46a17038cf3bc28fc5fa2fc4ee6da",
+  "order": 7,
+  "global_nodes": 5398317,
+  "elements": 110039,
+  "local_gll": 7042496,
+  "values_names": [
+    "rho",
+    "E",
+    "nu"
+  ],
+  "minimum": [
+    1864.3163893927667,
+    2944646624.174813,
+    0.28334050483456197
+  ],
+  "maximum": [
+    2559.608606435487,
+    53370844747.30027,
+    0.28383021623450994
+  ],
+  "bounds": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      11750.000000000191,
+      2750.0000000000005
+    ]
+  ],
+  "elapsed_seconds": 37.50483220199749,
+  "all_values_finite": true,
+  "new_elements_material_75": true
+}
