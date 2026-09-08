@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-09-08T20:18:01",
+  "input_dir": "data/dev_2_5/line_v5",
+  "source_count": 226,
+  "files": {
+    "output_line_v5_Vx_right.sgy": {
+      "size_bytes": 97497144,
+      "traces": 11826,
+      "samples_per_trace": 2001,
+      "sample_interval_us": 2000,
+      "format": 1,
+      "all_headers_identical_to_v4": true,
+      "verified_traces": 11826,
+      "max_absolute_error_vs_float32_npz": 5.21540641784668e-08,
+      "sha256": "1127c9a56dd49f61cc5e9e4c7b050b128a65bf1e66ebe39e2d1c13ee85daeed8"
+    },
+    "output_line_v5_Vx_left.sgy": {
+      "size_bytes": 97497144,
+      "traces": 11826,
+      "samples_per_trace": 2001,
+      "sample_interval_us": 2000,
+      "format": 1,
+      "all_headers_identical_to_v4": true,
+      "verified_traces": 11826,
+      "max_absolute_error_vs_float32_npz": 5.21540641784668e-08,
+      "sha256": "1244ec7630cf7f7e879d94b6d1023ea126458de8bf41a5e39c31754c87de986a"
+    },
+    "output_line_v5_Vy_right.sgy": {
+      "size_bytes": 97497144,
+      "traces": 11826,
+      "samples_per_trace": 2001,
+      "sample_interval_us": 2000,
+      "format": 1,
+      "all_headers_identical_to_v4": true,
+      "verified_traces": 11826,
+      "max_absolute_error_vs_float32_npz": 8.344650268554688e-07,
+      "sha256": "119eec05448e26b701db7bfb1bb7efe79f19e320f5277d0e8849de9b60a9b16f"
+    },
+    "output_line_v5_Vy_left.sgy": {
+      "size_bytes": 97497144,
+      "traces": 11826,
+      "samples_per_trace": 2001,
+      "sample_interval_us": 2000,
+      "format": 1,
+      "all_headers_identical_to_v4": true,
+      "verified_traces": 11826,
+      "max_absolute_error_vs_float32_npz": 8.344650268554688e-07,
+      "sha256": "d2a080ac0a27dfc8b9d6da6360123534a1ed954d867ad336a7c6b0c0ce558224"
+    }
+  },
+  "status": "passed"
+}

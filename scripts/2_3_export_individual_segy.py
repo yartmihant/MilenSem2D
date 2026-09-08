@@ -17,7 +17,7 @@ import segyio
 """ ## Параметры экспорта ## """
 
 CONFIG = {
-    "npz_dir": Path("data/dev_2_3/line_v4"),
+    "npz_dir": Path("data/dev_2_5/line_v5"),
     "components": ("vx", "vy"),
     "output_name": "seismogram_{component}.sgy",
     "sample_count": 2001,
